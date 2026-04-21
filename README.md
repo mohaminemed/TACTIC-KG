@@ -4,7 +4,7 @@ TACTIC-KG is a modular, agent-based pipeline for constructing **Cyber Threat Int
 
 ---
 
-## 🚀 Overview
+## Overview
 
 The system transforms raw CTI reports into a **Curated Cyber Security Knowledge Graph (CSKG)** through a sequence of specialized agents:
 
@@ -16,7 +16,7 @@ Verifier → Curator → Curated CSKG
 
 ---
 
-## 🧩 Pipeline Description
+## Pipeline Description
 
 A long CTI report is first segmented using **semantic chunking** to preserve discourse boundaries and avoid context fragmentation.
 
@@ -75,7 +75,7 @@ The pipeline executes a sequence of agents under an **auditable and Human-in-the
 
 ---
 
-## 🔑 Key Features
+## Key Features
 
 - ✅ Faithfulness-first design
 - ✅ Modular multi-agent architecture
@@ -86,7 +86,7 @@ The pipeline executes a sequence of agents under an **auditable and Human-in-the
 
 ---
 
-## 📂 Data Format
+## Data Format
 
 All stages communicate using structured JSON:
 
@@ -106,7 +106,7 @@ All stages communicate using structured JSON:
 }
 ```
 
-## 🧪 Running Experiments
+##  Running Experiments
 
 Experiments are controlled via configuration files located in:
 
@@ -124,7 +124,7 @@ Or manually:
 python src/utils/evaluate_semantic.py --config configs/<model>.yaml
 ```
 
-### ▶️ Execution Workflow
+### Execution Workflow
 
 A typical run follows these steps:
 
@@ -133,7 +133,7 @@ Defines models, thresholds, and experiment settings →
 Load fine-tuned LoRA agents and run the pipline
 
 
-### 🔁 Batch Execution
+### Batch Execution
 
 To run multiple models use:
 
@@ -142,7 +142,7 @@ bash run_loop_over_models.sh
 ```
 
 
-### 📊 Reproducing Paper Results
+### Reproducing Paper Results
 
 To reproduce the results reported in the paper:
 
@@ -151,12 +151,12 @@ To reproduce the results reported in the paper:
 3. Enable: LoRA-based agents, Hybrid reasoning mode (if specified)
 4. Run the pipline for each base model on TEST1 and TEST2 
 
-## 🧠 Notes
+## Notes
 - The pipeline supports partial execution, allowing you to run individual agents independently.
 - Intermediate outputs are stored in JSON format for full auditability.
 
 
-## 🚧 Upcoming
+##  Upcoming
 
 An interactive version of the pipeline is currently under development.
 
