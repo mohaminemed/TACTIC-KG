@@ -1,0 +1,9 @@
+{
+  "apt": "FIN6",
+  "source": "AnotherVictim",
+  "reports": {
+    "default_annotator": {
+      "report_text": "Magecart operators registered a domain called neweggstats.com with the intent of blending in with Newegg's primary domain, newegg.com Adversaries may acquire domains that can be used during targeting. Domain names are the human readable names used to represent one or more IP addresses. They can be purchased or, in some cases, acquired for free.\nAdversaries may impersonate a trusted person or organization in order to persuade and trick a target into performing some action on their behalf.\na Magecart drop server where their skimmer backend runs to receive skimmed credit card information Adversaries may steal data by exfiltrating it over an existing command and control channel.\nthese actors acquired a certificate issued for the domain by Comodo to lend an air of legitimacy to their page Adversaries may buy and/or steal SSL/TLS certificates that can be used during targeting. SSL/TLS certificates are designed to instill trust.\nthe attackers placed the skimmer code on Newegg Adversaries may abuse command and script interpreters to execute commands, scripts, or binaries.\nThe skimmer was put on the payment processing page itself, not in a script, so it would not show unless the payment page was hit. Adversaries may attempt to make an executable or file difficult to discover."
+    }
+  }
+}

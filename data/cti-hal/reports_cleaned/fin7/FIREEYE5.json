@@ -1,0 +1,9 @@
+{
+  "apt": "FIN7",
+  "source": "FIREEYE5",
+  "reports": {
+    "default_annotator": {
+      "report_text": "The shim injected a malicious in-memory patch into the Services Control Manager (\"services.exe\") process, and then spawned a CARBANAK backdoor process. FIN7 leveraged an application shim database to achieve persistent access on systems in multiple environments.\n\nFIN7 used a custom Base64 encoded PowerShell script, which ran the \"sdbinst.exe\" utility to register a custom shim database file containing a patch onto a system. obtained an additional shellcode payload stored in a registry key.\n\nThe second stage shellcode launched the CARBANAK DLL (stored in a registry key), which spawned an instance of Service Host (\"svchost.exe\") and injected itself into that process. The new \"ScRegisterTCPEndpoint\" function (shellcode) contained a reference to the path of \"\\REGISTRY\\MACHINE\\SOFTWARE\\Microsoft\\DRM\", which is a registry location where additional malicious shellcode and the CARBANAK DLL payload was stored on the system.\n\nThe shellcode stored within the registry path \"HKLM\\SOFTWARE\\Microsoft\\DRM\" used the API function \"RtlDecompressBuffer\" to decompress the payload. Once loaded in memory, it created a new process named \"svchost.exe\" that contained the CARBANAK DLL."
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "apt": "FIN7",
+  "source": "FIREEYE2",
+  "reports": {
+    "default_annotator": {
+      "report_text": "FIN7 sent spear phishing emails to personnel involved with United States Securities and Exchange Commission (SEC) filings at multiple organizations. FIN7's use of spear-phishing emails with malicious attachments to target individuals with access to valuable SEC filings.\n\nFIN7's spear phishing emails that leveraged hidden shortcut files (LNK files). FIN7 used spear-phishing emails containing LNK files to trick victims into initiating the infection process.\n\nleveraged hidden shortcut files (LNK files) to initiate the infection. The use of LNK files as a method of delivering malware that requires the victim to execute the file.\n\nVBScript functionality launched by mshta.exe to infect the victim. The mshta.exe process and VBScript execution are used to exploit the system for code execution without relying on Office macros.\n\nFIN7's use of the CARBANAK backdoor as a postexploitation tool to cement their foothold in a network and maintain access to victim environments. The CARBANAK backdoor allows FIN7 to maintain remote access to victim systems, giving them control over compromised environments for extended periods."
+    }
+  }
+}

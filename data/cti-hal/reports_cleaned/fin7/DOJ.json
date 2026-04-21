@@ -1,0 +1,9 @@
+{
+  "apt": "FIN7",
+  "source": "DOJ",
+  "reports": {
+    "default_annotator": {
+      "report_text": "FIN7 typically initiated its cyberattacks by delivering a \"phishing\" email to a company employee. Each email included an attached file, often an innocuous-appearing Microsoft Word document, with embedded malware.\n\nOnce infected, the compromised victim computer connected to one of FIN7's command and control servers located throughout the world.\n\nThrough a specially designed control panel, FIN7 could download a wide array of additional malware to the victim computer.\n\nFIN7 incorporated and adapted the notorious Carbanak malware for persistent access and control.\n\nFIN7's malware allowed its members to conduct surveillance on company employees, including taking screen shots.\n\nThe malware also recorded videos of desktop activity, enabling more detailed surveillance and data theft.\n\nenabling them to secretly steal credentials and other network information.\n\nFIN7 then used its unauthorized access to the victim's computer system to locate and extract various information and property of value, such as financial information and caches of customer payment card data.\n\nThe text within the email simulated a legitimate businessrelated message in order to lead the recipient employee to open the attachment and unwittingly activate the malware that would infect the computer."
+    }
+  }
+}

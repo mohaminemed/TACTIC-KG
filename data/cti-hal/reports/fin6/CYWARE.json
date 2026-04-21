@@ -1,0 +1,9 @@
+{
+  "apt": "FIN6",
+  "source": "CYWARE",
+  "reports": {
+    "default_annotator": {
+      "report_text": "FIN6 relied on Windows' Remote Desktop Protocol (RDP) to move laterally across a\u0000ected networks Using Windows' Remote Desktop Protocol (RDP) to move laterally across affected networks\n\ntwo di\u0000erent techniques\n\nThis movement enabled FIN6 to then inject LockerGoga and Ryuk ransomware Injecting LockerGoga and Ryuk ransomware\n\nexecuting an encoded command through PowerShell Executing an encoded command through PowerShell\n\nThe command downloaded a Cobalt Strike payload Downloading a Cobalt Strike payload\n\nwhich in turn was con\u0000gured to drop a malicious payload onto the systems Cobalt Strike payload dropping a malicious payload onto the systems\n\nuse of a Windows Service created by Metasploit Use of a Windows Service created by Metasploit\n\nthat was used to communicate with a C2 server for dropping additional payloads into compromised systems. Communicating with a C2 server for dropping additional payloads\n\nThis would allow FIN6 to escalate privileges in the system. Escalating privileges in the system\n\n\u0000rst technique\n\nsecond technique"
+    }
+  }
+}

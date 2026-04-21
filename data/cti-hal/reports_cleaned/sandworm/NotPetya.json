@@ -1,0 +1,9 @@
+{
+  "apt": "SANDWORM",
+  "source": "NotPetya",
+  "reports": {
+    "default_annotator": {
+      "report_text": "even if they pay the ransom they will not get their data back. Secondly, this reinforces the theory that the main goal of the ExPetr attack was not financially motivated, but destructive. Adversaries may destroy data and files on specific systems or in large numbers on a network to interrupt availability to systems, services, and network resources."
+    }
+  }
+}

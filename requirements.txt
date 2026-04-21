@@ -1,0 +1,24 @@
+# Core dependencies
+numpy
+pandas
+tqdm
+scikit-learn
+
+# NLP + semantic similarity
+spacy
+fuzzywuzzy
+python-Levenshtein
+sentence-transformers
+nltk
+rapidfuzz
+
+# Graph / structure alignment
+networkx
+
+# JSON + filesystem utilities
+ujson
+glob2
+
+# Optional (for visualization)
+matplotlib
+seaborn

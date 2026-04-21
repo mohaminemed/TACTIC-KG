@@ -1,0 +1,9 @@
+{
+  "apt": "FIN6",
+  "source": "InsideTheBreach",
+  "reports": {
+    "default_annotator": {
+      "report_text": "Magecart injects scripts designed to steal sensitive data that consumers enter into online payment forms on e-commerce websites directly or through compromised third-party suppliers used by these sites Adversaries may abuse various implementations of JavaScript for execution.\nAdversaries may use methods of capturing user input to obtain credentials or collect information.\n\nonce a user hits the button to submit their payment on the compromised British Airways site, the information from the payment form is extracted along with their name and sent to the attacker's server. Adversaries may steal data by exfiltrating it over an existing command and control channel.\n\nthey decided to go with a paid certificate from Comodo instead of a free LetsEncrypt certificate, likely to make it appear like a legitimate server Adversaries may buy and/or steal SSL/TLS certificates that can be used during targeting. SSL/TLS certificates are designed to instill trust."
+    }
+  }
+}

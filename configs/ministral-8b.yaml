@@ -1,0 +1,38 @@
+# =========================
+# Global configuration
+# =========================
+experiment:
+  name: "ministral-3-8b_v0.1_unseen"
+  test: 1      # 1: 25 reports or 2: 45 reports
+  num_docs: 1  # Number of documents to process (max: 25 for test = 1)
+  islora: true
+  hybrid: true
+  entity_merge_threshold: 0.8
+  relation_merge_threshold: 0.8
+  evaluation_threshold: 0.6
+  start : 0
+
+models:
+  base_model: "mistralai/Ministral-3-8B-Reasoning-2512"
+  hybrid_model: "mistralai/Ministral-3-8B-Reasoning-2512"
+  embedding_merge_model: "sentence-transformers/all-MiniLM-L12-v2"  #all-mpnet-base-v2", paraphrase-MiniLM-L6-v2, all-MiniLM-L6-v2 
+  evaluation_model: "sentence-transformers/all-MiniLM-L12-v2"  #all-mpnet-base-v2", paraphrase-MiniLM-L6-v2, all-MiniLM-L6-v2 
+
+  
+
+# =========================
+# Agent-specific LoRAs
+# =========================
+agents:
+  extractor:
+    lora_dir: "models/ministral-3-8B-Reasoning-2512_extractor_lora_v2.0"
+
+  typer:
+    lora_dir: "models/ministral-3-8B-Reasoning-2512_typer_lora_v2.0"
+
+  verifier:
+    lora_dir: "models/ministral-3-8B-Reasoning-2512_verifier_lora_v0.1"  
+
+  curator:
+    lora_dir: "models/ministral-3-8B-Reasoning-2512_curator_lora_v0.2"
+              

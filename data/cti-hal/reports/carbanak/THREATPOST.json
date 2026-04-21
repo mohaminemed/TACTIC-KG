@@ -1,0 +1,9 @@
+{
+  "apt": "CARBANAK",
+  "source": "THREATPOST",
+  "reports": {
+    "default_annotator": {
+      "report_text": "The crime group would send out bank employees spear phishing emails, impersonating legitimate companies, which harbored a malicious attachment Sending spear phishing emails with malicious attachments.\n\nIf the attachments were executed If the attachments are executed, the malware is activated.\n\nthe criminals would use their malware to remotely control the victims' machines Use of remote access software to control victims' machines.\n\nThe group first launched a campaign in 2013 using malware known as Anunak to target financial transfers and ATM networks of financial institutions, but by the following year that malware had been improved into a more sophisticated version known as Carbanak. the attackers use Anunak\n\nFrom then onwards, the crime syndicate focused their efforts into developing an even more sophisticated wave of attacks by using tailormade malware based on the Cobalt Strike penetration testing software,\" use of a malware based on the Cobalt Strike penetration testing sofware\n\nThe spear-phishing emails contain attachments Sending spear phishing emails with malicious attachments.\n\nthat eventually download and execute a dropper If the attachments are executed, the malware is activated.\n\nThe backdoor is used to send system information and execute malicious code\n\nsteals credentials Access to stored credentials\n\nscreen recording Capture of compromised system screenshots."
+    }
+  }
+}

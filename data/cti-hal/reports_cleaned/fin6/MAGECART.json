@@ -1,0 +1,9 @@
+{
+  "apt": "FIN6",
+  "source": "MAGECART",
+  "reports": {
+    "default_annotator": {
+      "report_text": "The attackers injected their code into a library provided on Volusion's e-commerce platform for their client shops.\n\nThey created a new object \"e.widget.unbridge\" right before the original object \"e.widget.bridge\" and the malicious code is inside the new object. It's worth noting that the attackers even wrote their malicious code in a similar coding style to make it look more like a part of the original source code.\n\nThe injected object will create a new script element to load another remote script stored on Google Storage.\n\nThe skimmer copies the information on the entire payment form: the victim's name, address, phone number, email address, and credit card details (the number, cardholder name, expiration month, expiration year, and CVV number).\n\nOnce the skimmer has the credit card details, it serializes the copied data into a string and encodes it with Base64. Then, it performs a character permutation on the encoded string to make sure it can't be directly decoded with Base64 decoding.\n\nit will use HTTP POST to send the stolen payment information to a remote server at \"hxxps[:]//volusion-cdn[.]com/analytics/beacon\" for exfiltration."
+    }
+  }
+}

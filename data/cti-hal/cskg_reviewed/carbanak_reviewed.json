@@ -1,0 +1,4502 @@
+[
+  {
+    "id": 0,
+    "source_id": "TRUSTWAVE1_default_annotator",
+    "text": "The common successful entry point within all operations was an email message targeted to victim's public-facing services that contained a Microsoft Word document attachment.\n\nUpon opening the attachment multiple malicious files were created or downloaded allowing the attackers to gain some level of access into the victim's infrastructure.\n\nData from section \"last\" is written into registry perhaps to keep track of last executed command.\n\nPersistence was achieved by utilizing scheduled tasks.\n\nSeveral of the Operating System's auto-start locations allowed attackers to gain Domain or even Enterprise Admin access.\n\nCloud services such as Google Docs and Google Forms were involved allowing attackers to keep track of infected systems, spread malware and perform further malicious activities.\n\nScripting code (PowerShell, JavaScript, VBS).\n\nWhat seems to be the core tools of these activities is a variant of Anunak, remote backdoor, along with a Visual Basic Script specially crafted with data exfiltration features.\n\nOne other significant finding is that some of the executables were signed using valid certificates from Comodo, a Certification Authority.",
+    "final_triplets": [
+      {
+        "subject": "email message",
+        "subject_type": "Information",
+        "relation": "was the entry point for",
+        "object": "operations",
+        "object_type": "Event"
+      },
+      {
+        "subject": "email message",
+        "subject_type": "Information",
+        "relation": "targeted",
+        "object": "public-facing services",
+        "object_type": "Infrastructure"
+      },
+      {
+        "subject": "email message",
+        "subject_type": "Information",
+        "relation": "contained",
+        "object": "microsoft word document attachment",
+        "object_type": "Indicator:File"
+      },
+      {
+        "subject": "microsoft word document attachment",
+        "subject_type": "Indicator:File",
+        "relation": "created or downloaded",
+        "object": "malicious files",
+        "object_type": "Indicator:File"
+      },
+      {
+        "subject": "malicious files",
+        "subject_type": "Indicator:File",
+        "relation": "allowed",
+        "object": "attackers to gain access",
+        "object_type": "Event"
+      },
+      {
+        "subject": "attackers",
+        "subject_type": "Attacker",
+        "relation": "gained access to",
+        "object": "victim's infrastructure",
+        "object_type": "Infrastructure"
+      },
+      {
+        "subject": "data from section 'last'",
+        "subject_type": "Information",
+        "relation": "was written into",
+        "object": "registry",
+        "object_type": "Indicator:Registry Key"
+      },
+      {
+        "subject": "registry",
+        "subject_type": "Indicator:Registry Key",
+        "relation": "is used to keep track of",
+        "object": "last executed command",
+        "object_type": "Information"
+      },
+      {
+        "subject": "persistence",
+        "subject_type": "Malware Characteristic:Feature",
+        "relation": "was achieved by",
+        "object": "scheduled tasks",
+        "object_type": "Tool"
+      },
+      {
+        "subject": "operating system's auto-start locations",
+        "subject_type": "Indicator:Registry Key",
+        "relation": "allowed",
+        "object": "attackers to gain domain or enterprise admin access",
+        "object_type": "Event"
+      },
+      {
+        "subject": "cloud services",
+        "subject_type": "Infrastructure",
+        "relation": "was involved",
+        "object": "google docs",
+        "object_type": "Infrastructure"
+      },
+      {
+        "subject": "cloud services",
+        "subject_type": "Infrastructure",
+        "relation": "was involved",
+        "object": "google forms",
+        "object_type": "Infrastructure"
+      },
+      {
+        "subject": "attackers",
+        "subject_type": "Attacker",
+        "relation": "used cloud services to keep track of",
+        "object": "infected systems",
+        "object_type": "Infrastructure"
+      },
+      {
+        "subject": "attackers",
+        "subject_type": "Attacker",
+        "relation": "used cloud services to spread",
+        "object": "malware",
+        "object_type": "Malware"
+      },
+      {
+        "subject": "attackers",
+        "subject_type": "Attacker",
+        "relation": "used cloud services to perform",
+        "object": "further malicious activities",
+        "object_type": "Event"
+      },
+      {
+        "subject": "scripting code",
+        "subject_type": "Tool",
+        "relation": "includes",
+        "object": "powershell",
+        "object_type": "Tool"
+      },
+      {
+        "subject": "scripting code",
+        "subject_type": "Tool",
+        "relation": "includes",
+        "object": "javascript",
+        "object_type": "Tool"
+      },
+      {
+        "subject": "scripting code",
+        "subject_type": "Tool",
+        "relation": "includes",
+        "object": "vbs",
+        "object_type": "Tool"
+      },
+      {
+        "subject": "anunak",
+        "subject_type": "Malware",
+        "relation": "is a variant of",
+        "object": "remote backdoor",
+        "object_type": "Malware Characteristic:Variants"
+      },
+      {
+        "subject": "anunak",
+        "subject_type": "Malware",
+        "relation": "is a core tool of",
+        "object": "activities",
+        "object_type": "Event"
+      },
+      {
+        "subject": "visual basic script",
+        "subject_type": "Tool",
+        "relation": "is a core tool of",
+        "object": "activities",
+        "object_type": "Event"
+      },
+      {
+        "subject": "visual basic script",
+        "subject_type": "Tool",
+        "relation": "has",
+        "object": "data exfiltration features",
+        "object_type": "Malware Characteristic:Capability"
+      },
+      {
+        "subject": "executables",
+        "subject_type": "Indicator:File",
+        "relation": "were signed using",
+        "object": "valid certificates",
+        "object_type": "Indicator:SSL Certificate"
+      },
+      {
+        "subject": "valid certificates",
+        "subject_type": "Indicator:SSL Certificate",
+        "relation": "were from",
+        "object": "comodo",
+        "object_type": "Organization"
+      },
+      {
+        "subject": "comodo",
+        "subject_type": "Organization",
+        "relation": "is a",
+        "object": "certification authority",
+        "object_type": "Organization"
+      },
+      {
+        "subject": "scripting code",
+        "subject_type": "Tool",
+        "relation": "writes data to",
+        "object": "registry",
+        "object_type": "Unknown"
+      },
+      {
+        "subject": "scripting code",
+        "subject_type": "Tool",
+        "relation": "is used to achieve",
+        "object": "persistence",
+        "object_type": "Unknown"
+      },
+      {
+        "subject": "cloud services",
+        "subject_type": "Infrastructure",
+        "relation": "were involved allowing attackers to utilize",
+        "object": "scripting code",
+        "object_type": "Tool"
+      },
+      {
+        "subject": "valid certificates",
+        "subject_type": "Indicator:SSL Certificate",
+        "relation": "are used to sign",
+        "object": "scripting code",
+        "object_type": "Tool"
+      }
+    ],
+    "reviewed_triplets": [
+      {
+        "subject": "email message",
+        "subject_type": "Information",
+        "relation": "was the entry point for",
+        "object": "operations",
+        "object_type": "Event"
+      },
+      {
+        "subject": "email message",
+        "subject_type": "Information",
+        "relation": "targeted",
+        "object": "public-facing services",
+        "object_type": "Infrastructure"
+      },
+      {
+        "subject": "email message",
+        "subject_type": "Information",
+        "relation": "contained",
+        "object": "microsoft word document attachment",
+        "object_type": "Indicator:File"
+      },
+      {
+        "subject": "microsoft word document attachment",
+        "subject_type": "Indicator:File",
+        "relation": "created or downloaded",
+        "object": "malicious files",
+        "object_type": "Indicator:File"
+      },
+      {
+        "subject": "malicious files",
+        "subject_type": "Indicator:File",
+        "relation": "allowed",
+        "object": "attackers to gain access",
+        "object_type": "Event"
+      },
+      {
+        "subject": "attackers",
+        "subject_type": "Attacker",
+        "relation": "gained access to",
+        "object": "victim's infrastructure",
+        "object_type": "Infrastructure"
+      },
+      {
+        "subject": "data from section 'last'",
+        "subject_type": "Information",
+        "relation": "was written into",
+        "object": "registry",
+        "object_type": "Indicator:Registry Key"
+      },
+      {
+        "subject": "registry",
+        "subject_type": "Indicator:Registry Key",
+        "relation": "is used to keep track of",
+        "object": "last executed command",
+        "object_type": "Information"
+      },
+      {
+        "subject": "persistence",
+        "subject_type": "Malware Characteristic:Feature",
+        "relation": "was achieved by",
+        "object": "scheduled tasks",
+        "object_type": "Tool"
+      },
+      {
+        "subject": "operating system's auto-start locations",
+        "subject_type": "Indicator:Registry Key",
+        "relation": "allowed",
+        "object": "attackers to gain domain or enterprise admin access",
+        "object_type": "Event"
+      },
+      {
+        "subject": "cloud services",
+        "subject_type": "Infrastructure",
+        "relation": "was involved",
+        "object": "google docs",
+        "object_type": "Infrastructure"
+      },
+      {
+        "subject": "cloud services",
+        "subject_type": "Infrastructure",
+        "relation": "was involved",
+        "object": "google forms",
+        "object_type": "Infrastructure"
+      },
+      {
+        "subject": "attackers",
+        "subject_type": "Attacker",
+        "relation": "used cloud services to keep track of",
+        "object": "infected systems",
+        "object_type": "Infrastructure"
+      },
+      {
+        "subject": "attackers",
+        "subject_type": "Attacker",
+        "relation": "used cloud services to spread",
+        "object": "malware",
+        "object_type": "Malware"
+      },
+      {
+        "subject": "attackers",
+        "subject_type": "Attacker",
+        "relation": "used cloud services to perform",
+        "object": "further malicious activities",
+        "object_type": "Event"
+      },
+      {
+        "subject": "scripting code",
+        "subject_type": "Tool",
+        "relation": "includes",
+        "object": "powershell",
+        "object_type": "Tool"
+      },
+      {
+        "subject": "scripting code",
+        "subject_type": "Tool",
+        "relation": "includes",
+        "object": "javascript",
+        "object_type": "Tool"
+      },
+      {
+        "subject": "scripting code",
+        "subject_type": "Tool",
+        "relation": "includes",
+        "object": "vbs",
+        "object_type": "Tool"
+      },
+      {
+        "subject": "anunak",
+        "subject_type": "Malware",
+        "relation": "is a variant of",
+        "object": "remote backdoor",
+        "object_type": "Malware Characteristic:Variants"
+      },
+      {
+        "subject": "anunak",
+        "subject_type": "Malware",
+        "relation": "is a core tool of",
+        "object": "activities",
+        "object_type": "Event"
+      },
+      {
+        "subject": "visual basic script",
+        "subject_type": "Tool",
+        "relation": "is a core tool of",
+        "object": "activities",
+        "object_type": "Event"
+      },
+      {
+        "subject": "visual basic script",
+        "subject_type": "Tool",
+        "relation": "has",
+        "object": "data exfiltration features",
+        "object_type": "Malware Characteristic:Capability"
+      },
+      {
+        "subject": "executables",
+        "subject_type": "Indicator:File",
+        "relation": "were signed using",
+        "object": "valid certificates",
+        "object_type": "Indicator:SSL Certificate"
+      },
+      {
+        "subject": "valid certificates",
+        "subject_type": "Indicator:SSL Certificate",
+        "relation": "were from",
+        "object": "comodo",
+        "object_type": "Organization"
+      },
+      {
+        "subject": "comodo",
+        "subject_type": "Organization",
+        "relation": "is a",
+        "object": "certification authority",
+        "object_type": "Organization"
+      },
+      {
+        "subject": "scripting code",
+        "subject_type": "Tool",
+        "relation": "writes data to",
+        "object": "registry",
+        "object_type": "Unknown"
+      },
+      {
+        "subject": "scripting code",
+        "subject_type": "Tool",
+        "relation": "is used to achieve",
+        "object": "persistence",
+        "object_type": "Unknown"
+      },
+      {
+        "subject": "cloud services",
+        "subject_type": "Infrastructure",
+        "relation": "were involved allowing attackers to utilize",
+        "object": "scripting code",
+        "object_type": "Tool"
+      },
+      {
+        "subject": "valid certificates",
+        "subject_type": "Indicator:SSL Certificate",
+        "relation": "are used to sign",
+        "object": "scripting code",
+        "object_type": "Tool"
+      }
+    ]
+  },
+  {
+    "id": 1,
+    "source_id": "FIREEYE1_default_annotator",
+    "text": "CARBANAK is a full-featured backdoor with data-stealing capabilities and a plugin architecture\nkey logging Capturing keystrokes to gather sensitive information\ndesktop video capture Capturing screenshots of the victim's desktop to monitor user activity.\nVNC Using tools like VNC to remotely control the victim's machine.\nfile system management Managing and navigating the file system to locate files of interest.\nfile transfer Transferring files to or from a compromised system.\nTCP tunneling Using techniques like TCP tunneling to encapsulate traffic and avoid detection.\nOS destruction Destroying data on the victim's system to disrupt operations or cover tracks.\nPOS and Outlook data theft Stealing data from point-of-sale (POS) systems and Outlook.\nKey logger Logs key strokes for configured processes and sends them to the command and control (C2) server\nThe command and parameter names are hashed before being compared by the binary, making it difficult to recover the original names of commands and parameters.\nDesktop video recording Capturing screenshots of the victim's desktop to monitor user activity.\nDownloads executable The act of downloading an executable aligns with this technique, which covers the transfer of tools or files into a victim's environment.\ninjects into new process The technique of injecting code into a new process is directly described by \"injects into new process\".\nAmmyy Admin tool Ammyy Admin is a legitimate remote access tool often abused by attackers to gain remote control of victim systems.\nRenders computer unbootable by wiping the MBR This involves the destruction of data structures, such as the MBR, to prevent the operating system from booting. This technique aims to render the system unusable.\nCreates Adversaries may create user accounts to establish persistence, elevate privileges, or facilitate other malicious activities.\ndeletes Windows user account Adversaries may remove accounts to limit access to the system or to deny access to specific users, which can include deleting user accounts.\nDeletes file or service Adversaries may delete files to remove artifacts and other traces of their presence from the host to avoid detection.\ninjects directly into new process The technique of injecting code into a new process is directly described by \"injects into new process\".\nthe desktop Takes a screenshot of Adversaries may use utilities to capture screenshots of the victim's desktop to gather information about the environment and operations on the victim's system.\nsends it to the C2 server Sending data to the C2 server could utilize common web protocols to communicate, making the traffic blend in with legitimate web traffic.\nRuns VNC plugin Using tools like VNC to remotely control the victim's machine.\nprocesses to the C2 Returns list of running server monitoring and collecting information about the processes running on a system.\nDownload and execute shellcode from specified address Downloading and executing shellcode from a specific address\nMessages are encrypted using Microsoft's implementation of RC2 in CBC mode with PKCS#5 padding Use of RC2 in CBC mode with PKCS#5 padding to encrypt messages.\nThe encrypted message is then Base64 encoded Use of Base64 encoding to represent encrypted data\nreplacing all the '/' and '+' characters Use of Base64 encoding to replace specific characters ('/' and '+') with others ('.' and '-')\nCARBANAK communicates to its C2 servers The CARBANAK backdoor communicates with its command and control servers to exfiltrate stolen data\nThe encoded payload is then made to look like a URI by having a random number of '/' characters inserted at random locations within the encoded payload Described when the encoded payload is made to resemble a URI by inserting a random number of '/' characters in random locations. This is used to disguise the payload as a normal URI.\nThe malware then appends a script extension (php, bml, or cgi) with a random number of random parameters or a file extension from the following list with no parameters: gif, jpg, png, htm, html, php Described when the malware adds a script extension (php, bml or cgi) with a random number of random parameters or a file extension (gif, jpg, png, htm, html, php) with no parameters.\nA 256-bit AES session key is generated and used to encrypt both message headers and bodies separately The CARBANAK backdoor's custom binary protocol uses RSA for the initial key exchange and AES for subsequent message encryption, providing an encrypted communication channel\nAll subsequent messages are encrypted with AES in CBC mode The CARBANAK backdoor's custom binary protocol uses AES in CBC mode to encrypt message headers and bodies, providing an encrypted communication channel.\nCARBANAK's strings are encrypted in order to make analysis more difficult This technique involves making analysis more difficult by encoding or encrypting data and/or commands. It can be used to protect strings, file names, command-and-control (C2) server addresses, and other variables used by the malware.\nthe backdoor was embedded as a packed payload in another executable or in a weaponized document file of some kind CARBANAK has been delivered via weaponized document files and packed payloads in other executables, which can involve user execution of malicious files\nthe use of Power Admin PAExec for lateral movement use of PAExec",
+    "final_triplets": [
+      {
+        "subject": "carbanak",
+        "subject_type": "Malware",
+        "relation": "is",
+        "object": "malware",
+        "object_type": "Malware"
+      },
+      {
+        "subject": "carbanak",
+        "subject_type": "Malware",
+        "relation": "has capability",
+        "object": "key logging",
+        "object_type": "Malware Characteristic:Capability"
+      },
+      {
+        "subject": "carbanak",
+        "subject_type": "Malware",
+        "relation": "has capability",
+        "object": "desktop video capture",
+        "object_type": "Malware Characteristic:Capability"
+      },
+      {
+        "subject": "carbanak",
+        "subject_type": "Malware",
+        "relation": "uses",
+        "object": "vnc",
+        "object_type": "Tool"
+      },
+      {
+        "subject": "carbanak",
+        "subject_type": "Malware",
+        "relation": "has capability",
+        "object": "file system management",
+        "object_type": "Malware Characteristic:Capability"
+      },
+      {
+        "subject": "carbanak",
+        "subject_type": "Malware",
+        "relation": "has capability",
+        "object": "file transfer",
+        "object_type": "Malware Characteristic:Capability"
+      },
+      {
+        "subject": "carbanak",
+        "subject_type": "Malware",
+        "relation": "uses",
+        "object": "tcp tunneling",
+        "object_type": "Malware Characteristic:Capability"
+      },
+      {
+        "subject": "carbanak",
+        "subject_type": "Malware",
+        "relation": "has capability",
+        "object": "os destruction",
+        "object_type": "Malware Characteristic:Capability"
+      },
+      {
+        "subject": "carbanak",
+        "subject_type": "Malware",
+        "relation": "steals data from",
+        "object": "pos systems",
+        "object_type": "Infrastructure"
+      },
+      {
+        "subject": "carbanak",
+        "subject_type": "Malware",
+        "relation": "steals data from",
+        "object": "outlook",
+        "object_type": "Tool"
+      },
+      {
+        "subject": "carbanak",
+        "subject_type": "Malware",
+        "relation": "injects into",
+        "object": "new process",
+        "object_type": "Malware Characteristic:Behavior"
+      },
+      {
+        "subject": "carbanak",
+        "subject_type": "Malware",
+        "relation": "abuses",
+        "object": "ammyy admin tool",
+        "object_type": "Tool"
+      },
+      {
+        "subject": "carbanak",
+        "subject_type": "Malware",
+        "relation": "communicates with",
+        "object": "c2 servers",
+        "object_type": "Infrastructure"
+      },
+      {
+        "subject": "carbanak",
+        "subject_type": "Malware",
+        "relation": "uses encryption",
+        "object": "rc2",
+        "object_type": "Malware Characteristic:Feature"
+      },
+      {
+        "subject": "carbanak",
+        "subject_type": "Malware",
+        "relation": "uses encoding",
+        "object": "base64",
+        "object_type": "Malware Characteristic:Feature"
+      },
+      {
+        "subject": "carbanak",
+        "subject_type": "Malware",
+        "relation": "uses encryption",
+        "object": "aes",
+        "object_type": "Malware Characteristic:Feature"
+      },
+      {
+        "subject": "carbanak",
+        "subject_type": "Malware",
+        "relation": "delivered via",
+        "object": "weaponized document files",
+        "object_type": "Indicator:File"
+      },
+      {
+        "subject": "carbanak",
+        "subject_type": "Malware",
+        "relation": "uses for lateral movement",
+        "object": "power admin paexec",
+        "object_type": "Tool"
+      }
+    ],
+    "reviewed_triplets": [
+      {
+        "subject": "carbanak",
+        "subject_type": "Malware",
+        "relation": "is",
+        "object": "malware",
+        "object_type": "Malware"
+      },
+      {
+        "subject": "carbanak",
+        "subject_type": "Malware",
+        "relation": "has capability",
+        "object": "key logging",
+        "object_type": "Malware Characteristic:Capability"
+      },
+      {
+        "subject": "carbanak",
+        "subject_type": "Malware",
+        "relation": "has capability",
+        "object": "desktop video capture",
+        "object_type": "Malware Characteristic:Capability"
+      },
+      {
+        "subject": "carbanak",
+        "subject_type": "Malware",
+        "relation": "uses",
+        "object": "vnc",
+        "object_type": "Tool"
+      },
+      {
+        "subject": "carbanak",
+        "subject_type": "Malware",
+        "relation": "has capability",
+        "object": "file system management",
+        "object_type": "Malware Characteristic:Capability"
+      },
+      {
+        "subject": "carbanak",
+        "subject_type": "Malware",
+        "relation": "has capability",
+        "object": "file transfer",
+        "object_type": "Malware Characteristic:Capability"
+      },
+      {
+        "subject": "carbanak",
+        "subject_type": "Malware",
+        "relation": "uses",
+        "object": "tcp tunneling",
+        "object_type": "Malware Characteristic:Capability"
+      },
+      {
+        "subject": "carbanak",
+        "subject_type": "Malware",
+        "relation": "has capability",
+        "object": "os destruction",
+        "object_type": "Malware Characteristic:Capability"
+      },
+      {
+        "subject": "carbanak",
+        "subject_type": "Malware",
+        "relation": "steals data from",
+        "object": "pos systems",
+        "object_type": "Infrastructure"
+      },
+      {
+        "subject": "carbanak",
+        "subject_type": "Malware",
+        "relation": "steals data from",
+        "object": "outlook",
+        "object_type": "Tool"
+      },
+      {
+        "subject": "carbanak",
+        "subject_type": "Malware",
+        "relation": "injects into",
+        "object": "new process",
+        "object_type": "Malware Characteristic:Behavior"
+      },
+      {
+        "subject": "carbanak",
+        "subject_type": "Malware",
+        "relation": "abuses",
+        "object": "ammyy admin tool",
+        "object_type": "Tool"
+      },
+      {
+        "subject": "carbanak",
+        "subject_type": "Malware",
+        "relation": "communicates with",
+        "object": "c2 servers",
+        "object_type": "Infrastructure"
+      },
+      {
+        "subject": "carbanak",
+        "subject_type": "Malware",
+        "relation": "uses encryption",
+        "object": "rc2",
+        "object_type": "Malware Characteristic:Feature"
+      },
+      {
+        "subject": "carbanak",
+        "subject_type": "Malware",
+        "relation": "uses encoding",
+        "object": "base64",
+        "object_type": "Malware Characteristic:Feature"
+      },
+      {
+        "subject": "carbanak",
+        "subject_type": "Malware",
+        "relation": "uses encryption",
+        "object": "aes",
+        "object_type": "Malware Characteristic:Feature"
+      },
+      {
+        "subject": "carbanak",
+        "subject_type": "Malware",
+        "relation": "delivered via",
+        "object": "weaponized document files",
+        "object_type": "Indicator:File"
+      },
+      {
+        "subject": "carbanak",
+        "subject_type": "Malware",
+        "relation": "uses for lateral movement",
+        "object": "power admin paexec",
+        "object_type": "Tool"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "source_id": "KASPERSKY1_default_annotator",
+    "text": "a spear phishing e-mail with a CPL attachment; although in other cases Word documents exploiting known vulnerabilities were used Exploitation of vulnerabilities in client software to execute arbitrary code.\n\nAfter executing the shellcode, a backdoor based on Carberp, is installed on the system Transfer of tools or payloads from an external network to a compromised network.\n\nFurther forensic analysis took us to the point of initial infection: a spear phishing e-mail with a CPL attachment; although in other cases Word documents exploiting known vulnerabilities were used.\n\ninfected computers were used to record videos that were then sent to the Command and Control servers Collection of video from compromised devices.\n\nEven though the quality of the videos was relatively poor, they were still good enough for the attackers, armed also with the keylogged data for that particular machine to understand what the victim was doing.\n\nAttackers used spear phishing emails with malicious attachments Sending spear phishing e-mails with malicious attachments to induce the victim to execute the malware.",
+    "final_triplets": [
+      {
+        "subject": "spear phishing e-mail",
+        "subject_type": "Indicator:Email",
+        "relation": "contains",
+        "object": "cpl attachment",
+        "object_type": "Indicator:File"
+      },
+      {
+        "subject": "word documents",
+        "subject_type": "Indicator:File",
+        "relation": "exploit",
+        "object": "known vulnerabilities",
+        "object_type": "Vulnerability"
+      },
+      {
+        "subject": "exploitation of vulnerabilities",
+        "subject_type": "Event",
+        "relation": "results in",
+        "object": "arbitrary code execution",
+        "object_type": "Malware Characteristic:Capability"
+      },
+      {
+        "subject": "shellcode",
+        "subject_type": "Malware Characteristic:Payload",
+        "relation": "execution leads to installation of",
+        "object": "carberp-based backdoor",
+        "object_type": "Malware"
+      },
+      {
+        "subject": "attackers",
+        "subject_type": "Attacker",
+        "relation": "use",
+        "object": "spear phishing emails",
+        "object_type": "Indicator:Email"
+      },
+      {
+        "subject": "spear phishing emails",
+        "subject_type": "Indicator:Email",
+        "relation": "contain",
+        "object": "malicious attachments",
+        "object_type": "Indicator:File"
+      },
+      {
+        "subject": "attackers",
+        "subject_type": "Attacker",
+        "relation": "transfer",
+        "object": "tools or payloads",
+        "object_type": "Tool"
+      },
+      {
+        "subject": "infected computers",
+        "subject_type": "Infrastructure",
+        "relation": "used to record",
+        "object": "videos",
+        "object_type": "Information"
+      },
+      {
+        "subject": "videos",
+        "subject_type": "Information",
+        "relation": "sent to",
+        "object": "command and control servers",
+        "object_type": "Infrastructure"
+      },
+      {
+        "subject": "attackers",
+        "subject_type": "Attacker",
+        "relation": "use",
+        "object": "keylogged data",
+        "object_type": "Information"
+      },
+      {
+        "subject": "word documents",
+        "subject_type": "Indicator:File",
+        "relation": "are a type of attachment used in",
+        "object": "spear phishing e-mail",
+        "object_type": "Indicator:Email"
+      },
+      {
+        "subject": "spear phishing e-mail",
+        "subject_type": "Indicator:Email",
+        "relation": "can be used for",
+        "object": "exploitation of vulnerabilities",
+        "object_type": "Unknown"
+      },
+      {
+        "subject": "spear phishing e-mail",
+        "subject_type": "Indicator:Email",
+        "relation": "deliver",
+        "object": "carberp-based backdoor",
+        "object_type": "Unknown"
+      },
+      {
+        "subject": "spear phishing e-mail",
+        "subject_type": "Indicator:Email",
+        "relation": "lead to the collection of",
+        "object": "videos",
+        "object_type": "Unknown"
+      }
+    ],
+    "reviewed_triplets": [
+      {
+        "subject": "spear phishing e-mail",
+        "subject_type": "Indicator:Email",
+        "relation": "contains",
+        "object": "cpl attachment",
+        "object_type": "Indicator:File"
+      },
+      {
+        "subject": "word documents",
+        "subject_type": "Indicator:File",
+        "relation": "exploit",
+        "object": "known vulnerabilities",
+        "object_type": "Vulnerability"
+      },
+      {
+        "subject": "exploitation of vulnerabilities",
+        "subject_type": "Event",
+        "relation": "results in",
+        "object": "arbitrary code execution",
+        "object_type": "Malware Characteristic:Capability"
+      },
+      {
+        "subject": "shellcode",
+        "subject_type": "Malware Characteristic:Payload",
+        "relation": "execution leads to installation of",
+        "object": "carberp-based backdoor",
+        "object_type": "Malware"
+      },
+      {
+        "subject": "attackers",
+        "subject_type": "Attacker",
+        "relation": "use",
+        "object": "spear phishing emails",
+        "object_type": "Indicator:Email"
+      },
+      {
+        "subject": "spear phishing emails",
+        "subject_type": "Indicator:Email",
+        "relation": "contain",
+        "object": "malicious attachments",
+        "object_type": "Indicator:File"
+      },
+      {
+        "subject": "attackers",
+        "subject_type": "Attacker",
+        "relation": "transfer",
+        "object": "tools or payloads",
+        "object_type": "Tool"
+      },
+      {
+        "subject": "infected computers",
+        "subject_type": "Infrastructure",
+        "relation": "used to record",
+        "object": "videos",
+        "object_type": "Information"
+      },
+      {
+        "subject": "videos",
+        "subject_type": "Information",
+        "relation": "sent to",
+        "object": "command and control servers",
+        "object_type": "Infrastructure"
+      },
+      {
+        "subject": "attackers",
+        "subject_type": "Attacker",
+        "relation": "use",
+        "object": "keylogged data",
+        "object_type": "Information"
+      },
+      {
+        "subject": "word documents",
+        "subject_type": "Indicator:File",
+        "relation": "are a type of attachment used in",
+        "object": "spear phishing e-mail",
+        "object_type": "Indicator:Email"
+      },
+      {
+        "subject": "spear phishing e-mail",
+        "subject_type": "Indicator:Email",
+        "relation": "can be used for",
+        "object": "exploitation of vulnerabilities",
+        "object_type": "Unknown"
+      },
+      {
+        "subject": "spear phishing e-mail",
+        "subject_type": "Indicator:Email",
+        "relation": "deliver",
+        "object": "carberp-based backdoor",
+        "object_type": "Unknown"
+      },
+      {
+        "subject": "spear phishing e-mail",
+        "subject_type": "Indicator:Email",
+        "relation": "lead to the collection of",
+        "object": "videos",
+        "object_type": "Unknown"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "source_id": "KASPERSKY2_default_annotator",
+    "text": "the initial infections were achieved using spear phishing emails that appeared to be legitimate banking communications, with Microsoft Word 97 – 2003 (.doc) and Control Panel Applet (.CPL) files attached.\nThe email attachments exploit vulnerabilities in Microsoft Office 2003, 2007 and 2010 (CVE-2012-0158 and CVE-2013-3906) and Microsoft Word (CVE-2014- 1761) Exploitation of vulnerabilities in client software (e.g., document reader) to execute arbitrary code.\nthe shellcode decrypts and executes the backdoor known as Carbanak Using command and script interpreters to execute malicious commands and scripts.\nCarbanak is a remote backdoor (initially based on Carberp), designed for espionage, data exfiltration and to provide remote access to infected machines\nThey then install additional software such as the Ammyy Remote Administration Tool, or even compromise SSH servers Attackers use remote services to move laterally in the compromised network.\nOnce the vulnerability is successfully exploited, the shellcode decrypts and executes the backdoor known as Carbanak.\nvideo recordings of the activities of bank employees, particularly system administrators, were made Attackers capture video of the victim's system, often for surveillance or to collect credentials and other sensitive information.\nThe videos were sent to the C2 server Communications with the command and control server (C2)\nthe attackers abused the aforementioned services by impersonating legitimate local users who had the permissions to perform the actions later reproduced by the cybercriminals\ninstall the same Carberp-like malware Transfer of tools or files from outside to the compromised system.\nCarbanak contains an espionage component that allows the attackers to take control of video capabilities on the victim systems\nThe doc files exploit both Microsoft Office (CVE- 2012-0158 and CVE-2013-3906) and Microsoft Word (CVE- 2014-1761). Exploitation of software vulnerabilities to execute arbitrary code on the victim system.\nThe spear phishing email messages appeared legitimate and in some cases were sent from compromised coworkers´ accounts Using valid accounts to gain unauthorized access to systems.\nOnce the remote code execution vulnerability is successfully exploited, it installs Carbanak on the victim's system Transfer of tools or files from an external system to a system within the victim's environment.\nCarbanak is a backdoor used by the attackers to compromise the victim's machine once the exploit, either in the spear phishing email or exploit kit, successfully executes its payload\nCarbanak copies itself into \"%system32%\\com\" with the name \"svchost.exe\" The attacker renames a malicious file with a legitimate name to avoid detection.\nwith the file attributes: system, hidden and read-only. The attacker hides files and directories by making them invisible to users and security tools.\nThe original file created by the exploit payload is then deleted. The attacker deletes files to eliminate traces of his activity and obstruct investigations.\nTo ensure that Carbanak has autorun privileges the malware creates a new service Creation or modification of a service to achieve persistence and automatic execution.\nThe naming syntax is \"<ServiceName>Sys\" where ServiceName is any existing service randomly chosen, with the first character deleted. Changing the names of files or processes to make them look legitimate.\nCarbanak determines if either the avp.exe or avpui.exe processes (components of Kaspersky Internet Security) is running. Carbanak performs process discovery to identify specific processes associated with Kaspersky Internet Security (avp.exe or avpui.exe).\nthe malware gets the proxy configuration from the registry entry: [HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Internet Settings] The malware use registry keys to execute commands or to configure automatic loading at system startup.\nCarbanak injects its code into svchost.exe. Carbanak injects its code into the svchost.exe process to mask its activities within the legitimate Windows process.\nCarbanak downloads the file kldconfig.plug from its C2 server. Carbanak communicates with its C2 server to download the file kldconfig.plug, which includes the names of the processes to be monitored.\nCarbanak logs keystrokes Carbanak records keystrokes on the infected system's keyboard to collect sensitive information such as credentials and other data.\ntakes screenshots every 20 seconds Carbanak captures desktop screenshots every 20 seconds to monitor user activity and collect additional sensitive information.\nCarbanak sets Termservice service execution mode to Auto. Also, after executing this service Carbanak sets Termservice in automatic execution mode (Auto).\nit modifies the executable code in memory in order to establish simultaneous work processes for both remote and local users Modifies executable code in memory to establish simultaneous work processes for remote and local users.\nIf Carbanak detects the banking application BLIZKO (funds transfer software) in the infected computer Carbanak detects the presence of BLIZKO\nCarbanak is also aware of the IFOBS banking application and can, on command, substitute the details of payment documents in the IFOBS system Carbanak can manipulate payment document details in the IFOBS system on command.\nCarbanak uses the HTTP protocol Carbanak uses the HTTP protocol to communicate with its C2 server.\nwith RC2+Base64 encryption, Carbanak uses RC2+Base64 encryption to encrypt data transmitted through the command and control channel.\nModules modified in this process are: termsrv.dll, csrsrv.dll, msgina.dll and winlogon.exe.\nIf Carbanak detects the banking application BLIZKO (funds transfer software) in the infected computer, it sends a special notification to its C2 server\nThere appears to be a preference for the Ammyy Admin remote administration tool for remote control This technique specifically covers the use of Ammyy Admin as a remote administration tool for controlling systems within a compromised network.\na Secure Shell (SSH) backdoor was used to communicate with the C2 server in 190.97.165.126 (operatemesscont.net). This technique involves the use of SSH for establishing unauthorized access to remote systems.\nMetasploit,\nPsExec\nMimikatz.\nThe video file naming conventions used the name of the application in the foreground (e.g., Outlook, Cmd, etc.) and only recorded user activity This technique involves capturing video of a user's actions on a system.",
+    "final_triplets": [
+      {
+        "subject": "spear phishing emails",
+        "subject_type": "Indicator:Email",
+        "relation": "achieve initial infections",
+        "object": "campaign",
+        "object_type": "Event"
+      },
+      {
+        "subject": "spear phishing emails",
+        "subject_type": "Indicator:Email",
+        "relation": "appear as",
+        "object": "legitimate banking communications",
+        "object_type": "Information"
+      },
+      {
+        "subject": "spear phishing emails",
+        "subject_type": "Indicator:Email",
+        "relation": "deliver",
+        "object": "microsoft word 97 – 2003 (.doc) files",
+        "object_type": "Indicator:File"
+      },
+      {
+        "subject": "spear phishing emails",
+        "subject_type": "Indicator:Email",
+        "relation": "deliver",
+        "object": "control panel applet (.cpl) files",
+        "object_type": "Indicator:File"
+      },
+      {
+        "subject": "email attachments",
+        "subject_type": "Indicator:File",
+        "relation": "exploit",
+        "object": "cve-2012-0158",
+        "object_type": "Vulnerability"
+      },
+      {
+        "subject": "email attachments",
+        "subject_type": "Indicator:File",
+        "relation": "exploit",
+        "object": "cve-2013-3906",
+        "object_type": "Vulnerability"
+      },
+      {
+        "subject": "email attachments",
+        "subject_type": "Indicator:File",
+        "relation": "exploit",
+        "object": "cve-2014-1761",
+        "object_type": "Vulnerability"
+      },
+      {
+        "subject": "cve-2012-0158",
+        "subject_type": "Vulnerability",
+        "relation": "is a vulnerability in",
+        "object": "microsoft office 2003, 2007 and 2010",
+        "object_type": "Infrastructure"
+      },
+      {
+        "subject": "cve-2013-3906",
+        "subject_type": "Vulnerability",
+        "relation": "is a vulnerability in",
+        "object": "microsoft office 2003, 2007 and 2010",
+        "object_type": "Infrastructure"
+      },
+      {
+        "subject": "cve-2014-1761",
+        "subject_type": "Vulnerability",
+        "relation": "is a vulnerability in",
+        "object": "microsoft word",
+        "object_type": "Infrastructure"
+      },
+      {
+        "subject": "exploitation of vulnerabilities",
+        "subject_type": "Event",
+        "relation": "leads to",
+        "object": "arbitrary code execution",
+        "object_type": "Malware Characteristic:Capability"
+      },
+      {
+        "subject": "shellcode",
+        "subject_type": "Malware Characteristic:Payload",
+        "relation": "decrypts and executes",
+        "object": "carbanak",
+        "object_type": "Malware"
+      },
+      {
+        "subject": "carbanak",
+        "subject_type": "Malware",
+        "relation": "is a",
+        "object": "remote backdoor",
+        "object_type": "Malware Characteristic:Capability"
+      },
+      {
+        "subject": "carbanak",
+        "subject_type": "Malware",
+        "relation": "is based on",
+        "object": "carberp",
+        "object_type": "Malware"
+      },
+      {
+        "subject": "carbanak",
+        "subject_type": "Malware",
+        "relation": "is designed for",
+        "object": "espionage",
+        "object_type": "Malware Characteristic:Capability"
+      },
+      {
+        "subject": "carbanak",
+        "subject_type": "Malware",
+        "relation": "is designed for",
+        "object": "data exfiltration",
+        "object_type": "Malware Characteristic:Capability"
+      },
+      {
+        "subject": "carbanak",
+        "subject_type": "Malware",
+        "relation": "provides",
+        "object": "remote access",
+        "object_type": "Malware Characteristic:Capability"
+      },
+      {
+        "subject": "attackers",
+        "subject_type": "Attacker",
+        "relation": "install",
+        "object": "ammyy remote administration tool",
+        "object_type": "Tool"
+      },
+      {
+        "subject": "attackers",
+        "subject_type": "Attacker",
+        "relation": "compromise",
+        "object": "ssh servers",
+        "object_type": "Infrastructure"
+      },
+      {
+        "subject": "attackers",
+        "subject_type": "Attacker",
+        "relation": "use remote services to move laterally",
+        "object": "compromised network",
+        "object_type": "Infrastructure"
+      },
+      {
+        "subject": "attackers",
+        "subject_type": "Attacker",
+        "relation": "capture video of",
+        "object": "bank employees",
+        "object_type": "Information"
+      },
+      {
+        "subject": "attackers",
+        "subject_type": "Attacker",
+        "relation": "send videos to",
+        "object": "c2 server",
+        "object_type": "Infrastructure"
+      },
+      {
+        "subject": "attackers",
+        "subject_type": "Attacker",
+        "relation": "impersonate",
+        "object": "legitimate local users",
+        "object_type": "Account"
+      },
+      {
+        "subject": "carbanak",
+        "subject_type": "Malware",
+        "relation": "copies itself into",
+        "object": "%system32%\\com",
+        "object_type": "Indicator:File"
+      },
+      {
+        "subject": "carbanak",
+        "subject_type": "Malware",
+        "relation": "renames itself",
+        "object": "svchost.exe",
+        "object_type": "Indicator:File"
+      },
+      {
+        "subject": "carbanak",
+        "subject_type": "Malware",
+        "relation": "sets file attributes to",
+        "object": "system, hidden and read-only",
+        "object_type": "Malware Characteristic:Behavior"
+      },
+      {
+        "subject": "exploit payload",
+        "subject_type": "Malware Characteristic:Payload",
+        "relation": "original file is deleted by",
+        "object": "attacker",
+        "object_type": "Attacker"
+      },
+      {
+        "subject": "carbanak",
+        "subject_type": "Malware",
+        "relation": "creates a new service for",
+        "object": "persistence",
+        "object_type": "Malware Characteristic:Capability"
+      },
+      {
+        "subject": "carbanak",
+        "subject_type": "Malware",
+        "relation": "performs process discovery for",
+        "object": "avp.exe",
+        "object_type": "Indicator:File"
+      },
+      {
+        "subject": "carbanak",
+        "subject_type": "Malware",
+        "relation": "performs process discovery for",
+        "object": "avpui.exe",
+        "object_type": "Indicator:File"
+      },
+      {
+        "subject": "carbanak",
+        "subject_type": "Malware",
+        "relation": "gets proxy configuration from",
+        "object": "registry",
+        "object_type": "Indicator:Registry Key"
+      },
+      {
+        "subject": "carbanak",
+        "subject_type": "Malware",
+        "relation": "injects code into",
+        "object": "svchost.exe",
+        "object_type": "Indicator:File"
+      },
+      {
+        "subject": "carbanak",
+        "subject_type": "Malware",
+        "relation": "downloads",
+        "object": "kldconfig.plug",
+        "object_type": "Indicator:File"
+      },
+      {
+        "subject": "carbanak",
+        "subject_type": "Malware",
+        "relation": "logs",
+        "object": "keystrokes",
+        "object_type": "Malware Characteristic:Capability"
+      },
+      {
+        "subject": "carbanak",
+        "subject_type": "Malware",
+        "relation": "takes",
+        "object": "screenshots",
+        "object_type": "Malware Characteristic:Capability"
+      },
+      {
+        "subject": "carbanak",
+        "subject_type": "Malware",
+        "relation": "sets Termservice execution mode to",
+        "object": "auto",
+        "object_type": "Malware Characteristic:Behavior"
+      },
+      {
+        "subject": "carbanak",
+        "subject_type": "Malware",
+        "relation": "modifies executable code in memory",
+        "object": "termsrv.dll",
+        "object_type": "Indicator:File"
+      },
+      {
+        "subject": "carbanak",
+        "subject_type": "Malware",
+        "relation": "modifies executable code in memory",
+        "object": "csrsrv.dll",
+        "object_type": "Indicator:File"
+      },
+      {
+        "subject": "carbanak",
+        "subject_type": "Malware",
+        "relation": "modifies executable code in memory",
+        "object": "msgina.dll",
+        "object_type": "Indicator:File"
+      },
+      {
+        "subject": "carbanak",
+        "subject_type": "Malware",
+        "relation": "modifies executable code in memory",
+        "object": "winlogon.exe",
+        "object_type": "Indicator:File"
+      },
+      {
+        "subject": "carbanak",
+        "subject_type": "Malware",
+        "relation": "detects",
+        "object": "blizko banking application",
+        "object_type": "Infrastructure"
+      },
+      {
+        "subject": "carbanak",
+        "subject_type": "Malware",
+        "relation": "sends notification upon detecting",
+        "object": "blizko",
+        "object_type": "Infrastructure"
+      },
+      {
+        "subject": "carbanak",
+        "subject_type": "Malware",
+        "relation": "detects",
+        "object": "ifobs banking application",
+        "object_type": "Infrastructure"
+      },
+      {
+        "subject": "carbanak",
+        "subject_type": "Malware",
+        "relation": "manipulates payment details in",
+        "object": "ifobs system",
+        "object_type": "Infrastructure"
+      },
+      {
+        "subject": "carbanak",
+        "subject_type": "Malware",
+        "relation": "uses",
+        "object": "http protocol",
+        "object_type": "Information"
+      },
+      {
+        "subject": "carbanak",
+        "subject_type": "Malware",
+        "relation": "uses",
+        "object": "rc2+base64 encryption",
+        "object_type": "Information"
+      },
+      {
+        "subject": "attackers",
+        "subject_type": "Attacker",
+        "relation": "show preference for",
+        "object": "ammyy admin",
+        "object_type": "Tool"
+      },
+      {
+        "subject": "ssh backdoor",
+        "subject_type": "Malware",
+        "relation": "communicates with",
+        "object": "c2 server 190.97.165.126",
+        "object_type": "Infrastructure"
+      },
+      {
+        "subject": "attackers",
+        "subject_type": "Attacker",
+        "relation": "use",
+        "object": "metasploit",
+        "object_type": "Tool"
+      },
+      {
+        "subject": "attackers",
+        "subject_type": "Attacker",
+        "relation": "use",
+        "object": "psexec",
+        "object_type": "Tool"
+      },
+      {
+        "subject": "attackers",
+        "subject_type": "Attacker",
+        "relation": "use",
+        "object": "mimikatz",
+        "object_type": "Tool"
+      },
+      {
+        "subject": "spear phishing emails",
+        "subject_type": "Indicator:Email",
+        "relation": "deliver",
+        "object": "carbanak",
+        "object_type": "Malware"
+      },
+      {
+        "subject": "email attachments",
+        "subject_type": "Indicator:File",
+        "relation": "deliver",
+        "object": "carbanak",
+        "object_type": "Malware"
+      },
+      {
+        "subject": "exploitation of vulnerabilities",
+        "subject_type": "Event",
+        "relation": "enables installation of",
+        "object": "carbanak",
+        "object_type": "Malware"
+      },
+      {
+        "subject": "attackers",
+        "subject_type": "Attacker",
+        "relation": "use",
+        "object": "carbanak",
+        "object_type": "Malware"
+      }
+    ],
+    "reviewed_triplets": [
+      {
+        "subject": "spear phishing emails",
+        "subject_type": "Indicator:Email",
+        "relation": "achieve initial infections",
+        "object": "campaign",
+        "object_type": "Event"
+      },
+      {
+        "subject": "spear phishing emails",
+        "subject_type": "Indicator:Email",
+        "relation": "appear as",
+        "object": "legitimate banking communications",
+        "object_type": "Information"
+      },
+      {
+        "subject": "spear phishing emails",
+        "subject_type": "Indicator:Email",
+        "relation": "deliver",
+        "object": "microsoft word 97 – 2003 (.doc) files",
+        "object_type": "Indicator:File"
+      },
+      {
+        "subject": "spear phishing emails",
+        "subject_type": "Indicator:Email",
+        "relation": "deliver",
+        "object": "control panel applet (.cpl) files",
+        "object_type": "Indicator:File"
+      },
+      {
+        "subject": "email attachments",
+        "subject_type": "Indicator:File",
+        "relation": "exploit",
+        "object": "cve-2012-0158",
+        "object_type": "Vulnerability"
+      },
+      {
+        "subject": "email attachments",
+        "subject_type": "Indicator:File",
+        "relation": "exploit",
+        "object": "cve-2013-3906",
+        "object_type": "Vulnerability"
+      },
+      {
+        "subject": "email attachments",
+        "subject_type": "Indicator:File",
+        "relation": "exploit",
+        "object": "cve-2014-1761",
+        "object_type": "Vulnerability"
+      },
+      {
+        "subject": "cve-2012-0158",
+        "subject_type": "Vulnerability",
+        "relation": "is a vulnerability in",
+        "object": "microsoft office 2003, 2007 and 2010",
+        "object_type": "Infrastructure"
+      },
+      {
+        "subject": "cve-2013-3906",
+        "subject_type": "Vulnerability",
+        "relation": "is a vulnerability in",
+        "object": "microsoft office 2003, 2007 and 2010",
+        "object_type": "Infrastructure"
+      },
+      {
+        "subject": "cve-2014-1761",
+        "subject_type": "Vulnerability",
+        "relation": "is a vulnerability in",
+        "object": "microsoft word",
+        "object_type": "Infrastructure"
+      },
+      {
+        "subject": "exploitation of vulnerabilities",
+        "subject_type": "Event",
+        "relation": "leads to",
+        "object": "arbitrary code execution",
+        "object_type": "Malware Characteristic:Capability"
+      },
+      {
+        "subject": "shellcode",
+        "subject_type": "Malware Characteristic:Payload",
+        "relation": "decrypts and executes",
+        "object": "carbanak",
+        "object_type": "Malware"
+      },
+      {
+        "subject": "carbanak",
+        "subject_type": "Malware",
+        "relation": "is a",
+        "object": "remote backdoor",
+        "object_type": "Malware Characteristic:Capability"
+      },
+      {
+        "subject": "carbanak",
+        "subject_type": "Malware",
+        "relation": "is based on",
+        "object": "carberp",
+        "object_type": "Malware"
+      },
+      {
+        "subject": "carbanak",
+        "subject_type": "Malware",
+        "relation": "is designed for",
+        "object": "espionage",
+        "object_type": "Malware Characteristic:Capability"
+      },
+      {
+        "subject": "carbanak",
+        "subject_type": "Malware",
+        "relation": "is designed for",
+        "object": "data exfiltration",
+        "object_type": "Malware Characteristic:Capability"
+      },
+      {
+        "subject": "carbanak",
+        "subject_type": "Malware",
+        "relation": "provides",
+        "object": "remote access",
+        "object_type": "Malware Characteristic:Capability"
+      },
+      {
+        "subject": "attackers",
+        "subject_type": "Attacker",
+        "relation": "install",
+        "object": "ammyy remote administration tool",
+        "object_type": "Tool"
+      },
+      {
+        "subject": "attackers",
+        "subject_type": "Attacker",
+        "relation": "compromise",
+        "object": "ssh servers",
+        "object_type": "Infrastructure"
+      },
+      {
+        "subject": "attackers",
+        "subject_type": "Attacker",
+        "relation": "use remote services to move laterally",
+        "object": "compromised network",
+        "object_type": "Infrastructure"
+      },
+      {
+        "subject": "attackers",
+        "subject_type": "Attacker",
+        "relation": "capture video of",
+        "object": "bank employees",
+        "object_type": "Information"
+      },
+      {
+        "subject": "attackers",
+        "subject_type": "Attacker",
+        "relation": "send videos to",
+        "object": "c2 server",
+        "object_type": "Infrastructure"
+      },
+      {
+        "subject": "attackers",
+        "subject_type": "Attacker",
+        "relation": "impersonate",
+        "object": "legitimate local users",
+        "object_type": "Account"
+      },
+      {
+        "subject": "carbanak",
+        "subject_type": "Malware",
+        "relation": "copies itself into",
+        "object": "%system32%\\com",
+        "object_type": "Indicator:File"
+      },
+      {
+        "subject": "carbanak",
+        "subject_type": "Malware",
+        "relation": "renames itself",
+        "object": "svchost.exe",
+        "object_type": "Indicator:File"
+      },
+      {
+        "subject": "carbanak",
+        "subject_type": "Malware",
+        "relation": "sets file attributes to",
+        "object": "system, hidden and read-only",
+        "object_type": "Malware Characteristic:Behavior"
+      },
+      {
+        "subject": "exploit payload",
+        "subject_type": "Malware Characteristic:Payload",
+        "relation": "original file is deleted by",
+        "object": "attacker",
+        "object_type": "Attacker"
+      },
+      {
+        "subject": "carbanak",
+        "subject_type": "Malware",
+        "relation": "creates a new service for",
+        "object": "persistence",
+        "object_type": "Malware Characteristic:Capability"
+      },
+      {
+        "subject": "carbanak",
+        "subject_type": "Malware",
+        "relation": "performs process discovery for",
+        "object": "avp.exe",
+        "object_type": "Indicator:File"
+      },
+      {
+        "subject": "carbanak",
+        "subject_type": "Malware",
+        "relation": "performs process discovery for",
+        "object": "avpui.exe",
+        "object_type": "Indicator:File"
+      },
+      {
+        "subject": "carbanak",
+        "subject_type": "Malware",
+        "relation": "gets proxy configuration from",
+        "object": "registry",
+        "object_type": "Indicator:Registry Key"
+      },
+      {
+        "subject": "carbanak",
+        "subject_type": "Malware",
+        "relation": "injects code into",
+        "object": "svchost.exe",
+        "object_type": "Indicator:File"
+      },
+      {
+        "subject": "carbanak",
+        "subject_type": "Malware",
+        "relation": "downloads",
+        "object": "kldconfig.plug",
+        "object_type": "Indicator:File"
+      },
+      {
+        "subject": "carbanak",
+        "subject_type": "Malware",
+        "relation": "logs",
+        "object": "keystrokes",
+        "object_type": "Malware Characteristic:Capability"
+      },
+      {
+        "subject": "carbanak",
+        "subject_type": "Malware",
+        "relation": "takes",
+        "object": "screenshots",
+        "object_type": "Malware Characteristic:Capability"
+      },
+      {
+        "subject": "carbanak",
+        "subject_type": "Malware",
+        "relation": "sets Termservice execution mode to",
+        "object": "auto",
+        "object_type": "Malware Characteristic:Behavior"
+      },
+      {
+        "subject": "carbanak",
+        "subject_type": "Malware",
+        "relation": "modifies executable code in memory",
+        "object": "termsrv.dll",
+        "object_type": "Indicator:File"
+      },
+      {
+        "subject": "carbanak",
+        "subject_type": "Malware",
+        "relation": "modifies executable code in memory",
+        "object": "csrsrv.dll",
+        "object_type": "Indicator:File"
+      },
+      {
+        "subject": "carbanak",
+        "subject_type": "Malware",
+        "relation": "modifies executable code in memory",
+        "object": "msgina.dll",
+        "object_type": "Indicator:File"
+      },
+      {
+        "subject": "carbanak",
+        "subject_type": "Malware",
+        "relation": "modifies executable code in memory",
+        "object": "winlogon.exe",
+        "object_type": "Indicator:File"
+      },
+      {
+        "subject": "carbanak",
+        "subject_type": "Malware",
+        "relation": "detects",
+        "object": "blizko banking application",
+        "object_type": "Infrastructure"
+      },
+      {
+        "subject": "carbanak",
+        "subject_type": "Malware",
+        "relation": "sends notification upon detecting",
+        "object": "blizko",
+        "object_type": "Infrastructure"
+      },
+      {
+        "subject": "carbanak",
+        "subject_type": "Malware",
+        "relation": "detects",
+        "object": "ifobs banking application",
+        "object_type": "Infrastructure"
+      },
+      {
+        "subject": "carbanak",
+        "subject_type": "Malware",
+        "relation": "manipulates payment details in",
+        "object": "ifobs system",
+        "object_type": "Infrastructure"
+      },
+      {
+        "subject": "carbanak",
+        "subject_type": "Malware",
+        "relation": "uses",
+        "object": "http protocol",
+        "object_type": "Information"
+      },
+      {
+        "subject": "carbanak",
+        "subject_type": "Malware",
+        "relation": "uses",
+        "object": "rc2+base64 encryption",
+        "object_type": "Information"
+      },
+      {
+        "subject": "attackers",
+        "subject_type": "Attacker",
+        "relation": "show preference for",
+        "object": "ammyy admin",
+        "object_type": "Tool"
+      },
+      {
+        "subject": "ssh backdoor",
+        "subject_type": "Malware",
+        "relation": "communicates with",
+        "object": "c2 server 190.97.165.126",
+        "object_type": "Infrastructure"
+      },
+      {
+        "subject": "attackers",
+        "subject_type": "Attacker",
+        "relation": "use",
+        "object": "metasploit",
+        "object_type": "Tool"
+      },
+      {
+        "subject": "attackers",
+        "subject_type": "Attacker",
+        "relation": "use",
+        "object": "psexec",
+        "object_type": "Tool"
+      },
+      {
+        "subject": "attackers",
+        "subject_type": "Attacker",
+        "relation": "use",
+        "object": "mimikatz",
+        "object_type": "Tool"
+      },
+      {
+        "subject": "spear phishing emails",
+        "subject_type": "Indicator:Email",
+        "relation": "deliver",
+        "object": "carbanak",
+        "object_type": "Malware"
+      },
+      {
+        "subject": "email attachments",
+        "subject_type": "Indicator:File",
+        "relation": "deliver",
+        "object": "carbanak",
+        "object_type": "Malware"
+      },
+      {
+        "subject": "exploitation of vulnerabilities",
+        "subject_type": "Event",
+        "relation": "enables installation of",
+        "object": "carbanak",
+        "object_type": "Malware"
+      },
+      {
+        "subject": "attackers",
+        "subject_type": "Attacker",
+        "relation": "use",
+        "object": "carbanak",
+        "object_type": "Malware"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "source_id": "FORCEPOINT_default_annotator",
+    "text": "contains an encoded Visual Basic Script (VBScript) The use of VBScript for executing commands or scripts on the victim system.\n\nThe RTF document we analyzed (SHA1 1ec48e5c0b88f4f850facc718bbdec9200e4bd2d) has an embedded OLE object contains a VBScript file The use of VBScript for executing commands or scripts on the victim system.\n\nWhen the document is opened the targeted user is lured into double-clicking on the embedded object which is disguised as an image When the user double-clicks on the embedded object disguised as an image, the malicious script or executable is run.\n\nDouble clicking on the image results in a file open dialog for \"unprotected.vbe\". If the user executes this file then the malware will begin to execute. The user is tricked into double-clicking on the disguised embedded object, which leads to the execution of the malicious .vbe file.\n\nThe VBScript malware inside the RTF document (SHA1 cd75662751c59951717b4704ea2cdb6fb7ec19bc) is an encoded file. The VBScript is encoded within the RTF document, making it more difficult to detect and analyze.\n\nThe module is base64 encoded inside the main VBScript file The module is base64 encoded, which is a form of obfuscation to hide the malicious code from security tools and analysts.\n\nThe \"ggldr\" script will send and receive commands to and from Google Apps Script, Google Sheets, and Google Forms The \"ggldr\" script uses legitimate third-party web services such as Google Apps Script, Google Sheets, and Google Forms for C&C communication, hiding in plain sight within legitimate traffic.\n\nUpon the first attempt to contact the hard-coded Google Apps Script URL with the user's unique infection ID, the C& that no spreadsheet currently exists for the user. Using legitimate third-party web services like Google Apps Script, Google Sheets, and Google Forms for C&C communication.",
+    "final_triplets": [
+      {
+        "subject": "rtf document",
+        "subject_type": "Indicator:File",
+        "relation": "contains",
+        "object": "visual basic script (vbscript)",
+        "object_type": "Indicator:File"
+      },
+      {
+        "subject": "rtf document",
+        "subject_type": "Indicator:File",
+        "relation": "has embedded",
+        "object": "ole object",
+        "object_type": "Malware Characteristic:Payload"
+      },
+      {
+        "subject": "ole object",
+        "subject_type": "Malware Characteristic:Payload",
+        "relation": "contains",
+        "object": "vbscript file",
+        "object_type": "Indicator:File"
+      },
+      {
+        "subject": "vbscript",
+        "subject_type": "Indicator:File",
+        "relation": "is used for",
+        "object": "executing commands or scripts",
+        "object_type": "Malware Characteristic:Capability"
+      },
+      {
+        "subject": "embedded object",
+        "subject_type": "Malware Characteristic:Payload",
+        "relation": "is disguised as",
+        "object": "image",
+        "object_type": "Indicator:File"
+      },
+      {
+        "subject": "file open dialog",
+        "subject_type": "Malware Characteristic:Behavior",
+        "relation": "requests execution of",
+        "object": "unprotected.vbe",
+        "object_type": "Indicator:File"
+      },
+      {
+        "subject": "vbscript malware",
+        "subject_type": "Malware",
+        "relation": "is located in",
+        "object": "rtf document",
+        "object_type": "Indicator:File"
+      },
+      {
+        "subject": "vbscript",
+        "subject_type": "Indicator:File",
+        "relation": "is",
+        "object": "encoded file",
+        "object_type": "Indicator:File"
+      },
+      {
+        "subject": "module",
+        "subject_type": "Malware Characteristic:Payload",
+        "relation": "is encoded in",
+        "object": "main vbscript file",
+        "object_type": "Indicator:File"
+      },
+      {
+        "subject": "ggldr script",
+        "subject_type": "Malware",
+        "relation": "sends and receives commands to",
+        "object": "google apps script",
+        "object_type": "Tool"
+      },
+      {
+        "subject": "ggldr script",
+        "subject_type": "Malware",
+        "relation": "sends and receives commands to",
+        "object": "google sheets",
+        "object_type": "Tool"
+      },
+      {
+        "subject": "ggldr script",
+        "subject_type": "Malware",
+        "relation": "sends and receives commands to",
+        "object": "google forms",
+        "object_type": "Tool"
+      },
+      {
+        "subject": "ggldr script",
+        "subject_type": "Malware",
+        "relation": "uses for C&C communication",
+        "object": "google apps script",
+        "object_type": "Infrastructure"
+      },
+      {
+        "subject": "ggldr script",
+        "subject_type": "Malware",
+        "relation": "uses for C&C communication",
+        "object": "google sheets",
+        "object_type": "Infrastructure"
+      },
+      {
+        "subject": "ggldr script",
+        "subject_type": "Malware",
+        "relation": "uses for C&C communication",
+        "object": "google forms",
+        "object_type": "Infrastructure"
+      },
+      {
+        "subject": "file open dialog",
+        "subject_type": "Malware Characteristic:Behavior",
+        "relation": "triggers execution of",
+        "object": "visual basic script (vbscript)",
+        "object_type": "Indicator:File"
+      },
+      {
+        "subject": "ggldr script",
+        "subject_type": "Malware",
+        "relation": "is a module of",
+        "object": "visual basic script (vbscript)",
+        "object_type": "Indicator:File"
+      }
+    ],
+    "reviewed_triplets": [
+      {
+        "subject": "rtf document",
+        "subject_type": "Indicator:File",
+        "relation": "contains",
+        "object": "visual basic script (vbscript)",
+        "object_type": "Indicator:File"
+      },
+      {
+        "subject": "rtf document",
+        "subject_type": "Indicator:File",
+        "relation": "has embedded",
+        "object": "ole object",
+        "object_type": "Malware Characteristic:Payload"
+      },
+      {
+        "subject": "ole object",
+        "subject_type": "Malware Characteristic:Payload",
+        "relation": "contains",
+        "object": "vbscript file",
+        "object_type": "Indicator:File"
+      },
+      {
+        "subject": "vbscript",
+        "subject_type": "Indicator:File",
+        "relation": "is used for",
+        "object": "executing commands or scripts",
+        "object_type": "Malware Characteristic:Capability"
+      },
+      {
+        "subject": "embedded object",
+        "subject_type": "Malware Characteristic:Payload",
+        "relation": "is disguised as",
+        "object": "image",
+        "object_type": "Indicator:File"
+      },
+      {
+        "subject": "file open dialog",
+        "subject_type": "Malware Characteristic:Behavior",
+        "relation": "requests execution of",
+        "object": "unprotected.vbe",
+        "object_type": "Indicator:File"
+      },
+      {
+        "subject": "vbscript malware",
+        "subject_type": "Malware",
+        "relation": "is located in",
+        "object": "rtf document",
+        "object_type": "Indicator:File"
+      },
+      {
+        "subject": "vbscript",
+        "subject_type": "Indicator:File",
+        "relation": "is",
+        "object": "encoded file",
+        "object_type": "Indicator:File"
+      },
+      {
+        "subject": "module",
+        "subject_type": "Malware Characteristic:Payload",
+        "relation": "is encoded in",
+        "object": "main vbscript file",
+        "object_type": "Indicator:File"
+      },
+      {
+        "subject": "ggldr script",
+        "subject_type": "Malware",
+        "relation": "sends and receives commands to",
+        "object": "google apps script",
+        "object_type": "Tool"
+      },
+      {
+        "subject": "ggldr script",
+        "subject_type": "Malware",
+        "relation": "sends and receives commands to",
+        "object": "google sheets",
+        "object_type": "Tool"
+      },
+      {
+        "subject": "ggldr script",
+        "subject_type": "Malware",
+        "relation": "sends and receives commands to",
+        "object": "google forms",
+        "object_type": "Tool"
+      },
+      {
+        "subject": "ggldr script",
+        "subject_type": "Malware",
+        "relation": "uses for C&C communication",
+        "object": "google apps script",
+        "object_type": "Infrastructure"
+      },
+      {
+        "subject": "ggldr script",
+        "subject_type": "Malware",
+        "relation": "uses for C&C communication",
+        "object": "google sheets",
+        "object_type": "Infrastructure"
+      },
+      {
+        "subject": "ggldr script",
+        "subject_type": "Malware",
+        "relation": "uses for C&C communication",
+        "object": "google forms",
+        "object_type": "Infrastructure"
+      },
+      {
+        "subject": "file open dialog",
+        "subject_type": "Malware Characteristic:Behavior",
+        "relation": "triggers execution of",
+        "object": "visual basic script (vbscript)",
+        "object_type": "Indicator:File"
+      },
+      {
+        "subject": "ggldr script",
+        "subject_type": "Malware",
+        "relation": "is a module of",
+        "object": "visual basic script (vbscript)",
+        "object_type": "Indicator:File"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "source_id": "BITDEFENDER_default_annotator",
+    "text": "spear-phishing emails with malicious URLs Use of spear-phishing emails with malicious URLs\n\ntainted documents Use of contaminated documents to download a Cobalt Strike beacon component.\n\nCobalt Strike\n\nidentify critical documents Discovery activities to identify and locate sensitive information and files within the compromised infrastructure.\n\nprepare them for exfiltration Attackers prepare data to be exfiltrated from the compromised network to a location controlled by them.\n\nmalicious URLs Use of spear-phishing emails with malicious URLs\n\nbooby-trapped documents Use of contaminated documents.\n\nCobalt Strike\n\nThe spear-phishing emails sent to the financial institutions either end up with victims downloading a tampered document Use of contaminated documents to download a Cobalt Strike beacon component.\n\ndownload the Cobalt Strike beacon\n\nto exploit several unpatched Remote Code Execution Vulnerabilities and deploy a backdoor Exploitation of vulnerabilities to execute remote code.\n\nOnce the user attempts to open the attached documents, Execution of malicious files by the user.\n\nscripts embedded within the files are dropped on the disk and automatically executed in the background. Scripts are embedded in the attached files and run automatically when the files are opened.\n\nthe attacks use reconnaissance tools designed to assess the state of the victim's workstation and determine what tools should be downloaded next Gather information about the system to evaluate the configuration and installed applications.\n\nspear-phishing attachment Use of contaminated documents to download a Cobalt Strike beacon component.\n\n16:48 – one of the employees opened the document within the spear-phishing email 16:49 – a second employee opened the same tainted document Execution of compromised documents by users.\n\nFinally, a backdoor from the Command and Control Server was used to establish persistence in the infrastructure\n\ndownload additional scripts Downloading additional scripts.\n\nrun shell commands to move laterally in the infrastructure, The attacker executes commands to interact with the system and move laterally.\n\ndelete files from the system Deleting files from the system.\n\ncleaning registry keys to leave fewer forensics traces Attackers clean the logs to reduce the signs of their activities.\n\nCredentials for one Domain Administrator were compromised and used throughout the duration of the attack Compromising the credentials of a domain administrator.\n\nThe\"swift-fraud[.]com/documents/94563784.doc\"URL was opened from the body of an email received in a spearphishing campaign targeting financial institutions. Use of spear-phishing emails with malicious URLs\n\nThe attack flow leaves behind a temporary file\n\nafter the opening of the original document file, downloaded from the malicious URL mentioned above Opening the original document downloaded from the malicious URL triggers the creation of the temporary file.\n\nThe document downloaded from the malicious URL introduces files into the victim's system.\n\nKbhpQIcahFCuZwq.sct - (bb784d55895db10b67b1b4f1f5b0be16) This object was not found on disk, it was deleted after running by \"MGsCOxPSNK.txt\". The file \"MGsCOxPSNK.txt\" was deleted after execution to avoid detection and forensic analysis.\n\ncqHfjCkTtMwG.doc (c2a9443aac258a60d8cace43e839cf9f) This file can be found at the path: C:\\Users\\[redacted]\\AppData\\Local\\Temp\\cqHfjCkTtMwG.doc. It is a decoy file, because it acts as a normal document file Use of decoy files that look like normal documents.\n\nthe malicious payload is being dropped Transfer and placement of the malicious payload on the system.\n\nexecuted on the system Execution of the malicious payload through user interaction.\n\ntCrrDqBQoCcEkbnK.txt (581c2a76b382deedb48d1df077e5bdf1) This object can be found at the path: C:\\Users\\[redacted]\\AppData\\Local\\Temp\\tCrrDqBQoCcEkbnK.txt. It is a configuration file for cmstp.exe. It downloads a DLL dropper from \"cloud[.]yourdocument[.]biz/robots.txt\" Transfer of malicious tools or files into the target system.\n\nthe role of decrypting and dropping yet another JavaScript Dropper on the system Obfuscation or encryption of files to avoid detection.\n\nthe DLL will self-delete. Deleting the DLL from the system to avoid detection.\n\nthe file was obfuscated and encrypted with RC4 Obfuscation of files to avoid detection.\n\nthe binary tried to download a JavaScript backdoor from the Command and Control server (C&C)\"nl[.][redacted][.]kz/robots.txt\"and saved the file to\"%APPDATA%\\9D01CA.txt\" File transfer from a command and control (C2) server.\n\nThe file \"9D01CA.txt\"sent an initial fingerprint of the system compromised which contained the name of the antivirus solution installed on the system, the local IP address, username, computername and OS version The file \"9D01CA.txt\" collects and sends basic information about the compromised system, including computer name and operating system version.",
+    "final_triplets": [
+      {
+        "subject": "spear-phishing emails",
+        "subject_type": "Indicator:Email",
+        "relation": "contain",
+        "object": "malicious urls",
+        "object_type": "Indicator:URL"
+      },
+      {
+        "subject": "tainted documents",
+        "subject_type": "Indicator:File",
+        "relation": "download",
+        "object": "cobalt strike beacon component",
+        "object_type": "Tool"
+      },
+      {
+        "subject": "attackers",
+        "subject_type": "Attacker",
+        "relation": "perform discovery activities to identify",
+        "object": "critical documents",
+        "object_type": "Information"
+      },
+      {
+        "subject": "attackers",
+        "subject_type": "Attacker",
+        "relation": "prepare",
+        "object": "data for exfiltration",
+        "object_type": "Information"
+      },
+      {
+        "subject": "cobalt strike beacon",
+        "subject_type": "Tool",
+        "relation": "is downloaded",
+        "object": "from tainted documents",
+        "object_type": "Indicator:File"
+      },
+      {
+        "subject": "attackers",
+        "subject_type": "Attacker",
+        "relation": "exploit",
+        "object": "remote code execution vulnerabilities",
+        "object_type": "Vulnerability"
+      },
+      {
+        "subject": "remote code execution",
+        "subject_type": "Event",
+        "relation": "deploys",
+        "object": "backdoor",
+        "object_type": "Malware"
+      },
+      {
+        "subject": "user",
+        "subject_type": "Account",
+        "relation": "opens",
+        "object": "attached documents",
+        "object_type": "Indicator:File"
+      },
+      {
+        "subject": "scripts",
+        "subject_type": "Indicator:File",
+        "relation": "are embedded in",
+        "object": "attached files",
+        "object_type": "Indicator:File"
+      },
+      {
+        "subject": "scripts",
+        "subject_type": "Indicator:File",
+        "relation": "are executed automatically",
+        "object": "when files are opened",
+        "object_type": "Event"
+      },
+      {
+        "subject": "attackers",
+        "subject_type": "Attacker",
+        "relation": "use reconnaissance tools to assess",
+        "object": "victim's workstation",
+        "object_type": "Infrastructure"
+      },
+      {
+        "subject": "attackers",
+        "subject_type": "Attacker",
+        "relation": "download",
+        "object": "cobalt strike beacon component",
+        "object_type": "Tool"
+      },
+      {
+        "subject": "employees",
+        "subject_type": "Account",
+        "relation": "opened",
+        "object": "tainted document",
+        "object_type": "Indicator:File"
+      },
+      {
+        "subject": "backdoor",
+        "subject_type": "Malware",
+        "relation": "establishes",
+        "object": "persistence",
+        "object_type": "Malware Characteristic:Behavior"
+      },
+      {
+        "subject": "attackers",
+        "subject_type": "Attacker",
+        "relation": "download",
+        "object": "additional scripts",
+        "object_type": "Indicator:File"
+      },
+      {
+        "subject": "attackers",
+        "subject_type": "Attacker",
+        "relation": "execute shell commands to move laterally in",
+        "object": "infrastructure",
+        "object_type": "Infrastructure"
+      },
+      {
+        "subject": "attackers",
+        "subject_type": "Attacker",
+        "relation": "delete",
+        "object": "files from system",
+        "object_type": "Indicator:File"
+      },
+      {
+        "subject": "attackers",
+        "subject_type": "Attacker",
+        "relation": "clean registry keys to reduce",
+        "object": "forensic traces",
+        "object_type": "Information"
+      },
+      {
+        "subject": "attackers",
+        "subject_type": "Attacker",
+        "relation": "compromised",
+        "object": "domain administrator credentials",
+        "object_type": "Credential"
+      },
+      {
+        "subject": "decoy files",
+        "subject_type": "Indicator:File",
+        "relation": "appear as",
+        "object": "normal documents",
+        "object_type": "Indicator:File"
+      },
+      {
+        "subject": "malicious payload",
+        "subject_type": "Malware Characteristic:Payload",
+        "relation": "is dropped on",
+        "object": "system",
+        "object_type": "Infrastructure"
+      },
+      {
+        "subject": "malicious payload",
+        "subject_type": "Malware Characteristic:Payload",
+        "relation": "is executed through",
+        "object": "user interaction",
+        "object_type": "Event"
+      },
+      {
+        "subject": "configuration file",
+        "subject_type": "Indicator:File",
+        "relation": "downloads",
+        "object": "dll dropper",
+        "object_type": "Malware"
+      },
+      {
+        "subject": "javascript dropper",
+        "subject_type": "Malware",
+        "relation": "is decrypted and dropped on",
+        "object": "system",
+        "object_type": "Infrastructure"
+      },
+      {
+        "subject": "dll",
+        "subject_type": "Indicator:File",
+        "relation": "self-deletes to avoid",
+        "object": "detection",
+        "object_type": "Event"
+      },
+      {
+        "subject": "file",
+        "subject_type": "Indicator:File",
+        "relation": "is obfuscated and encrypted with",
+        "object": "rc4",
+        "object_type": "Tool"
+      },
+      {
+        "subject": "binary",
+        "subject_type": "Indicator:File",
+        "relation": "downloads",
+        "object": "javascript backdoor",
+        "object_type": "Malware"
+      },
+      {
+        "subject": "9d01ca.txt",
+        "subject_type": "Indicator:File",
+        "relation": "sends fingerprint containing",
+        "object": "system information",
+        "object_type": "Information"
+      },
+      {
+        "subject": "spear-phishing emails",
+        "subject_type": "Indicator:Email",
+        "relation": "are used by",
+        "object": "attackers",
+        "object_type": "Attacker"
+      },
+      {
+        "subject": "backdoor",
+        "subject_type": "Malware",
+        "relation": "is used by",
+        "object": "attackers",
+        "object_type": "Attacker"
+      },
+      {
+        "subject": "attached files",
+        "subject_type": "Unknown",
+        "relation": "are used by",
+        "object": "attackers",
+        "object_type": "Attacker"
+      },
+      {
+        "subject": "file",
+        "subject_type": "Indicator:File",
+        "relation": "is used by",
+        "object": "attackers",
+        "object_type": "Attacker"
+      },
+      {
+        "subject": "dll",
+        "subject_type": "Indicator:File",
+        "relation": "is used by",
+        "object": "attackers",
+        "object_type": "Attacker"
+      },
+      {
+        "subject": "attackers",
+        "subject_type": "Attacker",
+        "relation": "collect",
+        "object": "system information",
+        "object_type": "Unknown"
+      }
+    ],
+    "reviewed_triplets": [
+      {
+        "subject": "spear-phishing emails",
+        "subject_type": "Indicator:Email",
+        "relation": "contain",
+        "object": "malicious urls",
+        "object_type": "Indicator:URL"
+      },
+      {
+        "subject": "tainted documents",
+        "subject_type": "Indicator:File",
+        "relation": "download",
+        "object": "cobalt strike beacon component",
+        "object_type": "Tool"
+      },
+      {
+        "subject": "attackers",
+        "subject_type": "Attacker",
+        "relation": "perform discovery activities to identify",
+        "object": "critical documents",
+        "object_type": "Information"
+      },
+      {
+        "subject": "attackers",
+        "subject_type": "Attacker",
+        "relation": "prepare",
+        "object": "data for exfiltration",
+        "object_type": "Information"
+      },
+      {
+        "subject": "cobalt strike beacon",
+        "subject_type": "Tool",
+        "relation": "is downloaded",
+        "object": "from tainted documents",
+        "object_type": "Indicator:File"
+      },
+      {
+        "subject": "attackers",
+        "subject_type": "Attacker",
+        "relation": "exploit",
+        "object": "remote code execution vulnerabilities",
+        "object_type": "Vulnerability"
+      },
+      {
+        "subject": "remote code execution",
+        "subject_type": "Event",
+        "relation": "deploys",
+        "object": "backdoor",
+        "object_type": "Malware"
+      },
+      {
+        "subject": "user",
+        "subject_type": "Account",
+        "relation": "opens",
+        "object": "attached documents",
+        "object_type": "Indicator:File"
+      },
+      {
+        "subject": "scripts",
+        "subject_type": "Indicator:File",
+        "relation": "are embedded in",
+        "object": "attached files",
+        "object_type": "Indicator:File"
+      },
+      {
+        "subject": "scripts",
+        "subject_type": "Indicator:File",
+        "relation": "are executed automatically",
+        "object": "when files are opened",
+        "object_type": "Event"
+      },
+      {
+        "subject": "attackers",
+        "subject_type": "Attacker",
+        "relation": "use reconnaissance tools to assess",
+        "object": "victim's workstation",
+        "object_type": "Infrastructure"
+      },
+      {
+        "subject": "attackers",
+        "subject_type": "Attacker",
+        "relation": "download",
+        "object": "cobalt strike beacon component",
+        "object_type": "Tool"
+      },
+      {
+        "subject": "employees",
+        "subject_type": "Account",
+        "relation": "opened",
+        "object": "tainted document",
+        "object_type": "Indicator:File"
+      },
+      {
+        "subject": "backdoor",
+        "subject_type": "Malware",
+        "relation": "establishes",
+        "object": "persistence",
+        "object_type": "Malware Characteristic:Behavior"
+      },
+      {
+        "subject": "attackers",
+        "subject_type": "Attacker",
+        "relation": "download",
+        "object": "additional scripts",
+        "object_type": "Indicator:File"
+      },
+      {
+        "subject": "attackers",
+        "subject_type": "Attacker",
+        "relation": "execute shell commands to move laterally in",
+        "object": "infrastructure",
+        "object_type": "Infrastructure"
+      },
+      {
+        "subject": "attackers",
+        "subject_type": "Attacker",
+        "relation": "delete",
+        "object": "files from system",
+        "object_type": "Indicator:File"
+      },
+      {
+        "subject": "attackers",
+        "subject_type": "Attacker",
+        "relation": "clean registry keys to reduce",
+        "object": "forensic traces",
+        "object_type": "Information"
+      },
+      {
+        "subject": "attackers",
+        "subject_type": "Attacker",
+        "relation": "compromised",
+        "object": "domain administrator credentials",
+        "object_type": "Credential"
+      },
+      {
+        "subject": "decoy files",
+        "subject_type": "Indicator:File",
+        "relation": "appear as",
+        "object": "normal documents",
+        "object_type": "Indicator:File"
+      },
+      {
+        "subject": "malicious payload",
+        "subject_type": "Malware Characteristic:Payload",
+        "relation": "is dropped on",
+        "object": "system",
+        "object_type": "Infrastructure"
+      },
+      {
+        "subject": "malicious payload",
+        "subject_type": "Malware Characteristic:Payload",
+        "relation": "is executed through",
+        "object": "user interaction",
+        "object_type": "Event"
+      },
+      {
+        "subject": "configuration file",
+        "subject_type": "Indicator:File",
+        "relation": "downloads",
+        "object": "dll dropper",
+        "object_type": "Malware"
+      },
+      {
+        "subject": "javascript dropper",
+        "subject_type": "Malware",
+        "relation": "is decrypted and dropped on",
+        "object": "system",
+        "object_type": "Infrastructure"
+      },
+      {
+        "subject": "dll",
+        "subject_type": "Indicator:File",
+        "relation": "self-deletes to avoid",
+        "object": "detection",
+        "object_type": "Event"
+      },
+      {
+        "subject": "file",
+        "subject_type": "Indicator:File",
+        "relation": "is obfuscated and encrypted with",
+        "object": "rc4",
+        "object_type": "Tool"
+      },
+      {
+        "subject": "binary",
+        "subject_type": "Indicator:File",
+        "relation": "downloads",
+        "object": "javascript backdoor",
+        "object_type": "Malware"
+      },
+      {
+        "subject": "9d01ca.txt",
+        "subject_type": "Indicator:File",
+        "relation": "sends fingerprint containing",
+        "object": "system information",
+        "object_type": "Information"
+      },
+      {
+        "subject": "spear-phishing emails",
+        "subject_type": "Indicator:Email",
+        "relation": "are used by",
+        "object": "attackers",
+        "object_type": "Attacker"
+      },
+      {
+        "subject": "backdoor",
+        "subject_type": "Malware",
+        "relation": "is used by",
+        "object": "attackers",
+        "object_type": "Attacker"
+      },
+      {
+        "subject": "attached files",
+        "subject_type": "Unknown",
+        "relation": "are used by",
+        "object": "attackers",
+        "object_type": "Attacker"
+      },
+      {
+        "subject": "file",
+        "subject_type": "Indicator:File",
+        "relation": "is used by",
+        "object": "attackers",
+        "object_type": "Attacker"
+      },
+      {
+        "subject": "dll",
+        "subject_type": "Indicator:File",
+        "relation": "is used by",
+        "object": "attackers",
+        "object_type": "Attacker"
+      },
+      {
+        "subject": "attackers",
+        "subject_type": "Attacker",
+        "relation": "collect",
+        "object": "system information",
+        "object_type": "Unknown"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "source_id": "THREATPOST_default_annotator",
+    "text": "The crime group would send out bank employees spear phishing emails, impersonating legitimate companies, which harbored a malicious attachment.\n\nIf the attachments were executed, the malware is activated.\n\nthe criminals would use their malware to remotely control the victims' machines.\n\nThe group first launched a campaign in 2013 using malware known as Anunak to target financial transfers and ATM networks of financial institutions, but by the following year that malware had been improved into a more sophisticated version known as Carbanak.\n\nFrom then onwards, the crime syndicate focused their efforts into developing an even more sophisticated wave of attacks by using tailormade malware based on the Cobalt Strike penetration testing software.\n\nThe spear-phishing emails contain attachments that eventually download and execute a dropper.\n\nThe backdoor is used to send system information and execute malicious code.\n\nsteals credentials.\n\nscreen recording.",
+    "final_triplets": [
+      {
+        "subject": "crime group",
+        "subject_type": "Attacker",
+        "relation": "sends",
+        "object": "spear phishing emails",
+        "object_type": "Indicator:Email"
+      },
+      {
+        "subject": "spear phishing emails",
+        "subject_type": "Indicator:Email",
+        "relation": "impersonate",
+        "object": "legitimate companies",
+        "object_type": "Organization"
+      },
+      {
+        "subject": "spear phishing emails",
+        "subject_type": "Indicator:Email",
+        "relation": "contain",
+        "object": "malicious attachment",
+        "object_type": "Indicator:File"
+      },
+      {
+        "subject": "malicious attachment",
+        "subject_type": "Indicator:File",
+        "relation": "activates",
+        "object": "malware",
+        "object_type": "Malware"
+      },
+      {
+        "subject": "criminals",
+        "subject_type": "Attacker",
+        "relation": "use",
+        "object": "malware",
+        "object_type": "Malware"
+      },
+      {
+        "subject": "malware",
+        "subject_type": "Malware",
+        "relation": "remotely controls",
+        "object": "victims' machines",
+        "object_type": "Infrastructure"
+      },
+      {
+        "subject": "group",
+        "subject_type": "Attacker",
+        "relation": "launched",
+        "object": "campaign",
+        "object_type": "Event"
+      },
+      {
+        "subject": "campaign",
+        "subject_type": "Event",
+        "relation": "started in",
+        "object": "2013",
+        "object_type": "Time"
+      },
+      {
+        "subject": "campaign",
+        "subject_type": "Event",
+        "relation": "used",
+        "object": "anunak",
+        "object_type": "Malware"
+      },
+      {
+        "subject": "anunak",
+        "subject_type": "Malware",
+        "relation": "targets",
+        "object": "financial transfers",
+        "object_type": "Information"
+      },
+      {
+        "subject": "anunak",
+        "subject_type": "Malware",
+        "relation": "targets",
+        "object": "atm networks",
+        "object_type": "Infrastructure"
+      },
+      {
+        "subject": "anunak",
+        "subject_type": "Malware",
+        "relation": "targets",
+        "object": "financial institutions",
+        "object_type": "Organization"
+      },
+      {
+        "subject": "anunak",
+        "subject_type": "Malware",
+        "relation": "was improved into",
+        "object": "carbanak",
+        "object_type": "Malware"
+      },
+      {
+        "subject": "carbanak",
+        "subject_type": "Malware",
+        "relation": "is",
+        "object": "more sophisticated version",
+        "object_type": "Malware Characteristic:Variants"
+      },
+      {
+        "subject": "crime syndicate",
+        "subject_type": "Attacker",
+        "relation": "focused on",
+        "object": "developing sophisticated attacks",
+        "object_type": "Event"
+      },
+      {
+        "subject": "attacks",
+        "subject_type": "Event",
+        "relation": "use",
+        "object": "tailormade malware",
+        "object_type": "Malware"
+      },
+      {
+        "subject": "tailormade malware",
+        "subject_type": "Malware",
+        "relation": "based on",
+        "object": "cobalt strike",
+        "object_type": "Tool"
+      },
+      {
+        "subject": "cobalt strike",
+        "subject_type": "Tool",
+        "relation": "is",
+        "object": "penetration testing software",
+        "object_type": "Tool"
+      },
+      {
+        "subject": "spear-phishing emails",
+        "subject_type": "Indicator:Email",
+        "relation": "contain",
+        "object": "attachments",
+        "object_type": "Indicator:File"
+      },
+      {
+        "subject": "attachments",
+        "subject_type": "Indicator:File",
+        "relation": "download and execute",
+        "object": "dropper",
+        "object_type": "Malware"
+      },
+      {
+        "subject": "backdoor",
+        "subject_type": "Malware",
+        "relation": "sends",
+        "object": "system information",
+        "object_type": "Information"
+      },
+      {
+        "subject": "backdoor",
+        "subject_type": "Malware",
+        "relation": "executes",
+        "object": "malicious code",
+        "object_type": "Malware Characteristic:Payload"
+      },
+      {
+        "subject": "backdoor",
+        "subject_type": "Malware",
+        "relation": "steals",
+        "object": "credentials",
+        "object_type": "Credential"
+      },
+      {
+        "subject": "backdoor",
+        "subject_type": "Malware",
+        "relation": "performs",
+        "object": "screen recording",
+        "object_type": "Malware Characteristic:Behavior"
+      },
+      {
+        "subject": "anunak",
+        "subject_type": "Malware",
+        "relation": "has",
+        "object": "backdoor",
+        "object_type": "Unknown"
+      }
+    ],
+    "reviewed_triplets": [
+      {
+        "subject": "crime group",
+        "subject_type": "Attacker",
+        "relation": "sends",
+        "object": "spear phishing emails",
+        "object_type": "Indicator:Email"
+      },
+      {
+        "subject": "spear phishing emails",
+        "subject_type": "Indicator:Email",
+        "relation": "impersonate",
+        "object": "legitimate companies",
+        "object_type": "Organization"
+      },
+      {
+        "subject": "spear phishing emails",
+        "subject_type": "Indicator:Email",
+        "relation": "contain",
+        "object": "malicious attachment",
+        "object_type": "Indicator:File"
+      },
+      {
+        "subject": "malicious attachment",
+        "subject_type": "Indicator:File",
+        "relation": "activates",
+        "object": "malware",
+        "object_type": "Malware"
+      },
+      {
+        "subject": "criminals",
+        "subject_type": "Attacker",
+        "relation": "use",
+        "object": "malware",
+        "object_type": "Malware"
+      },
+      {
+        "subject": "malware",
+        "subject_type": "Malware",
+        "relation": "remotely controls",
+        "object": "victims' machines",
+        "object_type": "Infrastructure"
+      },
+      {
+        "subject": "group",
+        "subject_type": "Attacker",
+        "relation": "launched",
+        "object": "campaign",
+        "object_type": "Event"
+      },
+      {
+        "subject": "campaign",
+        "subject_type": "Event",
+        "relation": "started in",
+        "object": "2013",
+        "object_type": "Time"
+      },
+      {
+        "subject": "campaign",
+        "subject_type": "Event",
+        "relation": "used",
+        "object": "anunak",
+        "object_type": "Malware"
+      },
+      {
+        "subject": "anunak",
+        "subject_type": "Malware",
+        "relation": "targets",
+        "object": "financial transfers",
+        "object_type": "Information"
+      },
+      {
+        "subject": "anunak",
+        "subject_type": "Malware",
+        "relation": "targets",
+        "object": "atm networks",
+        "object_type": "Infrastructure"
+      },
+      {
+        "subject": "anunak",
+        "subject_type": "Malware",
+        "relation": "targets",
+        "object": "financial institutions",
+        "object_type": "Organization"
+      },
+      {
+        "subject": "anunak",
+        "subject_type": "Malware",
+        "relation": "was improved into",
+        "object": "carbanak",
+        "object_type": "Malware"
+      },
+      {
+        "subject": "carbanak",
+        "subject_type": "Malware",
+        "relation": "is",
+        "object": "more sophisticated version",
+        "object_type": "Malware Characteristic:Variants"
+      },
+      {
+        "subject": "crime syndicate",
+        "subject_type": "Attacker",
+        "relation": "focused on",
+        "object": "developing sophisticated attacks",
+        "object_type": "Event"
+      },
+      {
+        "subject": "attacks",
+        "subject_type": "Event",
+        "relation": "use",
+        "object": "tailormade malware",
+        "object_type": "Malware"
+      },
+      {
+        "subject": "tailormade malware",
+        "subject_type": "Malware",
+        "relation": "based on",
+        "object": "cobalt strike",
+        "object_type": "Tool"
+      },
+      {
+        "subject": "cobalt strike",
+        "subject_type": "Tool",
+        "relation": "is",
+        "object": "penetration testing software",
+        "object_type": "Tool"
+      },
+      {
+        "subject": "spear-phishing emails",
+        "subject_type": "Indicator:Email",
+        "relation": "contain",
+        "object": "attachments",
+        "object_type": "Indicator:File"
+      },
+      {
+        "subject": "attachments",
+        "subject_type": "Indicator:File",
+        "relation": "download and execute",
+        "object": "dropper",
+        "object_type": "Malware"
+      },
+      {
+        "subject": "backdoor",
+        "subject_type": "Malware",
+        "relation": "sends",
+        "object": "system information",
+        "object_type": "Information"
+      },
+      {
+        "subject": "backdoor",
+        "subject_type": "Malware",
+        "relation": "executes",
+        "object": "malicious code",
+        "object_type": "Malware Characteristic:Payload"
+      },
+      {
+        "subject": "backdoor",
+        "subject_type": "Malware",
+        "relation": "steals",
+        "object": "credentials",
+        "object_type": "Credential"
+      },
+      {
+        "subject": "backdoor",
+        "subject_type": "Malware",
+        "relation": "performs",
+        "object": "screen recording",
+        "object_type": "Malware Characteristic:Behavior"
+      },
+      {
+        "subject": "anunak",
+        "subject_type": "Malware",
+        "relation": "has",
+        "object": "backdoor",
+        "object_type": "Unknown"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "source_id": "TRUSTWAVE2_default_annotator",
+    "text": "the agent opened the attachment contained in the email The attacker uses social engineering to convince the agent to open a malicious email attachment. The email contains a malicious Word document. The email attachment was a malicious Word Document The agent executes the malicious attachment, triggered by the attacker. The malicious Word document contains the encoded .VBS script. that contained an encoded .VBS script capable of stealing system information desktop screenshots to download additional malware The malicious VB Script will use macros to search for instances of Microsoft Word running on the system This involves the use of Visual Basic scripts to execute commands on the system, which is what the malicious VB Script is doing.\n\nThe victim system will then reach out to http://95.215.47.105 to retrieve additional malware called AdobeUpdateManagementTool.vbs This technique involves transferring tools or files from an external system into the victim environment. The victim system retrieves the additional malware from http\n\nAdds file to WindowsUpdate folder: vbs This technique involves transferring tools or files to the victim system. The malware adds the VBS file to the `WindowsUpdate` folder.\n\nAdds persistence mechanism to the CURRENT_USER registry hive in the CurrentVersion\\Run and CurrentVersion\\RunOnce keys to autostart AdobeUpdateManagementTool. This technique involves adding registry keys to automatically execute programs upon user logon. The malware adds entries to the `CurrentVersion\\Run` and `CurrentVersion\\RunOnce` keys.\n\nA scheduled task is created named SysChecks which calls the vbs This technique involves using scheduled tasks for persistence. The malware creates a scheduled task named `SysChecks` to execute the VBS script.\n\nA service is created named 'ADOBEUPDTOOL' which calls the AdobeUpdateManagementTool.vbs This technique involves creating or modifying Windows services for persistence or to execute malicious code.\n\nThe malware drops a Shockwave Flash icon and disguises itself as such his technique involves disguising malicious files or processes to appear as legitimate ones.\n\nThe malware contacts the following and may attempt to download doc: Adversaries may transfer tools or other files from an external system into a compromised environment.\n\nThis malware was capable of stealing significant system and network information Adversaries may attempt to get detailed information about the system they are targeting.\n\nIt was also used to download several other reconnaissance tools to map out the network. Adversaries may transfer tools or other files from an external system into a compromised environment.\n\nit also downloaded additional malware that enables the next stage of the attack Adversaries may transfer tools or other files from an external system into a compromised environment.\n\ncould execute powershell scripts on command Adversaries may abuse PowerShell commands and scripts for execution.\n\nBeaconing messages are sent out to 179.43.133.34 via standard HTTP GET requests every 5 minutes Adversaries may use web protocols like HTTP to communicate with their command and control (C2) servers.\n\nThe content of the GET request is encoded with Base64 and secondarily encrypted with RC4 Adversaries may use various methods to obfuscate data to evade detection.\n\nDownloaded tools have included Nmap, FreeRDP, NCat, NPing, and others The malware downloads several reconnaissance tools like Nmap, FreeRDP, NCat, NPing to map out the network.\n\nThis malware executes a new iteration of svchost.exe and injects its malicious code into this running process Adversaries may inject code into the address space of another process to evade detection and achieve persistence.\n\nIt then drops a pseudo-randomly named configuration file into the %ProgramData%\\Mozilla folder. This file's name is base64 encoded and based on the infected system's MAC code, so identifying it by name will be challenging. Adversaries may use masquerading to disguise their files or processes as something legitimate to avoid detection.\n\nIt then searches Kaspersky antivirus processes and terminates them if running on the victim system. Adversaries may disable or interfere with security tools to prevent them from detecting or responding to the attack.\n\nit registers itself as a service with the following details: Service name: RpcSsSys (this name is random, may vary on different system) Adversaries may create or modify Windows services to ensure their malware runs automatically when the system starts or when a service is started.\n\nsteal local passwords Adversaries may dump credentials to obtain user passwords or hashes.\n\nThe malware searches Kaspersky antivirus processes and terminates them if running on the victim system.\n\ninstall completely different remote desktop programs, such as VNC or AMMYY Adversaries may use remote access tools to control systems and maintain persistence.\n\nIt communicates via an encrypted tunnel on port 443 Adversaries use application layer protocols for command and control (C2) communications.\n\nscreen captures Adversaries may capture screenshots to gather information from the victim's desktop.\n\nkeylogger information Adversaries may capture keystrokes to gather information from the victim.\n\nemail addresses from the PST file Adversaries may gather data from local systems for exfiltration.\n\nThe file is OLE compound file format that contains an embedded .VBE (encoded VBS) script This technique involves the use of scripting languages such as VBS (Visual Basic Script) to execute malicious actions. The .VBE (encoded VBS) script is a form of scripting used to perform various actions.\n\nstealing system information Adversaries may gather data from local systems for exfiltration.\n\ndesktop screenshots Adversaries may capture screenshots to gather information from the victim's desktop.\n\ndownload / execute additional malware Adversaries may transfer tools or other files from an external system into a compromised environment.\n\nWhen the malicious document file is opened, the embedded VBScript (VBE) file is dropped in the Windows %temp% folder. This technique involves configuring the system to execute the malicious payload during system boot or user logon. Although not directly related to dropping the VBScript, the placement in %temp% could be part of a persistence mechanism.\n\nThe dropped VBE file is a loader script that drops, installs and executes a second layer VBScript payload in the victim's system. This technique involves the use of scripting languages such as VBS (Visual Basic Script) to execute malicious actions.\n\nIt creates a folder named \"WindowsUpdate_\" in the Window's %temp% directory, If the folder already exists, it will create the folder in the parent directory where the script resides. This technique involves disguising files or processes to make them appear legitimate. The creation of the \"WindowsUpdate_\" folder and the naming conventions used may be attempts to blend in with legitimate system operations.\n\nA registry key is created that points to the Loader's directory sh.RegWriTe\"HKEY_CURRENT_USER\\System\\CurrentControlSet\\Control This technique involves creating or modifying registry entries to ensure that the malware executes automatically upon system boot or user logon.\n\nThe second VBScript payload is embedded in the loader script as a Base64 string This technique involves encoding or obfuscating files or information to hide their true purpose. The use of Base64 encoding is a form of obfuscation that helps to evade detection by making the payload less recognizable.\n\nThe loader script decodes the base64 string This technique involves decoding or deobfuscating information to make it usable. The loader script decodes the Base64 string to retrieve the VBScript payload.\n\nThis is then saved to a file named \"AdobeUpdateManagementTool.vbs\" into the \"\\WindowsUpdate_\" folder This technique involves transferring tools or files into a compromised system. The VBScript file is saved and created in the target system's directory.\n\nA persistence registry key is also created by the loader script: HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Run Adversaries may achieve persistence by adding a program to a startup folder or referencing it with a Registry run key. These mechanisms ensure that the program runs each time the user logs in or the system starts.\n\nThe loader script adds a scheduled task with a task named \"SysChecks\". The purpose of this scheduled task is to run the payload script (AdobeUpdateManagementTool.vbs) in every 5 minutes Adversaries may abuse task scheduling functionality to facilitate initial or recurring execution of malicious code. This can be used to execute code at a specific time or on a recurring schedule.\n\nA SWF icon file is also dropped in the folder in order to disguise the dropped file as a Shockwave Flash file Adversaries may change the file extension of a file to match a different file type. They can use this tactic to disguise files as benign or known types, making them less likely to be detected or scrutinized by security tools or users.\n\nA shortcut file is also added in the Windows startup folder as \"AdobeUpdateManagementTool.lnk\" Adversaries may create or modify shortcut files (.lnk) that are automatically started at boot or logon to execute malware or other malicious code. This technique involves placing shortcuts in specific locations, such as the startup folder, to achieve persistence.\n\nscript uses obfuscation, a combination of base64 and integer-ed characters (chr) to hide malicious code The use of base64 encoding and integer-ed characters (chr) to obfuscate the script. This more accurately reflects the described obfuscation of the VBScript payload.\n\nSteal system information System Name System Manufacturer System Model Time Zone Total Physical Memory Processor System Type Processor BIOS Version Networking information Computer name Domain User name Collecting information about the system, such as system name, system manufacturer, system model, total physical memory, processor details, BIOS version, and system type.\n\nA powershell script (filename: screenshot__.ps1) is created The creation and execution of a PowerShell script.\n\nto screenshot victim's desktop Adversaries may capture screenshots of the victim's desktop.\n\nIt may also be able to receive additional malware executables and install them on the victim's computer. The malware can receive additional executables from the attacker and install them on the victim's system. This technique involves transferring tools or files to a compromised system.\n\nIt can receive commands from the attacker to download and execute EXE files, VBScript, or Powershell script files. The malware can download and execute EXE files, VBScript, or PowerShell scripts, which aligns with the use of a backdoor to transfer tools or additional payloads into the victim's system.\n\nThe data is sent as a data encrypted with RC4 and Base64 It is sent via an HTTP POST tunnel to the attacker's server The data is encrypted with RC4 and Base64, which constitutes obfuscation. Obfuscation techniques are used to make it harder for security tools to analyze or detect the exfiltrated data.\n\nscreenshot__.ps1 - a powershell script that takes screenshots of the active desktop Powershell script\n\nvb__.vbs - a VBscript sent by the attacker\n\nps1__.ps1 - a Powershell script sent by the attacker A PowerShell script.\n\nit writes the cmdunig value to this registry key: HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion If the registry key is used to ensure the malware runs on startup or after a logon, this technique applies.\n\nFollowing is the System information sent to the control server when the command \"INFO\" is received from the attacker. OS Name Version Service Pack OS Manufacturer Windows Directory Locale Available Physical Memory Total Virtual Memory Available Virtual Memory System Name System Manufacturer System Model Time Zone Total Physical Memory Processor System Type Processor BIOS Version Computer name Domain User name Collecting information about the system, such as system name, system manufacturer, system model, total physical memory, processor details, BIOS version, and system type.\n\nThis system information is also stored in this registry key: HKEY_CURRENT_USER\\System\\CurrentControlSet\\Control\\Network\\CLM The malware interacts with the Windows registry, specifically modifying registry keys\n\nThe config filename is a base64 string comprising of a unique string and the MAC address of the infected system The configuration filename is a base64 string, indicating the use of obfuscation.\n\ninjects its code to that process he malware injects its code into a new `svchost.exe` process. Process injection is a common technique used to execute malicious code within the context of a legitimate process to evade detection and\n\nit registers itself as a service with the following details: Service name: RpcSsSys (this name is random, may vary on different systems) The malware creates a new Windows service to ensure its persistence. It sets up the service with a path that disguises its true nature, often using a name that mimics legitimate services.\n\nThe malware checks for the \"isDebugged\" flag in the PEB (Process Environment Block). It also checks for significant delay of code execution by utilizing the GetTickCount() function. The malware checks the \\\"isDebugged\\\" flag in the PEB (Process Environment Block) and also checks for significant delay of code execution by utilizing the GetTickCount() function to detect if the process is being debugged\n\nStrings are heavily obfuscated to avoid static string analysis Strings are obfuscated to avoid static string analysis\n\nThe malware enables the Remote Desktop by starting the Termservice service This technique involves using remote services such as Remote Desktop Protocol (RDP) or other remote access tools. Enabling and configuring Remote Desktop is a direct use of this technique to maintain access to the system.\n\nIt also sets the service to auto-mode so that the service will start on Windows startup. Modifying the Termservice service to start automatically on Windows startup is a form of persistence where the malware ensures that it will be able to reconnect to the system after a reboot.\n\nThe malware utilizes the open source project called Mimikatz and reused codes from this project to steal clear text local passwords from Lsass memory dump. This technique involves extracting credentials from operating system memory, files, or other sources. Mimikatz is a well-known tool for credential dumping, and its use to extract passwords from LSASS memory falls directly under this technique.\n\n$\"  ammyy.pl- this enables the malware to run AMMYY remote desktop control software %\"  vnc.pl- this enables the malware to run a remote desktop VNC application This technique involves the use of Remote Desktop Protocol (RDP) for remote access to systems. While the text specifically mentions Ammyy and VNC, RDP is a common protocol for similar purposes.",
+    "final_triplets": [
+      {
+        "subject": "attacker",
+        "subject_type": "Attacker",
+        "relation": "uses",
+        "object": "social engineering",
+        "object_type": "Malware Characteristic:Behavior"
+      },
+      {
+        "subject": "attacker",
+        "subject_type": "Attacker",
+        "relation": "sends",
+        "object": "malicious email",
+        "object_type": "Indicator:Email"
+      },
+      {
+        "subject": "malicious email",
+        "subject_type": "Indicator:Email",
+        "relation": "contains",
+        "object": "malicious word document",
+        "object_type": "Indicator:File"
+      },
+      {
+        "subject": "malicious word document",
+        "subject_type": "Indicator:File",
+        "relation": "contains",
+        "object": "encoded .vbs script",
+        "object_type": "Indicator:File"
+      },
+      {
+        "subject": "malicious vb script",
+        "subject_type": "Indicator:File",
+        "relation": "uses",
+        "object": "macros",
+        "object_type": "Malware Characteristic:Capability"
+      },
+      {
+        "subject": "malicious vb script",
+        "subject_type": "Indicator:File",
+        "relation": "searches for",
+        "object": "microsoft word",
+        "object_type": "Tool"
+      },
+      {
+        "subject": "victim system",
+        "subject_type": "Infrastructure",
+        "relation": "connects to",
+        "object": "95.215.47.105",
+        "object_type": "Indicator:IP"
+      },
+      {
+        "subject": "victim system",
+        "subject_type": "Infrastructure",
+        "relation": "downloads",
+        "object": "adobeupdatemanagementtool.vbs",
+        "object_type": "Indicator:File"
+      },
+      {
+        "subject": "malware",
+        "subject_type": "Malware",
+        "relation": "adds file to",
+        "object": "windowsupdate folder",
+        "object_type": "Infrastructure"
+      },
+      {
+        "subject": "malware",
+        "subject_type": "Malware",
+        "relation": "adds persistence to",
+        "object": "current_user registry hive",
+        "object_type": "Indicator:Registry Key"
+      },
+      {
+        "subject": "malware",
+        "subject_type": "Malware",
+        "relation": "creates scheduled task",
+        "object": "syschecks",
+        "object_type": "Infrastructure"
+      },
+      {
+        "subject": "malware",
+        "subject_type": "Malware",
+        "relation": "creates service",
+        "object": "adobeupdtool",
+        "object_type": "Infrastructure"
+      },
+      {
+        "subject": "malware",
+        "subject_type": "Malware",
+        "relation": "disguises as",
+        "object": "shockwave flash icon",
+        "object_type": "Indicator:File"
+      },
+      {
+        "subject": "malware",
+        "subject_type": "Malware",
+        "relation": "contacts",
+        "object": "179.43.133.34",
+        "object_type": "Indicator:IP"
+      },
+      {
+        "subject": "beaconing messages",
+        "subject_type": "Information",
+        "relation": "sent via",
+        "object": "http get requests",
+        "object_type": "Information"
+      },
+      {
+        "subject": "malware",
+        "subject_type": "Malware",
+        "relation": "downloads",
+        "object": "nmap",
+        "object_type": "Tool"
+      },
+      {
+        "subject": "malware",
+        "subject_type": "Malware",
+        "relation": "downloads",
+        "object": "freerdp",
+        "object_type": "Tool"
+      },
+      {
+        "subject": "malware",
+        "subject_type": "Malware",
+        "relation": "downloads",
+        "object": "ncat",
+        "object_type": "Tool"
+      },
+      {
+        "subject": "malware",
+        "subject_type": "Malware",
+        "relation": "downloads",
+        "object": "nping",
+        "object_type": "Tool"
+      },
+      {
+        "subject": "malware",
+        "subject_type": "Malware",
+        "relation": "injects code into",
+        "object": "svchost.exe",
+        "object_type": "Infrastructure"
+      },
+      {
+        "subject": "malware",
+        "subject_type": "Malware",
+        "relation": "drops configuration file to",
+        "object": "%programdata%\\mozilla folder",
+        "object_type": "Infrastructure"
+      },
+      {
+        "subject": "malware",
+        "subject_type": "Malware",
+        "relation": "searches for",
+        "object": "kaspersky antivirus processes",
+        "object_type": "Infrastructure"
+      },
+      {
+        "subject": "malware",
+        "subject_type": "Malware",
+        "relation": "terminates",
+        "object": "kaspersky antivirus processes",
+        "object_type": "Infrastructure"
+      },
+      {
+        "subject": "malware",
+        "subject_type": "Malware",
+        "relation": "registers as service",
+        "object": "rpcsssys",
+        "object_type": "Infrastructure"
+      },
+      {
+        "subject": "malware",
+        "subject_type": "Malware",
+        "relation": "installs",
+        "object": "vnc",
+        "object_type": "Tool"
+      },
+      {
+        "subject": "malware",
+        "subject_type": "Malware",
+        "relation": "installs",
+        "object": "ammyy",
+        "object_type": "Tool"
+      },
+      {
+        "subject": "malware",
+        "subject_type": "Malware",
+        "relation": "communicates via",
+        "object": "encrypted tunnel on port 443",
+        "object_type": "Information"
+      },
+      {
+        "subject": "malware",
+        "subject_type": "Malware",
+        "relation": "captures",
+        "object": "screen captures",
+        "object_type": "Information"
+      },
+      {
+        "subject": "malware",
+        "subject_type": "Malware",
+        "relation": "captures",
+        "object": "keylogger information",
+        "object_type": "Information"
+      },
+      {
+        "subject": "malware",
+        "subject_type": "Malware",
+        "relation": "collects",
+        "object": "email addresses from pst file",
+        "object_type": "Information"
+      },
+      {
+        "subject": "vbe script",
+        "subject_type": "Indicator:File",
+        "relation": "is dropped in",
+        "object": "windows %temp% folder",
+        "object_type": "Infrastructure"
+      },
+      {
+        "subject": "loader script",
+        "subject_type": "Malware",
+        "relation": "drops and executes",
+        "object": "second layer vbscript payload",
+        "object_type": "Malware Characteristic:Payload"
+      },
+      {
+        "subject": "loader script",
+        "subject_type": "Malware",
+        "relation": "creates folder",
+        "object": "windowsupdate_",
+        "object_type": "Infrastructure"
+      },
+      {
+        "subject": "loader script",
+        "subject_type": "Malware",
+        "relation": "creates registry key",
+        "object": "hkey_current_user\\system\\currentcontrolset\\control",
+        "object_type": "Indicator:Registry Key"
+      },
+      {
+        "subject": "loader script",
+        "subject_type": "Malware",
+        "relation": "decodes",
+        "object": "base64 string",
+        "object_type": "Information"
+      },
+      {
+        "subject": "loader script",
+        "subject_type": "Malware",
+        "relation": "saves file",
+        "object": "adobeupdatemanagementtool.vbs",
+        "object_type": "Indicator:File"
+      },
+      {
+        "subject": "loader script",
+        "subject_type": "Malware",
+        "relation": "creates persistence key",
+        "object": "hkey_current_user\\software\\microsoft\\windows\\currentversion\\run",
+        "object_type": "Indicator:Registry Key"
+      },
+      {
+        "subject": "loader script",
+        "subject_type": "Malware",
+        "relation": "adds scheduled task",
+        "object": "syschecks",
+        "object_type": "Infrastructure"
+      },
+      {
+        "subject": "loader script",
+        "subject_type": "Malware",
+        "relation": "drops",
+        "object": "swf icon file",
+        "object_type": "Indicator:File"
+      },
+      {
+        "subject": "loader script",
+        "subject_type": "Malware",
+        "relation": "adds shortcut file",
+        "object": "adobeupdatemanagementtool.lnk",
+        "object_type": "Indicator:File"
+      },
+      {
+        "subject": "malware",
+        "subject_type": "Malware",
+        "relation": "creates PowerShell script",
+        "object": "screenshot__.ps1",
+        "object_type": "Indicator:File"
+      },
+      {
+        "subject": "malware",
+        "subject_type": "Malware",
+        "relation": "receives and installs",
+        "object": "additional malware executables",
+        "object_type": "Malware"
+      },
+      {
+        "subject": "malware",
+        "subject_type": "Malware",
+        "relation": "downloads and executes",
+        "object": "exe files",
+        "object_type": "Indicator:File"
+      },
+      {
+        "subject": "malware",
+        "subject_type": "Malware",
+        "relation": "downloads and executes",
+        "object": "vbscript",
+        "object_type": "Indicator:File"
+      },
+      {
+        "subject": "malware",
+        "subject_type": "Malware",
+        "relation": "downloads and executes",
+        "object": "powershell script files",
+        "object_type": "Indicator:File"
+      },
+      {
+        "subject": "malware",
+        "subject_type": "Malware",
+        "relation": "writes to registry key",
+        "object": "hkey_current_user\\software\\microsoft\\windows\\currentversion",
+        "object_type": "Indicator:Registry Key"
+      },
+      {
+        "subject": "malware",
+        "subject_type": "Malware",
+        "relation": "collects system information",
+        "object": "os name",
+        "object_type": "Information"
+      },
+      {
+        "subject": "malware",
+        "subject_type": "Malware",
+        "relation": "stores information in registry key",
+        "object": "hkey_current_user\\system\\currentcontrolset\\control\\network\\clm",
+        "object_type": "Indicator:Registry Key"
+      },
+      {
+        "subject": "malware",
+        "subject_type": "Malware",
+        "relation": "injects code into",
+        "object": "svchost.exe process",
+        "object_type": "Infrastructure"
+      },
+      {
+        "subject": "malware",
+        "subject_type": "Malware",
+        "relation": "checks for",
+        "object": "isdebugged flag",
+        "object_type": "Malware Characteristic:Behavior"
+      },
+      {
+        "subject": "malware",
+        "subject_type": "Malware",
+        "relation": "uses",
+        "object": "gettickcount function",
+        "object_type": "Malware Characteristic:Capability"
+      },
+      {
+        "subject": "malware",
+        "subject_type": "Malware",
+        "relation": "enables",
+        "object": "remote desktop",
+        "object_type": "Infrastructure"
+      },
+      {
+        "subject": "malware",
+        "subject_type": "Malware",
+        "relation": "starts",
+        "object": "termservice service",
+        "object_type": "Infrastructure"
+      },
+      {
+        "subject": "malware",
+        "subject_type": "Malware",
+        "relation": "utilizes",
+        "object": "mimikatz",
+        "object_type": "Tool"
+      },
+      {
+        "subject": "malware",
+        "subject_type": "Malware",
+        "relation": "steals",
+        "object": "clear text local passwords",
+        "object_type": "Information"
+      },
+      {
+        "subject": "malware",
+        "subject_type": "Malware",
+        "relation": "runs",
+        "object": "ammyy remote desktop",
+        "object_type": "Tool"
+      },
+      {
+        "subject": "malware",
+        "subject_type": "Malware",
+        "relation": "runs",
+        "object": "vnc application",
+        "object_type": "Tool"
+      },
+      {
+        "subject": "beaconing messages",
+        "subject_type": "Information",
+        "relation": "are sent by",
+        "object": "malware",
+        "object_type": "Malware"
+      }
+    ],
+    "reviewed_triplets": [
+      {
+        "subject": "attacker",
+        "subject_type": "Attacker",
+        "relation": "uses",
+        "object": "social engineering",
+        "object_type": "Malware Characteristic:Behavior"
+      },
+      {
+        "subject": "attacker",
+        "subject_type": "Attacker",
+        "relation": "sends",
+        "object": "malicious email",
+        "object_type": "Indicator:Email"
+      },
+      {
+        "subject": "malicious email",
+        "subject_type": "Indicator:Email",
+        "relation": "contains",
+        "object": "malicious word document",
+        "object_type": "Indicator:File"
+      },
+      {
+        "subject": "malicious word document",
+        "subject_type": "Indicator:File",
+        "relation": "contains",
+        "object": "encoded .vbs script",
+        "object_type": "Indicator:File"
+      },
+      {
+        "subject": "malicious vb script",
+        "subject_type": "Indicator:File",
+        "relation": "uses",
+        "object": "macros",
+        "object_type": "Malware Characteristic:Capability"
+      },
+      {
+        "subject": "malicious vb script",
+        "subject_type": "Indicator:File",
+        "relation": "searches for",
+        "object": "microsoft word",
+        "object_type": "Tool"
+      },
+      {
+        "subject": "victim system",
+        "subject_type": "Infrastructure",
+        "relation": "connects to",
+        "object": "95.215.47.105",
+        "object_type": "Indicator:IP"
+      },
+      {
+        "subject": "victim system",
+        "subject_type": "Infrastructure",
+        "relation": "downloads",
+        "object": "adobeupdatemanagementtool.vbs",
+        "object_type": "Indicator:File"
+      },
+      {
+        "subject": "malware",
+        "subject_type": "Malware",
+        "relation": "adds file to",
+        "object": "windowsupdate folder",
+        "object_type": "Infrastructure"
+      },
+      {
+        "subject": "malware",
+        "subject_type": "Malware",
+        "relation": "adds persistence to",
+        "object": "current_user registry hive",
+        "object_type": "Indicator:Registry Key"
+      },
+      {
+        "subject": "malware",
+        "subject_type": "Malware",
+        "relation": "creates scheduled task",
+        "object": "syschecks",
+        "object_type": "Infrastructure"
+      },
+      {
+        "subject": "malware",
+        "subject_type": "Malware",
+        "relation": "creates service",
+        "object": "adobeupdtool",
+        "object_type": "Infrastructure"
+      },
+      {
+        "subject": "malware",
+        "subject_type": "Malware",
+        "relation": "disguises as",
+        "object": "shockwave flash icon",
+        "object_type": "Indicator:File"
+      },
+      {
+        "subject": "malware",
+        "subject_type": "Malware",
+        "relation": "contacts",
+        "object": "179.43.133.34",
+        "object_type": "Indicator:IP"
+      },
+      {
+        "subject": "beaconing messages",
+        "subject_type": "Information",
+        "relation": "sent via",
+        "object": "http get requests",
+        "object_type": "Information"
+      },
+      {
+        "subject": "malware",
+        "subject_type": "Malware",
+        "relation": "downloads",
+        "object": "nmap",
+        "object_type": "Tool"
+      },
+      {
+        "subject": "malware",
+        "subject_type": "Malware",
+        "relation": "downloads",
+        "object": "freerdp",
+        "object_type": "Tool"
+      },
+      {
+        "subject": "malware",
+        "subject_type": "Malware",
+        "relation": "downloads",
+        "object": "ncat",
+        "object_type": "Tool"
+      },
+      {
+        "subject": "malware",
+        "subject_type": "Malware",
+        "relation": "downloads",
+        "object": "nping",
+        "object_type": "Tool"
+      },
+      {
+        "subject": "malware",
+        "subject_type": "Malware",
+        "relation": "injects code into",
+        "object": "svchost.exe",
+        "object_type": "Infrastructure"
+      },
+      {
+        "subject": "malware",
+        "subject_type": "Malware",
+        "relation": "drops configuration file to",
+        "object": "%programdata%\\mozilla folder",
+        "object_type": "Infrastructure"
+      },
+      {
+        "subject": "malware",
+        "subject_type": "Malware",
+        "relation": "searches for",
+        "object": "kaspersky antivirus processes",
+        "object_type": "Infrastructure"
+      },
+      {
+        "subject": "malware",
+        "subject_type": "Malware",
+        "relation": "terminates",
+        "object": "kaspersky antivirus processes",
+        "object_type": "Infrastructure"
+      },
+      {
+        "subject": "malware",
+        "subject_type": "Malware",
+        "relation": "registers as service",
+        "object": "rpcsssys",
+        "object_type": "Infrastructure"
+      },
+      {
+        "subject": "malware",
+        "subject_type": "Malware",
+        "relation": "installs",
+        "object": "vnc",
+        "object_type": "Tool"
+      },
+      {
+        "subject": "malware",
+        "subject_type": "Malware",
+        "relation": "installs",
+        "object": "ammyy",
+        "object_type": "Tool"
+      },
+      {
+        "subject": "malware",
+        "subject_type": "Malware",
+        "relation": "communicates via",
+        "object": "encrypted tunnel on port 443",
+        "object_type": "Information"
+      },
+      {
+        "subject": "malware",
+        "subject_type": "Malware",
+        "relation": "captures",
+        "object": "screen captures",
+        "object_type": "Information"
+      },
+      {
+        "subject": "malware",
+        "subject_type": "Malware",
+        "relation": "captures",
+        "object": "keylogger information",
+        "object_type": "Information"
+      },
+      {
+        "subject": "malware",
+        "subject_type": "Malware",
+        "relation": "collects",
+        "object": "email addresses from pst file",
+        "object_type": "Information"
+      },
+      {
+        "subject": "vbe script",
+        "subject_type": "Indicator:File",
+        "relation": "is dropped in",
+        "object": "windows %temp% folder",
+        "object_type": "Infrastructure"
+      },
+      {
+        "subject": "loader script",
+        "subject_type": "Malware",
+        "relation": "drops and executes",
+        "object": "second layer vbscript payload",
+        "object_type": "Malware Characteristic:Payload"
+      },
+      {
+        "subject": "loader script",
+        "subject_type": "Malware",
+        "relation": "creates folder",
+        "object": "windowsupdate_",
+        "object_type": "Infrastructure"
+      },
+      {
+        "subject": "loader script",
+        "subject_type": "Malware",
+        "relation": "creates registry key",
+        "object": "hkey_current_user\\system\\currentcontrolset\\control",
+        "object_type": "Indicator:Registry Key"
+      },
+      {
+        "subject": "loader script",
+        "subject_type": "Malware",
+        "relation": "decodes",
+        "object": "base64 string",
+        "object_type": "Information"
+      },
+      {
+        "subject": "loader script",
+        "subject_type": "Malware",
+        "relation": "saves file",
+        "object": "adobeupdatemanagementtool.vbs",
+        "object_type": "Indicator:File"
+      },
+      {
+        "subject": "loader script",
+        "subject_type": "Malware",
+        "relation": "creates persistence key",
+        "object": "hkey_current_user\\software\\microsoft\\windows\\currentversion\\run",
+        "object_type": "Indicator:Registry Key"
+      },
+      {
+        "subject": "loader script",
+        "subject_type": "Malware",
+        "relation": "adds scheduled task",
+        "object": "syschecks",
+        "object_type": "Infrastructure"
+      },
+      {
+        "subject": "loader script",
+        "subject_type": "Malware",
+        "relation": "drops",
+        "object": "swf icon file",
+        "object_type": "Indicator:File"
+      },
+      {
+        "subject": "loader script",
+        "subject_type": "Malware",
+        "relation": "adds shortcut file",
+        "object": "adobeupdatemanagementtool.lnk",
+        "object_type": "Indicator:File"
+      },
+      {
+        "subject": "malware",
+        "subject_type": "Malware",
+        "relation": "creates PowerShell script",
+        "object": "screenshot__.ps1",
+        "object_type": "Indicator:File"
+      },
+      {
+        "subject": "malware",
+        "subject_type": "Malware",
+        "relation": "receives and installs",
+        "object": "additional malware executables",
+        "object_type": "Malware"
+      },
+      {
+        "subject": "malware",
+        "subject_type": "Malware",
+        "relation": "downloads and executes",
+        "object": "exe files",
+        "object_type": "Indicator:File"
+      },
+      {
+        "subject": "malware",
+        "subject_type": "Malware",
+        "relation": "downloads and executes",
+        "object": "vbscript",
+        "object_type": "Indicator:File"
+      },
+      {
+        "subject": "malware",
+        "subject_type": "Malware",
+        "relation": "downloads and executes",
+        "object": "powershell script files",
+        "object_type": "Indicator:File"
+      },
+      {
+        "subject": "malware",
+        "subject_type": "Malware",
+        "relation": "writes to registry key",
+        "object": "hkey_current_user\\software\\microsoft\\windows\\currentversion",
+        "object_type": "Indicator:Registry Key"
+      },
+      {
+        "subject": "malware",
+        "subject_type": "Malware",
+        "relation": "collects system information",
+        "object": "os name",
+        "object_type": "Information"
+      },
+      {
+        "subject": "malware",
+        "subject_type": "Malware",
+        "relation": "stores information in registry key",
+        "object": "hkey_current_user\\system\\currentcontrolset\\control\\network\\clm",
+        "object_type": "Indicator:Registry Key"
+      },
+      {
+        "subject": "malware",
+        "subject_type": "Malware",
+        "relation": "injects code into",
+        "object": "svchost.exe process",
+        "object_type": "Infrastructure"
+      },
+      {
+        "subject": "malware",
+        "subject_type": "Malware",
+        "relation": "checks for",
+        "object": "isdebugged flag",
+        "object_type": "Malware Characteristic:Behavior"
+      },
+      {
+        "subject": "malware",
+        "subject_type": "Malware",
+        "relation": "uses",
+        "object": "gettickcount function",
+        "object_type": "Malware Characteristic:Capability"
+      },
+      {
+        "subject": "malware",
+        "subject_type": "Malware",
+        "relation": "enables",
+        "object": "remote desktop",
+        "object_type": "Infrastructure"
+      },
+      {
+        "subject": "malware",
+        "subject_type": "Malware",
+        "relation": "starts",
+        "object": "termservice service",
+        "object_type": "Infrastructure"
+      },
+      {
+        "subject": "malware",
+        "subject_type": "Malware",
+        "relation": "utilizes",
+        "object": "mimikatz",
+        "object_type": "Tool"
+      },
+      {
+        "subject": "malware",
+        "subject_type": "Malware",
+        "relation": "steals",
+        "object": "clear text local passwords",
+        "object_type": "Information"
+      },
+      {
+        "subject": "malware",
+        "subject_type": "Malware",
+        "relation": "runs",
+        "object": "ammyy remote desktop",
+        "object_type": "Tool"
+      },
+      {
+        "subject": "malware",
+        "subject_type": "Malware",
+        "relation": "runs",
+        "object": "vnc application",
+        "object_type": "Tool"
+      },
+      {
+        "subject": "beaconing messages",
+        "subject_type": "Information",
+        "relation": "are sent by",
+        "object": "malware",
+        "object_type": "Malware"
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "source_id": "CROWD_default_annotator",
+    "text": "Anunak\n\nPrimary remote access toolkit (RAT) for monitoring victim systems of interest Use of remote access software to control victims' machines.\n\nIt contains all the functionality you would expect from a RAT, allowing the adversary to execute commands, manage the file system, manage processes, and collect data Using remote access software to execute commands and manage victim systems.\n\nit can record videos of victim sessions Capture of compromised system screenshots\n\nlog keystrokes Capture of keyboard inputs.\n\nenable remote desktop Using RDP to access and control the victim's system.\n\ninstall Ammyy Admin or VNC modules Use of external remote services to maintain compromised system access.\n\nAgent ORM\n\nThe malware collects basic system information Collection of basic system information.\n\ntake screenshots of victim systems Capture of compromised system screenshots\n\nIt is used to download next-stage payloads when systems of interest are identified Transfer of additional tools or payloads to the compromised system.\n\nVB Flash\n\nSeveral versions of VB Flash were developed including ones that utilized Google Forms, Google Macros, and Google Spreadsheets together to make a command-and-control (C2) channel Use of legitimate web services for command and control.\n\nThis variant would POST victim data to a specified Google form, then make a request to a Google macro script, receiving an address for a Google Spreadsheet from which to request commands Data exfiltration through legitimate web services.\n\nJS Flash\n\nJS Flash capabilities closely resemble those of VB Flash and leverage interesting techniques in deployment via batch scripts embedded as OLE objects in malicious documents Using the Windows command shell to execute commands and scripts.\n\nminor changes to obfuscation Obfuscation of files or information to avoid detection.\n\nability to downloadTinyMet(a cutdown of theMetasploit Meterpreterpayload) Transfer of additional tools or payloads to the compromised system.\n\nPowerShell was also used heavily for the execution of commands and arbitrary script execution Using PowerShell to execute arbitrary commands and scripts.\n\nBateleur\n\ndownload arbitrary scripts and executables, deploy TinyMet Transfer of additional tools or payloads to the compromised system.\n\nexecute commands via PowerShell Using PowerShell to execute commands.\n\ndeploy a credential stealer Extraction of credentials from password repositories\n\ncollect victim system information Collection of system information.\n\nspear phishing emails to deploy malicious documents Use of spear phishing attachments to gain initial access.\n\nused exploits Using exploits to execute code on the victim's machine.\n\nthey have used macros and OLE embedded objects Use of malicious documents that require user intervention for execution.\n\nspear phishing emails Use of spear phishing attachments to gain initial access.\n\nthat use exploits for a variety of vulnerabilities in Microsoft Office: CVE-2015-2545 CVE-2014-4114 CVE-2015-1770 CVE-2015-1641 Using exploits to execute code on the victim's machine.",
+    "final_triplets": [
+      {
+        "subject": "anunak",
+        "subject_type": "Malware",
+        "relation": "is",
+        "object": "primary remote access toolkit (rat)",
+        "object_type": "Malware"
+      },
+      {
+        "subject": "anunak",
+        "subject_type": "Malware",
+        "relation": "uses",
+        "object": "remote access software",
+        "object_type": "Tool"
+      },
+      {
+        "subject": "anunak",
+        "subject_type": "Malware",
+        "relation": "allows",
+        "object": "command execution",
+        "object_type": "Malware Characteristic:Capability"
+      },
+      {
+        "subject": "anunak",
+        "subject_type": "Malware",
+        "relation": "allows",
+        "object": "file system management",
+        "object_type": "Malware Characteristic:Capability"
+      },
+      {
+        "subject": "anunak",
+        "subject_type": "Malware",
+        "relation": "allows",
+        "object": "process management",
+        "object_type": "Malware Characteristic:Capability"
+      },
+      {
+        "subject": "anunak",
+        "subject_type": "Malware",
+        "relation": "allows",
+        "object": "data collection",
+        "object_type": "Malware Characteristic:Capability"
+      },
+      {
+        "subject": "anunak",
+        "subject_type": "Malware",
+        "relation": "can record",
+        "object": "victim sessions video",
+        "object_type": "Malware Characteristic:Capability"
+      },
+      {
+        "subject": "anunak",
+        "subject_type": "Malware",
+        "relation": "can log",
+        "object": "keystrokes",
+        "object_type": "Malware Characteristic:Capability"
+      },
+      {
+        "subject": "anunak",
+        "subject_type": "Malware",
+        "relation": "can enable",
+        "object": "remote desktop",
+        "object_type": "Malware Characteristic:Capability"
+      },
+      {
+        "subject": "anunak",
+        "subject_type": "Malware",
+        "relation": "can install",
+        "object": "ammyy admin",
+        "object_type": "Tool"
+      },
+      {
+        "subject": "anunak",
+        "subject_type": "Malware",
+        "relation": "can install",
+        "object": "vnc modules",
+        "object_type": "Tool"
+      },
+      {
+        "subject": "agent orm",
+        "subject_type": "Malware",
+        "relation": "collects",
+        "object": "basic system information",
+        "object_type": "Information"
+      },
+      {
+        "subject": "agent orm",
+        "subject_type": "Malware",
+        "relation": "takes",
+        "object": "screenshots",
+        "object_type": "Information"
+      },
+      {
+        "subject": "agent orm",
+        "subject_type": "Malware",
+        "relation": "is used to download",
+        "object": "next-stage payloads",
+        "object_type": "Malware Characteristic:Payload"
+      },
+      {
+        "subject": "vb flash",
+        "subject_type": "Malware",
+        "relation": "uses",
+        "object": "google forms",
+        "object_type": "Indicator:URL"
+      },
+      {
+        "subject": "vb flash",
+        "subject_type": "Malware",
+        "relation": "uses",
+        "object": "google macros",
+        "object_type": "Tool"
+      },
+      {
+        "subject": "vb flash",
+        "subject_type": "Malware",
+        "relation": "uses",
+        "object": "google spreadsheets",
+        "object_type": "Indicator:URL"
+      },
+      {
+        "subject": "vb flash",
+        "subject_type": "Malware",
+        "relation": "makes",
+        "object": "c2 channel",
+        "object_type": "Infrastructure"
+      },
+      {
+        "subject": "vb flash",
+        "subject_type": "Malware",
+        "relation": "POSTs",
+        "object": "victim data",
+        "object_type": "Information"
+      },
+      {
+        "subject": "js flash",
+        "subject_type": "Malware",
+        "relation": "leverages",
+        "object": "batch scripts",
+        "object_type": "Tool"
+      },
+      {
+        "subject": "js flash",
+        "subject_type": "Malware",
+        "relation": "uses",
+        "object": "ole objects",
+        "object_type": "Tool"
+      },
+      {
+        "subject": "js flash",
+        "subject_type": "Malware",
+        "relation": "uses",
+        "object": "obfuscation",
+        "object_type": "Malware Characteristic:Feature"
+      },
+      {
+        "subject": "js flash",
+        "subject_type": "Malware",
+        "relation": "can download",
+        "object": "tinymet",
+        "object_type": "Malware"
+      },
+      {
+        "subject": "js flash",
+        "subject_type": "Malware",
+        "relation": "uses",
+        "object": "powershell",
+        "object_type": "Tool"
+      },
+      {
+        "subject": "bateleur",
+        "subject_type": "Malware",
+        "relation": "can download",
+        "object": "arbitrary scripts",
+        "object_type": "Tool"
+      },
+      {
+        "subject": "bateleur",
+        "subject_type": "Malware",
+        "relation": "can download",
+        "object": "executables",
+        "object_type": "Indicator:File"
+      },
+      {
+        "subject": "bateleur",
+        "subject_type": "Malware",
+        "relation": "can deploy",
+        "object": "tinymet",
+        "object_type": "Malware"
+      },
+      {
+        "subject": "bateleur",
+        "subject_type": "Malware",
+        "relation": "executes commands via",
+        "object": "powershell",
+        "object_type": "Tool"
+      },
+      {
+        "subject": "bateleur",
+        "subject_type": "Malware",
+        "relation": "can deploy",
+        "object": "credential stealer",
+        "object_type": "Malware"
+      },
+      {
+        "subject": "bateleur",
+        "subject_type": "Malware",
+        "relation": "collects",
+        "object": "victim system information",
+        "object_type": "Information"
+      },
+      {
+        "subject": "bateleur",
+        "subject_type": "Malware",
+        "relation": "uses",
+        "object": "spear phishing emails",
+        "object_type": "Indicator:Email"
+      },
+      {
+        "subject": "bateleur",
+        "subject_type": "Malware",
+        "relation": "uses",
+        "object": "malicious documents",
+        "object_type": "Indicator:File"
+      },
+      {
+        "subject": "bateleur",
+        "subject_type": "Malware",
+        "relation": "uses",
+        "object": "exploits",
+        "object_type": "Exploit Target"
+      },
+      {
+        "subject": "bateleur",
+        "subject_type": "Malware",
+        "relation": "uses",
+        "object": "macros",
+        "object_type": "Tool"
+      },
+      {
+        "subject": "bateleur",
+        "subject_type": "Malware",
+        "relation": "uses",
+        "object": "ole embedded objects",
+        "object_type": "Tool"
+      },
+      {
+        "subject": "bateleur",
+        "subject_type": "Malware",
+        "relation": "uses exploits for",
+        "object": "cve-2015-2545",
+        "object_type": "Vulnerability"
+      },
+      {
+        "subject": "bateleur",
+        "subject_type": "Malware",
+        "relation": "uses exploits for",
+        "object": "cve-2014-4114",
+        "object_type": "Vulnerability"
+      },
+      {
+        "subject": "bateleur",
+        "subject_type": "Malware",
+        "relation": "uses exploits for",
+        "object": "cve-2015-1770",
+        "object_type": "Vulnerability"
+      },
+      {
+        "subject": "bateleur",
+        "subject_type": "Malware",
+        "relation": "uses exploits for",
+        "object": "cve-2015-1641",
+        "object_type": "Vulnerability"
+      },
+      {
+        "subject": "anunak",
+        "subject_type": "Malware",
+        "relation": "is related to",
+        "object": "bateleur",
+        "object_type": "Malware"
+      }
+    ],
+    "reviewed_triplets": [
+      {
+        "subject": "anunak",
+        "subject_type": "Malware",
+        "relation": "is",
+        "object": "primary remote access toolkit (rat)",
+        "object_type": "Malware"
+      },
+      {
+        "subject": "anunak",
+        "subject_type": "Malware",
+        "relation": "uses",
+        "object": "remote access software",
+        "object_type": "Tool"
+      },
+      {
+        "subject": "anunak",
+        "subject_type": "Malware",
+        "relation": "allows",
+        "object": "command execution",
+        "object_type": "Malware Characteristic:Capability"
+      },
+      {
+        "subject": "anunak",
+        "subject_type": "Malware",
+        "relation": "allows",
+        "object": "file system management",
+        "object_type": "Malware Characteristic:Capability"
+      },
+      {
+        "subject": "anunak",
+        "subject_type": "Malware",
+        "relation": "allows",
+        "object": "process management",
+        "object_type": "Malware Characteristic:Capability"
+      },
+      {
+        "subject": "anunak",
+        "subject_type": "Malware",
+        "relation": "allows",
+        "object": "data collection",
+        "object_type": "Malware Characteristic:Capability"
+      },
+      {
+        "subject": "anunak",
+        "subject_type": "Malware",
+        "relation": "can record",
+        "object": "victim sessions video",
+        "object_type": "Malware Characteristic:Capability"
+      },
+      {
+        "subject": "anunak",
+        "subject_type": "Malware",
+        "relation": "can log",
+        "object": "keystrokes",
+        "object_type": "Malware Characteristic:Capability"
+      },
+      {
+        "subject": "anunak",
+        "subject_type": "Malware",
+        "relation": "can enable",
+        "object": "remote desktop",
+        "object_type": "Malware Characteristic:Capability"
+      },
+      {
+        "subject": "anunak",
+        "subject_type": "Malware",
+        "relation": "can install",
+        "object": "ammyy admin",
+        "object_type": "Tool"
+      },
+      {
+        "subject": "anunak",
+        "subject_type": "Malware",
+        "relation": "can install",
+        "object": "vnc modules",
+        "object_type": "Tool"
+      },
+      {
+        "subject": "agent orm",
+        "subject_type": "Malware",
+        "relation": "collects",
+        "object": "basic system information",
+        "object_type": "Information"
+      },
+      {
+        "subject": "agent orm",
+        "subject_type": "Malware",
+        "relation": "takes",
+        "object": "screenshots",
+        "object_type": "Information"
+      },
+      {
+        "subject": "agent orm",
+        "subject_type": "Malware",
+        "relation": "is used to download",
+        "object": "next-stage payloads",
+        "object_type": "Malware Characteristic:Payload"
+      },
+      {
+        "subject": "vb flash",
+        "subject_type": "Malware",
+        "relation": "uses",
+        "object": "google forms",
+        "object_type": "Indicator:URL"
+      },
+      {
+        "subject": "vb flash",
+        "subject_type": "Malware",
+        "relation": "uses",
+        "object": "google macros",
+        "object_type": "Tool"
+      },
+      {
+        "subject": "vb flash",
+        "subject_type": "Malware",
+        "relation": "uses",
+        "object": "google spreadsheets",
+        "object_type": "Indicator:URL"
+      },
+      {
+        "subject": "vb flash",
+        "subject_type": "Malware",
+        "relation": "makes",
+        "object": "c2 channel",
+        "object_type": "Infrastructure"
+      },
+      {
+        "subject": "vb flash",
+        "subject_type": "Malware",
+        "relation": "POSTs",
+        "object": "victim data",
+        "object_type": "Information"
+      },
+      {
+        "subject": "js flash",
+        "subject_type": "Malware",
+        "relation": "leverages",
+        "object": "batch scripts",
+        "object_type": "Tool"
+      },
+      {
+        "subject": "js flash",
+        "subject_type": "Malware",
+        "relation": "uses",
+        "object": "ole objects",
+        "object_type": "Tool"
+      },
+      {
+        "subject": "js flash",
+        "subject_type": "Malware",
+        "relation": "uses",
+        "object": "obfuscation",
+        "object_type": "Malware Characteristic:Feature"
+      },
+      {
+        "subject": "js flash",
+        "subject_type": "Malware",
+        "relation": "can download",
+        "object": "tinymet",
+        "object_type": "Malware"
+      },
+      {
+        "subject": "js flash",
+        "subject_type": "Malware",
+        "relation": "uses",
+        "object": "powershell",
+        "object_type": "Tool"
+      },
+      {
+        "subject": "bateleur",
+        "subject_type": "Malware",
+        "relation": "can download",
+        "object": "arbitrary scripts",
+        "object_type": "Tool"
+      },
+      {
+        "subject": "bateleur",
+        "subject_type": "Malware",
+        "relation": "can download",
+        "object": "executables",
+        "object_type": "Indicator:File"
+      },
+      {
+        "subject": "bateleur",
+        "subject_type": "Malware",
+        "relation": "can deploy",
+        "object": "tinymet",
+        "object_type": "Malware"
+      },
+      {
+        "subject": "bateleur",
+        "subject_type": "Malware",
+        "relation": "executes commands via",
+        "object": "powershell",
+        "object_type": "Tool"
+      },
+      {
+        "subject": "bateleur",
+        "subject_type": "Malware",
+        "relation": "can deploy",
+        "object": "credential stealer",
+        "object_type": "Malware"
+      },
+      {
+        "subject": "bateleur",
+        "subject_type": "Malware",
+        "relation": "collects",
+        "object": "victim system information",
+        "object_type": "Information"
+      },
+      {
+        "subject": "bateleur",
+        "subject_type": "Malware",
+        "relation": "uses",
+        "object": "spear phishing emails",
+        "object_type": "Indicator:Email"
+      },
+      {
+        "subject": "bateleur",
+        "subject_type": "Malware",
+        "relation": "uses",
+        "object": "malicious documents",
+        "object_type": "Indicator:File"
+      },
+      {
+        "subject": "bateleur",
+        "subject_type": "Malware",
+        "relation": "uses",
+        "object": "exploits",
+        "object_type": "Exploit Target"
+      },
+      {
+        "subject": "bateleur",
+        "subject_type": "Malware",
+        "relation": "uses",
+        "object": "macros",
+        "object_type": "Tool"
+      },
+      {
+        "subject": "bateleur",
+        "subject_type": "Malware",
+        "relation": "uses",
+        "object": "ole embedded objects",
+        "object_type": "Tool"
+      },
+      {
+        "subject": "bateleur",
+        "subject_type": "Malware",
+        "relation": "uses exploits for",
+        "object": "cve-2015-2545",
+        "object_type": "Vulnerability"
+      },
+      {
+        "subject": "bateleur",
+        "subject_type": "Malware",
+        "relation": "uses exploits for",
+        "object": "cve-2014-4114",
+        "object_type": "Vulnerability"
+      },
+      {
+        "subject": "bateleur",
+        "subject_type": "Malware",
+        "relation": "uses exploits for",
+        "object": "cve-2015-1770",
+        "object_type": "Vulnerability"
+      },
+      {
+        "subject": "bateleur",
+        "subject_type": "Malware",
+        "relation": "uses exploits for",
+        "object": "cve-2015-1641",
+        "object_type": "Vulnerability"
+      },
+      {
+        "subject": "anunak",
+        "subject_type": "Malware",
+        "relation": "is related to",
+        "object": "bateleur",
+        "object_type": "Malware"
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "source_id": "TRUSTWAVE3_default_annotator",
+    "text": "a malicious Word or RTF document was sent to specific employees In each campaign, a malicious Word or RTF document was sent to specific employees. This is a form of spearphishing where the attacker targets specific individuals with malicious attachments to gain initial access.\n\nThis from social isaugmentedwitha engineeringscam personalphonecall theattacker, This technique involves using social engineering over a phone call to persuade the victim to open a malicious email attachment. The attacker's follow-up call to confirm the document was opened adds another layer of social engineering to ensure the malicious payload is executed.\n\nencouraging the intended victim to open the email attachment and click inside it This technique involves tricking the user into executing a file that contains malicious code.\n\nscreen-shot grabbing malware Taking screenshots of the victim's desktop to capture sensitive information displayed on the screen.\n\nis two VBS There are two VBS scripts\n\nPersistence is established by creating a scheduled task that runs the main malware file every 25 minutes Using scheduled tasks to execute programs or scripts at specific times or intervals.\n\nPersistence is established by creating a scheduled task that runs the main malware file every 25 minutes Persistence is established by creating a scheduled task\n\nfour more VBS scripts There are four more VBS scripts\n\nthe INI file, using it to issue commands to the compromised machine as well as to reflect the status of previous commands Using command-line interfaces to execute commands.\n\nthe victim's system information The adversary gathers information about the system.\n\nlist of currently running processes back to the attacker The adversary attempts to get a listing of running processes on a system.\n\nScreenshot (save screenshot as screenshot.png) Taking screenshots of the victim's desktop to capture sensitive information displayed on the screen.\n\nRunvbs Run VBS\n\nthe malware uses \"http POST\" to send data that has been retrieved/stolen from the infected system to the CnC server The adversary uses an existing command and control channel to exfiltrate data.\n\nInformation is sent using randomized variable names and simple encryption on the textbaseddatausingbase64encodingand substitution encryption with these alphabets The adversary encrypts files and data to make them inaccessible to users and applications and potentially to exfiltrate information from the victim's network.\n\nthe malware uses \"http POST\" to send data that has been retrieved/stolen from the infected system to the CnC server the malware uses \"http POST\" to send data\n\nuses SMB commands (including TreeConnect and Open/Write AndX) to locate a vulnerable host Adversaries use network service scanning to locate systems and services that are accessible over the network.\n\nto folderand The attacking system reads the log file and uses its contents to then transfer a 32-bit or thevictim's 64-bitexecutable file it. run C:\\Windows\\Temp Adversaries may transfer tools or files to the victim's system to perform further actions or operations. This technique involves moving executables or other files to the target system.\n\nThemeterpreterDLL ismade operational via reflective DLL injection, which copies the meterpreter DLL into the memory space of a chosen victim process (such as explorer.exe) and runs it as a thread. dversaries inject code into the address space of another process to execute their payload. Reflective DLL injection is a method of process injection where a DLL is loaded into the address space of a process without the use of traditional Windows APIs.\n\nThemeterpreterDLL ismade operational via reflective DLL injection, which copies the meterpreter DLL into the memory space of a chosen victim process (such as explorer.exe) and runs it as a thread. Transferring tools or files to the victim's system. This encompasses the initial transfer of the Meterpreter DLL.\n\nThe {~random} file names are not really random, but instead a base64 combination of the victim's system volume serial number and MAC address, which are obtained by queries to the system's WMI Service Adversaries use Windows Management Instrumentation (WMI) to obtain information.\n\nA PowerShell script created by the infected email attachment This technique involves using PowerShell to execute commands and scripts. The described behavior of using a PowerShell script to handle a base64-encoded payload is a common use case of PowerShell for malicious activities.\n\ncontains a base64-encoded block of text that is decoded, This technique includes various methods of obfuscating files or data to avoid detection. Base64 encoding is a common method of obfuscation used to hide the contents of a payload.\n\nwritten into memory as a thread, and executed. This technique involves injecting code into the memory space of another process. The action of writing the decoded payload into memory and executing it as a thread aligns with process injection techniques.\n\nPowerShell script file created from base64 encoded string PowerShell script file created from a base64 encoded string hidden in a Word document\n\nother files arealsoencodedandobfuscated. This technique includes various methods of obfuscating files or data to avoid detection. Base64 encoding is a common method of obfuscation used to hide the contents of a payload.",
+    "final_triplets": [
+      {
+        "subject": "malicious word document",
+        "subject_type": "Indicator:File",
+        "relation": "is used for",
+        "object": "spearphishing",
+        "object_type": "Malware Characteristic:Behavior"
+      },
+      {
+        "subject": "malicious rtf document",
+        "subject_type": "Indicator:File",
+        "relation": "is used for",
+        "object": "spearphishing",
+        "object_type": "Malware Characteristic:Behavior"
+      },
+      {
+        "subject": "attacker",
+        "subject_type": "Attacker",
+        "relation": "uses",
+        "object": "social engineering",
+        "object_type": "Tool"
+      },
+      {
+        "subject": "malware",
+        "subject_type": "Malware",
+        "relation": "takes",
+        "object": "screenshots",
+        "object_type": "Malware Characteristic:Capability"
+      },
+      {
+        "subject": "vbs script",
+        "subject_type": "Indicator:File",
+        "relation": "is used for",
+        "object": "malicious activity",
+        "object_type": "Malware Characteristic:Behavior"
+      },
+      {
+        "subject": "scheduled task",
+        "subject_type": "Tool",
+        "relation": "establishes",
+        "object": "persistence",
+        "object_type": "Malware Characteristic:Capability"
+      },
+      {
+        "subject": "ini file",
+        "subject_type": "Indicator:File",
+        "relation": "issues",
+        "object": "commands",
+        "object_type": "Malware Characteristic:Capability"
+      },
+      {
+        "subject": "adversary",
+        "subject_type": "Attacker",
+        "relation": "gathers",
+        "object": "system information",
+        "object_type": "Information"
+      },
+      {
+        "subject": "adversary",
+        "subject_type": "Attacker",
+        "relation": "gets",
+        "object": "running processes",
+        "object_type": "Information"
+      },
+      {
+        "subject": "malware",
+        "subject_type": "Malware",
+        "relation": "sends data using",
+        "object": "http post",
+        "object_type": "Tool"
+      },
+      {
+        "subject": "malware",
+        "subject_type": "Malware",
+        "relation": "sends data to",
+        "object": "cnc server",
+        "object_type": "Infrastructure"
+      },
+      {
+        "subject": "adversary",
+        "subject_type": "Attacker",
+        "relation": "encrypts data using",
+        "object": "base64 encoding",
+        "object_type": "Tool"
+      },
+      {
+        "subject": "adversary",
+        "subject_type": "Attacker",
+        "relation": "uses",
+        "object": "smb commands",
+        "object_type": "Tool"
+      },
+      {
+        "subject": "adversary",
+        "subject_type": "Attacker",
+        "relation": "transfers",
+        "object": "executable file",
+        "object_type": "Indicator:File"
+      },
+      {
+        "subject": "meterpreter dll",
+        "subject_type": "Indicator:File",
+        "relation": "is injected via",
+        "object": "reflective dll injection",
+        "object_type": "Malware Characteristic:Capability"
+      },
+      {
+        "subject": "malware",
+        "subject_type": "Malware",
+        "relation": "obtains information via",
+        "object": "windows management instrumentation",
+        "object_type": "Tool"
+      },
+      {
+        "subject": "powershell script",
+        "subject_type": "Indicator:File",
+        "relation": "is created by",
+        "object": "infected email attachment",
+        "object_type": "Indicator:File"
+      },
+      {
+        "subject": "adversary",
+        "subject_type": "Attacker",
+        "relation": "obfuscates data using",
+        "object": "base64 encoding",
+        "object_type": "Tool"
+      },
+      {
+        "subject": "adversary",
+        "subject_type": "Attacker",
+        "relation": "injects code via",
+        "object": "process injection",
+        "object_type": "Malware Characteristic:Capability"
+      },
+      {
+        "subject": "malicious word document",
+        "subject_type": "Indicator:File",
+        "relation": "is sent by",
+        "object": "attacker",
+        "object_type": "Attacker"
+      },
+      {
+        "subject": "malware",
+        "subject_type": "Malware",
+        "relation": "is used by",
+        "object": "attacker",
+        "object_type": "Attacker"
+      },
+      {
+        "subject": "attacker",
+        "subject_type": "Attacker",
+        "relation": "uses",
+        "object": "vbs script",
+        "object_type": "Unknown"
+      },
+      {
+        "subject": "attacker",
+        "subject_type": "Attacker",
+        "relation": "establishes",
+        "object": "persistence",
+        "object_type": "Unknown"
+      },
+      {
+        "subject": "attacker",
+        "subject_type": "Attacker",
+        "relation": "uses",
+        "object": "ini file",
+        "object_type": "Unknown"
+      },
+      {
+        "subject": "powershell script",
+        "subject_type": "Indicator:File",
+        "relation": "is used by",
+        "object": "attacker",
+        "object_type": "Attacker"
+      }
+    ],
+    "reviewed_triplets": [
+      {
+        "subject": "malicious word document",
+        "subject_type": "Indicator:File",
+        "relation": "is used for",
+        "object": "spearphishing",
+        "object_type": "Malware Characteristic:Behavior"
+      },
+      {
+        "subject": "malicious rtf document",
+        "subject_type": "Indicator:File",
+        "relation": "is used for",
+        "object": "spearphishing",
+        "object_type": "Malware Characteristic:Behavior"
+      },
+      {
+        "subject": "attacker",
+        "subject_type": "Attacker",
+        "relation": "uses",
+        "object": "social engineering",
+        "object_type": "Tool"
+      },
+      {
+        "subject": "malware",
+        "subject_type": "Malware",
+        "relation": "takes",
+        "object": "screenshots",
+        "object_type": "Malware Characteristic:Capability"
+      },
+      {
+        "subject": "vbs script",
+        "subject_type": "Indicator:File",
+        "relation": "is used for",
+        "object": "malicious activity",
+        "object_type": "Malware Characteristic:Behavior"
+      },
+      {
+        "subject": "scheduled task",
+        "subject_type": "Tool",
+        "relation": "establishes",
+        "object": "persistence",
+        "object_type": "Malware Characteristic:Capability"
+      },
+      {
+        "subject": "ini file",
+        "subject_type": "Indicator:File",
+        "relation": "issues",
+        "object": "commands",
+        "object_type": "Malware Characteristic:Capability"
+      },
+      {
+        "subject": "adversary",
+        "subject_type": "Attacker",
+        "relation": "gathers",
+        "object": "system information",
+        "object_type": "Information"
+      },
+      {
+        "subject": "adversary",
+        "subject_type": "Attacker",
+        "relation": "gets",
+        "object": "running processes",
+        "object_type": "Information"
+      },
+      {
+        "subject": "malware",
+        "subject_type": "Malware",
+        "relation": "sends data using",
+        "object": "http post",
+        "object_type": "Tool"
+      },
+      {
+        "subject": "malware",
+        "subject_type": "Malware",
+        "relation": "sends data to",
+        "object": "cnc server",
+        "object_type": "Infrastructure"
+      },
+      {
+        "subject": "adversary",
+        "subject_type": "Attacker",
+        "relation": "encrypts data using",
+        "object": "base64 encoding",
+        "object_type": "Tool"
+      },
+      {
+        "subject": "adversary",
+        "subject_type": "Attacker",
+        "relation": "uses",
+        "object": "smb commands",
+        "object_type": "Tool"
+      },
+      {
+        "subject": "adversary",
+        "subject_type": "Attacker",
+        "relation": "transfers",
+        "object": "executable file",
+        "object_type": "Indicator:File"
+      },
+      {
+        "subject": "meterpreter dll",
+        "subject_type": "Indicator:File",
+        "relation": "is injected via",
+        "object": "reflective dll injection",
+        "object_type": "Malware Characteristic:Capability"
+      },
+      {
+        "subject": "malware",
+        "subject_type": "Malware",
+        "relation": "obtains information via",
+        "object": "windows management instrumentation",
+        "object_type": "Tool"
+      },
+      {
+        "subject": "powershell script",
+        "subject_type": "Indicator:File",
+        "relation": "is created by",
+        "object": "infected email attachment",
+        "object_type": "Indicator:File"
+      },
+      {
+        "subject": "adversary",
+        "subject_type": "Attacker",
+        "relation": "obfuscates data using",
+        "object": "base64 encoding",
+        "object_type": "Tool"
+      },
+      {
+        "subject": "adversary",
+        "subject_type": "Attacker",
+        "relation": "injects code via",
+        "object": "process injection",
+        "object_type": "Malware Characteristic:Capability"
+      },
+      {
+        "subject": "malicious word document",
+        "subject_type": "Indicator:File",
+        "relation": "is sent by",
+        "object": "attacker",
+        "object_type": "Attacker"
+      },
+      {
+        "subject": "malware",
+        "subject_type": "Malware",
+        "relation": "is used by",
+        "object": "attacker",
+        "object_type": "Attacker"
+      },
+      {
+        "subject": "attacker",
+        "subject_type": "Attacker",
+        "relation": "uses",
+        "object": "vbs script",
+        "object_type": "Unknown"
+      },
+      {
+        "subject": "attacker",
+        "subject_type": "Attacker",
+        "relation": "establishes",
+        "object": "persistence",
+        "object_type": "Unknown"
+      },
+      {
+        "subject": "attacker",
+        "subject_type": "Attacker",
+        "relation": "uses",
+        "object": "ini file",
+        "object_type": "Unknown"
+      },
+      {
+        "subject": "powershell script",
+        "subject_type": "Indicator:File",
+        "relation": "is used by",
+        "object": "attacker",
+        "object_type": "Attacker"
+      }
+    ]
+  }
+]

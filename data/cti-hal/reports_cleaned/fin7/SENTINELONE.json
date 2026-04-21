@@ -1,0 +1,9 @@
+{
+  "apt": "FIN7",
+  "source": "SENTINELONE",
+  "reports": {
+    "default_annotator": {
+      "report_text": "the group still deploys lightweight JavaScript backdoor with communication over HTTPS mimicking Content Delivery Network (CDN) domains\nthey still leverage JavaScript backdoor via renamedwscript.exe with the actual JavaScript code called \"errors.txt,\" for example\nthe macro logic copies the original JavaScript execution enginewscript.exe in %LOCALAPPDATA%\nchecking the system drive size viaGetDrive.TotalSize of more than 2456 bytes to possibly thwart anti-sandbox check\nThe FIN7 Microsoft document loaders do not rely on any exploits but simply require a social engineering trick to \"Enable Content\" to activate macros.\nThe final execution of the backdoor is performed via this following command: %LOCALAPPDATA%mses.exe //b /e:jscript %temp%errors.txt\nThe actual obfuscated Javascript backdoor is stored in UserForm object, which is also written to a disc as \"errors.txt\" in%TEMP%\nThe malware checks for the presence of virtual machine checking whether the malware is running in a virtualized environment\nqueries active directory\noperating system, screen resolution\nretrieves a process list."
+    }
+  }
+}

@@ -1,0 +1,5022 @@
+[ 
+  { 
+    "id": 0,
+    "source_id": "star-blizzard-increases-sophistication-and-evasion-in-ongoing-attacks",
+    "text": "Microsoft Threat Intelligence continues to track and disrupt malicious activity attributed to a Russian state-sponsored actor we track as Star Blizzard (formerly SEABORGIUM, also known as COLDRIVER and Callisto Group). Star Blizzard has improved their detection evasion capabilities since 2022 while remaining focused on email credential theft against the same targets. Star Blizzard, whose activities we assess to have historically supported both espionage and cyber influence objectives, continues to prolifically target individuals and organizations involved in international affairs, defense, and logistics support to Ukraine, as well as academia, information security companies, and other entities aligning with Russian state interests. Microsoft continues to refine and deploy protections against Star Blizzard's evolving spear-phishing tactics.",
+    "triplets": [
+      {
+        "subject": "Microsoft Threat Intelligence",
+        "subject_type": "Organization",
+        "relation": "tracks",
+        "object": "Star Blizzard",
+        "object_type": "Attacker"
+      },
+      {
+        "subject": "Star Blizzard",
+        "subject_type": "Attacker",
+        "relation": "is also known as",
+        "object": "SEABORGIUM",
+        "object_type": "Attacker"
+      },
+      {
+        "subject": "Star Blizzard",
+        "subject_type": "Attacker",
+        "relation": "is also known as",
+        "object": "COLDRIVER",
+        "object_type": "Attacker"
+      },
+      {
+        "subject": "Star Blizzard",
+        "subject_type": "Attacker",
+        "relation": "is also known as",
+        "object": "Callisto Group",
+        "object_type": "Attacker"
+      },
+      {
+        "subject": "Star Blizzard",
+        "subject_type": "Attacker",
+        "relation": "improved",
+        "object": "detection evasion capabilities",
+        "object_type": "Malware Characteristic:Capability"
+      },
+      {
+        "subject": "Star Blizzard",
+        "subject_type": "Attacker",
+        "relation": "remains focused on",
+        "object": "email credential theft",
+        "object_type": "Malware Characteristic:Behavior"
+      },
+      {
+        "subject": "Star Blizzard",
+        "subject_type": "Attacker",
+        "relation": "targets",
+        "object": "individuals and organizations involved in international affairs, defense, and logistics support to Ukraine",
+        "object_type": "Organization"
+      },
+      {
+        "subject": "Star Blizzard",
+        "subject_type": "Attacker",
+        "relation": "targets",
+        "object": "academia",
+        "object_type": "Organization"
+      },
+      {
+        "subject": "Star Blizzard",
+        "subject_type": "Attacker",
+        "relation": "targets",
+        "object": "information security companies",
+        "object_type": "Organization"
+      },
+      {
+        "subject": "Star Blizzard",
+        "subject_type": "Attacker",
+        "relation": "targets",
+        "object": "entities aligning with Russian state interests",
+        "object_type": "Organization"
+      },
+      {
+      "subject": "Microsoft Threat Intelligence",
+      "subject_type": "Organization",
+      "relation": "attributes activity to",
+      "object": "Star Blizzard",
+      "object_type": "Attacker"
+      },
+      {
+      "subject": "Star Blizzard",
+      "subject_type": "Attacker",
+      "relation": "has objective",
+      "object": "espionage",
+      "object_type": "Malware Characteristic:Behavior"
+      },
+      {
+      "subject": "Star Blizzard",
+      "subject_type": "Attacker",
+      "relation": "has objective",
+      "object": "cyber influence",
+      "object_type": "Malware Characteristic:Behavior"
+      },
+      {
+      "subject": "detection evasion capabilities",
+      "subject_type": "Malware Characteristic:Behavior",
+      "relation": "improved since",
+      "object": "2022",
+      "object_type": "Time"
+     },
+     {
+      "subject": "Microsoft",
+      "subject_type": "Organization",
+      "relation": "refines protections against",
+      "object": "Star Blizzard",
+      "object_type": "Attacker"
+     },
+     {
+      "subject": "Microsoft",
+      "subject_type": "Organization",
+      "relation": "deploys protections against",
+      "object": "Star Blizzard",
+      "object_type": "Attacker"
+     }
+    ]
+  },
+  {
+    "id": 1,
+    "source_id": "new-spookier-gh0st-rat-uzbekistan-south-korea",
+    "text": "A new variant of the infamous Gh0st RAT malware has been identified in recent attacks targeting South Koreans and the Ministry of Foreign Affairs in Uzbekistan. The Chinese group C.Rufus Security Team first released Gh0st RAT on the open Web in March 2008. Remarkably, it's still in use today, particularly in and around China, albeit in modified forms. Since late August, for instance, a group with strong Chinese links has been distributing a modified Gh0st RAT deemed SugarGh0st RAT. According to research from Cisco Talos, this threat actor drops the variant via JavaScript-laced Windows shortcuts, while distracting targets with customized decoy documents. The four samples of SugarGh0st, likely delivered via phishing, arrive on targeted machines as archives embedded with Windows LNK shortcut files. The LNKs hide malicious JavaScript which, upon opening, drops a decoy document - targeted for Korean or Uzbek government audiences - and the payload. Like its progenitor - the Chinese origin remote access Trojan, first released to the public in March 2008 - SugarGh0st is a clean, multitooled espionage machine. A 32-bit dynamic link library (DLL) written in C++, it begins by collecting system data, then opens up the door to full remote access capabilities. Attackers can use SugarGh0st to retrieve any information they might desire about their compromised machine, or start, terminate, or delete the processes it's running. They can use it to find, exfiltrate, and delete files, and erase any event logs to mask the resulting forensic evidence. The backdoor comes fitted with a keylogger, a screenshotter, a means of accessing the device's camera, and plenty of other useful functions for manipulating the mouse, performing native Windows operation, or simply running arbitrary commands.",
+    "triplets": [
+    {
+      "subject": "Gh0st RAT",
+      "subject_type": "Malware",
+      "relation": "targets",
+      "object": "South Koreans",
+      "object_type": "Organization"
+    },
+    {
+      "subject": "Gh0st RAT",
+      "subject_type": "Malware",
+      "relation": "targets",
+      "object": "Ministry of Foreign Affairs in Uzbekistan",
+      "object_type": "Organization"
+    },
+    {
+      "subject": "C.Rufus Security Team",
+      "subject_type": "Attacker",
+      "relation": "released",
+      "object": "Gh0st RAT",
+      "object_type": "Malware"
+    },
+    {
+      "subject": "Gh0st RAT",
+      "subject_type": "Malware",
+      "relation": "was released in",
+      "object": "March 2008",
+      "object_type": "Time"
+    },
+    {
+      "subject": "SugarGh0st RAT",
+      "subject_type": "Malware",
+      "relation": "is distributed by",
+      "object": "group with strong Chinese links",
+      "object_type": "Attacker"
+    },
+    {
+      "subject": "SugarGh0st RAT",
+      "subject_type": "Malware",
+      "relation": "is dropped via",
+      "object": "JavaScript-laced Windows shortcuts",
+      "object_type": "Malware Characteristic:Payload"
+    },
+    {
+      "subject": "SugarGh0st RAT",
+      "subject_type": "Malware",
+      "relation": "is likely delivered via",
+      "object": "phishing",
+      "object_type": "Malware Characteristic:Behavior"
+    },
+    {
+      "subject": "SugarGh0st RAT",
+      "subject_type": "Malware",
+      "relation": "is delivered on",
+      "object": "machines as archives embedded with Windows LNK shortcut files",
+      "object_type": "Malware Characteristic:Payload"
+    },
+    {
+      "subject": "SugarGh0st RAT",
+      "subject_type": "Malware",
+      "relation": "targets",
+      "object": "Korean or Uzbek government audiences",
+      "object_type": "Organization"
+    },
+    {
+      "subject": "SugarGh0st RAT",
+      "subject_type": "Malware",
+      "relation": "collects",
+      "object": "system data",
+      "object_type": "Information"
+    },
+    {
+      "subject": "SugarGh0st RAT",
+      "subject_type": "Malware",
+      "relation": "provides",
+      "object": "full remote access capabilities",
+      "object_type": "Malware Characteristic:Capability"
+    },
+    {
+      "subject": "SugarGh0st RAT",
+      "subject_type": "Malware",
+      "relation": "features",
+      "object": "keylogger",
+      "object_type": "Malware Characteristic:Feature"
+    },
+    {
+      "subject": "SugarGh0st RAT",
+      "subject_type": "Malware",
+      "relation": "features",
+      "object": "screenshotter",
+      "object_type": "Malware Characteristic:Feature"
+    },
+    {
+      "subject": "SugarGh0st RAT",
+      "subject_type": "Malware",
+      "relation": "can access",
+      "object": "device's camera",
+      "object_type": "Malware Characteristic:Capability"
+    },
+    {
+      "subject": "SugarGh0st RAT",
+      "subject_type": "Malware",
+      "relation": "can perform",
+      "object": "native Windows operation",
+      "object_type": "Malware Characteristic:Capability"
+    },
+    {
+      "subject": "SugarGh0st RAT",
+      "subject_type": "Malware",
+      "relation": "can execute",
+      "object": "arbitrary commands",
+      "object_type": "Malware Characteristic:Capability"
+    },
+    {
+      "subject": "SugarGh0st RAT",
+      "subject_type": "Malware",
+      "relation": "is a modified variant of",
+      "object": "Gh0st RAT",
+      "object_type": "Malware"
+    },
+    {
+      "subject": "Gh0st RAT",
+      "subject_type": "Malware",
+      "relation": "is used in",
+      "object": "China",
+      "object_type": "Location"
+    },
+    {
+      "subject": "SugarGh0st RAT",
+      "subject_type": "Malware",
+      "relation": "is deemed as",
+      "object": "espionage machine",
+      "object_type": "Malware Characteristic:Capability"
+    },
+    {
+      "subject": "SugarGh0st RAT",
+      "subject_type": "Malware",
+      "relation": "is written in",
+      "object": "C++",
+      "object_type": "Information"
+    },
+    {
+      "subject": "SugarGh0st RAT",
+      "subject_type": "Malware",
+      "relation": "is a",
+      "object": "32-bit dynamic link library (DLL)",
+      "object_type": "File"
+    },
+    {
+      "subject": "SugarGh0st RAT",
+      "subject_type": "Malware",
+      "relation": "can retrieve",
+      "object": "information about compromised machine",
+      "object_type": "Information"
+    },
+    {
+      "subject": "SugarGh0st RAT",
+      "subject_type": "Malware",
+      "relation": "can start",
+      "object": "processes",
+      "object_type": "Malware Characteristic:Capability"
+    },
+    {
+      "subject": "SugarGh0st RAT",
+      "subject_type": "Malware",
+      "relation": "can terminate",
+      "object": "processes",
+      "object_type": "Malware Characteristic:Capability"
+    },
+    {
+      "subject": "SugarGh0st RAT",
+      "subject_type": "Malware",
+      "relation": "can delete",
+      "object": "processes",
+      "object_type": "Malware Characteristic:Capability"
+    },
+    {
+      "subject": "SugarGh0st RAT",
+      "subject_type": "Malware",
+      "relation": "can find",
+      "object": "files",
+      "object_type": "Information"
+    },
+    {
+      "subject": "SugarGh0st RAT",
+      "subject_type": "Malware",
+      "relation": "can exfiltrate",
+      "object": "files",
+      "object_type": "Information"
+    },
+    {
+      "subject": "SugarGh0st RAT",
+      "subject_type": "Malware",
+      "relation": "can delete",
+      "object": "files",
+      "object_type": "Information"
+    },
+    {
+      "subject": "SugarGh0st RAT",
+      "subject_type": "Malware",
+      "relation": "can erase",
+      "object": "event logs",
+      "object_type": "Information"
+    }]
+  },
+  {
+    "id": 2,
+    "source_id": "two-campaigns-by-north-korea-bad-actors-target-job-hunters",
+    "text": "Unit 42 researchers recently discovered two separate campaigns targeting job-seeking activities linked to state-sponsored threat actors associated with the Democratic People's Republic of Korea (DPRK), commonly known as North Korea. We call the first campaign “Contagious Interview,” where threat actors pose as employers (often anonymously or with vague identities) to lure software developers into installing malware through the interview process. This malware creates the potential for various types of theft. We attribute with moderate confidence that Contagious Interview is run by a North Korea state-sponsored threat actor. We call the second campaign “Wagemole,” where threat actors seek unauthorized employment with organizations based in the US and other parts of the world, with potential for both financial gain and espionage. We attribute with high confidence that Wagemole is a North Korea state-sponsored threat. Activity from both campaigns remains an ongoing active threat.",
+    "triplets": [
+  {
+    "subject": "Unit 42 researchers",
+    "subject_type": "Organization",
+    "relation": "discovered",
+    "object": "two separate campaigns",
+    "object_type": "Event"
+  },
+  {
+    "subject": "two separate campaigns",
+    "subject_type": "Event",
+    "relation": "target",
+    "object": "job-seeking activities",
+    "object_type": "Event"
+  },
+  {
+    "subject": "two separate campaigns",
+    "subject_type": "Event",
+    "relation": "linked to",
+    "object": "state-sponsored threat actors",
+    "object_type": "Attacker"
+  },
+  {
+    "subject": "state-sponsored threat actors",
+    "subject_type": "Attacker",
+    "relation": "associated with",
+    "object": "North Korea",
+    "object_type": "Location"
+  },
+  {
+    "subject": "threat actors",
+    "subject_type": "Attacker",
+    "relation": "pose as",
+    "object": "employers",
+    "object_type": "Organization"
+  },
+  {
+    "subject": "threat actors",
+    "subject_type": "Attacker",
+    "relation": "lure",
+    "object": "software developers",
+    "object_type": "Account"
+  },
+  {
+    "subject": "software developers",
+    "subject_type": "Account",
+    "relation": "install",
+    "object": "malware",
+    "object_type": "Malware"
+  },
+  {
+    "subject": "malware",
+    "subject_type": "Malware",
+    "relation": "creates potential for",
+    "object": "various types of theft",
+    "object_type": "Malware Characteristic:Capability"
+  },
+  {
+    "subject": "Contagious Interview",
+    "subject_type": "Infrastructure",
+    "relation": "is run by",
+    "object": "North Korea state-sponsored threat actor",
+    "object_type": "Attacker"
+  },
+  {
+    "subject": "Wagemole",
+    "subject_type": "Malware",
+    "relation": "targets",
+    "object": "organizations based in the US and other parts of the world",
+    "object_type": "Organization"
+  },
+  {
+    "subject": "Wagemole",
+    "subject_type": "Malware",
+    "relation": "has potential for",
+    "object": "financial gain and espionage",
+    "object_type": "Malware Characteristic:Capability"
+  },
+  {
+    "subject": "Wagemole",
+    "subject_type": "Malware",
+    "relation": "is",
+    "object": "North Korea state-sponsored threat",
+    "object_type": "Attacker"
+  },
+  {
+    "subject": "two separate campaigns",
+    "subject_type": "Event",
+    "relation": "include",
+    "object": "Contagious Interview",
+    "object_type": "Infrastructure"
+  },
+  {
+    "subject": "two separate campaigns",
+    "subject_type": "Event",
+    "relation": "include",
+    "object": "Wagemole",
+    "object_type": "Malware"
+  },
+  {
+    "subject": "Contagious Interview",
+    "subject_type": "Infrastructure",
+    "relation": "targets",
+    "object": "software developers",
+    "object_type": "Account"
+  },
+  {
+    "subject": "Wagemole",
+    "subject_type": "Malware",
+    "relation": "targets",
+    "object": "job-seeking activities",
+    "object_type": "Event"
+  },
+  {
+    "subject": "software developers",
+    "subject_type": "Account",
+    "relation": "participate in",
+    "object": "job-seeking activities",
+    "object_type": "Event"
+  },
+  {
+    "subject": "North Korea state-sponsored threat actor",
+    "subject_type": "Attacker",
+    "relation": "is a",
+    "object": "state-sponsored threat actor",
+    "object_type": "Attacker"
+  },
+  {
+    "subject": "Contagious Interview",
+    "subject_type": "Infrastructure",
+    "relation": "is attributed to",
+    "object": "state-sponsored threat actors",
+    "object_type": "Attacker"
+  },
+  {
+    "subject": "Wagemole",
+    "subject_type": "Malware",
+    "relation": "is attributed to",
+    "object": "state-sponsored threat actors",
+    "object_type": "Attacker"
+  },
+  {
+      "subject": "Contagious Interview",
+      "subject_type": "Infrastructure",
+      "relation": "has potential for",
+      "object": "various types of theft",
+      "object_type": "Malware Characteristic:Capability"
+  },
+  {
+      "subject": "Wagemole",
+      "subject_type": "Malware",
+      "relation": "has objective",
+      "object": "espionage",
+      "object_type": "Malware Characteristic:Capability"
+  },
+  {
+      "subject": "Wagemole",
+      "subject_type": "Malware",
+      "relation": "has objective",
+      "object": "financial gain",
+      "object_type": "Malware Characteristic:Capability"
+  }
+  ]
+  },
+  {  
+    "id": 3,
+    "source_id": "everything-you-need-to-know-about-apt-fancy-bear",
+    "text": "Fancy Bear, also known as APT 28, Sofacy, or Swallowtail, is a cyberespionage group that is linked to the Russian government. The group has been in operation since 2008, targeting the energy, government, media, aerospace, and defense sectors via phishing campaigns and credential harvesting. Fancy Bear is known to target both computers and mobile devices, running multiple intrusion operations concurrently. In 2016, Fancy Bear was front and center after they attacked the Democratic National Committee (DNC). The group was also responsible for leaking confidential drug testing information after they attacked the World Anti-Doping Agency (WADA) during the same year. Fancy Bear took credit for the attack and leaked the stolen information on a site named Fancy Bears. Despite two very public attacks, Fancy Bear returned to the shadows in 2017. Since that time, the group's activities have become clandestine, motivated by intelligence gathering. Between 2017 and 2018, Fancy Bear targeted the following organizations: European military, European government, A South American country's government, An Eastern European embassy, A prominent international organization. After much attention, Fancy Bear became more discreet, and not much was heard from the APT until their recent attacks on Ukrainians. In July 2022, researchers from Malwarebytes observed malicious activity from the group. They were sending malicious documents that contained an exploit for the Microsoft zero-day, Follina (CVE-2022-30190).",
+    "triplets": [
+      {
+        "subject": "Fancy Bear",
+        "subject_type": "Attacker",
+        "relation": "is linked to",
+        "object": "Russian government",
+        "object_type": "Organization"
+      },
+      {
+        "subject": "Fancy Bear",
+        "subject_type": "Attacker",
+        "relation": "has been in operation since",
+        "object": "2008",
+        "object_type": "Time"
+      },
+      {
+        "subject": "Fancy Bear",
+        "subject_type": "Attacker",
+        "relation": "targets",
+        "object": "energy sector",
+        "object_type": "Organization"
+      },
+      {
+        "subject": "Fancy Bear",
+        "subject_type": "Attacker",
+        "relation": "targets",
+        "object": "government sector",
+        "object_type": "Organization"
+      },
+      {
+        "subject": "Fancy Bear",
+        "subject_type": "Attacker",
+        "relation": "targets",
+        "object": "media sector",
+        "object_type": "Organization"
+      },
+      {
+        "subject": "Fancy Bear",
+        "subject_type": "Attacker",
+        "relation": "targets",
+        "object": "aerospace sector",
+        "object_type": "Organization"
+      },
+      {
+        "subject": "Fancy Bear",
+        "subject_type": "Attacker",
+        "relation": "targets",
+        "object": "defense sector",
+        "object_type": "Organization"
+      },
+      {
+        "subject": "Fancy Bear",
+        "subject_type": "Attacker",
+        "relation": "conducts attacks via",
+        "object": "phishing campaigns",
+        "object_type": "Malware Characteristic:Behavior"
+      },
+      {
+        "subject": "Fancy Bear",
+        "subject_type": "Attacker",
+        "relation": "conducts attacks via",
+        "object": "credential harvesting",
+        "object_type": "Malware Characteristic:Behavior"
+      },
+      {
+        "subject": "Fancy Bear",
+        "subject_type": "Attacker",
+        "relation": "targets",
+        "object": "computers",
+        "object_type": "Infrastructure"
+      },
+      {
+        "subject": "Fancy Bear",
+        "subject_type": "Attacker",
+        "relation": "targets",
+        "object": "mobile devices",
+        "object_type": "Infrastructure"
+      },
+      {
+        "subject": "Fancy Bear",
+        "subject_type": "Attacker",
+        "relation": "attacked",
+        "object": "Democratic National Committee (DNC)",
+        "object_type": "Organization"
+      },
+      {
+        "subject": "Fancy Bear",
+        "subject_type": "Attacker",
+        "relation": "attacked",
+        "object": "World Anti-Doping Agency (WADA)",
+        "object_type": "Organization"
+      },
+      {
+        "subject": "Fancy Bear",
+        "subject_type": "Attacker",
+        "relation": "leaked information on",
+        "object": "Fancy Bears Site",
+        "object_type": "Indicator:URL"
+      },
+      {
+        "subject": "Fancy Bear",
+        "subject_type": "Attacker",
+        "relation": "became discreet in",
+        "object": "2017",
+        "object_type": "Time"
+      },
+      {
+        "subject": "Fancy Bear",
+        "subject_type": "Attacker",
+        "relation": "targeted",
+        "object": "European military",
+        "object_type": "Organization"
+      },
+      {
+        "subject": "Fancy Bear",
+        "subject_type": "Attacker",
+        "relation": "targeted",
+        "object": "European government",
+        "object_type": "Organization"
+      },
+      {
+        "subject": "Fancy Bear",
+        "subject_type": "Attacker",
+        "relation": "targeted",
+        "object": "A South American country's government",
+        "object_type": "Organization"
+      },
+      {
+        "subject": "Fancy Bear",
+        "subject_type": "Attacker",
+        "relation": "targeted",
+        "object": "An Eastern European embassy",
+        "object_type": "Organization"
+      },
+      {
+        "subject": "Fancy Bear",
+        "subject_type": "Attacker",
+        "relation": "targeted",
+        "object": "A prominent international organization",
+        "object_type": "Organization"
+      },
+      {
+        "subject": "Fancy Bear",
+        "subject_type": "Attacker",
+        "relation": "conducted attacks on",
+        "object": "Ukrainians",
+        "object_type": "Organization"
+      },
+      {
+        "subject": "Fancy Bear",
+        "subject_type": "Attacker",
+        "relation": "sent",
+        "object": "malicious documents",
+        "object_type": "Indicator:File"
+      },
+      {
+        "subject": "malicious documents",
+        "subject_type": "Indicator:File",
+        "relation": "contained exploit for",
+        "object": "Microsoft zero-day (CVE-2022-30190)",
+        "object_type": "Vulnerability"
+      },
+      {
+        "subject": "Malwarebytes",
+        "subject_type": "Organization",
+        "relation": "observed activity from",
+        "object": "Fancy Bear",
+        "object_type": "Attacker"
+      },
+      {
+        "subject": "Malwarebytes",
+        "subject_type": "Organization",
+        "relation": "observed activity in",
+        "object": "July 2022",
+        "object_type": "Time"
+      },
+      {
+      "subject": "Fancy Bear",
+      "subject_type": "Attacker",
+      "relation": "is also known as",
+      "object": "APT 28",
+      "object_type": "Attacker"
+    },
+    {
+      "subject": "Fancy Bear",
+      "subject_type": "Attacker",
+      "relation": "is also known as",
+      "object": "Sofacy",
+      "object_type": "Attacker"
+    },
+    {
+      "subject": "Fancy Bear",
+      "subject_type": "Attacker",
+      "relation": "is also known as",
+      "object": "Swallowtail",
+      "object_type": "Attacker"
+    },
+    {
+      "subject": "Fancy Bear",
+      "subject_type": "Attacker",
+      "relation": "has motivation",
+      "object": "intelligence gathering",
+      "object_type": "Malware Characteristic:Capability"
+    }
+    ]
+  },
+  {
+    "id": 4,
+    "source_id": "fbi-androxgh0st-malware-botnet-steals-aws-microsoft-credentials",
+    "text": "CISA and the FBI warned today that threat actors using Androxgh0st malware are building a botnet focused on cloud credential theft and using the stolen information to deliver additional malicious payloads. It scans for websites and servers vulnerable to the following remote code execution (RCE) vulnerabilities: CVE-2017-9841 (PHPUnit unit testing framework), CVE-2021-41773 (Apache HTTP Server), and CVE-2018-15133 (Laravel PHP web framework). Androxgh0st is a Python-scripted malware primarily used to target .env files that contain confidential information, such as credentials for various high profile applications, i.e., Amazon Web Services [AWS], Microsoft Office 365, SendGrid, and Twilio from the Laravel web application framework. Androxgh0st malware also supports numerous functions capable of abusing the Simple Mail Transfer Protocol (SMTP), such as scanning and exploiting exposed credentials and application programming interfaces (APIs), and web shell deployment. Stolen Twilio and SendGrid credentials can be used by the threat actors to conduct spam campaigns impersonating the breached companies.",
+    "triplets": [
+      {
+        "subject": "Threat actors",
+        "subject_type": "Attacker",
+        "relation": "are using",
+        "object": "Androxgh0st malware",
+        "object_type": "Malware"
+      },
+      {
+        "subject": "Androxgh0st malware",
+        "subject_type": "Malware",
+        "relation": "is building",
+        "object": "a botnet",
+        "object_type": "Infrastructure"
+      },
+      {
+        "subject": "a botnet",
+        "subject_type": "Infrastructure",
+        "relation": "is focused on",
+        "object": "cloud credential theft",
+        "object_type": "Malware Characteristic:Behavior"
+      },
+      {
+        "subject": "Androxgh0st malware",
+        "subject_type": "Malware",
+        "relation": "scans for",
+        "object": "websites and servers vulnerable to remote code execution (RCE) vulnerabilities",
+        "object_type": "Exploit Target"
+      },
+      {
+        "subject": "remote code execution (RCE) vulnerabilities",
+        "subject_type": "Vulnerability",
+        "relation": "include",
+        "object": "CVE-2017-9841",
+        "object_type": "Vulnerability"
+      },
+      {
+        "subject": "remote code execution (RCE) vulnerabilities",
+        "subject_type": "Vulnerability",
+        "relation": "include",
+        "object": "CVE-2021-41773",
+        "object_type": "Vulnerability"
+      },
+      {
+        "subject": "remote code execution (RCE) vulnerabilities",
+        "subject_type": "Vulnerability",
+        "relation": "include",
+        "object": "CVE-2018-15133",
+        "object_type": "Vulnerability"
+      },
+      {
+        "subject": "Androxgh0st malware",
+        "subject_type": "Malware",
+        "relation": "targets",
+        "object": ".env files",
+        "object_type": "Indicator:File"
+      },
+      {
+        "subject": ".env files",
+        "subject_type": "Indicator:File",
+        "relation": "contain",
+        "object": "credentials for Amazon Web Services [AWS]",
+        "object_type": "Credential"
+      },
+      {
+        "subject": ".env files",
+        "subject_type": "Indicator:File",
+        "relation": "contain",
+        "object": "credentials for Microsoft Office 365",
+        "object_type": "Credential"
+      },
+      {
+        "subject": ".env files",
+        "subject_type": "Indicator:File",
+        "relation": "contain",
+        "object": "credentials for SendGrid",
+        "object_type": "Credential"
+      },
+      {
+        "subject": ".env files",
+        "subject_type": "Indicator:File",
+        "relation": "contain",
+        "object": "credentials for Twilio",
+        "object_type": "Credential"
+      },
+      {
+        "subject": "Androxgh0st malware",
+        "subject_type": "Malware",
+        "relation": "supports",
+        "object": "functions capable of abusing the Simple Mail Transfer Protocol (SMTP)",
+        "object_type": "Malware Characteristic:Capability"
+      },
+      {
+        "subject": "Threat actors",
+        "subject_type": "Attacker",
+        "relation": "use stolen Twilio credentials for",
+        "object": "spam campaigns impersonating breached companies",
+        "object_type": "Malware Characteristic:Behavior"
+      },
+      {
+        "subject": "Androxgh0st malware",
+        "subject_type": "Malware",
+        "relation": "scans for and exploits",
+        "object": "remote code execution (RCE) vulnerabilities",
+        "object_type": "Vulnerability"
+      }, 
+      {
+      "subject": "Androxgh0st malware",
+      "subject_type": "Malware",
+      "relation": "is scripted in",
+      "object": "Python",
+      "object_type": "Malware Characteristic:Feature"
+    },
+    {
+      "subject": "Androxgh0st malware",
+      "subject_type": "Malware",
+      "relation": "can exploit",
+      "object": "application programming interfaces (APIs)",
+      "object_type": "Malware Characteristic:Capability"
+    },
+    {
+      "subject": "Androxgh0st malware",
+      "subject_type": "Malware",
+      "relation": "can deploy",
+      "object": "web shells",
+      "object_type": "Malware Characteristic:Capability"
+    },
+    {
+      "subject": "Threat actors",
+      "subject_type": "Attacker",
+      "relation": "are warned by",
+      "object": "CISA and the FBI",
+      "object_type": "Organization"
+    }
+    ]
+  },
+  {
+    "id": 5,
+    "source_id": "fivehands-ransomware-overview",
+    "text": "This report is an overview of the FiveHands Ransomware variant that successfully attacked an organization (CISA release date May 6, 2021). CISA reports that the variant used publicly-available pen test and exploitation tools, plus FiveHands ransomware and SombRAT remote access trojan (RAT), to steal information, obfuscate files, accomplish network discovery, accomplish credential access, and demand ransom from the victim. Tools used include SoftPerfect Network Scanner, FiveHands ransomware, PsExec.exe, ServeManager.exe, SombRAT, RouterScan.exe, grabff.exe, rclone.exe, and s3browser-9-5-3.exe. The initial access vector was a zero-day vulnerability in a VPN product. What followed is that the bad actor used SoftPerfect Network Scanner for the discovery of hostnames and network services. PsExec was then used to execute ServeManager.exe (what CISA calls FiveHands ransomware). FiveHands is a novel ransomware variant that uses a public key encryption scheme called NTRUEncrypt. Note: the NTRUEncrypt public key cryptosystem encryption algorithm (NTRU), is a lattice-based alternative to Rivest-Shamir-Adleman, known as RSA, and Elliptic-curve cryptography, or ECC, and is based on the shortest vector problem in a lattice. To prevent data recovery, FiveHands uses WMI to first enumerate then delete Volume Shadow copies. The malware also encrypts files in the recovery folder. After the files are encrypted, the program will write a ransom note to each folder and directory on the system.",
+    "triplets": [
+      {
+        "subject": "FiveHands Ransomware",
+        "subject_type": "Malware",
+        "relation": "successfully attacked",
+        "object": "an organization",
+        "object_type": "Organization"
+      },
+      {
+        "subject": "CISA",
+        "subject_type": "Organization",
+        "relation": "released report on",
+        "object": "May 6, 2021",
+        "object_type": "Time"
+      },
+      {
+        "subject": "FiveHands Ransomware",
+        "subject_type": "Malware",
+        "relation": "used",
+        "object": "SombRAT",
+        "object_type": "Malware"
+      },
+      {
+        "subject": "FiveHands Ransomware",
+        "subject_type": "Malware",
+        "relation": "used",
+        "object": "SoftPerfect Network Scanner",
+        "object_type": "Tool"
+      },
+      {
+        "subject": "FiveHands Ransomware",
+        "subject_type": "Malware",
+        "relation": "used",
+        "object": "PsExec.exe",
+        "object_type": "Indicator:File"
+      },
+      {
+        "subject": "FiveHands Ransomware",
+        "subject_type": "Malware",
+        "relation": "used",
+        "object": "ServeManager.exe",
+        "object_type": "Indicator:File"
+      },
+      {
+        "subject": "FiveHands Ransomware",
+        "subject_type": "Malware",
+        "relation": "used",
+        "object": "RouterScan.exe",
+        "object_type": "Indicator:File"
+      },
+      {
+        "subject": "FiveHands Ransomware",
+        "subject_type": "Malware",
+        "relation": "used",
+        "object": "grabff.exe",
+        "object_type": "Indicator:File"
+      },
+      {
+        "subject": "FiveHands Ransomware",
+        "subject_type": "Malware",
+        "relation": "used",
+        "object": "rclone.exe",
+        "object_type": "Indicator:File"
+      },
+      {
+        "subject": "FiveHands Ransomware",
+        "subject_type": "Malware",
+        "relation": "used",
+        "object": "s3browser-9-5-3.exe",
+        "object_type": "Indicator:File"
+      },
+      {
+        "subject": "FiveHands Ransomware",
+        "subject_type": "Malware",
+        "relation": "used",
+        "object": "a zero-day vulnerability in a VPN product",
+        "object_type": "Vulnerability"
+      },
+      {
+        "subject": "SoftPerfect Network Scanner",
+        "subject_type": "Tool",
+        "relation": "used for",
+        "object": "discovery of hostnames and network services",
+        "object_type": "Malware Characteristic:Capability"
+      },
+      {
+        "subject": "PsExec.exe",
+        "subject_type": "Indicator:File",
+        "relation": "used to execute",
+        "object": "ServeManager.exe",
+        "object_type": "Indicator:File"
+      },
+      {
+        "subject": "ServeManager.exe",
+        "subject_type": "Indicator:File",
+        "relation": "is known as",
+        "object": "FiveHands ransomware",
+        "object_type": "Unknown"
+      },
+      {
+        "subject": "FiveHands Ransomware",
+        "subject_type": "Malware",
+        "relation": "uses encryption scheme",
+        "object": "NTRUEncrypt",
+        "object_type": "Malware Characteristic:Feature"
+      },
+      {
+        "subject": "FiveHands Ransomware",
+        "subject_type": "Malware",
+        "relation": "uses",
+        "object": "WMI",
+        "object_type": "Tool"
+      },
+      {
+        "subject": "FiveHands Ransomware",
+        "subject_type": "Malware",
+        "relation": "deletes",
+        "object": "Volume Shadow copies",
+        "object_type": "Infrastructure"
+      },
+      {
+        "subject": "FiveHands Ransomware",
+        "subject_type": "Malware",
+        "relation": "encrypts files in",
+        "object": "the recovery folder",
+        "object_type": "Infrastructure"
+      },
+      {
+        "subject": "FiveHands Ransomware",
+        "subject_type": "Malware",
+        "relation": "writes",
+        "object": "a ransom note",
+        "object_type": "Malware Characteristic:Behavior"
+      },
+      {
+        "subject": "CISA",
+        "subject_type": "Organization",
+        "relation": "reported on",
+        "object": "FiveHands Ransomware",
+        "object_type": "Malware"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "source_id": "midnight-blizzard-conducts-targeted-social-engineering-over-microsoft-teams",
+    "text": "Microsoft Threat Intelligence has identified highly targeted social engineering attacks using credential theft phishing lures sent as Microsoft Teams chats by the threat actor that Microsoft tracks as Midnight Blizzard (previously tracked as NOBELIUM). This latest attack, combined with past activity, further demonstrates Midnight Blizzard's ongoing execution of their objectives using both new and common techniques. In this latest activity, the threat actor uses previously compromised Microsoft 365 tenants owned by small businesses to create new domains that appear as technical support entities. Using these domains from compromised tenants, Midnight Blizzard leverages Teams messages to send lures that attempt to steal credentials from a targeted organization by engaging a user and eliciting approval of multifactor authentication (MFA) prompts. As with any social engineering lures, we encourage organizations to reinforce security best practices to all users and reinforce that any authentication requests not initiated by the user should be treated as malicious.",
+    "triplets": [
+      {
+        "subject": "Midnight Blizzard",
+        "subject_type": "Attacker",
+        "relation": "conducts",
+        "object": "highly targeted social engineering attacks",
+        "object_type": "Malware Characteristic:Behavior"
+      },
+      {
+        "subject": "Midnight Blizzard",
+        "subject_type": "Attacker",
+        "relation": "leverages",
+        "object": "credential theft phishing lures",
+        "object_type": "Malware Characteristic:Capability"
+      },
+      {
+        "subject": "credential theft phishing lures",
+        "subject_type": "Malware Characteristic:Capability",
+        "relation": "sent as",
+        "object": "Microsoft Teams chats",
+        "object_type": "Infrastructure"
+      },
+      {
+        "subject": "Midnight Blizzard",
+        "subject_type": "Attacker",
+        "relation": "previously tracked as",
+        "object": "NOBELIUM",
+        "object_type": "Attacker"
+      },
+      {
+        "subject": "Midnight Blizzard",
+        "subject_type": "Attacker",
+        "relation": "uses",
+        "object": "previously compromised Microsoft 365 tenants",
+        "object_type": "Infrastructure"
+      },
+      {
+        "subject": "previously compromised Microsoft 365 tenants",
+        "subject_type": "Infrastructure",
+        "relation": "owned by",
+        "object": "small businesses",
+        "object_type": "Organization"
+      },
+      {
+        "subject": "Midnight Blizzard",
+        "subject_type": "Attacker",
+        "relation": "creates",
+        "object": "new domains",
+        "object_type": "Indicator:Domain"
+      },
+      {
+        "subject": "new domains",
+        "subject_type": "Indicator:Domain",
+        "relation": "appear as",
+        "object": "technical support entities",
+        "object_type": "Infrastructure"
+      },
+      {
+        "subject": "Midnight Blizzard",
+        "subject_type": "Attacker",
+        "relation": "leverages",
+        "object": "Teams messages",
+        "object_type": "Infrastructure"
+      },
+      {
+        "subject": "Teams messages",
+        "subject_type": "Infrastructure",
+        "relation": "used to deliver",
+        "object": "lures that attempt to steal credentials",
+        "object_type": "Malware Characteristic:Behavior"
+      },
+      {
+        "subject": "lures that attempt to steal credentials",
+        "subject_type": "Malware Characteristic:Behavior",
+        "relation": "target",
+        "object": "organization",
+        "object_type": "Organization"
+      },
+      {
+        "subject": "lures that attempt to steal credentials",
+        "subject_type": "Malware Characteristic:Behavior",
+        "relation": "elicit",
+        "object": "approval of multifactor authentication (MFA) prompts",
+        "object_type": "Credential"
+      },
+       {
+      "subject": "Midnight Blizzard",
+      "subject_type": "Attacker",
+      "relation": "demonstrates",
+      "object": "ongoing execution of objectives using both new and common techniques",
+      "object_type": "Malware Characteristic:Behavior"
+    },
+    {
+      "subject": "Microsoft Threat Intelligence",
+      "subject_type": "Organization",
+      "relation": "identified",
+      "object": "highly targeted social engineering attacks",
+      "object_type": "Malware Characteristic:Behavior"
+    }
+    ]
+  },
+  {
+    "id": 7,
+    "source_id": "attackers-target-max-severity-apache-activemq-bug-to-drop-ransomware",
+    "text": "More than 3,000 Internet-accessible Apache ActiveMQ Servers are exposed to a critical remote code execution vulnerability that an attacker has begun actively targeting to drop ransomware. The Apache Software Foundation (ASF) disclosed the vulnerability, tracked as CVE-2023-46604, on Oct. 27. The bug allows a remote attacker with access to an ActiveMQ message broker to execute arbitrary commands on affected systems. Proof-of-concept exploit code and full details of the vulnerability are publicly available, meaning that threat actors have both the means and the information to launch attacks against the vulnerability. Researchers at Rapid7 reported observing exploit activity targeting the flaw at two customer locations, starting the same day that ASF disclosed the threat. In both instances, the adversary attempted to deploy ransomware binaries on target systems in an effort to ransom the victim organizations. They described both targeted organizations as running outdated versions of Apache ActiveMQ. The researchers attributed the malicious activity to the HelloKitty ransomware family, based on the ransom note and other attack attributes. HelloKitty ransomware has been percolating in the wild since at least 2020. Its operators have tended to favor double-extortion attacks in which they have not just encrypted the data but also stolen it as additional leverage for extracting a ransom from victims. The HelloKitty ransomware attacks leveraging the ActiveMQ flaw appeared somewhat rudimentary. In one of the attacks, the threat actor made more than a half dozen attempts to encrypt the data, prompting the researchers to label to threat actor as 'clumsy' in their report.",
+    "triplets": [
+      {
+        "subject": "Apache ActiveMQ Servers",
+        "subject_type": "Infrastructure",
+        "relation": "are exposed to",
+        "object": "CVE-2023-46604",
+        "object_type": "Vulnerability"
+      },
+      {
+        "subject": "Apache Software Foundation (ASF)",
+        "subject_type": "Organization",
+        "relation": "disclosed",
+        "object": "CVE-2023-46604",
+        "object_type": "Vulnerability"
+      },
+      {
+        "subject": "CVE-2023-46604",
+        "subject_type": "Vulnerability",
+        "relation": "allows",
+        "object": "remote attacker to execute arbitrary commands",
+        "object_type": "Malware Characteristic:Capability"
+      },
+      {
+        "subject": "Researchers at Rapid7",
+        "subject_type": "Organization",
+        "relation": "reported",
+        "object": "exploit activity targeting CVE-2023-46604",
+        "object_type": "Event"
+      },
+      {
+        "subject": "exploit activity targeting CVE-2023-46604",
+        "subject_type": "Event",
+        "relation": "was observed on",
+        "object": "Oct. 27",
+        "object_type": "Time"
+      },
+      {
+        "subject": "Threat Actor",
+        "subject_type": "Attacker",
+        "relation": "attempted to deploy",
+        "object": "ransomware binaries",
+        "object_type": "Malware"
+      },
+      {
+        "subject": "Threat Actor",
+        "subject_type": "Attacker",
+        "relation": "targeted",
+        "object": "organizations running outdated versions of Apache ActiveMQ",
+        "object_type": "Organization"
+      },
+      {
+        "subject": "malicious activity",
+        "subject_type": "Event",
+        "relation": "was attributed to",
+        "object": "HelloKitty ransomware",
+        "object_type": "Malware"
+      },
+      {
+        "subject": "HelloKitty ransomware",
+        "subject_type": "Malware",
+        "relation": "has been active since",
+        "object": "2020",
+        "object_type": "Time"
+      },
+      {
+        "subject": "HelloKitty ransomware",
+        "subject_type": "Malware",
+        "relation": "favors",
+        "object": "double-extortion attacks",
+        "object_type": "Malware Characteristic:Behavior"
+      },
+      {
+        "subject": "HelloKitty ransomware attacks",
+        "subject_type": "Event",
+        "relation": "leveraged",
+        "object": "CVE-2023-46604",
+        "object_type": "Vulnerability"
+      },
+      {
+        "subject": "exploit activity targeting CVE-2023-46604",
+        "subject_type": "Event",
+        "relation": "targets",
+        "object": "CVE-2023-46604",
+        "object_type": "Vulnerability"
+      },
+      {
+        "subject": "Threat Actor",
+        "subject_type": "Attacker",
+        "relation": "actively exploited",
+        "object": "CVE-2023-46604",
+        "object_type": "Vulnerability"
+      },
+      {
+        "subject": "HelloKitty ransomware",
+        "subject_type": "Malware",
+        "relation": "actively exploits",
+        "object": "CVE-2023-46604",
+        "object_type": "Vulnerability"
+      },
+        {
+      "subject": "Threat Actor",
+      "subject_type": "Attacker",
+      "relation": "described as",
+      "object": "clumsy",
+      "object_type": "Malware Characteristic:Behavior"
+    }
+    ]
+  },
+  {
+    "id": 8,
+    "source_id": "follina-msdt-exploit-malware",
+    "text": "Follina (CVE-2022-30190) is a vulnerability in the Microsoft Support Diagnostic Tool (MSDT) that allows remote code execution on vulnerable systems through the ms-msdt protocol handler scheme. The bug is present in all supported versions of Windows. The vulnerability can be easily exploited by a specially crafted Word document that downloads and loads a malicious HTML file through Word's remote template feature. The HTML file ultimately allows the attacker to load and execute PowerShell code within Windows. The vulnerability can also be exploited through the RTF file format.",
+    "triplets": [
+      {
+        "subject": "Follina (CVE-2022-30190)",
+        "subject_type": "Vulnerability",
+        "relation": "is a vulnerability in",
+        "object": "Microsoft Support Diagnostic Tool (MSDT)",
+        "object_type": "Tool"
+      },
+      {
+        "subject": "Follina (CVE-2022-30190)",
+        "subject_type": "Vulnerability",
+        "relation": "allows",
+        "object": "remote code execution",
+        "object_type": "Malware Characteristic:Capability"
+      },
+      {
+        "subject": "Follina (CVE-2022-30190)",
+        "subject_type": "Vulnerability",
+        "relation": "is present in",
+        "object": "Windows",
+        "object_type": "Infrastructure"
+      },
+      {
+        "subject": "Follina (CVE-2022-30190)",
+        "subject_type": "Vulnerability",
+        "relation": "is exploited by",
+        "object": "specially crafted Word document",
+        "object_type": "Indicator:File"
+      },
+      {
+        "subject": "specially crafted Word document",
+        "subject_type": "Indicator:File",
+        "relation": "downloads and loads",
+        "object": "malicious HTML file",
+        "object_type": "Indicator:File"
+      },
+      {
+        "subject": "malicious HTML file",
+        "subject_type": "Indicator:File",
+        "relation": "allows attacker to execute",
+        "object": "PowerShell code",
+        "object_type": "Malware"
+      },
+      {
+        "subject": "Follina (CVE-2022-30190)",
+        "subject_type": "Vulnerability",
+        "relation": "can be exploited through",
+        "object": "RTF file format",
+        "object_type": "Indicator:File"
+      },
+       {
+      "subject": "malicious HTML file",
+      "subject_type": "Indicator:File",
+      "relation": "is loaded via",
+      "object": "Word's remote template feature",
+      "object_type": "Tool"
+    }
+    ]
+  },
+  {
+    "id": 9,
+    "source_id": "global-teamcity-exploitation-opens-door-to-solarwinds-style-nightmare",
+    "text": "APT29, the notorious Russian advanced persistent threat behind the 2020 SolarWinds hack, is actively exploiting a critical security vulnerability in JetBrains TeamCity that could open the door to rampant software supply chain attacks.That's the word from CISA, the FBI, the NSA, and a host of international partners, who said in a joint alert today that APT29 (aka CozyBear, the Dukes, Midnight Blizzard, or Nobelium) is hammering servers hosting TeamCity software at a large scale using the unauthenticated remote code execution (RCE) bug. According to the feds, the exploitation of the issue, tracked as CVE-2023-42793 (CVSS score of 9.8), started in September after JetBrains patched the flaw and Rapid7 released a public proof-of-concept (PoC) exploit for it; but now, it has grown to be a worrying global phenomenon that could result in widespread damage.",
+    "triplets": [
+      {
+        "subject": "APT29",
+        "subject_type": "Attacker",
+        "relation": "exploits",
+        "object": "CVE-2023-42793",
+        "object_type": "Vulnerability"
+      },
+      {
+        "subject": "APT29",
+        "subject_type": "Attacker",
+        "relation": "is known as",
+        "object": "CozyBear",
+        "object_type": "Attacker"
+      },
+      {
+        "subject": "APT29",
+        "subject_type": "Attacker",
+        "relation": "is known as",
+        "object": "the Dukes",
+        "object_type": "Attacker"
+      },
+      {
+        "subject": "APT29",
+        "subject_type": "Attacker",
+        "relation": "is known as",
+        "object": "Midnight Blizzard",
+        "object_type": "Attacker"
+      },
+      {
+        "subject": "APT29",
+        "subject_type": "Attacker",
+        "relation": "is known as",
+        "object": "Nobelium",
+        "object_type": "Attacker"
+      },
+      {
+        "subject": "APT29",
+        "subject_type": "Attacker",
+        "relation": "is behind",
+        "object": "the 2020 SolarWinds hack",
+        "object_type": "Event"
+      },
+      {
+        "subject": "CVE-2023-42793",
+        "subject_type": "Vulnerability",
+        "relation": "affects",
+        "object": "JetBrains TeamCity",
+        "object_type": "Infrastructure"
+      },
+      {
+        "subject": "CVE-2023-42793",
+        "subject_type": "Vulnerability",
+        "relation": "allows",
+        "object": "unauthenticated remote code execution",
+        "object_type": "Malware Characteristic:Capability"
+      },
+      {
+        "subject": "APT29",
+        "subject_type": "Attacker",
+        "relation": "started exploitation in",
+        "object": "September",
+        "object_type": "Time"
+      },
+      {
+        "subject": "JetBrains",
+        "subject_type": "Organization",
+        "relation": "patched",
+        "object": "CVE-2023-42793",
+        "object_type": "Vulnerability"
+      },
+      {
+        "subject": "Rapid7",
+        "subject_type": "Organization",
+        "relation": "released",
+        "object": "public proof-of-concept (PoC) exploit",
+        "object_type": "Exploit Target"
+      },
+      {
+        "subject": "public proof-of-concept (PoC) exploit",
+        "subject_type": "Exploit Target",
+        "relation": "is leveraged by",
+        "object": "APT29",
+        "object_type": "Attacker"
+      },
+       {
+      "subject": "APT29",
+      "subject_type": "Attacker",
+      "relation": "could enable",
+      "object": "software supply chain attacks",
+      "object_type": "Malware Characteristic:Behavior"
+    },
+    {
+      "subject": "CVE-2023-42793",
+      "subject_type": "Vulnerability",
+      "relation": "could result in",
+      "object": "widespread global damage",
+      "object_type": "Event"
+    },
+    {
+      "subject": "CISA, FBI, NSA, and international partners",
+      "subject_type": "Organization",
+      "relation": "issued",
+      "object": "joint alert",
+      "object_type": "Event"
+    },
+    {
+      "subject": "joint alert",
+      "subject_type": "Event",
+      "relation": "about",
+      "object": "APT29",
+      "object_type": "Attacker"
+    },
+    {
+      "subject": "APT29",
+      "subject_type": "Attacker",
+      "relation": "targets",
+      "object": "servers hosting TeamCity software",
+      "object_type": "Infrastructure"
+    }
+    ]
+  },
+  {
+    "id": 10,
+    "source_id": "attackers-exploit-microsoft-office-bug-spyware",
+    "text": "Attackers are exploiting a 6-year-old Microsoft Office remote code execution (RCE) flaw to deliver spyware, in an email campaign weaponized by malicious Excel attachments and characterized by sophisticated evasion tactics. Threat actors dangle lures relating to business activity in spam emails that deliver files that contain CVE-2017-11882, an RCE flaw that dates back to 2014 and can allow for system takeover, Zscaler revealed in a blog post published Dec. 19. The end goal of the attack is to load Agent Tesla, a remote access Trojan (RAT) and advanced keylogger first discovered in 2014, and exfiltrate credentials and other data from an infected system via a Telegram bot run by the attackers.",
+    "triplets": [
+      {
+        "subject": "Attackers",
+        "subject_type": "Attacker",
+        "relation": "are exploiting",
+        "object": "CVE-2017-11882",
+        "object_type": "Vulnerability"
+      },
+      {
+        "subject": "CVE-2017-11882",
+        "subject_type": "Vulnerability",
+        "relation": "is a",
+        "object": "remote code execution flaw",
+        "object_type": "Malware Characteristic:Capability"
+      },
+      {
+        "subject": "Malicious Excel attachments",
+        "subject_type": "Indicator:File",
+        "relation": "contain",
+        "object": "CVE-2017-11882",
+        "object_type": "Vulnerability"
+      },
+      {
+        "subject": "Threat actors",
+        "subject_type": "Attacker",
+        "relation": "use lures relating to",
+        "object": "business activity",
+        "object_type": "Information"
+      },
+      {
+        "subject": "Email campaign",
+        "subject_type": "Infrastructure",
+        "relation": "delivers",
+        "object": "Agent Tesla",
+        "object_type": "Malware"
+      },
+      {
+        "subject": "Agent Tesla",
+        "subject_type": "Malware",
+        "relation": "is a type of",
+        "object": "remote access Trojan",
+        "object_type": "Malware"
+      },
+      {
+        "subject": "Agent Tesla",
+        "subject_type": "Malware",
+        "relation": "is a type of",
+        "object": "advanced keylogger",
+        "object_type": "Malware"
+      },
+      {
+        "subject": "Agent Tesla",
+        "subject_type": "Malware",
+        "relation": "was first discovered in",
+        "object": "2014",
+        "object_type": "Time"
+      },
+      {
+        "subject": "Agent Tesla",
+        "subject_type": "Malware",
+        "relation": "exfiltrates data via",
+        "object": "Telegram bot",
+        "object_type": "Tool"
+      },
+      {
+        "subject": "CVE-2017-11882",
+        "subject_type": "Vulnerability",
+        "relation": "is used to deliver",
+        "object": "Agent Tesla",
+        "object_type": "Malware"
+      },
+      {
+        "subject": "Threat actors",
+        "subject_type": "Attacker",
+        "relation": "deliver",
+        "object": "Agent Tesla",
+        "object_type": "Malware"
+      },
+      {
+      "subject": "Attackers",
+      "subject_type": "Attacker",
+      "relation": "are exploiting via",
+      "object": "email campaign weaponized by malicious Excel attachments",
+      "object_type": "Infrastructure"
+    },
+    {
+      "subject": "CVE-2017-11882",
+      "subject_type": "Vulnerability",
+      "relation": "dates back to",
+      "object": "2014",
+      "object_type": "Time"
+    },
+    {
+      "subject": "Attackers",
+      "subject_type": "Attacker",
+      "relation": "aim to load",
+      "object": "Agent Tesla",
+      "object_type": "Malware"
+    }
+    ]
+  },
+  {
+    "id": 11,
+    "source_id": "chinese-hackers-exploit-vmware-bug-as-zero-day-for-two-years",
+    "text": "A Chinese hacking group has been exploiting a critical vCenter Server vulnerability (CVE-2023-34048) as a zero-day since at least late 2021. The flaw was patched in October, with VMware confirming this Wednesday that it's aware of CVE-2023-34048 in-the-wild exploitation, although it didn't share any other details on the attacks. However, as security firm Mandiant revealed today, the vulnerability was used by the UNC3886 Chinese cyber espionage group as part of a previously reported campaign, exposed in June 2023. The cyberspies used it to breach their targets' vCenter servers and compromised credentials to deploy VirtualPita and VirtualPie backdoors on ESXi hosts via maliciously crafted vSphere Installation Bundles (VIBs). In the next stage, they exploited the CVE-2023-20867 VMware Tools authentication bypass flaw to escalate privileges, harvest files, and exfiltrate them from guest VMs.",
+    "triplets": [
+      {
+        "subject": "A Chinese hacking group",
+        "subject_type": "Attacker",
+        "relation": "exploiting",
+        "object": "critical vCenter Server vulnerability (CVE-2023-34048)",
+        "object_type": "Vulnerability",
+        "triplet_type": "explicit"
+      },
+      {
+        "subject": "critical vCenter Server vulnerability (CVE-2023-34048)",
+        "subject_type": "Vulnerability",
+        "relation": "patched in",
+        "object": "October",
+        "object_type": "Time",
+        "triplet_type": "explicit"
+      },
+      {
+        "subject": "VMware",
+        "subject_type": "Organization",
+        "relation": "aware of",
+        "object": "CVE-2023-34048 in-the-wild exploitation",
+        "object_type": "Event",
+        "triplet_type": "explicit"
+      },
+      {
+        "subject": "UNC3886",
+        "subject_type": "Attacker",
+        "relation": "used",
+        "object": "critical vCenter Server vulnerability (CVE-2023-34048)",
+        "object_type": "Vulnerability",
+        "triplet_type": "explicit"
+      },
+      {
+        "subject": "UNC3886",
+        "subject_type": "Attacker",
+        "relation": "exposed in",
+        "object": "June 2023",
+        "object_type": "Time",
+        "triplet_type": "explicit"
+      },
+      {
+        "subject": "UNC3886",
+        "subject_type": "Attacker",
+        "relation": "breached",
+        "object": "vCenter servers",
+        "object_type": "Infrastructure",
+        "triplet_type": "explicit"
+      },
+      {
+        "subject": "UNC3886",
+        "subject_type": "Attacker",
+        "relation": "compromised",
+        "object": "credentials",
+        "object_type": "Credential",
+        "triplet_type": "explicit"
+      },
+      {
+        "subject": "UNC3886",
+        "subject_type": "Attacker",
+        "relation": "deployed",
+        "object": "VirtualPita backdoors",
+        "object_type": "Malware",
+        "triplet_type": "explicit"
+      },
+      {
+        "subject": "UNC3886",
+        "subject_type": "Attacker",
+        "relation": "deployed",
+        "object": "VirtualPie backdoors",
+        "object_type": "Malware",
+        "triplet_type": "explicit"
+      },
+      {
+        "subject": "UNC3886",
+        "subject_type": "Attacker",
+        "relation": "used",
+        "object": "maliciously crafted vSphere Installation Bundles (VIBs)",
+        "object_type": "Malware Characteristic:Payload",
+        "triplet_type": "explicit"
+      },
+      {
+        "subject": "UNC3886",
+        "subject_type": "Attacker",
+        "relation": "exploited",
+        "object": "CVE-2023-20867 VMware Tools authentication bypass flaw",
+        "object_type": "Vulnerability",
+        "triplet_type": "explicit"
+      },
+      {
+        "subject": "UNC3886",
+        "subject_type": "Attacker",
+        "relation": "harvested files from",
+        "object": "guest VMs",
+        "object_type": "Infrastructure",
+        "triplet_type": "explicit"
+      },
+      {
+        "subject": "UNC3886",
+        "subject_type": "Attacker",
+        "relation": "exfiltrated files from",
+        "object": "guest VMs",
+        "object_type": "Infrastructure",
+        "triplet_type": "explicit"
+      },
+      {
+        "subject": "UNC3886",
+        "subject_type": "Attacker",
+        "relation": "exploited vulnerability in product of",
+        "object": "VMware",
+        "object_type": "Organization",
+        "triplet_type": "implicit"
+      },
+      {
+     "subject": "UNC3886",
+     "subject_type": "Attacker",
+     "relation": "escalated privileges using",
+     "object": "CVE-2023-20867 VMware Tools authentication bypass flaw",
+     "object_type": "Vulnerability"
+    }
+    ]
+  },
+  {
+    "id": 12,
+    "source_id": "0-days-exploited-by-commercial-surveillance-vendor-in-egypt",
+    "text": "Last week Google’s Threat Analysis Group (TAG), in partnership with The Citizen Lab, discovered an in-the-wild 0-day exploit chain for iPhones. Developed by the commercial surveillance vendor, Intellexa, this exploit chain is used to install its Predator spyware surreptitiously onto a device. In response, yesterday, Apple patched the bugs in iOS 16.7 and iOS 17.0.1 as CVE-2023-41991, CVE-2023-41992, CVE-2023-41993. This quick patching from Apple helps to better protect users and we encourage all iOS users to install them as soon as possible.",
+    "triplets": [
+      {
+        "subject": "Google's Threat Analysis Group (TAG)",
+        "subject_type": "Organization",
+        "relation": "discovered",
+        "object": "an in-the-wild 0-day exploit chain",
+        "object_type": "Exploit Target"
+      },
+      {
+        "subject": "The Citizen Lab",
+        "subject_type": "Organization",
+        "relation": "discovered",
+        "object": "an in-the-wild 0-day exploit chain",
+        "object_type": "Exploit Target"
+      },
+      {
+        "subject": "an in-the-wild 0-day exploit chain",
+        "subject_type": "Exploit Target",
+        "relation": "targets",
+        "object": "iPhones",
+        "object_type": "Infrastructure"
+      },
+      {
+        "subject": "Intellexa",
+        "subject_type": "Organization",
+        "relation": "developed",
+        "object": "an in-the-wild 0-day exploit chain",
+        "object_type": "Exploit Target"
+      },
+      {
+        "subject": "an in-the-wild 0-day exploit chain",
+        "subject_type": "Exploit Target",
+        "relation": "is used to install",
+        "object": "Predator spyware",
+        "object_type": "Malware"
+      },
+      {
+        "subject": "Apple",
+        "subject_type": "Organization",
+        "relation": "patched",
+        "object": "CVE-2023-41991",
+        "object_type": "Vulnerability"
+      },
+      {
+        "subject": "Apple",
+        "subject_type": "Organization",
+        "relation": "patched",
+        "object": "CVE-2023-41992",
+        "object_type": "Vulnerability"
+      },
+      {
+        "subject": "Apple",
+        "subject_type": "Organization",
+        "relation": "patched",
+        "object": "CVE-2023-41993",
+        "object_type": "Vulnerability"
+      },
+      {
+        "subject": "CVE-2023-41991",
+        "subject_type": "Vulnerability",
+        "relation": "patched in",
+        "object": "iOS 16.7 and iOS 17.0.1",
+        "object_type": "Infrastructure"
+      },
+      {
+        "subject": "CVE-2023-41992",
+        "subject_type": "Vulnerability",
+        "relation": "patched in",
+        "object": "iOS 16.7 and iOS 17.0.1",
+        "object_type": "Infrastructure"
+      },
+      {
+        "subject": "CVE-2023-41993",
+        "subject_type": "Vulnerability",
+        "relation": "patched in",
+        "object": "iOS 16.7 and iOS 17.0.1",
+        "object_type": "Infrastructure"
+      },
+      {
+        "subject": "iOS 16.7 and iOS 17.0.1",
+        "subject_type": "Infrastructure",
+        "relation": "patched",
+        "object": "an in-the-wild 0-day exploit chain",
+        "object_type": "Exploit Target"
+      }
+    ]
+  },
+    {
+    "id": 13,
+    "source_id": "mitel-voip-bug-exploited",
+    "text": "Ransomware groups are abusing unpatched versions of a Linux-based Mitel VoIP (Voice over Internet Protocol) application and using it as a springboard plant malware on targeted systems. The critical remote code execution (RCE) flaw, tracked as CVE-2022-29499, was first report by Crowdstrike in April as a zero-day vulnerability and is now patched. Mitel is popularly known for providing business phone systems and unified communication as a service (UCaaS) to all forms of organizations. The Mitel focuses on VoIP technology allowing users to make phone calls using an internet connection instead of regular telephone lines.",
+    "triplets": [
+      {
+        "subject": "Ransomware groups",
+        "subject_type": "Attacker",
+        "relation": "are abusing",
+        "object": "Linux-based Mitel VoIP application",
+        "object_type": "Infrastructure"
+      },
+      {
+        "subject": "Linux-based Mitel VoIP application",
+        "subject_type": "Infrastructure",
+        "relation": "contains",
+        "object": "CVE-2022-29499",
+        "object_type": "Vulnerability"
+      },
+      {
+        "subject": "CVE-2022-29499",
+        "subject_type": "Vulnerability",
+        "relation": "was first reported in",
+        "object": "April",
+        "object_type": "Time"
+      },
+      {
+        "subject": "Crowdstrike",
+        "subject_type": "Organization",
+        "relation": "first reported",
+        "object": "CVE-2022-29499",
+        "object_type": "Vulnerability"
+      },
+      {
+        "subject": "CVE-2022-29499",
+        "subject_type": "Vulnerability",
+        "relation": "is classified as",
+        "object": "zero-day vulnerability",
+        "object_type": "Vulnerability"
+      },
+      {
+        "subject": "CVE-2022-29499",
+        "subject_type": "Vulnerability",
+        "relation": "enables",
+        "object": "remote code execution",
+        "object_type": "Malware Characteristic:Capability"
+      },
+      {
+        "subject": "CVE-2022-29499",
+        "subject_type": "Vulnerability",
+        "relation": "is now",
+        "object": "patched",
+        "object_type": "Malware Characteristic:Feature"
+      },
+      {
+        "subject": "Mitel",
+        "subject_type": "Organization",
+        "relation": "provides",
+        "object": "business phone systems",
+        "object_type": "Infrastructure"
+      },
+      {
+        "subject": "Mitel",
+        "subject_type": "Organization",
+        "relation": "provides",
+        "object": "unified communication as a service (UCaaS)",
+        "object_type": "Infrastructure"
+      },
+      {
+        "subject": "Mitel",
+        "subject_type": "Organization",
+        "relation": "focuses on",
+        "object": "VoIP technology",
+        "object_type": "Infrastructure"
+      },
+      {
+        "subject": "CVE-2022-29499",
+        "subject_type": "Vulnerability",
+        "relation": "is vulnerability in",
+        "object": "Mitel",
+        "object_type": "Organization"
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "text": "Rhysida ransomware came to public attention in May 2023. The group has been associated with several significant breaches, including an attack on the Chilean Army where they leaked stolen documents on their data leak site. The threat actor was also linked to an attack on Prospect Medical Holdings, impacting 17 hospitals and 166 clinics across the U.S. Following this attack, the U.S. Department of Health and Human Services (HC3) classified Rhysida as a substantial threat to the healthcare sector. Rhysida typically gains access to a victim's system through phishing tactics, followed by the use of Cobalt Strike for lateral movement within the system. Additionally, the threat actors use PsExec to deploy both PowerShell scripts and the Rhysida ransomware payload. The PowerShell script, known as g.ps1 and identified as Trojan.PS1.SILENTKILL.A, serves various purposes for the threat actors, including terminating antivirus processes and services, erasing shadow copies, altering remote desktop protocol (RDP) configurations, and modifying the active directory (AD) password. Notably, during the execution of the script (g.ps1), it appears that the threat actors updated it, ultimately leading to a PowerShell version of Rhysida ransomware. Rhysida uses a 4096-bit RSA key and AES-CTR for file encryption. After successfully encrypting files, it appends the .rhysida extension to them and deposits a ransom note named CriticalBreachDetected.pdf.",
+    "source_id": "an-in-depth-look-at-rhysida-ransomware",
+    "triplets": [
+      {
+        "subject": "Rhysida ransomware",
+        "subject_type": "Malware",
+        "relation": "came to public attention in",
+        "object": "May 2023",
+        "object_type": "Time"
+      },
+      {
+        "subject": "Rhysida ransomware",
+        "subject_type": "Malware",
+        "relation": "associated with",
+        "object": "attack on the Chilean Army",
+        "object_type": "Event"
+      },
+      {
+        "subject": "Rhysida ransomware",
+        "subject_type": "Malware",
+        "relation": "associated with",
+        "object": "attack on Prospect Medical Holdings",
+        "object_type": "Event"
+      },
+      {
+        "subject": "attack on Prospect Medical Holdings",
+        "subject_type": "Event",
+        "relation": "impacted",
+        "object": "hospitals and clinics across the U.S.",
+        "object_type": "Infrastructure"
+      },
+      {
+        "subject": "U.S. Department of Health and Human Services (HC3)",
+        "subject_type": "Organization",
+        "relation": "classified",
+        "object": "Rhysida as a substantial threat to the healthcare sector",
+        "object_type": "Information"
+      },
+      {
+        "subject": "Rhysida ransomware",
+        "subject_type": "Malware",
+        "relation": "gains access through",
+        "object": "phishing tactics",
+        "object_type": "Malware Characteristic:Behavior"
+      },
+      {
+        "subject": "Rhysida ransomware",
+        "subject_type": "Malware",
+        "relation": "uses",
+        "object": "Cobalt Strike",
+        "object_type": "Tool"
+      },
+      {
+        "subject": "Rhysida ransomware",
+        "subject_type": "Malware",
+        "relation": "uses",
+        "object": "PsExec",
+        "object_type": "Tool"
+      },
+      {
+        "subject": "PsExec",
+        "subject_type": "Tool",
+        "relation": "deploys",
+        "object": "PowerShell scripts",
+        "object_type": "Tool"
+      },
+      {
+        "subject": "PsExec",
+        "subject_type": "Tool",
+        "relation": "deploys",
+        "object": "Rhysida ransomware payload",
+        "object_type": "Malware Characteristic:Payload"
+      },
+      {
+        "subject": "PowerShell scripts",
+        "subject_type": "Tool",
+        "relation": "identified as",
+        "object": "Trojan.PS1.SILENTKILL.A",
+        "object_type": "Malware"
+      },
+      {
+        "subject": "Trojan.PS1.SILENTKILL.A",
+        "subject_type": "Malware",
+        "relation": "terminates",
+        "object": "antivirus processes and services",
+        "object_type": "Infrastructure"
+      },
+      {
+        "subject": "Trojan.PS1.SILENTKILL.A",
+        "subject_type": "Malware",
+        "relation": "erases",
+        "object": "shadow copies",
+        "object_type": "Infrastructure"
+      },
+      {
+        "subject": "Trojan.PS1.SILENTKILL.A",
+        "subject_type": "Malware",
+        "relation": "alters",
+        "object": "remote desktop protocol (RDP) configurations",
+        "object_type": "Infrastructure"
+      },
+      {
+        "subject": "Trojan.PS1.SILENTKILL.A",
+        "subject_type": "Malware",
+        "relation": "modifies",
+        "object": "active directory (AD) password",
+        "object_type": "Credential"
+      },
+      {
+        "subject": "Threat Actor",
+        "subject_type": "Attacker",
+        "relation": "updated",
+        "object": "the script (g.ps1)",
+        "object_type": "Indicator:File"
+      },
+      {
+        "subject": "Rhysida ransomware",
+        "subject_type": "Malware",
+        "relation": "uses",
+        "object": "4096-bit RSA key",
+        "object_type": "Credential"
+      },
+      {
+        "subject": "Rhysida ransomware",
+        "subject_type": "Malware",
+        "relation": "uses",
+        "object": "AES-CTR",
+        "object_type": "Malware Characteristic:Capability"
+      },
+      {
+        "subject": "Rhysida ransomware",
+        "subject_type": "Malware",
+        "relation": "appends",
+        "object": ".rhysida extension",
+        "object_type": "Malware Characteristic:Feature"
+      },
+      {
+        "subject": "Rhysida ransomware",
+        "subject_type": "Malware",
+        "relation": "deposits",
+        "object": "ransom note named CriticalBreachDetected.pdf",
+        "object_type": "Indicator:File"
+      },
+      {
+        "subject": "U.S. Department of Health and Human Services (HC3)",
+        "subject_type": "Organization",
+        "relation": "classified as substantial threat",
+        "object": "Rhysida ransomware",
+        "object_type": "Malware"
+      },
+      {
+        "subject": "Threat Actor",
+        "subject_type": "Attacker",
+        "relation": "deploys",
+        "object": "Rhysida ransomware",
+        "object_type": "Malware"
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "text": "Despite first being detected six years ago, malicious attackers continue to use the Magniber ransomware to compromise organizations. In October 2022, phishing attacks were reported to distribute the Magniber ransomware using standalone JavaScript files digitally signed with a malformed key, exploiting the zero-day vulnerability CVE-2022-44698 to bypass Mark-of-the-Web (MOTW) security warnings, and allowing malicious files to be executed without raising alerts. Microsoft later patched this vulnerability in December 2022. Formerly known as a successor of Cerber, the Magniber ransomware was primarily distributed via the Magnitude exploit kit and exclusively targeted South Korea in 2017. In 2018, it expanded its targets across Asia using CVE-2018-8174 for initial access.",
+    "source_id": "ransomware-spotlight-magniber",
+    "triplets": [
+      {
+        "subject": "Magniber ransomware",
+        "subject_type": "Malware",
+        "relation": "compromise",
+        "object": "organizations",
+        "object_type": "Organization"
+      },
+      {
+        "subject": "phishing attacks",
+        "subject_type": "Malware Characteristic:Behavior",
+        "relation": "distribute",
+        "object": "Magniber ransomware",
+        "object_type": "Malware"
+      },
+      {
+        "subject": "phishing attacks",
+        "subject_type": "Malware Characteristic:Behavior",
+        "relation": "use",
+        "object": "standalone JavaScript files digitally signed with a malformed key",
+        "object_type": "Indicator:File"
+      },
+      {
+        "subject": "standalone JavaScript files digitally signed with a malformed key",
+        "subject_type": "Indicator:File",
+        "relation": "exploit",
+        "object": "zero-day vulnerability CVE-2022-44698",
+        "object_type": "Vulnerability"
+      },
+      {
+        "subject": "zero-day vulnerability CVE-2022-44698",
+        "subject_type": "Vulnerability",
+        "relation": "allows",
+        "object": "malicious files to be executed without raising alerts",
+        "object_type": "Malware Characteristic:Behavior"
+      },
+      {
+        "subject": "Microsoft",
+        "subject_type": "Organization",
+        "relation": "patched",
+        "object": "zero-day vulnerability CVE-2022-44698",
+        "object_type": "Vulnerability"
+      },
+      {
+        "subject": "Microsoft",
+        "subject_type": "Organization",
+        "relation": "patched",
+        "object": "December 2022",
+        "object_type": "Time"
+      },
+      {
+        "subject": "Magniber ransomware",
+        "subject_type": "Malware",
+        "relation": "is successor of",
+        "object": "Cerber",
+        "object_type": "Malware"
+      },
+      {
+        "subject": "Magniber ransomware",
+        "subject_type": "Malware",
+        "relation": "distributed via",
+        "object": "Magnitude exploit kit",
+        "object_type": "Tool"
+      },
+      {
+        "subject": "Magniber ransomware",
+        "subject_type": "Malware",
+        "relation": "targeted",
+        "object": "South Korea",
+        "object_type": "Location"
+      },
+      {
+        "subject": "Magniber ransomware",
+        "subject_type": "Malware",
+        "relation": "expanded targets across",
+        "object": "Asia",
+        "object_type": "Location"
+      },
+      {
+        "subject": "Magniber ransomware",
+        "subject_type": "Malware",
+        "relation": "used",
+        "object": "CVE-2018-8174",
+        "object_type": "Vulnerability"
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "text": "Beginning in March 2016, Buckeye began using a variant of DoublePulsar (Backdoor.Doublepulsar), a backdoor that was subsequently released by the Shadow Brokers in 2017. DoublePulsar was delivered to victims using a custom exploit tool (Trojan.Bemstour) that was specifically designed to install DoublePulsar. Bemstour exploits two Windows vulnerabilities in order to achieve remote kernel code execution on targeted computers. One vulnerability is a Windows zero-day vulnerability (CVE-2019-0703) discovered by Symantec. The second Windows vulnerability (CVE-2017-0143) was patched in March 2017 after it was discovered to have been used by two exploit tools—EternalRomance and EternalSynergy—that were also released as part of the Shadow Brokers leak.",
+    "source_id": "buckeye-windows-zero-day-exploit",
+    "triplets": [
+      {
+        "subject": "Buckeye",
+        "subject_type": "Attacker",
+        "relation": "began using",
+        "object": "DoublePulsar",
+        "object_type": "Malware"
+      },
+      {
+        "subject": "DoublePulsar",
+        "subject_type": "Malware",
+        "relation": "was released by",
+        "object": "the Shadow Brokers",
+        "object_type": "Attacker"
+      },
+      {
+        "subject": "DoublePulsar",
+        "subject_type": "Malware",
+        "relation": "was delivered using",
+        "object": "Trojan.Bemstour",
+        "object_type": "Malware"
+      },
+      {
+        "subject": "Trojan.Bemstour",
+        "subject_type": "Malware",
+        "relation": "exploits",
+        "object": "CVE-2019-0703",
+        "object_type": "Vulnerability"
+      },
+      {
+        "subject": "Trojan.Bemstour",
+        "subject_type": "Malware",
+        "relation": "exploits",
+        "object": "CVE-2017-0143",
+        "object_type": "Vulnerability"
+      },
+      {
+        "subject": "CVE-2017-0143",
+        "subject_type": "Vulnerability",
+        "relation": "was patched in",
+        "object": "March 2017",
+        "object_type": "Time"
+      },
+      {
+        "subject": "CVE-2017-0143",
+        "subject_type": "Vulnerability",
+        "relation": "was used by",
+        "object": "EternalRomance",
+        "object_type": "Exploit Target"
+      },
+      {
+        "subject": "CVE-2017-0143",
+        "subject_type": "Vulnerability",
+        "relation": "was used by",
+        "object": "EternalSynergy",
+        "object_type": "Exploit Target"
+      },
+      {
+        "subject": "EternalRomance",
+        "subject_type": "Exploit Target",
+        "relation": "was released by",
+        "object": "the Shadow Brokers",
+        "object_type": "Attacker"
+      },
+      {
+        "subject": "EternalSynergy",
+        "subject_type": "Exploit Target",
+        "relation": "was released by",
+        "object": "the Shadow Brokers",
+        "object_type": "Attacker"
+      },
+      {
+        "subject": "CVE-2019-0703",
+        "subject_type": "Vulnerability",
+        "relation": "was discovered by",
+        "object": "Symantec",
+        "object_type": "Organization"
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "text": "Trickbot,\n\nUNC1878 obtains credentials using Mimikatz, LaZagne and Kerbrute Using stolen credentials obtained by tools like Mimikatz, LaZagne, and Kerbrute.\n\nextended their access by connecting to network shares and directly to systems over RDP Using RDP for lateral movement within the network.\n\nUNC1878 obtains credentials using Mimikatz, LaZagne and Kerbrute Adversaries may attempt to dump credentials to obtain account login and credential material, normally in the form of a hash or a clear text password.\n\nand SSH Using SSH for lateral movement within the network\n\nrenewed phishing attempts to re-establish a foothold Using phishing  to re-establish a foothold\n\nThey'll then unzip The process of unzipping files, which may also imply the initial use of zipping for archiving collected or staged data.\n\ninto a directory they create named \"share$ Unzipping files into a created directory named share$ for local staging.\n\nThere are three \".bat\" scripts used for iterating computer names to execute Ryuk. Use of .bat scripts for executing commands, in this case, for iterating computer names and executing Ryuk.",
+    "source_id": "DIVE_default_annotator_wizardspider",
+    "triplets": [
+      {
+        "subject": "unc1878",
+        "subject_type": "Attacker",
+        "relation": "obtains credentials using",
+        "object": "mimikatz",
+        "object_type": "Tool"
+      },
+      {
+        "subject": "unc1878",
+        "subject_type": "Attacker",
+        "relation": "obtains credentials using",
+        "object": "lazagne",
+        "object_type": "Tool"
+      },
+      {
+        "subject": "unc1878",
+        "subject_type": "Attacker",
+        "relation": "obtains credentials using",
+        "object": "kerbrute",
+        "object_type": "Tool"
+      },
+      {
+        "subject": "unc1878",
+        "subject_type": "Attacker",
+        "relation": "extends access by connecting to",
+        "object": "network shares",
+        "object_type": "Infrastructure"
+      },
+      {
+        "subject": "unc1878",
+        "subject_type": "Attacker",
+        "relation": "extends access by connecting to",
+        "object": "systems over RDP",
+        "object_type": "Infrastructure"
+      },
+      {
+        "subject": "unc1878",
+        "subject_type": "Attacker",
+        "relation": "uses RDP for",
+        "object": "lateral movement",
+        "object_type": "Malware Characteristic:Behavior"
+      },
+      {
+        "subject": "unc1878",
+        "subject_type": "Attacker",
+        "relation": "uses SSH for",
+        "object": "lateral movement",
+        "object_type": "Malware Characteristic:Behavior"
+      },
+      {
+        "subject": "unc1878",
+        "subject_type": "Attacker",
+        "relation": "uses phishing for",
+        "object": "re-establish foothold",
+        "object_type": "Malware Characteristic:Behavior"
+      },
+      {
+        "subject": "unc1878",
+        "subject_type": "Attacker",
+        "relation": "creates",
+        "object": "directory named share$",
+        "object_type": "Infrastructure"
+      },
+      {
+        "subject": "unc1878",
+        "subject_type": "Attacker",
+        "relation": "unzips files into",
+        "object": "directory named share$",
+        "object_type": "Infrastructure"
+      },
+      {
+        "subject": "unc1878",
+        "subject_type": "Attacker",
+        "relation": "uses .bat scripts to execute",
+        "object": "ryuk",
+        "object_type": "Malware"
+      },
+      {
+        "subject": "ryuk",
+        "subject_type": "Malware",
+        "relation": "is executed by",
+        "object": ".bat scripts",
+        "object_type": "Indicator:File"
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "text": "The prolific North Korean state-backed threat actor known as TA444 is back with shiny new malware for targeting macOS users, dubbed \"SpectralBlur.\" The custom tool is the latest in a string of proprietary malware that the advanced persistent threat (APT) group has been consistently generating — a trait that sets it apart from other DPRK-sponsored threats.According to Proofpoint threat researcher Greg Lesnewich, TA444 (aka APT38, BlueNoroff, BlackAlicanto, Coperenicum, Sapphire Sleet, and Stardust Chollima) debuted the SpectralBlur malware in August. It's a \"moderately capable backdoor, that can upload/download files, run a shell, update its configuration, delete files, hibernate, or sleep, based on commands issued from the [command-and-control server],\"",
+    "source_id": "north-korea-debuts-spectralblur-malware-amid-macos-onslaught",
+    "triplets": [
+         {
+        "subject": "TA444",
+        "subject_type": "Attacker",
+        "relation": "is known as",
+        "object": "APT38",
+        "object_type": "Attacker"
+      },
+      {
+        "subject": "TA444",
+        "subject_type": "Attacker",
+        "relation": "is known as",
+        "object": "BlueNoroff",
+        "object_type": "Attacker"
+      },
+      {
+        "subject": "TA444",
+        "subject_type": "Attacker",
+        "relation": "is known as",
+        "object": "BlackAlicanto",
+        "object_type": "Attacker"
+      },
+      {
+        "subject": "TA444",
+        "subject_type": "Attacker",
+        "relation": "is known as",
+        "object": "Coperenicum",
+        "object_type": "Attacker"
+      },
+      {
+        "subject": "TA444",
+        "subject_type": "Attacker",
+        "relation": "is known as",
+        "object": "Sapphire Sleet",
+        "object_type": "Attacker"
+        
+      },
+      {
+        "subject": "TA444",
+        "subject_type": "Attacker",
+        "relation": "is known as",
+        "object": "Stardust Chollima",
+        "object_type": "Attacker"
+      },
+      {
+        "subject": "Threat Actor TA444",
+        "subject_type": "Attacker",
+        "relation": "is backed by",
+        "object": "North Korea",
+        "object_type": "Location"
+      },
+      {
+        "subject": "Threat Actor TA444",
+        "subject_type": "Attacker",
+        "relation": "targets",
+        "object": "macOS users",
+        "object_type": "Account"
+      },
+      {
+        "subject": "Threat Actor TA444",
+        "subject_type": "Attacker",
+        "relation": "uses",
+        "object": "SpectralBlur",
+        "object_type": "Malware"
+      },
+      {
+        "subject": "SpectralBlur",
+        "subject_type": "Malware",
+        "relation": "is a type of",
+        "object": "Malware",
+        "object_type": "Malware"
+      },
+      {
+        "subject": "SpectralBlur",
+        "subject_type": "Malware",
+        "relation": "was debuted in",
+        "object": "August",
+        "object_type": "Time"
+      },
+      {
+        "subject": "SpectralBlur",
+        "subject_type": "Malware",
+        "relation": "is classified as",
+        "object": "backdoor",
+        "object_type": "Malware Characteristic:Feature"
+      },
+      {
+        "subject": "SpectralBlur",
+        "subject_type": "Malware",
+        "relation": "can perform",
+        "object": "upload/download files",
+        "object_type": "Malware Characteristic:Capability"
+      },
+      {
+        "subject": "SpectralBlur",
+        "subject_type": "Malware",
+        "relation": "can perform",
+        "object": "run a shell",
+        "object_type": "Malware Characteristic:Capability"
+      },
+      {
+        "subject": "SpectralBlur",
+        "subject_type": "Malware",
+        "relation": "can perform",
+        "object": "update its configuration",
+        "object_type": "Malware Characteristic:Capability"
+      },
+      {
+        "subject": "SpectralBlur",
+        "subject_type": "Malware",
+        "relation": "can perform",
+        "object": "delete files",
+        "object_type": "Malware Characteristic:Capability"
+      }
+    ]
+  },
+   {
+    "id": 19,
+    "source_id": "3am-ransomware-lockbit",
+    "text": "A new ransomware family calling itself 3AM has emerged. To date, the ransomware has only been used in a limited fashion. Symantec's Threat Hunter Team, part of Broadcom, has seen it used in a single attack by a ransomware affiliate that attempted to deploy LockBit on a target's network and then switched to 3AM when LockBit was blocked. 3AM is written in Rust and appears to be a completely new malware family. The ransomware attempts to stop multiple services on the infected computer before it begins encrypting files. Once encryption is complete, it attempts to delete Volume Shadow (VSS) copies. It is still unclear whether its authors have any links to known cybercrime organizations. ",
+    "triplets": [
+      {
+        "subject": "3AM",
+        "subject_type": "Malware",
+        "relation": "is",
+        "object": "ransomware",
+        "object_type": "Malware"
+      },
+      {
+        "subject": "Symantec's Threat Hunter Team",
+        "subject_type": "Organization",
+        "relation": "observed",
+        "object": "a ransomware affiliate",
+        "object_type": "Attacker"
+      },
+      {
+        "subject": "a ransomware affiliate",
+        "subject_type": "Attacker",
+        "relation": "attempted to deploy",
+        "object": "LockBit",
+        "object_type": "Malware"
+      },
+      {
+        "subject": "a ransomware affiliate",
+        "subject_type": "Attacker",
+        "relation": "switched to",
+        "object": "3AM",
+        "object_type": "Malware"
+      },
+      {
+        "subject": "3AM",
+        "subject_type": "Malware",
+        "relation": "is written in",
+        "object": "Rust",
+        "object_type": "Tool"
+      },
+      {
+        "subject": "3AM",
+        "subject_type": "Malware",
+        "relation": "attempts to stop",
+        "object": "multiple services",
+        "object_type": "Infrastructure"
+      },
+      {
+        "subject": "3AM",
+        "subject_type": "Malware",
+        "relation": "encrypts",
+        "object": "files",
+        "object_type": "Indicator:File"
+      },
+      {
+        "subject": "3AM",
+        "subject_type": "Malware",
+        "relation": "attempts to delete",
+        "object": "Volume Shadow (VSS) copies",
+        "object_type": "Indicator:File"
+      },
+       {
+        "subject": "3AM authors",
+        "subject_type": "Attacker",
+        "relation": "created",
+        "object": "3AM",
+        "object_type": "Malware"
+      },
+      {
+      "subject": "3AM authors",
+      "subject_type": "Attacker",
+      "relation": "may have links to",
+      "object": "known cybercrime organizations",
+      "object_type": "Attacker"
+    }
+    ]
+  },
+  {
+    "id": 20,
+    "text": "The recent iOS 14.8 update fixes a zero-day, zero-click exploit for a vulnerability affecting every mobile iOS device. The flaw, dubbed FORCEDENTRY (CVE-2021-30860), resided in Apple's iMessage and, according to a report by The Citizen Lab, was used to push NSO Group's Pegasus spyware to mobile iOS devices dating back to as far as February 2021. Pegasus has been around for some years now but has been back in the spotlight recently following reports from both The Citizen Lab and Amnesty International about the spyware targeting journalists, activists, and others. One of the main concerns with FORCEDENTRY is that it can be used in what is called a zero-click attack, meaning it requires no user interaction. An attacker exploiting the flaw only needs the Apple ID of a device in order to silently compromise it",
+    "source_id": "pegasus-forcedentry-protection",
+    "triplets": [
+      {
+        "subject": "iOS 14.8 update",
+        "subject_type": "Tool",
+        "relation": "fixes",
+        "object": "a zero-day, zero-click exploit",
+        "object_type": "Exploit Target"
+      },
+      {
+        "subject": "a zero-day, zero-click exploit",
+        "subject_type": "Exploit Target",
+        "relation": "affects",
+        "object": "mobile iOS device",
+        "object_type": "Infrastructure"
+      },
+      {
+        "subject": "FORCEDENTRY (CVE-2021-30860)",
+        "subject_type": "Vulnerability",
+        "relation": "resided in",
+        "object": "Apple's iMessage",
+        "object_type": "Infrastructure"
+      },
+      {
+        "subject": "FORCEDENTRY (CVE-2021-30860)",
+        "subject_type": "Vulnerability",
+        "relation": "used to push",
+        "object": "NSO Group's Pegasus spyware",
+        "object_type": "Malware"
+      },
+      {
+        "subject": "NSO Group's Pegasus spyware",
+        "subject_type": "Malware",
+        "relation": "targeted",
+        "object": "journalists",
+        "object_type": "Organization"
+      },
+      {
+        "subject": "NSO Group's Pegasus spyware",
+        "subject_type": "Malware",
+        "relation": "targeted",
+        "object": "activists",
+        "object_type": "Organization"
+      },
+      {
+        "subject": "FORCEDENTRY (CVE-2021-30860)",
+        "subject_type": "Vulnerability",
+        "relation": "was used since",
+        "object": "February 2021",
+        "object_type": "Time"
+      },
+      {
+        "subject": "FORCEDENTRY (CVE-2021-30860)",
+        "subject_type": "Vulnerability",
+        "relation": "can be used in",
+        "object": "a zero-click attack",
+        "object_type": "Malware Characteristic:Behavior"
+      },
+      {
+        "subject": "adversary",
+        "subject_type": "Attacker",
+        "relation": "only needs",
+        "object": "Apple ID",
+        "object_type": "Credential"
+      },
+      {
+        "subject": "adversary",
+        "subject_type": "Attacker",
+        "relation": "can silently compromise",
+        "object": "mobile iOS device",
+        "object_type": "Infrastructure"
+      },
+      {
+        "subject": "FORCEDENTRY (CVE-2021-30860)",
+        "subject_type": "Vulnerability",
+        "relation": "is an example of",
+        "object": "a zero-day, zero-click exploit",
+        "object_type": "Exploit Target"
+      }
+    ]
+  },
+  {
+    "id": 21,
+    "text": "In June 2023, Google’s Threat Analysis Group (TAG) discovered an in-the-wild 0-day exploit targeting Zimbra Collaboration, an email server many organizations use to host their email. Since discovering the 0-day, now patched as CVE-2023-37580, TAG has observed four different groups exploiting the same bug to steal email data, user credentials, and authentication tokens. Most of this activity occurred after the initial fix became public on Github. CVE-2023-37580 is a reflected cross-site scripting (XSS) vulnerability. XSS is a web application vulnerability that allows malicious scripts to be injected into another website. In this case, there was a vulnerability in Zimbra that injected the parameter within the URL directly into the webpage, causing the script to be executed. ",
+    "source_id": "zimbra-0-day-used-to-target-international-government-organizations",
+    "triplets": [
+      {
+        "subject": "Google's Threat Analysis Group (TAG)",
+        "subject_type": "Organization",
+        "relation": "discovered",
+        "object": "in-the-wild 0-day exploit",
+        "object_type": "Vulnerability"
+      },
+      {
+        "subject": "in-the-wild 0-day exploit",
+        "subject_type": "Vulnerability",
+        "relation": "targets",
+        "object": "Zimbra Collaboration",
+        "object_type": "Infrastructure"
+      },
+      {
+        "subject": "in-the-wild 0-day exploit",
+        "subject_type": "Vulnerability",
+        "relation": "was discovered in",
+        "object": "June 2023",
+        "object_type": "Time"
+      },
+      {
+        "subject": "Zimbra Collaboration",
+        "subject_type": "Infrastructure",
+        "relation": "is used by",
+        "object": "organizations",
+        "object_type": "Organization"
+      },
+      {
+        "subject": "in-the-wild 0-day exploit",
+        "subject_type": "Vulnerability",
+        "relation": "patched as",
+        "object": "CVE-2023-37580",
+        "object_type": "Vulnerability"
+      },
+      {
+        "subject": "four different groups",
+        "subject_type": "Attacker",
+        "relation": "exploited",
+        "object": "CVE-2023-37580",
+        "object_type": "Vulnerability"
+      },
+      {
+        "subject": "CVE-2023-37580",
+        "subject_type": "Vulnerability",
+        "relation": "used to steal",
+        "object": "email data",
+        "object_type": "Information"
+      },
+      {
+        "subject": "CVE-2023-37580",
+        "subject_type": "Vulnerability",
+        "relation": "used to steal",
+        "object": "user credentials",
+        "object_type": "Credential"
+      },
+      {
+        "subject": "CVE-2023-37580",
+        "subject_type": "Vulnerability",
+        "relation": "used to steal",
+        "object": "authentication tokens",
+        "object_type": "Credential"
+      },
+      {
+        "subject": "CVE-2023-37580",
+        "subject_type": "Vulnerability",
+        "relation": "is",
+        "object": "a reflected cross-site scripting (XSS) vulnerability",
+        "object_type": "Vulnerability"
+      },
+      {
+        "subject": "XSS",
+        "subject_type": "Vulnerability",
+        "relation": "allows injection of",
+        "object": "malicious scripts",
+        "object_type": "Malware Characteristic:Payload"
+      },
+      {
+        "subject": "malicious scripts",
+        "subject_type": "Malware Characteristic:Payload",
+        "relation": "are injected into",
+        "object": "webpage",
+        "object_type": "Infrastructure"
+      },
+      {
+        "subject": "malicious scripts",
+        "subject_type": "Malware Characteristic:Payload",
+        "relation": "are injected through",
+        "object": "CVE-2023-37580",
+        "object_type": "Vulnerability"
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "text": "The recent iOS 14.8 update fixes a zero-day, zero-click exploit for a vulnerability affecting every mobile iOS device. The flaw, dubbed FORCEDENTRY (CVE-2021-30860), resided in Apple's iMessage and, according to a report by The Citizen Lab, was used to push NSO Group's Pegasus spyware to mobile iOS devices dating back to as far as February 2021. Pegasus has been around for some years now but has been back in the spotlight recently following reports from both The Citizen Lab and Amnesty International about the spyware targeting journalists, activists, and others. One of the main concerns with FORCEDENTRY is that it can be used in what is called a zero-click attack, meaning it requires no user interaction. An attacker exploiting the flaw only needs the Apple ID of a device in order to silently compromise it",
+    "source_id": "pegasus-forcedentry-protection_v1",
+    "triplets": [
+      {
+        "subject": "iOS 14.8 update",
+        "subject_type": "Tool",
+        "relation": "fixes",
+        "object": "a zero-day, zero-click exploit",
+        "object_type": "Exploit Target"
+      },
+      {
+        "subject": "a zero-day, zero-click exploit",
+        "subject_type": "Exploit Target",
+        "relation": "affects",
+        "object": "mobile iOS device",
+        "object_type": "Infrastructure"
+      },
+      {
+        "subject": "FORCEDENTRY (CVE-2021-30860)",
+        "subject_type": "Vulnerability",
+        "relation": "resided in",
+        "object": "Apple's iMessage",
+        "object_type": "Infrastructure"
+      },
+      {
+        "subject": "FORCEDENTRY (CVE-2021-30860)",
+        "subject_type": "Vulnerability",
+        "relation": "used to push",
+        "object": "NSO Group's Pegasus spyware",
+        "object_type": "Malware"
+      },
+      {
+        "subject": "NSO Group's Pegasus spyware",
+        "subject_type": "Malware",
+        "relation": "targeted",
+        "object": "journalists",
+        "object_type": "Organization"
+      },
+      {
+        "subject": "NSO Group's Pegasus spyware",
+        "subject_type": "Malware",
+        "relation": "targeted",
+        "object": "activists",
+        "object_type": "Organization"
+      },
+      {
+        "subject": "FORCEDENTRY (CVE-2021-30860)",
+        "subject_type": "Vulnerability",
+        "relation": "was used since",
+        "object": "February 2021",
+        "object_type": "Time"
+      },
+      {
+        "subject": "FORCEDENTRY (CVE-2021-30860)",
+        "subject_type": "Vulnerability",
+        "relation": "can be used in",
+        "object": "a zero-click attack",
+        "object_type": "Malware Characteristic:Behavior"
+      },
+      {
+        "subject": "adversary",
+        "subject_type": "Attacker",
+        "relation": "only needs",
+        "object": "Apple ID",
+        "object_type": "Credential"
+      },
+      {
+        "subject": "adversary",
+        "subject_type": "Attacker",
+        "relation": "can silently compromise",
+        "object": "mobile iOS device",
+        "object_type": "Infrastructure"
+      },
+      {
+        "subject": "FORCEDENTRY (CVE-2021-30860)",
+        "subject_type": "Vulnerability",
+        "relation": "is an example of",
+        "object": "a zero-day, zero-click exploit",
+        "object_type": "Exploit Target"
+      }
+    ]
+  },
+    {
+    "id": 23,
+    "source_id": "magento-vulnerability-exploited-to-deploy-persistent-backdoor",
+    "text": "Threat actors are exploiting a critical vulnerability in Magento to inject a persistent backdoor into ecommerce websites, cybersecurity firm Sansec reports. The issue, tracked as CVE-2024-20720 (CVSS score of 9.1), is described as an OS command injection flaw leading to arbitrary code execution without user interaction. Adobe resolved the critical vulnerability in February 2024 in both Adobe Commerce and Magento, as part of its Tuesday Patch updates. However, it appears that there are websites that have yet to be updated and remain vulnerable to exploitation. According to Sansec, threat actors have discovered a clever way to exploit CVE-2024-20720, using a crafted layout template in the database to inject XML code that can reinfect Magento servers even after a manual fix. Attackers combine the Magento layout parser with the beberlei/assert package (installed by default) to execute system commands. Because the layout block is tied to the checkout cart, this command is executed whenever <store>/checkout/cart is requested. As part of the observed attacks, the backdoor is added to the automatically generated content management system (CMS) controller, ensuring the backdoor is periodically reinjected and providing persistent remote code execution via POST commands. The threat actors have employed the mechanism to inject a fake Stripe payment skimmer and steal payment data from the compromised web stores.",
+    "triplets": [
+      {
+        "subject": "Threat actors",
+        "subject_type": "Attacker",
+        "relation": "are exploiting",
+        "object": "CVE-2024-20720",
+        "object_type": "Vulnerability"
+      },
+      {
+        "subject": "CVE-2024-20720",
+        "subject_type": "Vulnerability",
+        "relation": "affects",
+        "object": "Magento",
+        "object_type": "Infrastructure"
+      },
+      {
+        "subject": "CVE-2024-20720",
+        "subject_type": "Vulnerability",
+        "relation": "is described as",
+        "object": "an OS command injection flaw",
+        "object_type": "Malware Characteristic:Behavior"
+      },
+      {
+        "subject": "Adobe",
+        "subject_type": "Organization",
+        "relation": "resolved",
+        "object": "CVE-2024-20720",
+        "object_type": "Vulnerability"
+      },
+      {
+        "subject": "Adobe",
+        "subject_type": "Organization",
+        "relation": "patched",
+        "object": "Magento",
+        "object_type": "Infrastructure"
+      },
+      {
+        "subject": "Threat actors",
+        "subject_type": "Attacker",
+        "relation": "inject",
+        "object": "persistent backdoor into ecommerce websites",
+        "object_type": "Malware"
+      },
+      {
+        "subject": "Threat actors",
+        "subject_type": "Attacker",
+        "relation": "use",
+        "object": "crafted layout template",
+        "object_type": "Tool"
+      },
+      {
+        "subject": "crafted layout template",
+        "subject_type": "Tool",
+        "relation": "injects",
+        "object": "XML code",
+        "object_type": "Malware"
+      },
+      {
+        "subject": "XML code",
+        "subject_type": "Malware",
+        "relation": "is used to reinfect",
+        "object": "Magento servers",
+        "object_type": "Infrastructure"
+      },
+      {
+        "subject": "Attackers",
+        "subject_type": "Attacker",
+        "relation": "combine",
+        "object": "Magento layout parser and beberlei/assert package",
+        "object_type": "Tool"
+      },
+      {
+        "subject": "backdoor",
+        "subject_type": "Malware",
+        "relation": "provides",
+        "object": "persistent remote code execution",
+        "object_type": "Malware Characteristic:Capability"
+      },
+      {
+        "subject": "Threat actors",
+        "subject_type": "Attacker",
+        "relation": "inject",
+        "object": "fake Stripe payment skimmer",
+        "object_type": "Malware"
+      },
+      {
+        "subject": "fake Stripe payment skimmer",
+        "subject_type": "Malware",
+        "relation": "steals",
+        "object": "payment data",
+        "object_type": "Information"
+      },
+      {
+        "subject": "Attackers",
+        "subject_type": "Attacker",
+        "relation": "are exploiting",
+        "object": "CVE-2024-20720",
+        "object_type": "Vulnerability"
+      },
+      {
+        "subject": "backdoor",
+        "subject_type": "Malware",
+        "relation": "is deployed by exploiting",
+        "object": "CVE-2024-20720",
+        "object_type": "Vulnerability"
+      }
+    ]
+  },
+  {
+    "id": 24,
+    "source_id": "multiple-north-korean-threat-actors-exploiting-the-teamcity-cve-2023-42793-vulnerability",
+    "text": "Since early October 2023, Microsoft has observed two North Korean nation-state threat actors – Diamond Sleet and Onyx Sleet – exploiting CVE-2023-42793, a remote-code execution vulnerability affecting multiple versions of JetBrains TeamCity server. TeamCity is a continuous integration/continuous deployment (CI/CD) application used by organizations for DevOps and other software development activities. While the two threat actors are exploiting the same vulnerability, Microsoft observed Diamond Sleet and Onyx Sleet utilizing unique sets of tools and techniques following successful exploitation. Based on the profile of victim organizations affected by these intrusions, Microsoft assesses that the threat actors may be opportunistically compromising vulnerable servers. However, both actors have deployed malware and tools and utilized techniques that may enable persistent access to victim environments.",
+    "triplets": [
+       {
+        "subject": "Microsoft",
+        "subject_type": "Organization",
+        "relation": "observed",
+        "object": "two North Korean nation-state threat actors",
+        "object_type": "Attacker"
+      },
+      {
+        "subject": "two North Korean nation-state threat actors",
+        "subject_type": "Attacker",
+        "relation": "include",
+        "object": "Diamond Sleet",
+        "object_type": "Attacker"
+      },
+      {
+        "subject": "two North Korean nation-state threat actors",
+        "subject_type": "Attacker",
+        "relation": "include",
+        "object": "Onyx Sleet",
+        "object_type": "Attacker"
+      },
+      {
+        "subject": "Diamond Sleet",
+        "subject_type": "Attacker",
+        "relation": "exploiting",
+        "object": "CVE-2023-42793",
+        "object_type": "Vulnerability"
+      },
+      {
+        "subject": "Onyx Sleet",
+        "subject_type": "Attacker",
+        "relation": "exploiting",
+        "object": "CVE-2023-42793",
+        "object_type": "Vulnerability"
+      },
+      {
+        "subject": "CVE-2023-42793",
+        "subject_type": "Vulnerability",
+        "relation": "is",
+        "object": "a remote-code execution vulnerability",
+        "object_type": "Vulnerability"
+      },
+      {
+        "subject": "CVE-2023-42793",
+        "subject_type": "Vulnerability",
+        "relation": "affects",
+        "object": "JetBrains TeamCity server",
+        "object_type": "Infrastructure"
+      },
+      {
+        "subject": "JetBrains TeamCity server",
+        "subject_type": "Infrastructure",
+        "relation": "is",
+        "object": "a continuous integration/continuous deployment (CI/CD) application",
+        "object_type": "Infrastructure"
+      },
+      {
+        "subject": "Diamond Sleet",
+        "subject_type": "Attacker",
+        "relation": "utilizes",
+        "object": "unique sets of tools and techniques",
+        "object_type": "Tool"
+      },
+      {
+        "subject": "Onyx Sleet",
+        "subject_type": "Attacker",
+        "relation": "utilizes",
+        "object": "unique sets of tools and techniques",
+        "object_type": "Tool"
+      },
+      {
+        "subject": "Diamond Sleet",
+        "subject_type": "Attacker",
+        "relation": "deployed",
+        "object": "malware and tools",
+        "object_type": "Malware"
+      },
+      {
+        "subject": "Onyx Sleet",
+        "subject_type": "Attacker",
+        "relation": "deployed",
+        "object": "malware and tools",
+        "object_type": "Malware"
+      },
+      {
+        "subject": "Diamond Sleet",
+        "subject_type": "Attacker",
+        "relation": "utilized",
+        "object": "techniques that may enable persistent access",
+        "object_type": "Malware Characteristic:Behavior"
+      },
+      {
+        "subject": "Onyx Sleet",
+        "subject_type": "Attacker",
+        "relation": "utilized",
+        "object": "techniques that may enable persistent access",
+        "object_type": "Malware Characteristic:Behavior"
+      },
+         {
+      "subject": "Diamond Sleet",
+      "subject_type": "Attacker",
+      "relation": "is associated with",
+      "object": "North Korean nation-state",
+      "object_type": "Organization"
+    },
+    {
+      "subject": "Onyx Sleet",
+      "subject_type": "Attacker",
+      "relation": "is associated with",
+      "object": "North Korean nation-state",
+      "object_type": "Organization"
+    },
+    {
+      "subject": "JetBrains TeamCity server",
+      "subject_type": "Infrastructure",
+      "relation": "used by",
+      "object": "organizations for DevOps and software development activities",
+      "object_type": "Organization"
+    }
+    ]
+  },
+  {
+    "id": 25,
+    "source_id": "two-microsoft-zero-day-vulnerabilities-exploited-by-attackers",
+    "text": "CVE-2023-36884 is a remote code execution vulnerability that was previously patched. The vulnerability allowed attackers to craft Microsoft Office documents in a way that circumvented the Mark of the Web (MoTW) security feature. This allowed the files to be opened without triggering a security warning, ultimately enabling remote code execution. To counteract a previously mitigated but actively exploited CVE-2023-36884 flaw, Microsoft has introduced an Office Defense in Depth update. The Russian threat actor Storm-0978/RomCom is responsible for actively exploiting this vulnerability. This group, previously recognized for deploying the Industrial Spy ransomware in their attacks, has now rebranded as 'Underground' and extorts victims through their ransomware operations.",
+    "triplets": [
+      {
+        "subject": "CVE-2023-36884",
+        "subject_type": "Vulnerability",
+        "relation": "is a",
+        "object": "remote code execution vulnerability",
+        "object_type": "Vulnerability"
+      },
+      {
+        "subject": "CVE-2023-36884",
+        "subject_type": "Vulnerability",
+        "relation": "allowed attackers to",
+        "object": "craft Microsoft Office documents",
+        "object_type": "Unknown"
+      },
+      {
+        "subject": "Microsoft Office documents",
+        "subject_type": "Indicator:File",
+        "relation": "circumvented",
+        "object": "Mark of the Web (MoTW) security feature",
+        "object_type": "Malware Characteristic:Feature"
+      },
+      {
+        "subject": "Microsoft",
+        "subject_type": "Organization",
+        "relation": "introduced",
+        "object": "Office Defense in Depth update",
+        "object_type": "Tool"
+      },
+      {
+        "subject": "Storm-0978/RomCom",
+        "subject_type": "Attacker",
+        "relation": "is responsible for actively exploiting",
+        "object": "CVE-2023-36884",
+        "object_type": "Vulnerability"
+      },
+      {
+        "subject": "Storm-0978/RomCom",
+        "subject_type": "Attacker",
+        "relation": "previously deployed",
+        "object": "Industrial Spy ransomware",
+        "object_type": "Malware"
+      },
+      {
+        "subject": "Storm-0978/RomCom",
+        "subject_type": "Attacker",
+        "relation": "rebranded as",
+        "object": "Underground",
+        "object_type": "Attacker"
+      },
+      {
+        "subject": "Underground",
+        "subject_type": "Attacker",
+        "relation": "extorts victims through",
+        "object": "ransomware operations",
+        "object_type": "Malware Characteristic:Behavior"
+      },
+      {
+        "subject": "Microsoft",
+        "subject_type": "Organization",
+        "relation": "has patched",
+        "object": "CVE-2023-36884",
+        "object_type": "Vulnerability"
+      }
+    ]
+  },
+  { 
+    "id": 26,
+    "source_id": "ransomware-spotlight-akira",
+    "text": "Cisco released a security advisory on Sept. 6, 2023, stating that Akira ransomware operators exploited CVE-2023-20269, a zero-day vulnerability in two of their products' remote access VPN feature: the Cisco Adaptive Security Appliance (ASA) software and Cisco Firepower Thread Defense (FTD) software. Cisco reported that malicious actors who exploit CVE-2023-20269 can identify valid credentials that could be abused to establish unauthorized remote access VPN sessions, and for victims running Cisco ASA Software Release 9.16 or earlier, establish a clientless SSL VPN session. Recently, Sentinel One released a video analyzing an Akira ransomware variant named Megazord that emerged in August 2023. This variant appears to be referencing a Power Rangers formation because it encrypts files with the “POWERRANGES” file extension. The ransom note, which is named “powerranges.txt,” instructs victims to contact the ransomware actor via TOX messenger.",
+    "triplets": [
+      {
+        "subject": "Cisco",
+        "subject_type": "Organization",
+        "relation": "released",
+        "object": "a security advisory on Sept. 6, 2023",
+        "object_type": "Information"
+      },
+      {
+        "subject": "Akira ransomware operators",
+        "subject_type": "Attacker",
+        "relation": "exploited",
+        "object": "CVE-2023-20269",
+        "object_type": "Vulnerability"
+      },
+      {
+        "subject": "CVE-2023-20269",
+        "subject_type": "Vulnerability",
+        "relation": "is a vulnerability in",
+        "object": "Cisco Adaptive Security Appliance (ASA) software",
+        "object_type": "Infrastructure"
+      },
+      {
+        "subject": "CVE-2023-20269",
+        "subject_type": "Vulnerability",
+        "relation": "is a vulnerability in",
+        "object": "Cisco Firepower Thread Defense (FTD) software",
+        "object_type": "Infrastructure"
+      },
+      {
+        "subject": "malicious actors",
+        "subject_type": "Attacker",
+        "relation": "exploit",
+        "object": "CVE-2023-20269",
+        "object_type": "Vulnerability"
+      },
+      {
+        "subject": "malicious actors",
+        "subject_type": "Attacker",
+        "relation": "can identify",
+        "object": "valid credentials",
+        "object_type": "Credential"
+      },
+      {
+        "subject": "valid credentials",
+        "subject_type": "Credential",
+        "relation": "could be abused to establish",
+        "object": "unauthorized remote access VPN sessions",
+        "object_type": "Malware Characteristic:Behavior"
+      },
+      {
+        "subject": "valid credentials",
+        "subject_type": "Credential",
+        "relation": "could be abused to establish",
+        "object": "a clientless SSL VPN session",
+        "object_type": "Malware Characteristic:Behavior"
+      },
+      {
+        "subject": "Sentinel One",
+        "subject_type": "Organization",
+        "relation": "released a video analyzing",
+        "object": "an Akira ransomware variant named Megazord",
+        "object_type": "Malware"
+      },
+      {
+        "subject": "an Akira ransomware variant named Megazord",
+        "subject_type": "Malware",
+        "relation": "emerged in",
+        "object": "August 2023",
+        "object_type": "Time"
+      },
+      {
+        "subject": "an Akira ransomware variant named Megazord",
+        "subject_type": "Malware",
+        "relation": "encrypts files with",
+        "object": "POWERRANGES file extension",
+        "object_type": "Malware Characteristic:Behavior"
+      },
+      {
+        "subject": "The ransom note",
+        "subject_type": "Malware Characteristic:Payload",
+        "relation": "is named",
+        "object": "powerranges.txt",
+        "object_type": "Indicator:File"
+      },
+      {
+        "subject": "Cisco",
+        "subject_type": "Organization",
+        "relation": "reported vulnerability",
+        "object": "CVE-2023-20269",
+        "object_type": "Vulnerability"
+      },
+      {
+        "subject": "an Akira ransomware variant named Megazord",
+        "subject_type": "Malware",
+        "relation": "exploited",
+        "object": "CVE-2023-20269",
+        "object_type": "Vulnerability"
+      },
+      {
+        "subject": "The ransom note",
+        "subject_type": "Malware Characteristic:Payload",
+        "relation": "is indirectly related to",
+        "object": "CVE-2023-20269",
+        "object_type": "Vulnerability"
+      }
+    ]
+  },
+    {
+      "id": 27,
+    "source_id": "mispadu-banking-trojan-resurfaces",
+    "text": "Recent spam campaigns leading to URSA/Mispadu banking trojan (detected by Trend Micro as TrojanSpy.Win32.MISPADU.THIADBO) have been uncovered, as reported by malware analyst Pedro Tavares in a Twitter post and by Seguranca Informatica in a blog post. Mispadu malware steals credentials from users' systems. This attack targets systems with Spanish and Portuguese as system languages. It is also likely that they have targets similar to previous Mispadu attacks where users from Mexico, Spain, Portugal, and other nearby regions were targeted. This behavior is in line with past Mispadu schemes, such as the one where spam emails for fake discount coupons were used as bait.",
+    "triplets": [
+      {
+        "subject": "URSA/Mispadu banking trojan",
+        "subject_type": "Malware",
+        "relation": "is detected as",
+        "object": "TrojanSpy.Win32.MISPADU.THIADBO",
+        "object_type": "Malware"
+      },
+      {
+        "subject": "Pedro Tavares",
+        "subject_type": "This entity cannot be classified into any of the existing types",
+        "relation": "reported",
+        "object": "URSA/Mispadu banking trojan",
+        "object_type": "Malware"
+      },
+      {
+        "subject": "Seguranca Informatica",
+        "subject_type": "Organization",
+        "relation": "reported",
+        "object": "URSA/Mispadu banking trojan",
+        "object_type": "Malware"
+      },
+      {
+        "subject": "Mispadu malware",
+        "subject_type": "Unknown",
+        "relation": "steals",
+        "object": "credentials from users' systems",
+        "object_type": "Credential"
+      },
+      {
+        "subject": "URSA/Mispadu banking trojan",
+        "subject_type": "Malware",
+        "relation": "targets",
+        "object": "systems with Spanish and Portuguese as system languages",
+        "object_type": "Infrastructure"
+      },
+      {
+        "subject": "URSA/Mispadu banking trojan",
+        "subject_type": "Malware",
+        "relation": "targets users from",
+        "object": "Mexico",
+        "object_type": "Location"
+      },
+      {
+        "subject": "URSA/Mispadu banking trojan",
+        "subject_type": "Malware",
+        "relation": "targets users from",
+        "object": "Spain",
+        "object_type": "Location"
+      },
+      {
+        "subject": "URSA/Mispadu banking trojan",
+        "subject_type": "Malware",
+        "relation": "targets users from",
+        "object": "Portugal",
+        "object_type": "Location"
+      },
+      {
+        "subject": "URSA/Mispadu banking trojan",
+        "subject_type": "Malware",
+        "relation": "used bait",
+        "object": "spam emails for fake discount coupons",
+        "object_type": "Indicator:Email"
+      }
+    ]
+  },
+  {
+    "id": 28,
+    "source_id": "plugx-variants-in-usbs",
+    "text": "Recently, our Unit 42 incident response team was engaged in a Black Basta breach response that uncovered several tools and malware samples on the victim's machines, including GootLoader malware, Brute Ratel C4 red-teaming tool and an older PlugX malware sample. The PlugX malware stood out to us as this variant infects any attached removable USB media devices such as floppy, thumb or flash drives and any additional systems the USB is later plugged into. This PlugX malware also hides actor files in a USB device using a novel technique that works even on the most recent Windows operating systems (OS) at the time of writing this post. This means the malicious files can only be viewed on a Unix-like (*nix) OS or by mounting the USB device in a forensic tool. We also discovered a similar variant of PlugX in VirusTotal that infects USB devices and copies all Adobe PDF and Microsoft Word files from the host. It places these copies in a hidden folder on the USB device that is created by the malware. PlugX is a second-stage implant used not only by multiple groups with a Chinese nexus but also by several cybercrime groups. It has been around for over a decade and has been observed in some high-profile cyberattacks, including the U.S. Government Office of Personnel Management (OPM) breach in 2015. It is a modular malware framework, supporting an evolving set of capabilities throughout the years.",
+    "triplets": [
+      {
+        "subject": "Unit 42 incident response team",
+        "subject_type": "Organization",
+        "relation": "was engaged in",
+        "object": "Black Basta breach response",
+        "object_type": "Event"
+      },
+      {
+        "subject": "Black Basta breach response",
+        "subject_type": "Event",
+        "relation": "uncovered",
+        "object": "GootLoader malware",
+        "object_type": "Malware"
+      },
+      {
+        "subject": "Black Basta breach response",
+        "subject_type": "Event",
+        "relation": "uncovered",
+        "object": "Brute Ratel C4 red-teaming tool",
+        "object_type": "Tool"
+      },
+      {
+        "subject": "Black Basta breach response",
+        "subject_type": "Event",
+        "relation": "uncovered",
+        "object": "PlugX malware",
+        "object_type": "Malware"
+      },
+      {
+        "subject": "PlugX malware",
+        "subject_type": "Malware",
+        "relation": "infects",
+        "object": "removable USB media devices",
+        "object_type": "Unknown"
+      },
+      {
+        "subject": "PlugX malware",
+        "subject_type": "Malware",
+        "relation": "hides actor files on",
+        "object": "USB device",
+        "object_type": "Infrastructure"
+      },
+      {
+        "subject": "PlugX malware",
+        "subject_type": "Malware",
+        "relation": "infects",
+        "object": "Windows operating systems",
+        "object_type": "Infrastructure"
+      },
+      {
+        "subject": "PlugX malware",
+        "subject_type": "Malware",
+        "relation": "infects",
+        "object": "USB devices",
+        "object_type": "Unknown"
+      },
+      {
+        "subject": "PlugX malware",
+        "subject_type": "Malware",
+        "relation": "copies",
+        "object": "Adobe PDF files",
+        "object_type": "Indicator:File"
+      },
+      {
+        "subject": "PlugX malware",
+        "subject_type": "Malware",
+        "relation": "copies",
+        "object": "Microsoft Word files",
+        "object_type": "Indicator:File"
+      },
+      {
+        "subject": "PlugX malware",
+        "subject_type": "Malware",
+        "relation": "used by",
+        "object": "multiple groups with a Chinese nexus",
+        "object_type": "Attacker"
+      },
+      {
+        "subject": "PlugX malware",
+        "subject_type": "Malware",
+        "relation": "used by",
+        "object": "several cybercrime groups",
+        "object_type": "Attacker"
+      },
+      {
+        "subject": "PlugX malware",
+        "subject_type": "Malware",
+        "relation": "was observed in",
+        "object": "U.S. Government Office of Personnel Management (OPM) breach in 2015",
+        "object_type": "Event"
+      }
+    ]
+  },
+    {
+    "id": 29,
+    "source_id": "ransomware-spotlight-blackcat",
+    "text": "First observed in mid-November 2021 by researchers from the MalwareHunterTeam, BlackCat (aka AlphaVM, AlphaV, or ALPHV) swiftly gained notoriety for being the first major professional ransomware family to be written in Rust, a cross-platform language that enables malicious actors to customize malware with ease for different operating systems like Windows and Linux, thus affording a wide range of enterprise environments. Since then, BlackCat ransomware has frequently made the headlines for its successive attacks on high-profile targets and its use of triple extortion which has endowed the group with a distinct competitive edge over other RaaS operators. Aside from exposing exfiltrated data, ransomware actors that use triple extortion threaten to launch distributed denial-of-service (DDoS) attacks on their victims' infrastructure to coerce them to pay the ransom.",
+    "triplets": [
+      {
+        "subject": "BlackCat ransomware",
+        "subject_type": "Malware",
+        "relation": "was first observed in",
+        "object": "mid-November 2021",
+        "object_type": "Time"
+      },
+      {
+        "subject": "MalwareHunterTeam",
+        "subject_type": "Organization",
+        "relation": "observed",
+        "object": "BlackCat ransomware",
+        "object_type": "Malware"
+      },
+      {
+        "subject": "BlackCat ransomware",
+        "subject_type": "Malware",
+        "relation": "is also known as",
+        "object": "AlphaVM",
+        "object_type": "Malware"
+      },
+      {
+        "subject": "BlackCat ransomware",
+        "subject_type": "Malware",
+        "relation": "is also known as",
+        "object": "AlphaV",
+        "object_type": "Unknown"
+      },
+      {
+        "subject": "BlackCat ransomware",
+        "subject_type": "Malware",
+        "relation": "is also known as",
+        "object": "ALPHV",
+        "object_type": "Malware"
+      },
+      {
+        "subject": "BlackCat ransomware",
+        "subject_type": "Malware",
+        "relation": "is written in",
+        "object": "Rust",
+        "object_type": "Tool"
+      },
+      {
+        "subject": "Rust",
+        "subject_type": "Tool",
+        "relation": "enables malware customization for",
+        "object": "Operating System",
+        "object_type": "Infrastructure"
+      },
+      {
+        "subject": "BlackCat ransomware",
+        "subject_type": "Malware",
+        "relation": "targets",
+        "object": "Windows",
+        "object_type": "Infrastructure"
+      },
+      {
+        "subject": "BlackCat ransomware",
+        "subject_type": "Malware",
+        "relation": "targets",
+        "object": "Linux",
+        "object_type": "Infrastructure"
+      },
+      {
+        "subject": "BlackCat ransomware",
+        "subject_type": "Malware",
+        "relation": "uses",
+        "object": "triple extortion",
+        "object_type": "Malware Characteristic:Behavior"
+      },
+      {
+        "subject": "ransomware actors",
+        "subject_type": "Attacker",
+        "relation": "threaten to launch",
+        "object": "distributed denial-of-service (DDoS) attacks",
+        "object_type": "Malware Characteristic:Behavior"
+      },
+      {
+        "subject": "ransomware actors",
+        "subject_type": "Attacker",
+        "relation": "use",
+        "object": "BlackCat ransomware",
+        "object_type": "Malware"
+      }
+    ]
+  },
+    {
+    "id": 30,
+    "source_id": "apache-erp-0day-underscores-dangers-of-incomplete-patches",
+    "text": "Unknown groups have launched probes against a zero-day vulnerability identified in Apache's OfBiz enterprise resource planning (ERP) framework - an increasingly popular strategy of analyzing patches for ways to bypass software fixes. The 0-day vulnerability (CVE-2023-51467) in Apache OFBiz, disclosed on Dec. 26, allows an attacker to access sensitive information and remotely execute code against applications using the ERP framework, according to an analysis by cybersecurity firm SonicWall. The Apache Software Foundation had originally released a patch for a related issue, CVE-2023-49070, but the fix failed to protect against other variations of the attack.",
+    "triplets": [
+      {
+        "subject": "Unknown groups",
+        "subject_type": "Attacker",
+        "relation": "launched probes against",
+        "object": "zero-day vulnerability CVE-2023-51467",
+        "object_type": "Vulnerability"
+      },
+      {
+        "subject": "zero-day vulnerability CVE-2023-51467",
+        "subject_type": "Vulnerability",
+        "relation": "affects",
+        "object": "Apache OfBiz",
+        "object_type": "Infrastructure"
+      },
+      {
+        "subject": "zero-day vulnerability CVE-2023-51467",
+        "subject_type": "Vulnerability",
+        "relation": "allows attacker to",
+        "object": "access sensitive information",
+        "object_type": "Malware Characteristic:Capability"
+      },
+      {
+        "subject": "zero-day vulnerability CVE-2023-51467",
+        "subject_type": "Vulnerability",
+        "relation": "allows attacker to",
+        "object": "remotely execute code against applications",
+        "object_type": "Malware Characteristic:Capability"
+      },
+      {
+        "subject": "Apache Software Foundation",
+        "subject_type": "Organization",
+        "relation": "released patch for",
+        "object": "CVE-2023-49070",
+        "object_type": "Vulnerability"
+      },
+      {
+        "subject": "patch for CVE-2023-49070",
+        "subject_type": "Tool",
+        "relation": "failed to protect against",
+        "object": "other variations of the attack",
+        "object_type": "MalwareCharacteristic:Variants"
+      },
+      {
+        "subject": "zero-day vulnerability CVE-2023-51467",
+        "subject_type": "Vulnerability",
+        "relation": "disclosed on",
+        "object": "Dec. 26",
+        "object_type": "Time"
+      },
+      {
+        "subject": "SonicWall",
+        "subject_type": "Organization",
+        "relation": "analyzed",
+        "object": "zero-day vulnerability CVE-2023-51467",
+        "object_type": "Vulnerability"
+      },
+      {
+        "subject": "Apache Software Foundation",
+        "subject_type": "Organization",
+        "relation": "disclosed",
+        "object": "zero-day vulnerability CVE-2023-51467",
+        "object_type": "Vulnerability"
+      },
+      {
+        "subject": "patch for CVE-2023-49070",
+        "subject_type": "Tool",
+        "relation": "failed to protect against",
+        "object": "zero-day vulnerability CVE-2023-51467",
+        "object_type": "Vulnerability"
+      }
+    ]
+  },
+    {
+    "id": 31,
+    "source_id": "microsoft-workaround-0day-attack",
+    "text": "Microsoft has released a workaround for a zero-day flaw that was initially flagged in April and that attackers already have used to target organizations in Russia and Tibet, researchers said. The remote control execution (RCE) flaw, tracked as CVE-2022-3019, is associated with the Microsoft Support Diagnostic Tool (MSDT), which, ironically, itself collects information about bugs in the company’s products and reports to Microsoft Support. If successfully exploited, attackers can install programs, view, change or delete data, or create new accounts in the context allowed by the user’s rights, the company said. A remote code execution vulnerability exists when MSDT is called using the URL protocol from a calling application such as Word,” Microsoft explained in its guidance on the Microsoft Security Response Center. “An attacker who successfully exploits this vulnerability can run arbitrary code with the privileges of the calling application.",
+    "triplets": [
+      {
+        "subject": "Microsoft",
+        "subject_type": "Organization",
+        "relation": "released workaround for",
+        "object": "zero-day flaw CVE-2022-3019",
+        "object_type": "Vulnerability"
+      },
+      {
+        "subject": "attackers",
+        "subject_type": "Attacker",
+        "relation": "have used",
+        "object": "zero-day flaw CVE-2022-3019",
+        "object_type": "Vulnerability"
+      },
+      {
+        "subject": "attackers",
+        "subject_type": "Attacker",
+        "relation": "targeted",
+        "object": "organizations in Russia",
+        "object_type": "Organization"
+      },
+      {
+        "subject": "attackers",
+        "subject_type": "Attacker",
+        "relation": "targeted",
+        "object": "organizations in Tibet",
+        "object_type": "Organization"
+      },
+      {
+        "subject": "CVE-2022-3019",
+        "subject_type": "Unknown",
+        "relation": "is associated with",
+        "object": "Microsoft Support Diagnostic Tool (MSDT)",
+        "object_type": "Tool"
+      },
+      {
+        "subject": "attackers",
+        "subject_type": "Attacker",
+        "relation": "can install",
+        "object": "programs",
+        "object_type": "Tool"
+      },
+      {
+        "subject": "attackers",
+        "subject_type": "Attacker",
+        "relation": "can view, change or delete",
+        "object": "data",
+        "object_type": "Information"
+      },
+      {
+        "subject": "attackers",
+        "subject_type": "Attacker",
+        "relation": "can create",
+        "object": "new accounts",
+        "object_type": "Account"
+      },
+      {
+        "subject": "Remote code execution vulnerability",
+        "subject_type": "Vulnerability",
+        "relation": "exists when called from",
+        "object": "Application Word",
+        "object_type": "Tool"
+      },
+      {
+        "subject": "attacker",
+        "subject_type": "Unknown",
+        "relation": "can run",
+        "object": "arbitrary code",
+        "object_type": "Malware Characteristic:Capability"
+      },
+      {
+        "subject": "Remote code execution vulnerability",
+        "subject_type": "Vulnerability",
+        "relation": "is exploited by",
+        "object": "attackers",
+        "object_type": "Attacker"
+      }
+    ]
+  },
+    {
+    "id": 32,
+    "source_id": "threat-recap-darkside-crysis-negasteal-coinminer",
+    "text": "Crysis/Dharma ransomware (detected by Trend Micro as Ransom.Win32.CRYSIS.TIBGGS) has released a hacking toolkit named Toolbox, Sophos reports. Toolbox contains Mimikatz to harvest passwords, NirSoft Remote Desktop PassView to steal remote desktop protocol (RDP) passwords, Hash Suite Tools Free to dump hashes, and other tools to help find target computers and deploy the ransomware payload. With this kit, even rookie hackers can infiltrate networks easily. Crysis operates under a ransomware-as-a-service (RaaS) model, and this hacking tool only makes it easier for affiliates to spread the ransomware to more targets.",
+    "triplets": [
+      {
+        "subject": "Crysis/Dharma ransomware",
+        "subject_type": "Malware",
+        "relation": "released",
+        "object": "a hacking toolkit named Toolbox",
+        "object_type": "Unknown"
+      },
+      {
+        "subject": "Toolbox",
+        "subject_type": "Tool",
+        "relation": "contains",
+        "object": "Mimikatz",
+        "object_type": "Tool"
+      },
+      {
+        "subject": "Toolbox",
+        "subject_type": "Tool",
+        "relation": "contains",
+        "object": "NirSoft Remote Desktop PassView",
+        "object_type": "Tool"
+      },
+      {
+        "subject": "Toolbox",
+        "subject_type": "Tool",
+        "relation": "contains",
+        "object": "Hash Suite Tools Free",
+        "object_type": "Tool"
+      },
+      {
+        "subject": "Mimikatz",
+        "subject_type": "Tool",
+        "relation": "harvests",
+        "object": "passwords",
+        "object_type": "Credential"
+      },
+      {
+        "subject": "NirSoft Remote Desktop PassView",
+        "subject_type": "Tool",
+        "relation": "steals",
+        "object": "remote desktop protocol (RDP) passwords",
+        "object_type": "Credential"
+      },
+      {
+        "subject": "Hash Suite Tools Free",
+        "subject_type": "Tool",
+        "relation": "dumps",
+        "object": "hashes",
+        "object_type": "Credential"
+      },
+      {
+        "subject": "Toolbox",
+        "subject_type": "Tool",
+        "relation": "helps find",
+        "object": "target computers",
+        "object_type": "Infrastructure"
+      },
+      {
+        "subject": "Toolbox",
+        "subject_type": "Tool",
+        "relation": "deploys",
+        "object": "the ransomware payload",
+        "object_type": "Malware Characteristic:Payload"
+      },
+      {
+        "subject": "Crysis/Dharma ransomware",
+        "subject_type": "Malware",
+        "relation": "operates under",
+        "object": "ransomware-as-a-service (RaaS) model",
+        "object_type": "Malware Characteristic:Feature"
+      }
+    ]
+  },
+  {
+    "id": 33,
+    "source_id": "microsoft-warns-of-new-falsefont",
+    "text": "Organizations in the Defense Industrial Base (DIB) sector are in the crosshairs of an Iranian threat actor as part of a campaign designed to deliver a never-before-seen backdoor called FalseFont. The findings come from Microsoft, which is tracking the activity under its weather-themed moniker Peach Sandstorm (formerly Holmium), which is also known as APT33, Elfin, and Refined Kitten. FalseFont is a custom backdoor with a wide range of functionalities that allow operators to remotely access an infected system, launch additional files, and send information to its [command-and-control] servers. In a report published in September 2023, Microsoft linked the group to password spray attacks carried out against thousands of organizations globally between February and July 2023. The intrusions primarily singled out satellite, defense, and pharmaceutical sectors. The end goal, the company said, is to facilitate intelligence collection in support of Iranian state interests. Peach Sandstorm is believed to have been active since at least 2013. The disclosure comes as the Israel National Cyber Directorate (INCD) accused Iran and Hezbollah of attempting to unsuccessfully target Ziv Hospital through hacking crews named Agrius and Lebanese Cedar.",
+    "triplets": [
+      {
+        "subject": "Organizations in the Defense Industrial Base (DIB) sector",
+        "subject_type": "Organization",
+        "relation": "targeted by",
+        "object": "Iranian threat actor",
+        "object_type": "Attacker"
+      },
+      {
+        "subject": "Iranian threat actor",
+        "subject_type": "Attacker",
+        "relation": "delivers",
+        "object": "FalseFont",
+        "object_type": "Malware"
+      },
+      {
+        "subject": "Microsoft",
+        "subject_type": "Organization",
+        "relation": "tracks",
+        "object": "Peach Sandstorm",
+        "object_type": "Attacker"
+      },
+      {
+        "subject": "Peach Sandstorm",
+        "subject_type": "Attacker",
+        "relation": "also known as",
+        "object": "APT33",
+        "object_type": "Attacker"
+      },
+      {
+        "subject": "Peach Sandstorm",
+        "subject_type": "Attacker",
+        "relation": "also known as",
+        "object": "Elfin",
+        "object_type": "Attacker"
+      },
+      {
+        "subject": "Peach Sandstorm",
+        "subject_type": "Attacker",
+        "relation": "also known as",
+        "object": "Refined Kitten",
+        "object_type": "Attacker"
+      },
+      {
+        "subject": "FalseFont",
+        "subject_type": "Malware",
+        "relation": "allows",
+        "object": "operators to remotely access an infected system",
+        "object_type": "Malware Characteristic:Capability"
+      },
+      {
+        "subject": "FalseFont",
+        "subject_type": "Malware",
+        "relation": "allows operators to",
+        "object": "launch additional files",
+        "object_type": "Malware Characteristic:Capability"
+      },
+      {
+        "subject": "FalseFont",
+        "subject_type": "Malware",
+        "relation": "allows operators to",
+        "object": "send information to its command-and-control servers",
+        "object_type": "Malware Characteristic:Behavior"
+      },
+      {
+        "subject": "Microsoft",
+        "subject_type": "Organization",
+        "relation": "linked",
+        "object": "Peach Sandstorm to password spray attacks",
+        "object_type": "Information"
+      },
+      {
+        "subject": "password spray attacks",
+        "subject_type": "Event",
+        "relation": "targeted",
+        "object": "thousands of organizations globally",
+        "object_type": "Organization"
+      },
+      {
+        "subject": "password spray attacks",
+        "subject_type": "Event",
+        "relation": "occurred between",
+        "object": "February and July 2023",
+        "object_type": "Time"
+      },
+      {
+        "subject": "Intrusions",
+        "subject_type": "Event",
+        "relation": "targeted",
+        "object": "satellite, defense, and pharmaceutical sectors",
+        "object_type": "Organization"
+      },
+      {
+        "subject": "Peach Sandstorm",
+        "subject_type": "Attacker",
+        "relation": "active since at least",
+        "object": "2013",
+        "object_type": "Time"
+      },
+      {
+        "subject": "Israel National Cyber Directorate (INCD)",
+        "subject_type": "Organization",
+        "relation": "accused",
+        "object": "Iran and Hezbollah",
+        "object_type": "Attacker"
+      },
+      {
+        "subject": "Iran and Hezbollah",
+        "subject_type": "Attacker",
+        "relation": "attempted to target",
+        "object": "Ziv Hospital",
+        "object_type": "Organization"
+      },
+      {
+        "subject": "Agrius",
+        "subject_type": "Attacker",
+        "relation": "is named as",
+        "object": "hacking crew",
+        "object_type": "Attacker"
+      },
+      {
+        "subject": "Lebanese Cedar",
+        "subject_type": "Attacker",
+        "relation": "is named as",
+        "object": "hacking crew",
+        "object_type": "Attacker"
+      },
+      {
+        "subject": "FalseFont",
+        "subject_type": "Malware",
+        "relation": "is used by",
+        "object": "Peach Sandstorm",
+        "object_type": "Attacker"
+      },
+      {
+        "subject": "password spray attacks",
+        "subject_type": "Event",
+        "relation": "are conducted by",
+        "object": "Peach Sandstorm",
+        "object_type": "Attacker"
+      },
+      {
+        "subject": "Intrusions",
+        "subject_type": "Event",
+        "relation": "carried out by",
+        "object": "Peach Sandstorm",
+        "object_type": "Attacker"
+      },
+      {
+        "subject": "Iran and Hezbollah",
+        "subject_type": "Attacker",
+        "relation": "are associated with",
+        "object": "Peach Sandstorm",
+        "object_type": "Attacker"
+      },
+      {
+        "subject": "Peach Sandstorm",
+        "subject_type": "Attacker",
+        "relation": "is an instance of",
+        "object": "hacking crew",
+        "object_type": "Attacker"
+      }
+    ]
+  },
+  {
+    "id": 34,
+    "source_id": "cloaked-ursa-phishing",
+    "text": "Russia's Foreign Intelligence Service hackers, which we call Cloaked Ursa (aka APT29, UAC-0004, Midnight Blizzard/Nobelium, Cozy Bear) are well known for targeting diplomatic missions globally. Their initial access attempts over the past two years have predominantly used phishing lures with a theme of diplomatic operations such as the following: 1. Notes verbale (semiformal government-to-government diplomatic communications) 2. Embassies' operating status updates 3. Schedules for diplomats 4. Invitations to embassy events. These types of lures are generally sent to individuals who handle this type of embassy correspondence as part of their daily jobs. They are meant to entice targets to open the files on behalf of the organization they work for. Recently, Unit 42 researchers observed instances of Cloaked Ursa using lures focusing on the diplomats themselves more than the countries they represent. We have identified Cloaked Ursa targeting diplomatic missions within Ukraine by leveraging something that all recently placed diplomats need – a vehicle. We observed Cloaked Ursa targeting at least 22 of over 80 foreign missions located in Kyiv. While we don't have details on their infection success rate, this is a truly astonishing number for a clandestine operation conducted by an advanced persistent threat (APT) that the United States and the United Kingdom publicly attribute to Russia's Foreign Intelligence Service (SVR).",
+    "triplets": [
+      {
+        "subject": "Cloaked Ursa",
+        "subject_type": "Attacker",
+        "relation": "is also known as",
+        "object": "APT29",
+        "object_type": "Attacker"
+      },
+      {
+        "subject": "Cloaked Ursa",
+        "subject_type": "Attacker",
+        "relation": "is also known as",
+        "object": "Midnight Blizzard/Nobelium",
+        "object_type": "Attacker"
+      },
+      {
+        "subject": "Cloaked Ursa",
+        "subject_type": "Attacker",
+        "relation": "is also known as",
+        "object": "Cozy Bear",
+        "object_type": "Attacker"
+      },
+      {
+        "subject": "Cloaked Ursa",
+        "subject_type": "Attacker",
+        "relation": "is attributed to",
+        "object": "Russia's Foreign Intelligence Service",
+        "object_type": "Organization"
+      },
+      {
+        "subject": "Cloaked Ursa",
+        "subject_type": "Attacker",
+        "relation": "is known for targeting",
+        "object": "diplomatic missions globally",
+        "object_type": "Organization"
+      },
+      {
+        "subject": "Cloaked Ursa",
+        "subject_type": "Attacker",
+        "relation": "used",
+        "object": "phishing lures",
+        "object_type": "Malware Characteristic:Capability"
+      },
+      {
+        "subject": "phishing lures",
+        "subject_type": "Malware Characteristic:Capability",
+        "relation": "had themes",
+        "object": "diplomatic operations",
+        "object_type": "Event"
+      },
+      {
+        "subject": "phishing lures",
+        "subject_type": "Malware Characteristic:Capability",
+        "relation": "targeted",
+        "object": "individuals who handle embassy correspondence",
+        "object_type": "Account"
+      },
+      {
+        "subject": "Cloaked Ursa",
+        "subject_type": "Attacker",
+        "relation": "used lures focused on",
+        "object": "diplomats themselves",
+        "object_type": "Account"
+      },
+      {
+        "subject": "Cloaked Ursa",
+        "subject_type": "Attacker",
+        "relation": "targeted",
+        "object": "diplomatic missions within Ukraine",
+        "object_type": "Unknown"
+      },
+      {
+        "subject": "Cloaked Ursa",
+        "subject_type": "Attacker",
+        "relation": "targeted",
+        "object": "foreign missions located in Kyiv",
+        "object_type": "Organization"
+      }
+    ]
+  },
+  {
+    "id": 35,
+    "source_id": "h0lygh0st-ransomware-north-korea",
+    "text": "Microsoft researchers have linked an emerging ransomware threat that already has compromised a number of small-to-mid-sized businesses to financially motivated North Korean state-sponsored actors that have been active since last year. A group tracked by researchers from Microsoft Threat Intelligence Center (MSTIC) as DEV-0530 but that calls itself H0lyGh0st has been developing and using ransomware in attacks since June 2021. H0lyGh0st’s standard modus operandi is to use a namesake ransomware to encrypt all files on the target device using the file extension .h0lyenc, then send the victim a sample of the files as proof. The group interacts with victims on a .onion site that it maintains and on which it provides a contact form for victims to get in touch, researchers said.",
+    "triplets": [
+      {
+        "subject": "Microsoft researchers",
+        "subject_type": "Organization",
+        "relation": "linked",
+        "object": "an emerging ransomware threat",
+        "object_type": "Malware"
+      },
+      {
+        "subject": "an emerging ransomware threat",
+        "subject_type": "Malware",
+        "relation": "compromised",
+        "object": "small-to-mid-sized businesses",
+        "object_type": "Organization"
+      },
+      {
+        "subject": "an emerging ransomware threat",
+        "subject_type": "Malware",
+        "relation": "linked to",
+        "object": "North Korean state-sponsored actors",
+        "object_type": "Attacker"
+      },
+      {
+        "subject": "North Korean state-sponsored actors",
+        "subject_type": "Attacker",
+        "relation": "have been active since",
+        "object": "last year",
+        "object_type": "Time"
+      },
+      {
+        "subject": "Microsoft Threat Intelligence Center (MSTIC)",
+        "subject_type": "Organization",
+        "relation": "tracked",
+        "object": "DEV-0530",
+        "object_type": "Attacker"
+      },
+      {
+        "subject": "DEV-0530",
+        "subject_type": "Attacker",
+        "relation": "calls itself",
+        "object": "H0lyGh0st",
+        "object_type": "Attacker"
+      },
+      {
+        "subject": "H0lyGh0st",
+        "subject_type": "Attacker",
+        "relation": "developing and using",
+        "object": "ransomware",
+        "object_type": "Unknown"
+      },
+      {
+        "subject": "H0lyGh0st",
+        "subject_type": "Attacker",
+        "relation": "has been active since",
+        "object": "June 2021",
+        "object_type": "Time"
+      },
+      {
+        "subject": "H0lyGh0st",
+        "subject_type": "Attacker",
+        "relation": "uses",
+        "object": "namesake ransomware",
+        "object_type": "Unknown"
+      },
+      {
+        "subject": "namesake ransomware",
+        "subject_type": "Unknown",
+        "relation": "encrypts",
+        "object": "all files on the target device",
+        "object_type": "Indicator:File"
+      },
+      {
+        "subject": "namesake ransomware",
+        "subject_type": "Unknown",
+        "relation": "uses",
+        "object": "file extension .h0lyenc",
+        "object_type": "Malware Characteristic:Feature"
+      },
+      {
+        "subject": "H0lyGh0st",
+        "subject_type": "Attacker",
+        "relation": "interacts with victims via",
+        "object": ".onion site",
+        "object_type": "Infrastructure"
+      }
+    ]
+  },
+  {
+      "id": 36,
+    "source_id": "an-in-depth-look-at-cuba-ransomware",
+    "text": "Cuba ransomware first appeared in 2019 but remained relatively unnoticed until November 2021, when they reportedly targeted a minimum of 49 organizations across various sectors. The sectors included government, healthcare, information technology, manufacturing, and finance. During this time, Cuba ransomware operators were infiltrating networks by encrypting files using the '.cuba' extension. Over the years, the ransom demands from Cuba totals at least $145 million, and the group has successfully collected at least $60 million in ransom payments. By 2022, the threat actors had expanded their tactics, techniques, and procedures (TTPs), leading security researchers to suggest a potential connection between Cuba ransomware actors, RomCom Remote Access Trojan (RAT) actors, and Industrial Spy ransomware actors. This month, Cuba garnered attention when they took responsibility for a cyberattack on The Philadelphia Inquirer.",
+    "triplets": [
+      {
+        "subject": "Cuba ransomware",
+        "subject_type": "Malware",
+        "relation": "first appeared in",
+        "object": "2019",
+        "object_type": "Time"
+      },
+      {
+        "subject": "Cuba ransomware",
+        "subject_type": "Malware",
+        "relation": "reportedly targeted",
+        "object": "49 organizations",
+        "object_type": "Organization"
+      },
+      {
+        "subject": "49 organizations",
+        "subject_type": "Organization",
+        "relation": "included sectors",
+        "object": "government",
+        "object_type": "Organization"
+      },
+      {
+        "subject": "49 organizations",
+        "subject_type": "Organization",
+        "relation": "included sectors",
+        "object": "healthcare",
+        "object_type": "Organization"
+      },
+      {
+        "subject": "49 organizations",
+        "subject_type": "Organization",
+        "relation": "included sectors",
+        "object": "information technology",
+        "object_type": "Organization"
+      },
+      {
+        "subject": "49 organizations",
+        "subject_type": "Organization",
+        "relation": "included sectors",
+        "object": "manufacturing",
+        "object_type": "Organization"
+      },
+      {
+        "subject": "49 organizations",
+        "subject_type": "Organization",
+        "relation": "included sectors",
+        "object": "finance",
+        "object_type": "Organization"
+      },
+      {
+        "subject": "Cuba ransomware operators",
+        "subject_type": "Unknown",
+        "relation": "infiltrated networks by",
+        "object": "encrypting files using the '.cuba' extension",
+        "object_type": "Malware Characteristic:Behavior"
+      },
+      {
+        "subject": "Cuba ransomware",
+        "subject_type": "Malware",
+        "relation": "demanded ransom totals at least",
+        "object": "$145 million",
+        "object_type": "Information"
+      },
+      {
+        "subject": "Cuba ransomware",
+        "subject_type": "Malware",
+        "relation": "collected ransom payments totaling at least",
+        "object": "$60 million",
+        "object_type": "Information"
+      },
+      {
+        "subject": "Cuba ransomware actors",
+        "subject_type": "Attacker",
+        "relation": "potentially connected to",
+        "object": "RomCom Remote Access Trojan (RAT) actors",
+        "object_type": "Attacker"
+      },
+      {
+        "subject": "Cuba ransomware actors",
+        "subject_type": "Attacker",
+        "relation": "potentially connected to",
+        "object": "Industrial Spy ransomware actors",
+        "object_type": "Unknown"
+      },
+      {
+        "subject": "Cuba ransomware",
+        "subject_type": "Malware",
+        "relation": "took responsibility for",
+        "object": "a cyberattack on The Philadelphia Inquirer",
+        "object_type": "Event"
+      },
+      {
+        "subject": "a cyberattack on The Philadelphia Inquirer",
+        "subject_type": "Event",
+        "relation": "occurred in",
+        "object": "This month",
+        "object_type": "Time"
+      },
+      {
+        "subject": "Cuba ransomware actors",
+        "subject_type": "Attacker",
+        "relation": "targeted",
+        "object": "49 organizations",
+        "object_type": "Organization"
+      }
+    ]
+  },
+    {
+    "id": 37,
+    "source_id": "flax-typhoon-using-legitimate-software-to-quietly-access-taiwanese-organizations",
+    "text": "Flax Typhoon has been active since mid-2021 and has targeted government agencies and education, critical manufacturing, and information technology organizations in Taiwan. Some victims have also been observed elsewhere in Southeast Asia, as well as in North America and Africa. Flax Typhoon focuses on persistence, lateral movement, and credential access. As with any observed nation-state actor activity, Microsoft has directly notified targeted or compromised customers, providing them with important information needed to secure their environments. Flax Typhoon is known to use the China Chopper web shell, Metasploit, Juicy Potato privilege escalation tool, Mimikatz, and SoftEther virtual private network (VPN) client. However, Flax Typhoon primarily relies on living-off-the-land techniques and hands-on-keyboard activity. Flax Typhoon achieves initial access by exploiting known vulnerabilities in public-facing servers and deploying web shells like China Chopper. Following initial access, Flax Typhoon uses command-line tools to first establish persistent access over the remote desktop protocol, then deploy a VPN connection to actor-controlled network infrastructure, and finally collect credentials from compromised systems. Flax Typhoon further uses this VPN access to scan for vulnerabilities on targeted systems and organizations from the compromised systems.",
+    "triplets": [
+      {
+        "subject": "Flax Typhoon",
+        "subject_type": "Attacker",
+        "relation": "has been active since",
+        "object": "mid-2021",
+        "object_type": "Time"
+      },
+      {
+        "subject": "Flax Typhoon",
+        "subject_type": "Attacker",
+        "relation": "has targeted",
+        "object": "government agencies and education, critical manufacturing, and information technology organizations in Taiwan",
+        "object_type": "Organization"
+      },
+      {
+        "subject": "Flax Typhoon",
+        "subject_type": "Attacker",
+        "relation": "has victims observed in",
+        "object": "Southeast Asia",
+        "object_type": "Location"
+      },
+      {
+        "subject": "Flax Typhoon",
+        "subject_type": "Attacker",
+        "relation": "has victims observed in",
+        "object": "North America",
+        "object_type": "Location"
+      },
+      {
+        "subject": "Flax Typhoon",
+        "subject_type": "Attacker",
+        "relation": "has victims observed in",
+        "object": "Africa",
+        "object_type": "Location"
+      },
+      {
+        "subject": "Flax Typhoon",
+        "subject_type": "Attacker",
+        "relation": "focuses on",
+        "object": "persistence",
+        "object_type": "Malware Characteristic:Behavior"
+      },
+      {
+        "subject": "Flax Typhoon",
+        "subject_type": "Attacker",
+        "relation": "focuses on",
+        "object": "lateral movement",
+        "object_type": "Malware Characteristic:Behavior"
+      },
+      {
+        "subject": "Flax Typhoon",
+        "subject_type": "Attacker",
+        "relation": "focuses on",
+        "object": "credential access",
+        "object_type": "Malware Characteristic:Capability"
+      },
+      {
+        "subject": "Microsoft",
+        "subject_type": "Organization",
+        "relation": "has directly notified",
+        "object": "targeted or compromised customers",
+        "object_type": "Organization"
+      },
+      {
+        "subject": "Flax Typhoon",
+        "subject_type": "Attacker",
+        "relation": "uses",
+        "object": "China Chopper web shell",
+        "object_type": "Malware"
+      },
+      {
+        "subject": "Flax Typhoon",
+        "subject_type": "Attacker",
+        "relation": "uses",
+        "object": "Metasploit",
+        "object_type": "Tool"
+      },
+      {
+        "subject": "Flax Typhoon",
+        "subject_type": "Attacker",
+        "relation": "uses",
+        "object": "Juicy Potato privilege escalation tool",
+        "object_type": "Tool"
+      },
+      {
+        "subject": "Flax Typhoon",
+        "subject_type": "Attacker",
+        "relation": "uses",
+        "object": "Mimikatz",
+        "object_type": "Tool"
+      },
+      {
+        "subject": "Flax Typhoon",
+        "subject_type": "Attacker",
+        "relation": "uses",
+        "object": "SoftEther virtual private network (VPN) client",
+        "object_type": "Tool"
+      },
+      {
+        "subject": "Flax Typhoon",
+        "subject_type": "Attacker",
+        "relation": "relies on",
+        "object": "living-off-the-land techniques",
+        "object_type": "Malware Characteristic:Behavior"
+      },
+      {
+        "subject": "Flax Typhoon",
+        "subject_type": "Attacker",
+        "relation": "achieves initial access by exploiting",
+        "object": "known vulnerabilities in public-facing servers",
+        "object_type": "Vulnerability"
+      },
+      {
+        "subject": "Flax Typhoon",
+        "subject_type": "Attacker",
+        "relation": "deploys",
+        "object": "China Chopper web shell",
+        "object_type": "Malware"
+      },
+      {
+        "subject": "Flax Typhoon",
+        "subject_type": "Attacker",
+        "relation": "uses",
+        "object": "command-line tools",
+        "object_type": "Tool"
+      },
+      {
+        "subject": "Flax Typhoon",
+        "subject_type": "Attacker",
+        "relation": "establishes persistent access over",
+        "object": "remote desktop protocol",
+        "object_type": "Infrastructure"
+      },
+      {
+        "subject": "Flax Typhoon",
+        "subject_type": "Attacker",
+        "relation": "deploys",
+        "object": "a VPN connection to actor-controlled network infrastructure",
+        "object_type": "Infrastructure"
+      },
+      {
+        "subject": "Flax Typhoon",
+        "subject_type": "Attacker",
+        "relation": "collects",
+        "object": "credentials from compromised systems",
+        "object_type": "Credential"
+      },
+      {
+        "subject": "Flax Typhoon",
+        "subject_type": "Attacker",
+        "relation": "uses VPN access to",
+        "object": "scan for vulnerabilities on targeted systems and organizations",
+        "object_type": "Malware Characteristic:Capability"
+      },
+      {
+        "subject": "Microsoft",
+        "subject_type": "Organization",
+        "relation": "has directly notified customers targeted by",
+        "object": "Flax Typhoon",
+        "object_type": "Attacker"
+      }
+    ]
+  },
+  {
+    "id": 38,
+    "source_id": "operation-earth-kitsune-tracking-slub-s-current-operations",
+    "text": "We found Operation Earth Kitsune using a total of five C&C servers, seven samples, and four new bugs, aiming to compromise websites to host malware. We initiated our investigation after noticing that the Korean American National Coordinating Council (KANCC) website was redirecting visitors to the Hanseattle website. Users who accessed the said site were redirected to a weaponized version of a proof of concept (POC) for the CVE-2019-5782 Google Chrome vulnerability published in the chromium tracking system. Digging deeper, we discovered that the attack does not only involve a weaponized version of the mentioned Chrome exploit; the exploit was infecting the victim machine with three separate malware samples.",
+    "triplets": [
+      {
+        "subject": "Operation Earth Kitsune",
+        "subject_type": "Attacker",
+        "relation": "using",
+        "object": "five C&C servers",
+        "object_type": "Infrastructure"
+      },
+      {
+        "subject": "Operation Earth Kitsune",
+        "subject_type": "Attacker",
+        "relation": "using",
+        "object": "seven samples",
+        "object_type": "Malware"
+      },
+      {
+        "subject": "Operation Earth Kitsune",
+        "subject_type": "Attacker",
+        "relation": "using",
+        "object": "four new bugs",
+        "object_type": "Vulnerability"
+      },
+      {
+        "subject": "Operation Earth Kitsune",
+        "subject_type": "Attacker",
+        "relation": "aiming to compromise",
+        "object": "websites",
+        "object_type": "Infrastructure"
+      },
+      {
+        "subject": "Korean American National Coordinating Council (KANCC)",
+        "subject_type": "Organization",
+        "relation": "website was redirecting visitors to",
+        "object": "Hanseattle website",
+        "object_type": "Infrastructure"
+      },
+      {
+        "subject": "Hanseattle website",
+        "subject_type": "Infrastructure",
+        "relation": "redirected users to",
+        "object": "weaponized version of CVE-2019-5782",
+        "object_type": "Exploit Target"
+      },
+      {
+        "subject": "weaponized version of CVE-2019-5782",
+        "subject_type": "Exploit Target",
+        "relation": "infecting victim machine with",
+        "object": "three separate malware samples",
+        "object_type": "Malware"
+      },
+      {
+        "subject": "CVE-2019-5782",
+        "subject_type": "Vulnerability",
+        "relation": "is a vulnerability in",
+        "object": "Google Chrome",
+        "object_type": "Tool"
+      },
+      {
+        "subject": "Hanseattle website",
+        "subject_type": "Infrastructure",
+        "relation": "is used by",
+        "object": "Operation Earth Kitsune",
+        "object_type": "Attacker"
+      },
+      {
+        "subject": "Operation Earth Kitsune",
+        "subject_type": "Attacker",
+        "relation": "exploited",
+        "object": "CVE-2019-5782",
+        "object_type": "Vulnerability"
+      }
+    ]
+  }, 
+    {
+    "id": 39,
+    "source_id": "cybercriminals-are-selling-access-to-chinese-surveillance-cameras",
+    "text": "Hikvision – short for Hangzhou Hikvision Digital Technology – is a Chinese state-owned manufacturer of video surveillance equipment. Their customers span over 100 countries (including the United States, despite the FCC labeling Hikvision “an unacceptable risk to U.S. national security” in 2019). Last Fall, a command injection flaw in Hikvision cameras was revealed to the world as CVE-2021-36260. The exploit was given a “critical” 9.8 out of 10 rating by NIST. Despite the severity of the vulnerability, and nearly a year into this story, over 80,000 affected devices remain unpatched. In the time since, the researchers have discovered “multiple instances of hackers looking to collaborate on exploiting Hikvision cameras using the command injection vulnerability,” specifically in Russian dark web forums, where leaked credentials have been put up for sale. The extent of the damage done already is unclear. The authors of the report could only speculate that “Chinese threat groups such as MISSION2025/APT41, APT10 and its affiliates, as well as unknown Russian threat actor groups could potentially exploit vulnerabilities in these devices to fulfill their motives.",
+    "triplets": [
+      {
+        "subject": "Hikvision",
+        "subject_type": "Organization",
+        "relation": "is",
+        "object": "a Chinese state-owned manufacturer",
+        "object_type": "Organization"
+      },
+      {
+        "subject": "Hikvision",
+        "subject_type": "Organization",
+        "relation": "has customers in",
+        "object": "the United States",
+        "object_type": "Location"
+      },
+      {
+        "subject": "FCC",
+        "subject_type": "Organization",
+        "relation": "labeled",
+        "object": "Hikvision an unacceptable risk to U.S. national security",
+        "object_type": "Organization"
+      },
+      {
+        "subject": "command injection flaw",
+        "subject_type": "Vulnerability",
+        "relation": "identified as",
+        "object": "CVE-2021-36260",
+        "object_type": "Vulnerability"
+      },
+      {
+        "subject": "exploit",
+        "subject_type": "Exploit Target",
+        "relation": "received rating",
+        "object": "critical 9.8 out of 10 by NIST",
+        "object_type": "Information"
+      },
+      {
+        "subject": "80,000 affected devices",
+        "subject_type": "Infrastructure",
+        "relation": "remain",
+        "object": "unpatched",
+        "object_type": "Malware Characteristic:Behavior"
+      },
+      {
+        "subject": "hackers",
+        "subject_type": "Attacker",
+        "relation": "collaborate on exploiting",
+        "object": "Hikvision cameras",
+        "object_type": "Infrastructure"
+      },
+      {
+        "subject": "command injection vulnerability",
+        "subject_type": "Unknown",
+        "relation": "exploited by",
+        "object": "hackers on Russian dark web forums",
+        "object_type": "Attacker"
+      },
+      {
+        "subject": "leaked credentials",
+        "subject_type": "Credential",
+        "relation": "put up for sale on",
+        "object": "Russian dark web forums",
+        "object_type": "Infrastructure"
+      },
+      {
+        "subject": "Chinese threat groups",
+        "subject_type": "Attacker",
+        "relation": "could exploit",
+        "object": "vulnerabilities in Hikvision cameras",
+        "object_type": "Vulnerability"
+      },
+      {
+        "subject": "Russian threat actor groups",
+        "subject_type": "Attacker",
+        "relation": "could exploit",
+        "object": "vulnerabilities in Hikvision cameras",
+        "object_type": "Vulnerability"
+      },
+      {
+        "subject": "FCC",
+        "subject_type": "Organization",
+        "relation": "labeled as security risk by",
+        "object": "Hikvision",
+        "object_type": "Organization"
+      },
+      {
+        "subject": "command injection flaw",
+        "subject_type": "Vulnerability",
+        "relation": "was discovered in devices manufactured by",
+        "object": "Hikvision",
+        "object_type": "Organization"
+      },
+      {
+        "subject": "exploit",
+        "subject_type": "Exploit Target",
+        "relation": "targets devices from",
+        "object": "Hikvision",
+        "object_type": "Organization"
+      },
+      {
+        "subject": "Hikvision",
+        "subject_type": "Organization",
+        "relation": "has devices that are",
+        "object": "unpatched",
+        "object_type": "Malware Characteristic:Behavior"
+      },
+      {
+        "subject": "hackers",
+        "subject_type": "Attacker",
+        "relation": "are exploiting vulnerabilities in devices of",
+        "object": "Hikvision",
+        "object_type": "Organization"
+      },
+      {
+        "subject": "leaked credentials",
+        "subject_type": "Credential",
+        "relation": "are associated with",
+        "object": "Hikvision",
+        "object_type": "Organization"
+      },
+      {
+        "subject": "vulnerabilities in Hikvision cameras",
+        "subject_type": "Vulnerability",
+        "relation": "exist in products of",
+        "object": "Hikvision",
+        "object_type": "Organization"
+      }
+    ]
+  },
+    {
+    "id": 40,
+    "source_id": "google-patches-chromes-fifth-zero-day-of-the-year",
+    "text": "Google has patched the fifth actively exploited zero-day vulnerability discovered in Chrome this year as one in a series of fixes included in a stable channel update released Wednesday. The bug, tracked as CVE-2022-2856 and rated as high on the Common Vulnerability Scoring System (CVSS), is associated with “insufficient validation of untrusted input in Intents,” according to the advisory posted by Google. Google credits Ashley Shen and Christian Resell of its Google Threat Analysis Group (TAG) for reporting the zero-day bug, which could allow for arbitrary code execution, on July 19. The advisory also unveiled 10 other patches for various other Chrome issues.",
+    "triplets": [
+      {
+        "subject": "Google",
+        "subject_type": "Organization",
+        "relation": "patched",
+        "object": "the fifth actively exploited zero-day vulnerability",
+        "object_type": "Vulnerability"
+      },
+      {
+        "subject": "the fifth actively exploited zero-day vulnerability",
+        "subject_type": "Vulnerability",
+        "relation": "is tracked as",
+        "object": "CVE-2022-2856",
+        "object_type": "Vulnerability"
+      },
+      {
+        "subject": "CVE-2022-2856",
+        "subject_type": "Vulnerability",
+        "relation": "is rated",
+        "object": "high on the Common Vulnerability Scoring System (CVSS)",
+        "object_type": "Malware Characteristic:Feature"
+      },
+      {
+        "subject": "CVE-2022-2856",
+        "subject_type": "Vulnerability",
+        "relation": "is associated with",
+        "object": "insufficient validation of untrusted input in Intents",
+        "object_type": "Malware Characteristic:Feature"
+      },
+      {
+        "subject": "Google",
+        "subject_type": "Organization",
+        "relation": "credits",
+        "object": "Ashley Shen",
+        "object_type": "Attacker"
+      },
+      {
+        "subject": "Google",
+        "subject_type": "Organization",
+        "relation": "credits",
+        "object": "Christian Resell",
+        "object_type": "Attacker"
+      },
+      {
+        "subject": "Ashley Shen",
+        "subject_type": "Attacker",
+        "relation": "reported",
+        "object": "CVE-2022-2856",
+        "object_type": "Vulnerability"
+      },
+      {
+        "subject": "Christian Resell",
+        "subject_type": "Attacker",
+        "relation": "reported",
+        "object": "CVE-2022-2856",
+        "object_type": "Vulnerability"
+      },
+      {
+        "subject": "CVE-2022-2856",
+        "subject_type": "Vulnerability",
+        "relation": "could allow",
+        "object": "arbitrary code execution",
+        "object_type": "Malware Characteristic:Capability"
+      },
+      {
+        "subject": "Google",
+        "subject_type": "Organization",
+        "relation": "released",
+        "object": "10 other patches for various other Chrome issues",
+        "object_type": "Information"
+      },
+      {
+        "subject": "Google",
+        "subject_type": "Organization",
+        "relation": "released the patch on",
+        "object": "Wednesday",
+        "object_type": "Time"
+      },
+      {
+        "subject": "Ashley Shen",
+        "subject_type": "Attacker",
+        "relation": "reported CVE-2022-2856 on",
+        "object": "July 19",
+        "object_type": "Time"
+      },
+      {
+        "subject": "Christian Resell",
+        "subject_type": "Attacker",
+        "relation": "reported CVE-2022-2856 on",
+        "object": "July 19",
+        "object_type": "Time"
+      }
+    ]
+  },
+    {
+    "id": 41,
+    "source_id": "malware-distributor-storm-0324-facilitates-ransomware-access",
+    "text": "The threat actor that Microsoft tracks as Storm-0324 is a financially motivated group known to gain initial access using email-based initial infection vectors and then hand off access to compromised networks to other threat actors. These handoffs frequently lead to ransomware deployment. Beginning in July 2023, Storm-0324 was observed distributing payloads using an open-source tool to send phishing lures through Microsoft Teams chats. This activity is not related to the Midnight Blizzard social engineering campaigns over Teams that we observed beginning in May 2023. Because Storm-0324 hands off access to other threat actors, identifying and remediating Storm-0324 activity can prevent more dangerous follow-on attacks like ransomware.Storm-0324 (DEV-0324), which overlaps with threat groups tracked by other researchers as TA543 and Sagrid, acts as a distributor in the cybercriminal economy, providing a service to distribute the payloads of other attackers through phishing and exploit kit vectors.  Storm-0324's tactics focus on highly evasive infection chains with payment and invoice lures. The actor is known to distribute the JSSLoader malware, which facilitates access for the ransomware-as-a-service (RaaS) actor Sangria Tempest (ELBRUS, Carbon Spider, FIN7). Previous distribution activity associated with Storm-0324 included the Gozi infostealer and the Nymaim downloader and locker.",
+    "triplets": [
+      {
+        "subject": "Storm-0324",
+        "subject_type": "Attacker",
+        "relation": "is tracked by",
+        "object": "Microsoft",
+        "object_type": "Organization"
+      },
+      {
+        "subject": "Storm-0324",
+        "subject_type": "Attacker",
+        "relation": "is known to gain initial access using",
+        "object": "email-based initial infection vectors",
+        "object_type": "Malware Characteristic:Behavior"
+      },
+      {
+        "subject": "Storm-0324",
+        "subject_type": "Attacker",
+        "relation": "hands off compromised networks to",
+        "object": "other threat actors",
+        "object_type": "Attacker"
+      },
+      {
+        "subject": "Storm-0324",
+        "subject_type": "Attacker",
+        "relation": "distributed payloads through",
+        "object": "Microsoft Teams chats",
+        "object_type": "Infrastructure"
+      },
+      {
+        "subject": "Storm-0324",
+        "subject_type": "Attacker",
+        "relation": "began distributing payloads in",
+        "object": "July 2023",
+        "object_type": "Time"
+      },
+      {
+        "subject": "Storm-0324",
+        "subject_type": "Attacker",
+        "relation": "acts as",
+        "object": "a distributor in the cybercriminal economy",
+        "object_type": "Malware Characteristic:Behavior"
+      },
+      {
+        "subject": "Storm-0324",
+        "subject_type": "Attacker",
+        "relation": "distributes payloads through",
+        "object": "phishing and exploit kit vectors",
+        "object_type": "Malware Characteristic:Behavior"
+      },
+      {
+        "subject": "Storm-0324",
+        "subject_type": "Attacker",
+        "relation": "uses tactics with",
+        "object": "payment and invoice lures",
+        "object_type": "Malware Characteristic:Behavior"
+      },
+      {
+        "subject": "Storm-0324",
+        "subject_type": "Attacker",
+        "relation": "is known to distribute",
+        "object": "JSSLoader malware",
+        "object_type": "Malware"
+      },
+      {
+        "subject": "JSSLoader malware",
+        "subject_type": "Malware",
+        "relation": "facilitates access for",
+        "object": "Sangria Tempest",
+        "object_type": "Attacker"
+      },
+      {
+        "subject": "Storm-0324",
+        "subject_type": "Attacker",
+        "relation": "previously distributed",
+        "object": "Gozi infostealer",
+        "object_type": "Malware"
+      },
+      {
+        "subject": "Storm-0324",
+        "subject_type": "Attacker",
+        "relation": "previously distributed",
+        "object": "Nymaim downloader and locker",
+        "object_type": "Malware"
+      },
+      {
+        "subject": "Sangria Tempest",
+        "subject_type": "Attacker",
+        "relation": "is categorized as",
+        "object": "ransomware-as-a-service (RaaS) actor",
+        "object_type": "Attacker"
+      },
+      {
+        "subject": "Storm-0324",
+        "subject_type": "Attacker",
+        "relation": "has overlap with",
+        "object": "TA543",
+        "object_type": "Attacker"
+      },
+      {
+        "subject": "Storm-0324",
+        "subject_type": "Attacker",
+        "relation": "has overlap with",
+        "object": "Sagrid",
+        "object_type": "Attacker"
+      },
+      {
+        "subject": "Midnight Blizzard social engineering campaigns",
+        "subject_type": "Event",
+        "relation": "were observed beginning in",
+        "object": "May 2023",
+        "object_type": "Time"
+      },
+      {
+        "subject": "Midnight Blizzard social engineering campaigns",
+        "subject_type": "Event",
+        "relation": "are not related to",
+        "object": "Storm-0324",
+        "object_type": "Attacker"
+      }
+    ]
+  },
+   {
+    "id": 42,
+    "source_id": "cisa-urges-patch-11-bug",
+    "text": "A Windows 11 vulnerability, part of Microsoft’s Patch Tuesday roundup of fixes, is being exploited in the wild, prompting the U.S. Cybersecurity and Infrastructure Security Agency (CISA) to advise patching of the elevation of privileges flaw by August 2. The recommendation is directed at federal agencies and concerns CVE-2022-22047, a vulnerability that carries a CVSS score of high (7.8) and exposes Windows Client Server Runtime Subsystem (CSRSS) used in Windows 11 (and earlier versions dating back to 7) and also Windows Server 2022 (and earlier versions 2008, 2012, 2016 and 2019) to attack. The CSRSS bug is an elevation of privileges vulnerability that allows adversaries with a pre-established foothold on a targeted system to execute code as an unprivileged user. When the bug was first reported by Microsoft’s own security team earlier this month it was classified as a zero-day, or a known bug with no patch. ",
+    "triplets": [
+      {
+        "subject": "Windows 11",
+        "subject_type": "Infrastructure",
+        "relation": "contains",
+        "object": "CVE-2022-22047",
+        "object_type": "Vulnerability"
+      },
+      {
+        "subject": "CVE-2022-22047",
+        "subject_type": "Vulnerability",
+        "relation": "is exploited by",
+        "object": "attackers",
+        "object_type": "Attacker"
+      },
+      {
+        "subject": "U.S. Cybersecurity and Infrastructure Security Agency (CISA)",
+        "subject_type": "Organization",
+        "relation": "advises patching by",
+        "object": "August 2",
+        "object_type": "Time"
+      },
+      {
+        "subject": "CVE-2022-22047",
+        "subject_type": "Vulnerability",
+        "relation": "affects",
+        "object": "Windows Client Server Runtime Subsystem (CSRSS)",
+        "object_type": "Infrastructure"
+      },
+      {
+        "subject": "Windows Client Server Runtime Subsystem (CSRSS)",
+        "subject_type": "Infrastructure",
+        "relation": "is used in",
+        "object": "Windows 11",
+        "object_type": "Infrastructure"
+      },
+      {
+        "subject": "Windows Client Server Runtime Subsystem (CSRSS)",
+        "subject_type": "Infrastructure",
+        "relation": "is used in",
+        "object": "Windows Server 2022",
+        "object_type": "Infrastructure"
+      },
+      {
+        "subject": "CVE-2022-22047",
+        "subject_type": "Vulnerability",
+        "relation": "allows",
+        "object": "execute code as an unprivileged user",
+        "object_type": "Malware Characteristic:Capability"
+      },
+      {
+        "subject": "Microsoft",
+        "subject_type": "Organization",
+        "relation": "reported",
+        "object": "CVE-2022-22047",
+        "object_type": "Vulnerability"
+      },
+      {
+        "subject": "CVE-2022-22047",
+        "subject_type": "Vulnerability",
+        "relation": "was classified as",
+        "object": "a zero-day",
+        "object_type": "Vulnerability"
+      },
+      {
+        "subject": "U.S. Cybersecurity and Infrastructure Security Agency (CISA)",
+        "subject_type": "Organization",
+        "relation": "advised patching of",
+        "object": "CVE-2022-22047",
+        "object_type": "Vulnerability"
+      }
+    ]
+  },
+  {
+    "id": 43,
+    "source_id": "new-macos-vulnerability-migraine-could-bypass-system-integrity-protection",
+    "text": "A new vulnerability, which we refer to as “Migraine” for its involvement with macOS migration, could allow an attacker with root access to automatically bypass System Integrity Protection (SIP) in macOS and perform arbitrary operations on a device. We shared these findings with Apple through Coordinated Vulnerability Disclosure (CVD) via Microsoft Security Vulnerability Research (MSVR). A fix for this vulnerability, now identified as CVE-2023-32369, was included in the security updates released by Apple on May 18, 2023.",
+    "triplets": [
+      {
+        "subject": "Migraine",
+        "subject_type": "Malware",
+        "relation": "affects",
+        "object": "macOS",
+        "object_type": "Infrastructure"
+      },
+      {
+        "subject": "attacker",
+        "subject_type": "Attacker",
+        "relation": "could bypass",
+        "object": "System Integrity Protection (SIP)",
+        "object_type": "Malware Characteristic:Capability"
+      },
+      {
+        "subject": "attacker",
+        "subject_type": "Attacker",
+        "relation": "can perform",
+        "object": "arbitrary operations on a device",
+        "object_type": "Malware Characteristic:Capability"
+      },
+      {
+        "subject": "Microsoft Security Vulnerability Research (MSVR)",
+        "subject_type": "Organization",
+        "relation": "shared findings with",
+        "object": "Apple",
+        "object_type": "Organization"
+      },
+      {
+        "subject": "CVE-2023-32369",
+        "subject_type": "Vulnerability",
+        "relation": "is identified as",
+        "object": "Migraine",
+        "object_type": "Malware"
+      },
+      {
+        "subject": "Apple",
+        "subject_type": "Organization",
+        "relation": "released fix for",
+        "object": "CVE-2023-32369",
+        "object_type": "Vulnerability"
+      },
+      {
+        "subject": "Apple",
+        "subject_type": "Organization",
+        "relation": "released security updates on",
+        "object": "May 18, 2023",
+        "object_type": "Time"
+      },
+      {
+        "subject": "attacker",
+        "subject_type": "Attacker",
+        "relation": "exploits vulnerability addressed by",
+        "object": "Apple",
+        "object_type": "Organization"
+      }
+    ]
+  },
+  {
+    "id": 44,
+    "source_id": "magnet-goblin-delivers-linux-malware-using-one-day-vulnerabilities",
+    "text": "A financially motivated threat actor has been targeting one-day vulnerabilities in public-facing services to deploy Linux backdoors, Check Point reports. Tracked as Magnet Goblin, the adversary was seen quickly adopting one-day vulnerabilities, often in edge devices, and relying on the Nerbian custom malware family to perform nefarious activities. Magnet Goblin was seen targeting publicly disclosed vulnerabilities in Ivanti VPNs (CVE-2023-46805, CVE-2024-21887, CVE-2024-21888, and CVE-2024-21893), Magento (CVE-2022-24086), Qlik Sense (CVE-2023-41265, CVE-2023-41266, and CVE-2023-48365), and possibly Apache ActiveMQ. As part of an attack exploiting the recent Ivanti flaws, the threat actor was observed deploying a JavaScript credential stealer called Warpwire, a Linux variant of the NerbianRAT backdoor, and the open source tunneling tool Ligolo. The Warpwire stealer was previously linked to the mass exploitation of Ivanti vulnerabilities, suggesting that multiple threat actors might be using it, Check Point says. The tool was also seen in a 2022 attack against Magento servers, which were used as command-and-control (C&C) servers for the Windows variant of NerbianRAT and for Warpwire. Magnet Goblin deployed MiniNerbian, a smaller version of the Linux NerbianRAT backdoor, on the compromised Magento instances.",
+    "triplets": [
+      {
+        "subject": "Threat Actor",
+        "subject_type": "Attacker",
+        "relation": "targets",
+        "object": "one-day vulnerabilities",
+        "object_type": "Vulnerability"
+      },
+      {
+        "subject": "Threat Actor",
+        "subject_type": "Attacker",
+        "relation": "deploys",
+        "object": "Linux backdoors",
+        "object_type": "Malware"
+      },
+      {
+        "subject": "Threat Actor",
+        "subject_type": "Attacker",
+        "relation": "tracked as",
+        "object": "Magnet Goblin",
+        "object_type": "Attacker"
+      },
+      {
+        "subject": "Magnet Goblin",
+        "subject_type": "Attacker",
+        "relation": "adopts",
+        "object": "one-day vulnerabilities",
+        "object_type": "Vulnerability"
+      },
+      {
+        "subject": "Magnet Goblin",
+        "subject_type": "Attacker",
+        "relation": "relies on",
+        "object": "Nerbian custom malware family",
+        "object_type": "Unknown"
+      },
+      {
+        "subject": "Magnet Goblin",
+        "subject_type": "Attacker",
+        "relation": "targets",
+        "object": "Ivanti VPNs",
+        "object_type": "Infrastructure"
+      },
+      {
+        "subject": "Ivanti VPNs",
+        "subject_type": "Infrastructure",
+        "relation": "have vulnerabilities",
+        "object": "CVE-2023-46805",
+        "object_type": "Vulnerability"
+      },
+      {
+        "subject": "Ivanti VPNs",
+        "subject_type": "Infrastructure",
+        "relation": "have vulnerabilities",
+        "object": "CVE-2024-21887",
+        "object_type": "Vulnerability"
+      },
+      {
+        "subject": "Ivanti VPNs",
+        "subject_type": "Infrastructure",
+        "relation": "have vulnerabilities",
+        "object": "CVE-2024-21888",
+        "object_type": "Vulnerability"
+      },
+      {
+        "subject": "Ivanti VPNs",
+        "subject_type": "Infrastructure",
+        "relation": "have vulnerabilities",
+        "object": "CVE-2024-21893",
+        "object_type": "Vulnerability"
+      },
+      {
+        "subject": "Magnet Goblin",
+        "subject_type": "Attacker",
+        "relation": "targets",
+        "object": "Magento",
+        "object_type": "Infrastructure"
+      },
+      {
+        "subject": "Magento",
+        "subject_type": "Infrastructure",
+        "relation": "has vulnerability",
+        "object": "CVE-2022-24086",
+        "object_type": "Vulnerability"
+      },
+      {
+        "subject": "Magnet Goblin",
+        "subject_type": "Attacker",
+        "relation": "targets",
+        "object": "Qlik Sense",
+        "object_type": "Infrastructure"
+      },
+      {
+        "subject": "Qlik Sense",
+        "subject_type": "Infrastructure",
+        "relation": "has vulnerability",
+        "object": "CVE-2023-41265",
+        "object_type": "Vulnerability"
+      },
+      {
+        "subject": "Qlik Sense",
+        "subject_type": "Infrastructure",
+        "relation": "has vulnerability",
+        "object": "CVE-2023-41266",
+        "object_type": "Vulnerability"
+      },
+      {
+        "subject": "Qlik Sense",
+        "subject_type": "Infrastructure",
+        "relation": "has vulnerability",
+        "object": "CVE-2023-48365",
+        "object_type": "Vulnerability"
+      },
+      {
+        "subject": "Magnet Goblin",
+        "subject_type": "Attacker",
+        "relation": "targets",
+        "object": "Apache ActiveMQ",
+        "object_type": "Infrastructure"
+      },
+      {
+        "subject": "Magnet Goblin",
+        "subject_type": "Attacker",
+        "relation": "deploys",
+        "object": "Warpwire",
+        "object_type": "Malware"
+      },
+      {
+        "subject": "Warpwire",
+        "subject_type": "Malware",
+        "relation": "is a",
+        "object": "Indicator",
+        "object_type": "Indicator"
+      },
+      {
+        "subject": "Warpwire",
+        "subject_type": "Malware",
+        "relation": "steals",
+        "object": "credentials",
+        "object_type": "Credential"
+      },
+      {
+        "subject": "Magnet Goblin",
+        "subject_type": "Attacker",
+        "relation": "deploys",
+        "object": "NerbianRAT",
+        "object_type": "Malware"
+      },
+      {
+        "subject": "NerbianRAT",
+        "subject_type": "Malware",
+        "relation": "is a variant of",
+        "object": "Nerbian custom malware family",
+        "object_type": "Unknown"
+      },
+      {
+        "subject": "Magnet Goblin",
+        "subject_type": "Attacker",
+        "relation": "deploys",
+        "object": "Ligolo",
+        "object_type": "Malware"
+      },
+      {
+        "subject": "Warpwire",
+        "subject_type": "Malware",
+        "relation": "linked to",
+        "object": "mass exploitation of Ivanti vulnerabilities",
+        "object_type": "Event"
+      },
+      {
+        "subject": "Warpwire",
+        "subject_type": "Malware",
+        "relation": "used in",
+        "object": "2022 attack against Magento servers",
+        "object_type": "Event"
+      },
+      {
+        "subject": "Magento servers",
+        "subject_type": "Unknown",
+        "relation": "used as",
+        "object": "command-and-control (C&C) servers",
+        "object_type": "Infrastructure"
+      },
+      {
+        "subject": "Magnet Goblin",
+        "subject_type": "Attacker",
+        "relation": "deployed",
+        "object": "MiniNerbian",
+        "object_type": "Malware"
+      },
+      {
+        "subject": "MiniNerbian",
+        "subject_type": "Malware",
+        "relation": "is a variant of",
+        "object": "NerbianRAT",
+        "object_type": "Malware"
+      },
+      {
+        "subject": "MiniNerbian",
+        "subject_type": "Malware",
+        "relation": "deployed on",
+        "object": "Magento instances",
+        "object_type": "Unknown"
+      }
+    ]
+  }
+]
+  

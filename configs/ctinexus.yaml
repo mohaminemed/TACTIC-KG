@@ -1,0 +1,26 @@
+experiment:
+  num_docs: 25
+
+models:
+
+  - name: deepseek-v3.1:671b
+    file: outputs/unseen/ctinexus/deepseek-v3.1:671b_unseen_test.json
+
+  - name: devstral-2:123b
+    file: outputs/unseen/ctinexus/devstral-2:123b_unseen_test.json
+
+  - name: kimi-k2:1t
+    file: outputs/unseen/ctinexus/kimi-k2:1t_unseen_test.json
+
+  - name: nemotron-3-nano:30b
+    file: outputs/unseen/ctinexus/nemotron-3-nano:30b_unseen_test.json
+
+  - name: gpt-oss:20b
+    file: outputs/unseen/ctinexus/gpt-oss:20b_unseen_test.json
+
+  - name: gpt-oss:120b
+    file: outputs/unseen/ctinexus/gpt-oss:120b_unseen_test.json 
+  
+  #- name: glm-5
+   # file: outputs/unseen/ctinexus/glm-5_seen_test.json        
+        

@@ -1,0 +1,9 @@
+.env
+outputs/
+printing/
+lib/
+ie_et_lora_env/
+models/
+
+evaluation_results/
+evaluation_resultsv0/
