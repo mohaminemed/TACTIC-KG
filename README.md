@@ -136,7 +136,7 @@ Load fine-tuned LoRA agents and run the pipline
 
 ### 🔁 Batch Execution
 
-To run multiple models use run loop oer models script.
+To run multiple models use:
 
 ```bash
 bash run_loop_over_models.sh
