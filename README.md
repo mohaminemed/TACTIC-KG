@@ -30,8 +30,8 @@ The pipeline executes a sequence of agents under an **auditable and Human-in-the
 ## 🤖 Agents
 
 ### 1. Extractor Agent
-- **Input:** Chunked report \( R_i \)
-- **Output:** Candidate relational triples \((h, r, t)\)
+- **Input:** Chunked report $R_i$
+- **Output:** Candidate relational triples $(h, r, t)$
 - **Properties:**
   - Fully grounded in text
   - No typing or global reasoning
@@ -41,7 +41,7 @@ The pipeline executes a sequence of agents under an **auditable and Human-in-the
 
 ### 2. Typer Agent
 - **Input:** Extracted triples
-- **Output:** Typed triples \((h, r, t, \tau_h, \tau_t)\)
+- **Output:** Typed triples $(h, r, t, \tau_h, \tau_t)$
 - **Properties:**
   - Assigns ontology-compliant entity types
   - Uses local context and relation semantics
