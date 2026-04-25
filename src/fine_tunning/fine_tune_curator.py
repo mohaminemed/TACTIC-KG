@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Curator fine-tuning script (per triplet verification).
+Curator fine-tuning script.
 
 Objective:
 Given:
