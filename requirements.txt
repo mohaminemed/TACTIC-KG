@@ -4,6 +4,12 @@ pandas
 tqdm
 scikit-learn
 
+ollama
+torch
+torchaudio
+torchvision
+transformers
+
 # NLP + semantic similarity
 spacy
 fuzzywuzzy
