@@ -21,6 +21,6 @@ models:
   - name: gpt-oss:120b
     file: outputs/unseen/ctinexus/gpt-oss:120b_unseen_test.json 
   
-  #- name: glm-5
-   # file: outputs/unseen/ctinexus/glm-5_seen_test.json        
+  - name: glm-5
+    file: outputs/unseen/ctinexus/glm-5_seen_test.json        
         
