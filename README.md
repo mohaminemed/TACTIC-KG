@@ -151,10 +151,6 @@ To reproduce the results reported in the paper:
 3. Enable: LoRA-based agents, Hybrid reasoning mode (if specified)
 4. Run the pipline for each base model on TEST1 and TEST2 
 
-## Notes
-- The pipeline supports partial execution, allowing you to run individual agents independently.
-- Intermediate outputs are stored in JSON format for full auditability.
-
 
 ##  Upcoming
 
