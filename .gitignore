@@ -8,4 +8,4 @@ data/cti-hal
 data/cinexus
 
 evaluation_results/
-evaluation_resultsv0/
+.gitignore
