@@ -1,9 +1,0 @@
-{
-  "apt": "FIN7",
-  "source": "FIREEYE3",
-  "reports": {
-    "default_annotator": {
-      "report_text": "The initial document was probably sent within the Baltic region (or tested there). It was submitted to VirusTotal from Latvia. The name of the document translated from Russian is \"new questioner\". It is password-protected with the password: \"goodmorning\". Sending a document\n\nIt uses social engineering to convince the recipient to enable macros through the use of the images, logo and tagline of a newly launched, legitimate VPN tool InvinciBull by cybersecurity company Finjan. Convincing the user to enable macros for execution through social engineering tactics\n\nthe next stage obfuscated JavaScript is extracted from the form caption Use of obfuscated JavaScript as a next-stage payload extracted from the form caption\n\nobfuscated JavaScript The obfuscation of both the macro and the JavaScript is part of this technique, where adversaries disguise their code to evade detection.\n\nexecuting JavaScript from VBScript the execution of VBScript, which in this case is used to launch JavaScript.\n\nThe deobfuscated JavaScript is actually a backdoor component that directly communicates to the C2 server (in this case hxxps://bing-cdn[.]com) The C2 communication over HTTPS where adversaries communicate over common web protocols to avoid detection.\n\nIt executes the response The backdoor uses JavaScript to execute commands received from the C2 server, leveraging the eval function to run these commands dynamically."
-    }
-  }
-}

@@ -1,9 +1,0 @@
-{
-  "apt": "FIN6",
-  "source": "MORPHISEC",
-  "reports": {
-    "default_annotator": {
-      "report_text": "FrameworkPOS scraping malware installed on some of the thin clients.\ninitializing PowerShell/WMI stages that downloaded and reflectively loaded Cobalt-Strike beacon with PowerShell extension directly into the memory.\nDownloading a payload such as the Cobalt Strike beacon.\nLoading code (such as Cobalt Strike beacon) directly into memory without writing it to disk.\nUsing PowerShell extensions to load the Cobalt Strike beacon into memory.\nthe Cobalt Strike beacon payload gives attackers full control over the infected system.\nthe ability to move laterally to other systems.\nharvest user credentials.\nevading advanced EDR scanning techniques.\none vector is executed through HTA files.\nthat execute PowerShell scripts.\npart of an embedded VBScript.\nsome of them are executed through WMI.\nbase64 encoded script.\nthat is either remotely injected into the existing 32 bit or into a newly created 32 bit PowerShell process (if the current PowerShell is 64bit).\nThe injected shellcode is a regular Metasploit downloader shellcode.\nthat traverses the PEB, resolves the function names by the standard ROR 13 hash.\ndownloads the next stage shellcode directly into memory from the C2.\n2 types.\nregular direct reflective loaded Cobalt Strike DLL beacon, usually XOR encoded.\nshellcode backdoor beacon with PowerShell and Mimikatz functionality.\ninstall \"WindowsHelpAssistant\" task in the task scheduler.\nuses rundll32.exe with System privileges to execute and export function \"workerInstance\" from a downloaded binary DLL \"Assistant32.dll\".\nthe first one.\nThe second type.\nsimilar command execution as part of the HKLM Run key.\nThe malware XOR's (xor 0xAA) the credit card information before exfiltration through DNS tunneling."
-    }
-  }
-}

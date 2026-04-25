@@ -1,9 +1,0 @@
-{
-  "apt": "SANDWORM",
-  "source": "UKRAININAPOWERAUTHORITYATTACKS",
-  "reports": {
-    "default_annotator": {
-      "report_text": "BlackEnergy\n\nKillDisk"
-    }
-  }
-}

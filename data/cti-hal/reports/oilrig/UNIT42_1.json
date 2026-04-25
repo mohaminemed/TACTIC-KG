@@ -1,9 +1,0 @@
-{
-  "apt": "OILRIG",
-  "source": "UNIT42_1",
-  "reports": {
-    "default_annotator": {
-      "report_text": "spear-phishing as their initial attack vector OilRig uses spear-phishing emails\n\nOilRig preferred macro-enabled Microsoft Office (Word and Excel) documents to install their custom payloads OilRig uses spear-phishing emails with macro-enabled Microsoft Office (Word and Excel) documents to deliver their custom payloads.\n\nPowerShell Custom payloads include PowerShell scripts.\n\nVBScripts. Custom payloads include VBScripts.\n\nilRig's custom payloads frequently used DNS tunneling as a command and control (C2) channel. Custom payloads frequently use DNS tunneling for C2 communication.\n\nOnce gaining access to an end point, actors would use credential dumping tools, such as Mimikatz to gather credentials to legitimate accounts to then move laterally to other systems on the network Using tools like Mimikatz to dump credentials\n\nOilRig would install a webshell as another ingress point to maintain access to the network Installing web shells on compromised web servers to maintain access."
-    }
-  }
-}

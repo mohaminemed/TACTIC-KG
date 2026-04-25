@@ -1,9 +1,0 @@
-{
-  "apt": "CARBANAK",
-  "source": "KASPERSKY1",
-  "reports": {
-    "default_annotator": {
-      "report_text": "a spear phishing e-mail with a CPL attachment; although in other cases Word documents Sending spear phishing e-mails with malicious attachments to induce the victim to execute the malware.\n\nexploiting known vulnerabilities were used Exploitation of vulnerabilities in client software to execute arbitrary code.\n\nAfter executing the shellcode, a backdoor based on Carberp, is installed on the system Transfer of tools or payloads from an external network to a compromised network.\n\nFurther forensic analysis took us to the point of initial infection: a spear phishing e-mail with a CPL attachment; although in other cases Word documents exploiting known vulnerabilities were used a spear-phishing email with a CPL attachment\n\ninfected computers were used to record videos that were then sent to the Command and Control servers Collection of video from compromised devices.\n\ninfected computers were used to record videos that were then sent to the Command and Control servers Collection of video from compromised devices\n\nEven though the quality of the videos was relatively poor, they were still good enough for the attackers, armed also with the keylogged data for that particular machine to understand what the victim was doing attackers with the keylogged data for that particular machine can understand what the victim was doing\n\nAttackers used spear phishing emails with malicious attachments Sending spear phishing e-mails with malicious attachments to induce the victim to execute the malware."
-    }
-  }
-}

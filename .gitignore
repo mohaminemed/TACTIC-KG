@@ -4,6 +4,8 @@ printing/
 lib/
 ie_et_lora_env/
 models/
+data/cti-hal
+data/cinexus
 
 evaluation_results/
 evaluation_resultsv0/

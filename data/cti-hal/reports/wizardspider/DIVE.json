@@ -1,9 +1,0 @@
-{
-  "apt": "WIZARDSPIDER",
-  "source": "DIVE",
-  "reports": {
-    "default_annotator": {
-      "report_text": "Trickbot,\n\nUNC1878 obtains credentials using Mimikatz, LaZagne and Kerbrute Using stolen credentials obtained by tools like Mimikatz, LaZagne, and Kerbrute.\n\nextended their access by connecting to network shares and directly to systems over RDP Using RDP for lateral movement within the network.\n\nUNC1878 obtains credentials using Mimikatz, LaZagne and Kerbrute Adversaries may attempt to dump credentials to obtain account login and credential material, normally in the form of a hash or a clear text password.\n\nand SSH Using SSH for lateral movement within the network\n\nrenewed phishing attempts to re-establish a foothold Using phishing  to re-establish a foothold\n\nThey'll then unzip The process of unzipping files, which may also imply the initial use of zipping for archiving collected or staged data.\n\ninto a directory they create named \"share$ Unzipping files into a created directory named share$ for local staging.\n\nThere are three \".bat\" scripts used for iterating computer names to execute Ryuk. Use of .bat scripts for executing commands, in this case, for iterating computer names and executing Ryuk."
-    }
-  }
-}

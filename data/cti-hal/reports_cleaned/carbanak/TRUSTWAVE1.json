@@ -1,9 +1,0 @@
-{
-  "apt": "CARBANAK",
-  "source": "TRUSTWAVE1",
-  "reports": {
-    "default_annotator": {
-      "report_text": "The common successful entry point within all operations was an email message targeted to victim's public-facing services that contained a Microsoft Word document attachment.\n\nUpon opening the attachment multiple malicious files were created or downloaded allowing the attackers to gain some level of access into the victim's infrastructure.\n\nData from section \"last\" is written into registry perhaps to keep track of last executed command.\n\nPersistence was achieved by utilizing scheduled tasks.\n\nSeveral of the Operating System's auto-start locations allowed attackers to gain Domain or even Enterprise Admin access.\n\nCloud services such as Google Docs and Google Forms were involved allowing attackers to keep track of infected systems, spread malware and perform further malicious activities.\n\nScripting code (PowerShell, JavaScript, VBS).\n\nWhat seems to be the core tools of these activities is a variant of Anunak, remote backdoor, along with a Visual Basic Script specially crafted with data exfiltration features.\n\nOne other significant finding is that some of the executables were signed using valid certificates from Comodo, a Certification Authority."
-    }
-  }
-}

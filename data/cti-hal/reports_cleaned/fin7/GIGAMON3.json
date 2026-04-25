@@ -1,9 +1,0 @@
-{
-  "apt": "FIN7",
-  "source": "GIGAMON3",
-  "reports": {
-    "default_annotator": {
-      "report_text": "FIN7 used Cobalt Strike's DNS C2 as their method of maintaining access inside target environments DNS tunneling is used to establish and maintain a covert channel for C2 communication, evading traditional detection mechanisms that might monitor for suspicious IP traffic.\n\nC2 method leveraged a different encrypted communication channel.\n\nthe threat actors would spawn a secondary C2 component during their off-hour periods in an apparent attempt to maintain access should the DNS C2 be detected.\n\nDNS C2 leverages malicious DNS TXT and A RRs (resource records) queries which traverse standard recursive DNS channels and terminate at an attacker's authoritative DNS server. Queries containing data or commands are sent as DNS TXT (Text) or A (Address) resource records, making the traffic blend into normal DNS activity. This is effective in environments with restrictive firewalls, web filters, or proxies, such as POS networks in the retail or hospitality sectors, where DNS traffic is often allowed and less scrutinized.\n\nthe actors used PowerShell scripts to deploy DNS TXT record stagers into memory.\n\nDuring execution, PowerShell would make iterative DNS TXT queries, which would return encrypted data to be concatenated and then executed in memory.\n\nAfter staging, the attacker would shift to the use of DNS A resource records. When idle, the malware would make requests to the attacker-controlled domain with a pattern matching [SessionID].MaliciousDomain.com.\n\nFIN7 would frequently use the psexec_psh command within Cobalt Strike, which uses the RPC Service Controller protocol to create a service on a remote host with the binary path set to execute a malicious PowerShell command."
-    }
-  }
-}

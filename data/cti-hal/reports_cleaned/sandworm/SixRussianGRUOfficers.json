@@ -1,9 +1,0 @@
-{
-  "apt": "SANDWORM",
-  "source": "SixRussianGRUOfficers",
-  "reports": {
-    "default_annotator": {
-      "report_text": "KillDisk\nIndustroyer\nNotPetya\nOlympic Destroyer"
-    }
-  }
-}
