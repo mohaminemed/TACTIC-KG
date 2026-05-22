@@ -131,6 +131,7 @@ bash run_pipeline.sh
 ```
 Or manually:
 ```python
+python src/load_ft_models/load_ft_{agent_name}.py --config configs/<model>.yaml
 python src/utils/evaluate_semantic.py --config configs/<model>.yaml
 ```
 
