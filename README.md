@@ -106,6 +106,16 @@ All stages communicate using structured JSON:
 }
 ```
 
+## How To Use? 
+
+To build the LoRA adapter for a specific agent, run:
+
+```bash
+python src/fine_tunning/fine_tune_{agent_name}.py 
+```
+
+The base model name, dataset split, and other hyperparameters are defined at the beginning of each script and can be modified directly there.
+
 ##  Running Experiments
 
 Experiments are controlled via configuration files located in:
