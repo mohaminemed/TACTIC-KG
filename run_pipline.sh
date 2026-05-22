@@ -1,6 +1,6 @@
 #!/bin/bash
 
-MODEL= "ministral-8b"
+MODEL="ministral-8b"
 
 
 CONFIG="configs/${MODEL}.yaml"
