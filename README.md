@@ -174,3 +174,8 @@ To reproduce the results reported in the paper:
 
 An interactive version of the pipeline is currently under development.
 
+In the meantime, you can run the current prototype interface using Streamlit:
+
+```bash
+streamlit run src/app.py
+```
