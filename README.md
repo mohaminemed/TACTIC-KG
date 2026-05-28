@@ -1,4 +1,11 @@
-# TACTIC-KG: Toward Small Agent Teams for Cyber Threat Intelligence Knowledge Graph Construction
+
+<p align="center">
+  <img src="tactic-kg.png" alt="TACTIC-KG Logo" width="220"/>
+</p>
+
+<h1 align="center">Toward Small Agent Teams for Cyber Threat Intelligence Knowledge Graph Construction</h1>
+
+
 
 TACTIC-KG is a modular, agentic pipeline for constructing **Cyber Threat Intelligence Knowledge Graphs (CSKG)** from unstructured reports. It emphasizes **faithfulness, auditability, and controlled reasoning**.
 
