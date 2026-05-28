@@ -15,6 +15,7 @@ from pathlib import Path
 import argparse
 import time
 
+
 def parse_args():
     parser = argparse.ArgumentParser()
     parser.add_argument("--config", type=str, required=True)
