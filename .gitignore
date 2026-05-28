@@ -6,6 +6,7 @@ ie_et_lora_env/
 models/
 data/cti-hal
 data/cinexus
+graphs/*
 
 evaluation_results/
 .gitignore
