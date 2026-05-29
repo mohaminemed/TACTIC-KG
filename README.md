@@ -172,7 +172,7 @@ To reproduce the results reported in the paper:
 
 ##  Upcoming
 
-An interactive version of the pipeline is currently under development.
+An online interactive application is currently under development.
 
 In the meantime, you can run the current prototype interface using Streamlit:
 

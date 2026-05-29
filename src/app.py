@@ -37,9 +37,9 @@ import numpy as np
 # =========================================================
 
 MAX_LENGTH = 4096
-MAX_NEW_TOKENS = 2048
-MAX_NEW_TOKENS_HYBRID = 4096
-CHUNK_SIZE = 2048
+MAX_NEW_TOKENS = 4096
+MAX_NEW_TOKENS_HYBRID = 8192
+CHUNK_SIZE = 4096
 OVERLAP = 50
 
 MODELS_DIR = "models"
