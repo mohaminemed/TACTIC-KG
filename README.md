@@ -7,7 +7,7 @@
 
 
 
-TACTIC-KG is a modular, agentic pipeline for constructing **Cyber Threat Intelligence Knowledge Graphs (CSKG)** from unstructured reports. It emphasizes **faithfulness, auditability, and controlled reasoning**.
+TACTIC-KG is a modular, agentic pipeline for constructing **Cyber Security Knowledge Graphs (CSKG)** from unstructured reports. It emphasizes **faithfulness, auditability, and controlled reasoning**.
 
 ---
 
