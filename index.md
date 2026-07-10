@@ -120,18 +120,7 @@ The pipeline executes a sequence of agents under an **auditable and Human-in-the
 - ✅ Human-in-the-loop compatibility
 - ✅ Partial pipeline re-execution
 
-
-
-##  Interactive App
-
-An interactive application is currently under development.
-
-In the meantime, you can run the current prototype interface using Streamlit:
-
-```bash
-streamlit run src/app.py
-```
-
+---
 
 ## 📖  Paper
 
