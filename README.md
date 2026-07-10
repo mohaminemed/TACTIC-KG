@@ -5,7 +5,23 @@
 
 <h1 align="center">Toward Small Agent Teams for Cyber Threat Intelligence Knowledge Graph Construction</h1>
 
+<div align="center">
 
+<p align="center">
+  <a href="https://github.com/mohaminemed/TACTIC-KG">
+    <img src="https://img.shields.io/badge/💻_Repository-GitHub-181717?style=for-the-badge&logo=github" alt="Repository">
+  </a>
+  &nbsp;
+  <a href="https://arxiv.org/pdf/2607.05001">
+    <img src="https://img.shields.io/badge/📄_Paper-arXiv-B31B1B?style=for-the-badge&logo=arxiv" alt="Paper">
+  </a>
+  &nbsp;
+  <a href="https://mohaminemed.github.io/TACTIC-KG/">
+    <img src="https://img.shields.io/badge/🌐_Website-GitHub_Pages-2EA44F?style=for-the-badge&logo=githubpages" alt="Website">
+  </a>
+</p>
+
+</div>
 
 TACTIC-KG is a modular, agentic pipeline for constructing **Cyber Security Knowledge Graphs (CSKG)** from unstructured reports. It emphasizes **faithfulness, auditability, and controlled reasoning**.
 
@@ -209,7 +225,3 @@ If you find **TACTIC-KG** useful in your research, please consider citing our pa
   url={https://arxiv.org/abs/2607.05001}
 }
 ```
-
-📄 **Paper:** https://arxiv.org/abs/2607.05001
-
-📑 **PDF:** https://arxiv.org/pdf/2607.05001
