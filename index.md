@@ -23,7 +23,8 @@
 
 </div>
 
-TACTIC-KG is a modular, agentic pipeline for constructing **Cyber Security Knowledge Graphs (CSKG)** from unstructured reports. It emphasizes **faithfulness, auditability, and controlled reasoning**.
+TACTIC-KG is a modular, cost-effective, agentic pipeline for constructing **Cyber Security Knowledge Graphs (CSKG)** from unstructured reports by decomposing the task into specialized roles for lightweight LLMs. It emphasizes **faithfulness, auditability, and controlled reasoning**.
+
 
 ---
 
@@ -65,7 +66,7 @@ The pipeline executes a sequence of agents under an **auditable and Human-in-the
 ## 🤖 Agents
 
 ### 1. Extractor Agent
-- **Input:** Chunked report $R_i$
+- **Input:** Chunked report 
 - **Output:** Candidate relational triples
 - **Properties:**
   - Fully grounded in text
