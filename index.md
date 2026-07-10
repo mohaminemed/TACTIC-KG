@@ -50,7 +50,7 @@ Verifier → Curator → Curated CSKG
 ## Pipeline Description
 
 <p align="center">
-  <img src="workflow-dark.png" alt="TACTIC-KG Workflow" width="800"/>
+  <img src="workflow.png" alt="TACTIC-KG Workflow" width="800"/>
 </p>
 
 A long CTI report is first segmented using **semantic chunking** to preserve discourse boundaries and avoid context fragmentation.
@@ -66,7 +66,7 @@ The pipeline executes a sequence of agents under an **auditable and Human-in-the
 
 ### 1. Extractor Agent
 - **Input:** Chunked report $R_i$
-- **Output:** Candidate relational triples $(h, r, t)$
+- **Output:** Candidate relational triples
 - **Properties:**
   - Fully grounded in text
   - No typing or global reasoning
@@ -76,7 +76,7 @@ The pipeline executes a sequence of agents under an **auditable and Human-in-the
 
 ### 2. Typer Agent
 - **Input:** Extracted triples
-- **Output:** Typed triples $(h, r, t, \tau_h, \tau_t)$
+- **Output:** Typed triples 
 - **Properties:**
   - Assigns ontology-compliant entity types
   - Uses local context and relation semantics
@@ -119,83 +119,6 @@ The pipeline executes a sequence of agents under an **auditable and Human-in-the
 - ✅ Human-in-the-loop compatibility
 - ✅ Partial pipeline re-execution
 
----
-
-## Data Format
-
-All stages communicate using structured JSON:
-
-```json
-{
-  "id": 0,
-  "text": "...",
-  "triplets": [
-    {
-      "subject": "...",
-      "relation": "...",
-      "object": "...",
-      "subject_type": "...",
-      "object_type": "..."
-    }
-  ]
-}
-```
-
-## How To Use? 
-
-To build the LoRA adapter for a specific agent, run:
-
-```bash
-python src/fine_tunning/fine_tune_{agent_name}.py 
-```
-
-The base model name, dataset split, and other hyperparameters are defined at the beginning of each script and can be modified directly there.
-
-##  Running Experiments
-
-Experiments are controlled via configuration files located in:
-
-```bash
-configs/<model>.yaml
-```
-
-To launch an experiment:
-
-```bash
-bash run_pipeline.sh
-```
-Or manually:
-```python
-python src/load_ft_models/load_ft_{agent_name}.py --config configs/<model>.yaml
-python src/utils/evaluate_semantic.py --config configs/<model>.yaml
-```
-
-### Execution Workflow
-
-A typical run follows these steps:
-
-Select a configuration file →
-Defines models, thresholds, and experiment settings →
-Load fine-tuned LoRA agents and run the pipline
-
-
-### Batch Execution
-
-To run multiple models use:
-
-```bash
-bash run_loop_over_models.sh
-```
-
-
-### Reproducing Paper Results
-
-To reproduce the results reported in the paper:
-
-1. Use the provided configuration files in configs/
-2. Ensure the correct LoRA checkpoints are available
-3. Enable: LoRA-based agents, Hybrid reasoning mode (if specified)
-4. Run the pipline for each base model on, TEST0, TEST1 and TEST2 
 
 
 ##  Interactive App
