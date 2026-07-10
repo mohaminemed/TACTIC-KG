@@ -34,7 +34,7 @@ Verifier → Curator → Curated CSKG
 ## Pipeline Description
 
 <p align="center">
-  <img src="tactic-kg-w.png" alt="TACTIC-KG Workflow" width="800"/>
+  <img src="workflow.png" alt="TACTIC-KG Workflow" width="800"/>
 </p>
 
 A long CTI report is first segmented using **semantic chunking** to preserve discourse boundaries and avoid context fragmentation.
