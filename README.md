@@ -21,6 +21,14 @@ Extractor → Typer → Initial CSKG →
 Verifier → Curator → Curated CSKG
 
 
+## 🔥 News
+
+- **June 2026** — 🎉 TACTIC-KG accepted at ESORICS 2026.
+- **June 2026** — 🚀 Initial public release.
+- **July 2026** — 📄 Preprint available on arXiv.
+- **September 2026** — 📍 TACTIC-KG will be presented in Rome, Italy (14–18 September 2026).
+
+
 ---
 
 ## Pipeline Description
@@ -167,15 +175,37 @@ To reproduce the results reported in the paper:
 1. Use the provided configuration files in configs/
 2. Ensure the correct LoRA checkpoints are available
 3. Enable: LoRA-based agents, Hybrid reasoning mode (if specified)
-4. Run the pipline for each base model on TEST1 and TEST2 
+4. Run the pipline for each base model on, TEST0, TEST1 and TEST2 
 
 
-##  Upcoming
+##  Interactive App
 
-An online interactive application is currently under development.
+An interactive application is currently under development.
 
 In the meantime, you can run the current prototype interface using Streamlit:
 
 ```bash
 streamlit run src/app.py
 ```
+
+
+## 📖  Paper
+
+If you find **TACTIC-KG** useful in your research, please consider citing our paper:
+
+
+```bibtex
+@misc{bouchiha2026tactickgsmallagentteams,
+  title={TACTIC-KG: Toward Small Agent Teams for Cyber Threat Intelligence Knowledge Graph Construction},
+  author={Mouhamed Amine Bouchiha and Gregory Blanc},
+  year={2026},
+  eprint={2607.05001},
+  archivePrefix={arXiv},
+  primaryClass={cs.CR},
+  url={https://arxiv.org/abs/2607.05001}
+}
+```
+
+📄 **Paper:** https://arxiv.org/abs/2607.05001
+
+📑 **PDF:** https://arxiv.org/pdf/2607.05001
