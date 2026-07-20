@@ -30,7 +30,7 @@ TACTIC-KG is a modular, cost-effective, agentic pipeline for constructing **Cybe
 
 ## Overview
 
-The system transforms raw CTI reports into a **Curated Cyber Security Knowledge Graph (CSKG)** through a sequence of specialized agents:
+The system transforms raw CTI reports into a **Curated CSKG** through a sequence of specialized agents:
 
 
 Raw Report → Semantic Chunking → Chunked Reports →
@@ -128,13 +128,10 @@ If you find **TACTIC-KG** useful in your research, please consider citing our pa
 
 
 ```bibtex
-@misc{bouchiha2026tactickgsmallagentteams,
+@inproceedings{bouchiha2026tactic,
   title={TACTIC-KG: Toward Small Agent Teams for Cyber Threat Intelligence Knowledge Graph Construction},
-  author={Mouhamed Amine Bouchiha and Gregory Blanc},
-  year={2026},
-  eprint={2607.05001},
-  archivePrefix={arXiv},
-  primaryClass={cs.CR},
-  url={https://arxiv.org/abs/2607.05001}
+  author={Bouchiha, Mouhamed Amine and Blanc, Gregory},
+  booktitle={31st European Symposium on Research in Computer Security (ESORICS)},
+  year={2026}
 }
 ```
