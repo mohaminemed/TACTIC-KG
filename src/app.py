@@ -88,27 +88,15 @@ CLASSES = [
 # HELPERS
 # =========================================================
 
-def cleanup_model(model=None, tokenizer=None):
-
+def cleanup_model():
     try:
-
-        if model is not None:
-            del model
-
-        if tokenizer is not None:
-            del tokenizer
-
         gc.collect()
-
         if torch.cuda.is_available():
-
             torch.cuda.empty_cache()
-
             torch.cuda.ipc_collect()
-
     except Exception as e:
-
         print(f"Cleanup error: {e}")
+
 
 def load_yaml_config(path):
     with open(path, "r") as f:
@@ -1417,10 +1405,9 @@ if run_button:
 
     st.json(extractor_json)
 
-    cleanup_model(
-    extractor_model,
-    tokenizer
-    )
+    extractor_model = None
+    tokenizer = None
+    cleanup_model()
 
     graph_path = None
     if "extractor_triplets" not in st.session_state:
@@ -1500,10 +1487,9 @@ if run_button:
 
         st.json(typer_json)
 
-        cleanup_model(
-            typer_model,
-            typer_tokenizer
-        )
+        typer_model = None
+        typer_tokenizer = None
+        cleanup_model()
 
         graph_path = None
         if "typed_triplets" not in st.session_state:
@@ -1580,16 +1566,16 @@ if run_button:
               "verifier_lora": selected_verifier_lora,
               "num_verified_triplets": len(verified_triplets),
               "verified_triplets": verified_triplets
-           }
+              }
 
-           st.subheader("Verifier JSON")
+           with st.container():
+                  st.subheader("Verifier JSON")
 
-           st.json(verifier_json)
+                  st.json(verifier_json)
 
-           cleanup_model(
-              verifier_model,
-              verifier_tokenizer
-           )
+                  verifier_model = None
+                  verifier_tokenizer = None
+                  cleanup_model()
 
            graph_path = None
 
@@ -1670,6 +1656,9 @@ if run_button:
                 embedding_model
                )
 
+              embedding_model = None
+              cleanup_model()
+
               # ================================================
               # RELATION COLLAPSE
               # ================================================
@@ -1718,10 +1707,9 @@ if run_button:
 
               st.json(curator_json)
 
-              cleanup_model(
-                curator_model,
-                curator_tokenizer
-              )
+              curator_model = None
+              curator_tokenizer = None
+              cleanup_model()
 
               graph_path = None
 

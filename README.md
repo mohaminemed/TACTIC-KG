@@ -198,15 +198,20 @@ To reproduce the results reported in the paper:
 4. Run the pipline for each base model on, TEST0, TEST1 and TEST2 
 
 
-##  Interactive App
+## 🚀 Interactive App
 
-An interactive application is currently under development.
+The interactive application is now ready.
 
-In the meantime, you can run the current prototype interface using Streamlit:
-
+You can run the prototype interface locally using Streamlit:
 ```bash
 streamlit run src/app.py
 ```
+
+⚠️ Note: Before running the application, make sure the required **LLM backend model checkpoints** are stored in the **models/** directory.
+
+### Generating the Checkpoints
+
+To build the LoRA adapter for a specific agent see **How To Use?**
 
 
 ## 📖  Paper
