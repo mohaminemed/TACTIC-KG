@@ -22,6 +22,8 @@ rapidfuzz
 
 # Graph / structure alignment
 networkx
+pyvis
+streamlit
 
 # JSON + filesystem utilities
 ujson

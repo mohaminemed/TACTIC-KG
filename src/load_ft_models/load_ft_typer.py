@@ -13,6 +13,8 @@ from pathlib import Path
 import argparse
 import time
 
+from prompt_config import load_prompt_config, render_prompt
+
 def parse_args():
     parser = argparse.ArgumentParser()
     parser.add_argument("--config", type=str, required=True)
@@ -23,6 +25,8 @@ args = parse_args()
 # Load YAML
 with open(args.config, "r") as f:
     config = yaml.safe_load(f)
+
+prompt_config = load_prompt_config(args.config)
 
 # Global config
 BASE_MODEL = config["models"]["base_model"]
@@ -121,76 +125,17 @@ def select_short_demo(docs, tokenizer, max_tokens=1024, k=3):
     # Randomly sample k (or all if fewer)
     return random.sample(candidates, min(k, len(candidates)))
 
-CLASSES = [
-    "Account",
-    "Credential",
-    "Tool",
-    "Attacker",
-    "Event",
-    "Exploit Target",
-    {
-        "Indicator": [
-            "File",
-            "IP",
-            "URL",
-            "Domain",
-            "Registry Key",
-            "Hash",
-            "Mutex",
-            "User Agent",
-            "Email",
-            "Yara Rule",
-            "SSL Certificate",
-        ]
-    },
-    "Information",
-    "Location",
-    "Malware",
-    {
-        "Malware Characteristic": [
-            "Behavior",
-            "Capability",
-            "Feature",
-            "Payload",
-            "Variants",
-        ]
-    },
-    "Organization",
-    "Infrastructure",
-    "Time",
-    "Vulnerability",
-    "This entity cannot be classified into any of the existing types",
+CLASSES = prompt_config["classes"][:-1] + [
+    "This entity cannot be classified into any of the existing types"
 ]
 
 def build_prompt(text, extracted_triplets=""):
-    return (f"""
-                You are a Typer, a cyber threat intelligence graph reasoning agent. You are given a CTI report and the corresponding set of extracted triplets.
-                Your task is to read carefully the text and type all entities (subject, object) from the set of triplets using the provided nested classes.
-                Output format:
-                [
-                 {{
-                    "subject": "<entity>",
-                    "subject_type": "<Entity Class>",
-                    "relation": "<relation>",
-                    "object": "<entity>",
-                    "object_type": "<Entity Class>",
-                 }},
-                ...
-                ]
-                Rules:
-                   1. Each entity type must accurately reflect the context provided in the text.
-                   2. All subjects and objects in the input triplets must be typed.
-                   3. Use only the nested entity classes provided: {CLASSES}.
-                   4. Be consistent: each entity (subject or object) must have a unique type across all triplets.
-                   5. Return valid JSON **only**. Do not include explanations or extra text.
-
-                ### TARGET REPORT: (Process THIS)
-                CTI: {text}
-                ### EXTRACTED TRIPLETS:
-                {extracted_triplets}
-
-                JSON:
-                """)
+    return render_prompt(
+        prompt_config["prompts"]["typer"],
+        CLASSES=CLASSES,
+        TEXT=text,
+        EXTRACTED_TRIPLETS=extracted_triplets,
+    )
 
 def deduplicate_triplets(triplets):
     """

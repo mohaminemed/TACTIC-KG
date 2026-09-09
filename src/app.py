@@ -2,14 +2,12 @@
 import os
 import re
 import json
-import webbrowser
 import yaml
 import math
 import torch
 import torch.nn.functional as F
 import streamlit as st
 from pathlib import Path
-import webbrowser
 import gc
 
 from transformers import (
@@ -115,6 +113,22 @@ def cleanup_model(model=None, tokenizer=None):
 def load_yaml_config(path):
     with open(path, "r") as f:
         return yaml.safe_load(f)
+
+
+def render_graph(graph_path, download_label, download_file_name):
+    if not graph_path or not os.path.exists(graph_path):
+        return
+
+    with open(graph_path, "r", encoding="utf-8") as graph_file:
+        html = graph_file.read()
+
+    components.html(html, height=780, scrolling=True)
+    st.download_button(
+        label=download_label,
+        data=html,
+        file_name=download_file_name,
+        mime="text/html",
+    )
 
 
 def extract_json_objects(text: str):
@@ -1422,17 +1436,11 @@ if run_button:
     # =====================================================
     # EXTRACTOR GRAPH
     # =====================================================
-    if graph_path and os.path.exists(graph_path):
-         
-        with open(graph_path, "r", encoding="utf-8") as f:
-            html = f.read()
-
-        st.download_button(
-            label="Download Extractor Graph HTML",
-            data=html,
-            file_name="extractor_triplets.html",
-            mime="text/html"
-        )    
+    render_graph(
+        graph_path,
+        "Download Extractor Graph HTML",
+        "extractor_triplets.html",
+    )
 
 
 
@@ -1512,18 +1520,11 @@ if run_button:
         # TYPER GRAPH
         # =====================================================
 
-        
-        if graph_path and os.path.exists(graph_path):
-         
-           with open(graph_path, "r", encoding="utf-8") as f:
-             html = f.read()
-
-           st.download_button(
-              label="Download Typer Graph HTML",
-              data=html,
-              file_name="typer_triplets.html",
-              mime="text/html"
-           )    
+            render_graph(
+                graph_path,
+                "Download Typer Graph HTML",
+                "typer_triplets.html",
+            )
 
         st.download_button(
             label="Download Typed JSON",
@@ -1609,17 +1610,10 @@ if run_button:
            # VERIFIER GRAPH
            # =====================================================
 
-           if graph_path and os.path.exists(graph_path):
-
-              with open(graph_path, "r", encoding="utf-8") as f:
-
-                html = f.read()
-
-              st.download_button(
-                label="Download Verifier Graph HTML",
-                data=html,
-                file_name="verified_triplets.html",
-                mime="text/html"
+              render_graph(
+                  graph_path,
+                  "Download Verifier Graph HTML",
+                  "verified_triplets.html",
               )
 
            st.download_button(
@@ -1737,39 +1731,32 @@ if run_button:
 
               else:
 
-               graph_path = build_graph(
-                st.session_state["final_triplets"],
-                graph_name="Curated Graph",
-                origin="curator",
-                agent_name="Curator"
-               )
+                graph_path = build_graph(
+                    st.session_state["final_triplets"],
+                    graph_name="Curated Graph",
+                    origin="curator",
+                    agent_name="Curator",
+                )
 
               # =====================================================
               # CURATOR GRAPH
               # =====================================================
 
-              if graph_path and os.path.exists(graph_path):
-
-                with open(graph_path, "r", encoding="utf-8") as f:
-
-                   html = f.read()
-
-                st.download_button(
-                  label="Download Curated Graph HTML",
-                  data=html,
-                  file_name="curated_triplets.html",
-                  mime="text/html"
-                )
+              render_graph(
+                  graph_path,
+                  "Download Curated Graph HTML",
+                  "curated_triplets.html",
+              )
 
               st.download_button(
-                label="Download Final JSON",
-                data=json.dumps(
-                curator_json,
-                indent=2,
-                ensure_ascii=False
-               ),
-               file_name="final_triplets.json",
-               mime="application/json"
+                  label="Download Final JSON",
+                  data=json.dumps(
+                      curator_json,
+                      indent=2,
+                      ensure_ascii=False,
+                  ),
+                  file_name="final_triplets.json",
+                  mime="application/json",
               )
 
               with st.expander("Raw Curator Output"):

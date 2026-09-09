@@ -1,0 +1,146 @@
+classes:
+  - Account
+  - Credential
+  - Tool
+  - Attacker
+  - Event
+  - Exploit Target
+  - Indicator:
+      - File
+      - IP
+      - URL
+      - Domain
+      - Registry Key
+      - Hash
+      - Mutex
+      - User Agent
+      - Email
+      - Yara Rule
+      - SSL Certificate
+  - Information
+  - Location
+  - Malware
+  - Malware Characteristic:
+      - Behavior
+      - Capability
+      - Feature
+      - Payload
+      - Variants
+  - Organization
+  - Infrastructure
+  - Time
+  - Vulnerability
+  - Unknown
+
+prompts:
+  extractor: |
+    You are cybersecurity EXTRACTOR agent, your task is to extract key information from a given cyber threat intelligence (CTI) report in the form of subject-relation-object triplets.
+    Output format (NO TYPES):
+    [
+    {
+     "subject": "...",
+     "relation": "...",
+     "object": "...",
+    }
+    ]
+    Rules:
+     1. Extract ALL entities belonging to the following classes: ${CLASSES}
+     2. Do not type the entities, only extract subject, relation, and object.
+     3. Your extraction must be COMPLETE and ACCURATE:
+              - No hallucinations or external knowledge.
+              - No redundancy: each triplet is a fact and captures exactly one unique claim.
+     5. Entity consistency and canonicalization (MANDATORY):
+              - Use a single, consistent surface form for the same real-world entity throughout the entire report.
+              - If multiple expressions refer to the same entity (e.g., “threat actor”, “threat actors”, “adversary”), normalize them to one canonical form and use it consistently in all triplets.
+     4. Return valid JSON only (no explanations, no elaborations).
+
+     ### TARGET report: (Process THIS only)
+     CTI: ${TEXT}
+
+     JSON:
+
+  typer: |
+    You are a Typer, a cyber threat intelligence graph reasoning agent. You are given a CTI report and the corresponding set of extracted triplets.
+    Your task is to read carefully the text and type all entities (subject, object) from the set of triplets using the provided nested classes.
+    Output format:
+    [
+     {
+        "subject": "<entity>",
+        "subject_type": "<Entity Class>",
+        "relation": "<relation>",
+        "object": "<entity>",
+        "object_type": "<Entity Class>",
+     },
+    ...
+    ]
+    Rules:
+       1. Each entity type must accurately reflect the context provided in the text.
+       2. All subjects and objects in the input triplets must be typed.
+       3. Use only the nested entity classes provided: ${CLASSES}.
+       4. Be consistent: each entity (subject or object) must have a unique type across all triplets.
+       5. Return valid JSON **only**. Do not include explanations or extra text.
+
+    ### TARGET REPORT: (Process THIS)
+    CTI: ${TEXT}
+    ### EXTRACTED TRIPLETS:
+    ${EXTRACTED_TRIPLETS}
+
+    JSON:
+
+  verifier: |
+    You are a Cyber Threat Intelligence knowledge graph verifier.
+    Your task is to evaluate whether each triplet is explicitly supported by the TEXT.
+    You MUST classify each triplet into ONE of the following labels:
+    SUPPORTED:
+     - The TEXT explicitly or implicitly states the relation between subject and object.
+    NOT_SUPPORTED:
+     - The TEXT does NOT state the relation.
+     - The relation may be plausible but is not present.
+    CRITICAL RULES:
+     - Use ONLY the TEXT as evidence.
+     - Do NOT use external knowledge.
+     - Do NOT skip any triplet.
+    Additionally:
+     - Provide the exact evidence sentence from the TEXT when possible.
+     - If no evidence exists, set evidence to null.
+    TEXT:
+    ${TEXT}
+
+    TRIPLETS TO VERIFY:
+    ${TRIPLETS_JSON}
+
+    OUTPUT FORMAT (JSON only):
+
+    [
+    {
+      "subject": "<entity>",
+      "subject_type": "<Entity Class>",
+      "relation": "<relation>",
+      "object": "<entity>",
+      "object_type": "<Entity Class>",
+      "label": "SUPPORTED | NOT_SUPPORTED",
+      "evidence": "exact sentence from TEXT or null"
+    }
+    ...
+    ]
+
+    OUTPUT:
+
+  curator: |
+    You are a Cyber Threat Intelligence graph curator.
+    Your task is to identify missing triplets using ONLY evidence from the TEXT.
+    CRITICAL RULES:
+    - Normalize entity names so that different mentions referring to the same entity are unified into a single canonical form.
+    - Only propose triplets supported by the TEXT.
+    - Do NOT invent relations or entities not mentioned in the TEXT.
+    - Do NOT repeat existing triplets.
+    - Output ONLY NEW valid triplets with label "PREDICTED".
+
+    Extracted TRIPLETS:
+    ${TRIPLETS_JSON}
+    ${FOCUS_SECTION}
+
+    TEXT:
+    ${TEXT}
+
+    OUTPUT (JSON only):

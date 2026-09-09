@@ -15,6 +15,8 @@ from pathlib import Path
 import argparse
 import time
 
+from prompt_config import load_prompt_config, render_prompt
+
 def parse_args():
     parser = argparse.ArgumentParser()
     parser.add_argument("--config", type=str, required=True)
@@ -25,6 +27,8 @@ args = parse_args()
 # Load YAML
 with open(args.config, "r") as f:
     config = yaml.safe_load(f)
+
+prompt_config = load_prompt_config(args.config)
 
 # Global config
 BASE_MODEL = config["models"]["base_model"]
@@ -110,74 +114,14 @@ with open(TEST_DATA_PATH, "r", encoding="utf-8") as f:
     all_test_docs = json.load(f)
     print(f"✅ Loaded test dataset with {len(all_test_docs)} documents.")
 
-CLASSES = [
-    "Account",
-    "Credential",
-    "Tool",
-    "Attacker",
-    "Event",
-    "Exploit Target",
-    {
-        "Indicator": [
-            "File",
-            "IP",
-            "URL",
-            "Domain",
-            "Registry Key",
-            "Hash",
-            "Mutex",
-            "User Agent",
-            "Email",
-            "Yara Rule",
-            "SSL Certificate",
-        ]
-    },
-    "Information",
-    "Location",
-    "Malware",
-    {
-        "Malware Characteristic": [
-            "Behavior",
-            "Capability",
-            "Feature",
-            "Payload",
-            "Variants",
-        ]
-    },
-    "Organization",
-    "Infrastructure",
-    "Time",
-    "Vulnerability",
-    "Unknown",
-]
+CLASSES = prompt_config["classes"]
 
 def build_prompt(text):
-    return (f"""
-           You are cybersecurity EXTRACTOR agent, your task is to extract key information from a given cyber threat intelligence (CTI) report in the form of subject-relation-object triplets.
-           Output format (NO TYPES):
-           [
-           {{
-            "subject": "...", 
-            "relation": "...",
-            "object": "...", 
-           }}
-           ]
-           Rules:
-            1. Extract ALL entities belonging to the following classes: {CLASSES}
-            2. Do not type the entities, only extract subject, relation, and object.
-            3. Your extraction must be COMPLETE and ACCURATE: 
-                     - No hallucinations or external knowledge.
-                     - No redundancy: each triplet is a fact and captures exactly one unique claim.
-            5. Entity consistency and canonicalization (MANDATORY):
-                     - Use a single, consistent surface form for the same real-world entity throughout the entire report.
-                     - If multiple expressions refer to the same entity (e.g., “threat actor”, “threat actors”, “adversary”), normalize them to one canonical form and use it consistently in all triplets.
-            4. Return valid JSON only (no explanations, no elaborations).
-
-            ### TARGET report: (Process THIS only)
-            CTI: {text}
-
-            JSON:
-            """)
+    return render_prompt(
+        prompt_config["prompts"]["extractor"],
+        CLASSES=CLASSES,
+        TEXT=text,
+    )
 
 def deduplicate_triplets(triplets):
     """

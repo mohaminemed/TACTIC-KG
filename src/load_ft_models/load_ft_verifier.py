@@ -15,6 +15,8 @@ from pathlib import Path
 import argparse
 import time
 
+from prompt_config import load_prompt_config, render_prompt
+
 
 def parse_args():
     parser = argparse.ArgumentParser()
@@ -26,6 +28,8 @@ args = parse_args()
 # Load YAML
 with open(args.config, "r") as f:
     config = yaml.safe_load(f)
+
+prompt_config = load_prompt_config(args.config)
 
 # Global config
 BASE_MODEL = config["models"]["base_model"]
@@ -225,47 +229,11 @@ def merge_duplicate_triplets(triplets):
 
 
 def build_verifier_prompt(text, triplets):
-
-    prompt = f"""
-      You are a Cyber Threat Intelligence knowledge graph verifier.
-      Your task is to evaluate whether each triplet is explicitly supported by the TEXT.
-      You MUST classify each triplet into ONE of the following labels:
-      SUPPORTED:
-       - The TEXT explicitly or implicitly states the relation between subject and object.
-      NOT_SUPPORTED:
-       - The TEXT does NOT state the relation.
-       - The relation may be plausible but is not present.
-      CRITICAL RULES:
-       - Use ONLY the TEXT as evidence.
-       - Do NOT use external knowledge.
-       - Do NOT skip any triplet.
-      Additionally:
-       - Provide the exact evidence sentence from the TEXT when possible.
-       - If no evidence exists, set evidence to null.
-      TEXT:
-      {text}
-
-      TRIPLETS TO VERIFY:
-      {json.dumps(triplets, indent=2, ensure_ascii=False)}
-
-      OUTPUT FORMAT (JSON only):
-
-      [
-      {{
-        "subject": "<entity>",
-        "subject_type": "<Entity Class>",
-        "relation": "<relation>",
-        "object": "<entity>",
-        "object_type": "<Entity Class>",
-        "label": "SUPPORTED | NOT_SUPPORTED",
-        "evidence": "exact sentence from TEXT or null"
-      }}
-      ...
-    ]
-
-    OUTPUT:
-    """
-    return prompt
+        return render_prompt(
+                prompt_config["prompts"]["verifier"],
+                TEXT=text,
+                TRIPLETS_JSON=json.dumps(triplets, indent=2, ensure_ascii=False),
+        )
 
 
 # -------------------- LOAD MODELS -------------------------

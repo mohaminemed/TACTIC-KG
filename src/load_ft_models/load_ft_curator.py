@@ -15,6 +15,8 @@ from pathlib import Path
 import argparse
 import time
 
+from prompt_config import load_prompt_config, render_prompt
+
 def parse_args():
     parser = argparse.ArgumentParser()
     parser.add_argument("--config", type=str, required=True)
@@ -25,6 +27,8 @@ args = parse_args()
 # Load YAML
 with open(args.config, "r") as f:
     config = yaml.safe_load(f)
+
+prompt_config = load_prompt_config(args.config)
 
 # Global config
 BASE_MODEL = config["models"]["base_model"]
@@ -228,33 +232,19 @@ def infer_type(entity, triplets):
     return "Unknown"
 
 def build_curator_prompt(text, triplets, focus_triplets=None):
-
-    prompt = f"""
-    You are a Cyber Threat Intelligence graph curator.
-    Your task is to identify missing triplets using ONLY evidence from the TEXT.
-    CRITICAL RULES:
-    - Normalize entity names so that different mentions referring to the same entity are unified into a single canonical form. 
-    - Only propose triplets supported by the TEXT.
-    - Do NOT invent relations or entities not mentioned in the TEXT.
-    - Do NOT repeat existing triplets.
-    - Output ONLY NEW valid triplets with label "PREDICTED".
-
-    Extracted TRIPLETS:
-    {json.dumps(triplets, indent=2, ensure_ascii=False)}
-    """
-
+    focus_section = ""
     if focus_triplets:
-        prompt += "\nLOW-CONFIDENCE TRIPLETS (optional refinement):\n"
-        prompt += json.dumps(focus_triplets, indent=2, ensure_ascii=False)
+        focus_section = (
+            "\nLOW-CONFIDENCE TRIPLETS (optional refinement):\n"
+            + json.dumps(focus_triplets, indent=2, ensure_ascii=False)
+        )
 
-    prompt += f"""
-
-    TEXT:
-    {text}
-
-    OUTPUT (JSON only):
-    """
-    return prompt
+    return render_prompt(
+        prompt_config["prompts"]["curator"],
+        TEXT=text,
+        TRIPLETS_JSON=json.dumps(triplets, indent=2, ensure_ascii=False),
+        FOCUS_SECTION=focus_section,
+    )
 
 
 # -------------------- LOAD MODELS -------------------------
