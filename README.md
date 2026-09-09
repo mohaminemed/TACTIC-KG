@@ -8,10 +8,6 @@
 <div align="center">
 
 <p align="center">
-  <a href="https://github.com/mohaminemed/TACTIC-KG">
-    <img src="https://img.shields.io/badge/💻_Repository-GitHub-181717?style=for-the-badge&logo=github" alt="Repository">
-  </a>
-  &nbsp;
   <a href="https://arxiv.org/pdf/2607.05001">
     <img src="https://img.shields.io/badge/📄_Paper-arXiv-B31B1B?style=for-the-badge&logo=arxiv" alt="Paper">
   </a>
