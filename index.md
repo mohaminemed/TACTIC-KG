@@ -44,7 +44,7 @@ Verifier → Curator → Curated CSKG
 - **June 2026** — 🚀 Initial public release.
 - **July 2026** — 📄 Preprint available on arXiv.
 - **September 2026** — 💻 Interactive application now available.
-- **September 2026** — 📍 TACTIC-KG will be presented in Rome, Italy (14–18 September 2026).
+- **September 2026** — 📍 TACTIC-KG presented at ESORICS in Rome.
 
 
 ---
