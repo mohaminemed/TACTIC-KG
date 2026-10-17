@@ -216,13 +216,12 @@ If you find **TACTIC-KG** useful in your research, please consider citing our pa
 
 
 ```bibtex
-@misc{bouchiha2026tactickgsmallagentteams,
+@inproceedings{bouchiha2026tactic,
   title={TACTIC-KG: Toward Small Agent Teams for Cyber Threat Intelligence Knowledge Graph Construction},
-  author={Mouhamed Amine Bouchiha and Gregory Blanc},
+  author={Bouchiha, Mouhamed Amine and Blanc, Gregory},
+  booktitle={European Symposium on Research in Computer Security (ESORICS)},
+  pages={470--490},
   year={2026},
-  eprint={2607.05001},
-  archivePrefix={arXiv},
-  primaryClass={cs.CR},
-  url={https://arxiv.org/abs/2607.05001}
+  organization={Springer}
 }
 ```
