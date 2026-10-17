@@ -47,6 +47,7 @@ Verifier → Curator → Curated CSKG
 - **September 2026** — 📍 TACTIC-KG presented at ESORICS in Rome.
 
 
+
 ---
 
 ## Pipeline Description
@@ -133,6 +134,8 @@ If you find **TACTIC-KG** useful in your research, please consider citing our pa
   title={TACTIC-KG: Toward Small Agent Teams for Cyber Threat Intelligence Knowledge Graph Construction},
   author={Bouchiha, Mouhamed Amine and Blanc, Gregory},
   booktitle={31st European Symposium on Research in Computer Security (ESORICS)},
-  year={2026}
+  pages={470--490},
+  year={2026},
+  organization={Springer}
 }
 ```
